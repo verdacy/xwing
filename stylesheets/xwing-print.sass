@@ -19,49 +19,6 @@ body
 .modal-backdrop
   display: none
 
-.rebel
-  border-bottom-color: #d73737 !important
-
-.empire
-  border-bottom-color: #2f4e9f !important
-
-.scum
-  border-bottom-color: #b79e33 !important
-
-.rebel-outline
-  border-bottom-color: #FFA500 !important
-
-.firstorder
-  border-bottom-color: #872424 !important
-
-.republic
-  border-bottom-color: #a17747 !important
-
-.separatist
-  border-bottom-color: #363ca3 !important
-
-.rebel-pilot
-  border-top-color: #d7373775 !important
-
-.empire-pilot
-  border-top-color: #2f4e9f75 !important
-
-.scum-pilot
-  border-top-color: #b79e3375 !important
-
-.rebel-outline-pilot
-  border-top-color: #FFA50075 !important
-
-.firstorder-pilot
-  border-top-color: #87242475 !important
-
-.republic-pilot
-  border-top-color: #a1774775 !important
-
-.separatist-pilot
-  border-top-color: #363ca375 !important
-
-
 #printable
   overflow: hidden
 
@@ -162,18 +119,17 @@ body
 
     .squad-name
       position: absolute
-      font-size: 0.3in
+      font-size: $fancy-header-height * 0.75
+      margin-top: $fancy-header-height * 0.1
       font-weight: 100
     
       .xwing-miniatures-font
-        position: relative
-        bottom: 0.04in
-        font-size: 0.24in
+        font-size: $fancy-header-height * 0.7
 
     .squad-faction
       position: absolute
-      margin-top: 0.04in
-      right: 0.7in
+      margin-top: 0
+      right: $header-circle-diameter * 1.75
       font-weight: 100
 
       .xwing-miniatures-font
@@ -181,7 +137,7 @@ body
 
     .mask
       position: absolute
-      right: -0.25in
+      right: 0
       width: $header-circle-diameter
       background-color: white
       height: $header-circle-diameter
@@ -213,6 +169,9 @@ body
     border-right-color: transparent
     position: relative
     left: $fancy-header-height
+  
+  .tall
+    min-height: 2.5in
 
   .fancy-ship
     overflow: hidden
@@ -279,11 +238,11 @@ body
       border-left-color: transparent
       border-bottom-color: transparent
       border-right-color: transparent
-      margin-bottom: -0.5in
+      margin-bottom: -$fancy-pilot-header-height * 2
 
       .pilot-stats-content
         position: relative
-        margin-top: -0.27in
+        margin-top: -$fancy-pilot-header-height + 0.1
         
         .xwing-miniatures-font
           vertical-align: middle
@@ -298,39 +257,25 @@ body
       margin-left: $fancy-pilot-header-height * 2
       padding: 5px
       color: black
-      font-size: 0.18in
-      margin-bottom: 0.2in
 
     .fancy-upgrade-container
       color: black
       position: relative
-      margin-left: 0.365in
-      margin-right: 0.365in
       // margin-left: $fancy-pilot-header-height
-      margin-bottom: 10px
+      // margin-bottom: 10px
       // padding-top: 10px
       // padding-bottom: 1px
 
-      .wide
-        width: 60% !important
-
       .upgrade-container
-        width: 49%
-        display: inline-block
-        vertical-align: top
         position: relative
-        margin-left: 0.04in
-        margin-right: 0.04in
         margin-bottom: 0.04in
-        font-size: 0.163in
+        margin-left: 0.75in
+        margin-right: 0.365in
         border: 1px dotted lightgray
         clear: both
 
         .upgrade-stats
           min-height: 0.38in
-
-          .upgrade-name
-            font-size: 0.19in
 
         .card-restriction-container
           padding-top: 0.10in
@@ -409,7 +354,7 @@ body
             margin-right: 0.02in
 
         .upgrade-text
-          padding-right: 0.1in
+          padding-right: $upgrade-circle-diameter
           padding-left: 0.27in
           margin-left: 0.10in
 
@@ -488,9 +433,7 @@ body
     color: black
     
   .version
-    position: relative
-    bottom: 0.2in
-    color: white
+    color: black
 
   .qrcode-container
     color: black

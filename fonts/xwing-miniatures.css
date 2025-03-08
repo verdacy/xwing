@@ -394,6 +394,9 @@ i.xwing-miniatures-font-sensor:before {
 i.xwing-miniatures-font-shield:before {
   content: "*"; }
 
+i.xwing-miniatures-font-sidearcs:before {
+  content: "ı"; }
+
 i.xwing-miniatures-font-singleturretarc:before {
   content: "p"; }
 
@@ -691,6 +694,9 @@ i.xwing-miniatures-ship-m3ainterceptor:before {
 i.xwing-miniatures-ship-mg100starfortress:before {
   content: "Z"; }
 
+i.xwing-miniatures-ship-modifiedn1starfighter:before {
+    content: "<";
+}
 i.xwing-miniatures-ship-modifiedtielnfighter:before {
   content: "C"; }
 
@@ -769,7 +775,7 @@ i.xwing-miniatures-ship-tieddefender:before {
 i.xwing-miniatures-ship-tiefofighter:before {
   content: "O"; }
 
-i.xwing-miniatures-ship-tieinterceptor:before {
+i.xwing-miniatures-ship-tieininterceptor:before {
   content: "I"; }
 
 i.xwing-miniatures-ship-tielnfighter:before {
@@ -820,12 +826,18 @@ i.xwing-miniatures-ship-xiclasslightshuttle:before {
 i.xwing-miniatures-ship-yt2400lightfreighter:before {
   content: "o"; }
 
+i.xwing-miniatures-ship-yt2400lightfreighter2023:before {
+  content: "o"; }
+
 i.xwing-miniatures-ship-yv666lightfreighter:before {
   content: "t"; }
 
 i.xwing-miniatures-ship-tridentclassassaultship:before {
-  content: "\0036"; }
-  
+  content: "7"; }
+
+i.xwing-miniatures-ship-consularcruiser:before {
+    content: "8"; }
+
 i.xwing-miniatures-ship-z95af4headhunter:before {
   content: "z"; }
 

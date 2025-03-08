@@ -75,21 +75,12 @@ class exportObj.CardBrowser
                                         </label>
                                     </div>
                                     <div class = "advanced-search-point-selection-container">
-                                        <strong class="translated" defaultText="Point cost:"></strong>
+                                        <strong class="translated" defaultText="Point costs:"></strong>
                                         <label class = "advanced-search-label set-minimum-points">
                                             <span class="translated" defaultText="from"></span> <input type="number" class="minimum-point-cost advanced-search-number-input" value="0" /> 
                                         </label>
                                         <label class = "advanced-search-label set-maximum-points">
-                                            <span class="translated" defaultText="to"></span> <input type="number" class="maximum-point-cost advanced-search-number-input" value="20" /> 
-                                        </label>
-                                    </div>
-                                    <div class = "advanced-search-loadout-selection-container">
-                                        <strong class="translated" defaultText="Loadout cost:"></strong>
-                                        <label class = "advanced-search-label set-minimum-loadout">
-                                            <span class="translated" defaultText="from"></span> <input type="number" class="minimum-loadout-cost advanced-search-number-input" value="0" /> 
-                                        </label>
-                                        <label class = "advanced-search-label set-maximum-loadout">
-                                            <span class="translated" defaultText="to"></span> <input type="number" class="maximum-loadout-cost advanced-search-number-input" value="99" /> 
+                                            <span class="translated" defaultText="to"></span> <input type="number" class="maximum-point-cost advanced-search-number-input" value="200" /> 
                                         </label>
                                     </div>
                                     <div class = "advanced-search-collection-container">
@@ -98,7 +89,7 @@ class exportObj.CardBrowser
                                             <span class="translated" defaultText="from"></span> <input type="number" class="minimum-owned-copies advanced-search-number-input" value="0" /> 
                                         </label>
                                         <label class = "advanced-search-label set-maximum-owened-copies">
-                                            <span class="translated" defaultText="to"></span> <input type="number" class="maximum-owned-copies advanced-search-number-input" value="99" /> 
+                                            <span class="translated" defaultText="to"></span> <input type="number" class="maximum-owned-copies advanced-search-number-input" value="100" /> 
                                         </label>
                                     </div>
                                     <div class = "advanced-search-misc-container">
@@ -108,9 +99,6 @@ class exportObj.CardBrowser
                                         </label>
                                         <label class = "advanced-search-label toggle-non-unique">
                                             <input type="checkbox" class="non-unique-checkbox advanced-search-checkbox" /> <span class="translated" defaultText="Is not unique"></span>
-                                        </label>
-                                        <label class = "advanced-search-label toggle-standard">
-                                            <input type="checkbox" class="standard-checkbox advanced-search-checkbox" />  <span class="translated" defaultText="Standard legal"></span>
                                         </label>
                                     </div>
                                 </div>
@@ -190,9 +178,6 @@ class exportObj.CardBrowser
                                         </label>
                                         <label class = "advanced-search-label toggle-large-base">
                                             <input type="checkbox" class="large-base-checkbox advanced-search-checkbox" checked="checked"/> <span class="translated" defaultText="Large"></span>
-                                        </label>
-                                        <label class = "advanced-search-label toggle-huge-base">
-                                            <input type="checkbox" class="huge-base-checkbox advanced-search-checkbox" checked="checked"/> <span class="translated" defaultText="Huge"></span>
                                         </label>
                                     </div>
                                     <div class = "advanced-search-attack-container">
@@ -312,7 +297,10 @@ class exportObj.CardBrowser
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card-viewer-container">
+                        <div class="card card-viewer-placeholder info-well">
+                            <p class="translate select-a-card" defaultText="Select a card"></p>
+                        </div>
+                        <div class="card card-viewer-container">
                         </div>
                     </div>
                 </div>
@@ -321,10 +309,11 @@ class exportObj.CardBrowser
 
         @card_selector_container = $ @container.find('.xwing-card-browser .card-selector-container')
         @card_viewer_container = $ @container.find('.xwing-card-browser .card-viewer-container')
-        @card_viewer_container.append $.trim exportObj.builders[7].createInfoContainerUI(false)
+        @card_viewer_container.append $.trim exportObj.builders[7].createInfoContainerUI()
         @card_viewer_container.hide()
         @card_viewer_conditions_container = $ @container.find('.xwing-card-browser .card-viewer-conditions-container')
         @card_viewer_conditions_container.hide()
+        @card_viewer_placeholder = $ @container.find('.xwing-card-browser .card-viewer-placeholder')
         @advanced_search_container = $ @container.find('.xwing-card-browser .advanced-search-container')
 
         @sort_selector = $ @container.find('select.sort-by')
@@ -349,16 +338,12 @@ class exportObj.CardBrowser
         
         @minimum_point_costs = ($ @container.find('.xwing-card-browser .minimum-point-cost'))[0]
         @maximum_point_costs = ($ @container.find('.xwing-card-browser .maximum-point-cost'))[0]
-        @minimum_loadout_costs = ($ @container.find('.xwing-card-browser .minimum-loadout-cost'))[0]
-        @maximum_loadout_costs = ($ @container.find('.xwing-card-browser .maximum-loadout-cost'))[0]
-        @standard_checkbox = ($ @container.find('.xwing-card-browser .standard-checkbox'))[0]
         @unique_checkbox = ($ @container.find('.xwing-card-browser .unique-checkbox'))[0]
         @non_unique_checkbox = ($ @container.find('.xwing-card-browser .non-unique-checkbox'))[0]
         @base_size_checkboxes = 
-            Small: ($ @container.find('.xwing-card-browser .small-base-checkbox'))[0]
-            Medium: ($ @container.find('.xwing-card-browser .medium-base-checkbox'))[0]
-            Large: ($ @container.find('.xwing-card-browser .large-base-checkbox'))[0]
-            Huge: ($ @container.find('.xwing-card-browser .huge-base-checkbox'))[0]
+            large: ($ @container.find('.xwing-card-browser .large-base-checkbox'))[0]
+            medium: ($ @container.find('.xwing-card-browser .medium-base-checkbox'))[0]
+            small: ($ @container.find('.xwing-card-browser .small-base-checkbox'))[0]
         @slot_available_selection = ($ @container.find('.xwing-card-browser select.slot-available-selection'))
         for slot of exportObj.upgradesBySlotCanonicalName
             opt = $ document.createElement('OPTION')
@@ -473,12 +458,9 @@ class exportObj.CardBrowser
         
         @faction_selection[0].onchange = => @renderList @sort_selector.val()
         for basesize, checkbox of @base_size_checkboxes
-            checkbox.onclick = => @renderList @sort_selector.val()
+            checkbox.onclick = => @renderList @sort_selector.val()            
         @minimum_point_costs.oninput = => @renderList @sort_selector.val()
         @maximum_point_costs.oninput = => @renderList @sort_selector.val()
-        @minimum_loadout_costs.oninput = => @renderList @sort_selector.val()
-        @maximum_loadout_costs.oninput = => @renderList @sort_selector.val()
-        @standard_checkbox.onclick = => @renderList @sort_selector.val()
         @unique_checkbox.onclick = => @renderList @sort_selector.val()
         @non_unique_checkbox.onclick = => @renderList @sort_selector.val()
         @slot_available_selection[0].onchange = => @renderList @sort_selector.val()
@@ -630,11 +612,12 @@ class exportObj.CardBrowser
             add_opts = {addon_type: orig_type}
             orig_type = 'Addon'
 
+        exportObj.builders[7].showTooltip(orig_type, data, add_opts ? {}, @card_viewer_container) # we use the render method from the squad builder, cause it works.
+        
         if orig_type == 'Pilot'
             @card_viewer_container.find('tr.info-faction').show() # this information is not shown in the builder, since the faction is clear there, but usefull here. 
 
         @card_viewer_container.show()
-        exportObj.builders[7].showTooltip(orig_type, data, add_opts ? {}, @card_viewer_container) # we use the render method from the squad builder, cause it works.
 
         # Conditions
         if data?.applies_condition?
@@ -654,9 +637,11 @@ class exportObj.CardBrowser
         else
             @card_viewer_conditions_container.hide()
 
+        @card_viewer_placeholder.hide()
+
     addCardTo: (container, card) ->
         option = $ document.createElement('OPTION')
-        option.text "#{if card.display_name then card.display_name else card.name} (#{if card.data.points? then card.data.points else '*'}#{if card.data.loadout? then "/#{card.data.loadout}" else ''})"
+        option.text "#{if card.display_name then card.display_name.replace( /(<([^>]+)>)/ig, '') else card.name} (#{if card.data.points? then card.data.points else '*'})"
         option.data 'name', card.name
         option.data 'display_name', card.display_name
         option.data 'type', card.type
@@ -684,7 +669,7 @@ class exportObj.CardBrowser
     checkSearchCriteria: (card) ->
         # check for text search
         search_text = @card_search_text.value.toLowerCase()
-        text_search = card.name.toLowerCase().indexOf(search_text) > -1 or (card.data.text and card.data.text.toLowerCase().indexOf(search_text) > -1) or (card.display_name and card.display_name.toLowerCase().indexOf(search_text) > -1)
+        text_search = card.name.toLowerCase().indexOf(search_text) > -1 or (card.data.text and card.data.text.toLowerCase().indexOf(search_text)) > -1 or (card.display_name and card.display_name.toLowerCase().indexOf(search_text) > -1)
         
         if not text_search
             return false unless card.data.ship
@@ -722,19 +707,18 @@ class exportObj.CardBrowser
         else
             selected_factions = all_factions
 
-        # check if standard only matches
-        if @standard_checkbox.checked
-            standard_legal = false
-            # check all factions specified by the card (which might be a single faction or an array of factions), or all selected factions if card does not specify any
-            for faction in (if card.data.faction? then (if Array.isArray(card.data.faction) then card.data.faction else [card.data.faction]) else selected_factions)
-                continue unless faction in selected_factions # e.g. ships should only be displayed if a legal faction is selected
-                standard_legal = standard_legal or exportObj.standardCheckBrowser(card.data, faction, card.orig_type)
-            return false unless standard_legal
-
         # check for slot requirements
         required_slots = @slot_available_selection.val()
         if required_slots.length > 0
             slots = card.data.slots
+            if card.orig_type == 'Ship'
+                slots = []
+                for faction in selected_factions
+                    if faction != undefined
+                        for name, pilots of exportObj.pilotsByFactionCanonicalName[faction]
+                            for pilot in pilots # there are sometimes multiple pilots with the same name, so we have another array layer here
+                                if pilot.ship == card.data.name 
+                                    slots.push.apply(slots, pilot.slots)
             
             for slot in required_slots
                 # special case for hardpoints
@@ -776,9 +760,9 @@ class exportObj.CardBrowser
             return false unless actions? and ((("R> " + action) in actions) or (("> " + action) in actions))
 
         # check if point costs matches
-        if @minimum_point_costs.value > 0 or @maximum_point_costs.value < 20
-            return false unless (card.data.points >= @minimum_point_costs.value and card.data.points <= @maximum_point_costs.value) or (card.data.variablepoints?)
-            if card.data.variablepoints?
+        if @minimum_point_costs.value > 0 or @maximum_point_costs.value < 200
+            return false unless (card.data.points >= @minimum_point_costs.value and card.data.points <= @maximum_point_costs.value) or (card.data.points == "*" or not card.data.points?)
+            if card.data.pointsarray?
                 matching_points = false
                 for points in card.data.pointsarray
                     if points >= @minimum_point_costs.value and points <= @maximum_point_costs.value
@@ -797,22 +781,6 @@ class exportObj.CardBrowser
                         break if matching_points
                     break if matching_points            
                 return false unless matching_points
-
-        # check if loadout costs matches
-        if @minimum_loadout_costs.value > 0 or @maximum_loadout_costs.value < 99
-            return false unless (card.data.loadout >= @minimum_loadout_costs.value and card.data.loadout <= @maximum_loadout_costs.value)
-            if card.orig_type == 'Ship' # check if pilot matching points exist
-                matching_loadout = false
-                for faction in selected_factions
-                    for name, pilots of exportObj.pilotsByFactionCanonicalName[faction]
-                        for pilot in pilots
-                            if pilot.ship == card.data.name
-                                if pilot.loadout >= @minimum_point_costs.value and pilot.loadout <= @maximum_loadout_costs.value
-                                    matching_loadout = true
-                                    break
-                        break if matching_loadout
-                    break if matching_loadout
-                return false unless matching_loadout
 
         # check if used slot matches
         used_slots = @slot_used_selection.val()
@@ -862,20 +830,17 @@ class exportObj.CardBrowser
             return false unless @minimum_ini.value <= 0 and @maximum_ini.value >= 6
 
         # check for base size
-        if not (@base_size_checkboxes['Small'].checked and @base_size_checkboxes['Medium'].checked and @base_size_checkboxes['Large'].checked and @base_size_checkboxes['Huge'].checked)
+        if not (@base_size_checkboxes['small'].checked and @base_size_checkboxes['medium'].checked and @base_size_checkboxes['large'].checked)
             size_matches = false
             if card.orig_type == 'Ship'
-                if card.data.base?
-                    size_matches = size_matches or @base_size_checkboxes[card.data.base].checked
-                else
-                    size_matches = size_matches or @base_size_checkboxes['Small'].checked
+                size_matches = size_matches or card.data.medium and @base_size_checkboxes['medium'].checked
+                size_matches = size_matches or card.data.large and @base_size_checkboxes['large'].checked
+                size_matches = size_matches or not card.data.medium and not card.data.large and @base_size_checkboxes['small'].checked
             else if card.orig_type == 'Pilot'
                 ship = exportObj.ships[card.data.ship]
-                if ship.base?
-                    size_matches = size_matches or @base_size_checkboxes[ship.base].checked
-                else
-                    size_matches = size_matches or @base_size_checkboxes['Small'].checked
-
+                size_matches = size_matches or ship.medium and @base_size_checkboxes['medium'].checked
+                size_matches = size_matches or ship.large and @base_size_checkboxes['large'].checked
+                size_matches = size_matches or not ship.medium and not ship.large and @base_size_checkboxes['small'].checked
             return false unless size_matches
 
         # check for hull

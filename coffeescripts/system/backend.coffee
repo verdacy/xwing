@@ -1,7 +1,7 @@
 ###
-    X-Wing Squad Builder 2.5
+    X-Wing Squad Builder 2.0
     Stephen Kim <raithos@gmail.com>
-    https://yasb.app
+    https://raithos.github.io
 ###
 
 exportObj = exports ? this
@@ -192,13 +192,13 @@ class exportObj.SquadBuilderBackend
                         </div>
                     </div>
                     <div class="row squad-delete-confirm">
-                        <div class="col-md-6">
+                        <div class="col-md-9">
                             #{exportObj.translate('ui', 'reallyDeleteSquadXY', "<em>#{squad.name}</em>")}
                         </div>
-                        <div class="col-md-6 btn-group">
+                        <div class="col-md-3">
                             <button class="btn btn-danger confirm-delete-squad translated" defaultText="Delete"></button>
-                            <button class="btn confirm-archive-squad translated" defaultText="Archive"></button>
-                            <button class="btn btn-modal cancel-delete-squad translated" defaultText="Unselect"></button>
+                            &nbsp;
+                            <button class="btn btn-modal cancel-delete-squad translated" defaultText="Cancel"></button>
                         </div>
                     </div>
                 """
@@ -312,34 +312,6 @@ class exportObj.SquadBuilderBackend
                             li.html $.trim """
                                 Error deleting #{li.data('squad').name}: <em>#{results.error}</em>
                             """
-
-                li.find('button.confirm-archive-squad').click (e) =>
-                    e.preventDefault()
-                    button = $ e.target
-                    li = button.closest 'li'
-                    builder = li.data('builder')
-                    li.find('.confirm-delete-squad').addClass 'disabled'
-                    li.find('.confirm-delete-squad').text exportObj.translate('ui', 'Archiving...')
-                    @archive li.data('squad'), li.data('builder').faction, (results) =>
-                        if results.success
-                            li.slideUp 'fast', ->
-                                $(li).hide()
-                                $(li).find('.confirm-delete-squad').removeClass 'disabled'
-                                $(li).find('.confirm-delete-squad').text exportObj.translate('ui', 'Delete')
-                                $(li).data 'selectedForDeletion', false
-                                $(li).find('.squad-delete-confirm').fadeOut 'fast', ->
-                                    $(li).find('.squad-description').fadeIn 'fast'
-                            # decrement counter
-                            @number_of_selected_squads_to_be_deleted -= 1
-                            # hide delete multiple section if this was the last selected squad
-                            if not @number_of_selected_squads_to_be_deleted
-                                @squad_list_modal.find('div.delete-multiple-squads').hide()
-                        else
-                            li.html $.trim """
-                                Error archiving #{li.data('squad').name}: <em>#{results.error}</em>
-                            """
-
-
             if not hasNotArchivedSquads
                 list_ul.append $.trim """
                     <li class="translated" defaultText="No saved squads"></li>
@@ -356,7 +328,7 @@ class exportObj.SquadBuilderBackend
                 tag_button = $ @squad_list_tags.find(".#{tagclean}")
                 tag_button.click (e) =>
                     button = $ e.target
-                    buttontag = button.attr('class').replace('btn ','').replace('btn-inverse ','')
+                    buttontag = button.attr('class').replace('btn ','')
                     @squad_list_modal.find('.squad-display-mode .btn').removeClass 'btn-inverse'
                     @squad_list_tags.find('.btn').removeClass 'btn-inverse'
                     button.addClass 'btn-inverse'
@@ -574,8 +546,8 @@ class exportObj.SquadBuilderBackend
                 </div>
                 <div class="btn-group squad-display-mode full-row">
                     <button class="btn btn-modal btn-inverse show-all-squads translated" defaultText="All"></button>
-                    <button class="btn btn-modal show-standard-squads"><span class="d-none d-lg-block translated" defaultText="Standard"></span><span class="d-lg-none translated" defaultText="Hyper"></span></button>
-                    <button class="btn btn-modal show-extended-squads"><span class="d-none d-lg-block translated" defaultText="Extended"></span><span class="d-lg-none translated" defaultText="Ext"></span></button>
+                    <button class="btn btn-modal show-extended-squads"><span class="d-none d-lg-block translated" defaultText="Standard"></span><span class="d-lg-none translated" defaultText="Ext"></span></button>
+                    <button class="btn btn-modal show-hyperspace-squads"><span class="d-none d-lg-block translated" defaultText="Wild Space"></span><span class="d-lg-none translated" defaultText="Hyper"></span></button>
                     <button class="btn btn-modal show-quickbuild-squads"><span class="d-none d-lg-block translated" defaultText="Quickbuild"></span><span class="d-lg-none translated" defaultText="QB"></span></button>
                     <button class="btn btn-modal show-epic-squads translated" defaultText="Epic"></button>
                     <button class="btn btn-modal show-archived-squads translated" defaultText="Archived"></button>
@@ -720,13 +692,13 @@ class exportObj.SquadBuilderBackend
                 @squad_list_modal.find('.squad-list li').each (idx, elem) ->
                     $(elem).toggle $(elem).data().squad.serialized.search(/v\d+Ze/) != -1
 
-        @show_standard_squads_button = $ @squad_list_modal.find('.show-standard-squads')
-        @show_standard_squads_button.click (e) =>
-            unless @squad_display_mode == 'standard'
-                @squad_display_mode = 'standard'
+        @show_hyperspace_squads_button = $ @squad_list_modal.find('.show-hyperspace-squads')
+        @show_hyperspace_squads_button.click (e) =>
+            unless @squad_display_mode == 'hyperspace'
+                @squad_display_mode = 'hyperspace'
                 @squad_list_modal.find('.squad-display-mode .btn').removeClass 'btn-inverse'
                 @squad_list_tags.find('.btn').removeClass 'btn-inverse'
-                @show_standard_squads_button.addClass 'btn-inverse'
+                @show_hyperspace_squads_button.addClass 'btn-inverse'
                 @squad_list_modal.find('.squad-list li').each (idx, elem) ->
                     $(elem).toggle $(elem).data().squad.serialized.search(/v\d+Zh/) != -1
 
@@ -960,8 +932,8 @@ class exportObj.SquadBuilderBackend
             , 1000
         
     getSettings: (cb=$.noop) ->
-        $.get("#{@server}/settings").done (data, textStatus, jqXHR) =>
-            cb data.settings
+#        $.get("#{@server}/settings").done (data, textStatus, jqXHR) =>
+#            cb data.settings
 
     set: (setting, value, cb=$.noop) ->
         post_args =
@@ -983,17 +955,16 @@ class exportObj.SquadBuilderBackend
         if settings?.language?
             # we found a language, provide it with priority 10
             cb settings.language, 10
-        # otherwise we may parse a language out of the headers 
+        # otherwise we may parse a language out of the headers (reimplements commit d95bb5e93fbb75d0e6a4a7270f7a86cf86a62a0a)
         else
             await @getHeaders defer(headers)
             if headers?.HTTP_ACCEPT_LANGUAGE?
                 # Need to parse out language preferences
-                # console.log "#{headers.HTTP_ACCEPT_LANGUAGE}"
+                # I'm going to be lazy and only output the first one we encounter
                 for language_range in headers.HTTP_ACCEPT_LANGUAGE.split(',')
                     [ language_tag, quality ] = language_range.split ';'
-                    # console.log "#{language_tag}, #{quality}"
                     if language_tag == '*'
-                        # let's give that half priority
+                        # let's give that half bullshit priority
                         cb 'English', -0.5
                     else
                         language_code = language_tag.split('-')[0]

@@ -3,19 +3,19 @@ doctype html
 
 html
   head
-    title YASB 2
+    title YASB - Xwing 2.0 Legacy
     meta(charset="utf-8")
 
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(property="og:url", content="http://yasb.app/")
-    meta(property="og:image", content="http://yasb.app/android-chrome-192x192.png")
-    meta(property="og:description", content="YASB 2 is a simple, fast, and easy to use squad builder for X-Wing Miniatures by Fantasy Flight Games.")
+    meta(property="og:url", content="https://xwing-legacy.com/")
+    meta(property="og:image", content="https://images-cdn.fantasyflightgames.com/filer_public/59/48/5948f638-de0a-4cb6-a468-3127eafd65d0/swz01_anc_slider.jpg")
+    meta(property="og:description", content="YASB - Xwing 2.0 Legacy is a simple, fast, and easy to use squad builder for X-Wing Miniatures by Fantasy Flight Games.")
 
-    link(rel="apple-touch-icon", sizes="180x180", href="apple-touch-icon.png")
-    link(rel="icon", type="image/png", sizes="32x32", href="favicon-32x32.png")
-    link(rel="icon", type="image/png", sizes="16x16", href="favicon-16x16.png")
+    link(rel="apple-touch-icon", sizes="180x180", href="images/apple-touch-icon.png")
+    link(rel="icon", type="image/png", sizes="32x32", href="images/favicon-32x32.png")
+    link(rel="icon", type="image/png", sizes="16x16", href="images/favicon-16x16.png")
     link(rel="manifest", href="site.webmanifest")
-    link(rel="shortcut icon", type="image/x-icon", href="favicon.ico")
+    link(rel="shortcut icon", type="image/x-icon", href="images/favicon.ico")
 
     link(rel="stylesheet", href=`bower_components/select2/select2.css?${now_ts}`)
     link(rel="stylesheet", href=`bootstrap/css/bootstrap.css?${now_ts}`)
@@ -30,7 +30,7 @@ html
 
   body
     // body layout
-    script(async='', src='https://www.googletagmanager.com/gtag/js?id=G-WQ43KS2P7F')
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-123324723-1&aip=1')
     script.
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -55,7 +55,7 @@ html
         li.nav-item
           a#allTab.nav-link('data-toggle'="tab", href='#allContent', title='All', class='translated', defaultText='MultiFaction')
         li.nav-item.float-right
-          a.nav-link(href='https://github.com/raithos/xwing/issues/new/choose', target='_blank', class='translated', defaultText='Submit Bug/Feature Request') 
+          a.nav-link(href='https://discord.com/invite/gnU2CKVGYv', target='_blank', class='translated', defaultText='Submit Bug/Feature Request') 
         li.nav-item.float-right
           a#login-logout.d-none.nav-link(href='#')
             span.hide-authenticated
@@ -68,13 +68,13 @@ html
           a#auth-status.nav-link(href='#')
             i.fa.fa-sync.fa-spin
             span.payload
-        // li.nav-item.float-right
-        //  a.nav-link(href='old', target='_blank') Old Version 
         li.dropdown.language-picker.nav-item.float-right
           a.nav-link.dropdown-toggle('data-toggle'='dropdown', href='#')
             span.language-placeholder
             b.caret
           ul.dropdown-menu      
+        li.nav-item.float-right
+          a#aboutTab.nav-link('data-toggle'="tab", href='#aboutContent', class='translated', defaultText='About')
         li.nav-item.float-right
           a#browserTab.nav-link('data-toggle'="tab", href='#browserContent', class='translated', defaultText='Card Browser')
         li.nav-item.float-right
@@ -101,6 +101,52 @@ html
           #card-browser
         .tab-pane.fade#rulesBrowserContent
           #rules-browser
+        .tab-pane.fade#aboutContent
+          .container-fluid
+            .row-fluid
+              .span8.about
+                .image-block
+                    img(src="https://images-cdn.fantasyflightgames.com/filer_public/59/48/5948f638-de0a-4cb6-a468-3127eafd65d0/swz01_anc_slider.jpg", height="100", width="350")
+                    h2 YASB for X-Wing 2.0 Legacy
+                :markdown
+                    YASB 2.0 is a simple, fast, no-frills squad builder for [X-Wing Miniatures](http://www.fantasyflightgames.com/edge_minisite.asp?eidm=174&enmi=X-Wing) by [Fantasy Flight Games](http://www.fantasyflightgames.com/index.asp).
+
+                    It is pure HTML, JavaScript, and CSS and requires no backend, and can be dropped into place on any website (with maybe a few CSS tweaks).
+
+                    YASB for X-wing 2.0 Legacy is a community fork of [YASB 2.5](https://yasb.app).
+                    You can give your feedback here : [X-wing 2.0 Discord Server](https://discord.com/invite/gnU2CKVGYv)
+                    Updated rules and information can be found here : [Infinite Arenas 2.0 Legacy](https://infinitearenas.com/legacy/docs)
+
+                    YASB 2.5 is updated and maintained by Stephen Kim.
+
+                    2.0 launch data thanks to Evan Cameron, Jonathan Hon, Devon Monkhouse, and Mark Stewart.
+                    
+                    Translation Team: Patrick Mischke, godgremos, Clément Bourgoin, ManuelWittke
+
+                    Site logo by Thomas Kohler
+
+                    Based on the amazing original [Yet Another Squad Builder](https://geordanr.github.io/xwing/)
+
+                    Icons and fonts courtesy GeckoTH's excellent PSD, available on [A Few Maneuvers](http://www.afewmaneuvers.com/forums/viewtopic.php?f=28&t=183).
+					
+                    X-Wing symbols font courtesy [Hinny](https://github.com/Hinny) and [Josh Derksen](https://github.com/armoredgear7).
+
+                    Fancy printout design inspired by TheKestrel on the FFG forums.
+
+                    Maneuver dial functionality by [hpanderson](https://github.com/hpanderson).
+
+                    Upgrade card text integrated into printouts by [wffurr](https://github.com/wffurr).
+
+                    Squad name in the permalink and obstacles choice modal by [zacharyp](https://github.com/zacharyp).
+
+                    Quick Build support by [patschke](https://github.com/patschke)
+
+                    This builder is unofficial and is not affiliated with Atomic Mass Games, Fantasy Flight Games, Lucasfilm Ltd., or Disney.
+
+                    Do you want to donate ? You can help YASB 2.5 here :
+                p
+                    button(class='btn btn-primary paypal', onclick="window.open('https://paypal.me/raithos');") Donate?
+
     .footer
       .msie8-hax
 
@@ -121,9 +167,12 @@ html
     script(src=`https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js` integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
     script(src=`bootstrap/js/bootstrap.js?${now_ts}`)
 	
-    script(src=`javascripts/translations.min.js?${now_ts}`)
     script(src=`javascripts/xwing.min.js?${now_ts}`)
     script(src=`javascripts/xwingcontent.min.js?${now_ts}`)
+    script(src=`javascripts/manifest.min.js?${now_ts}`)
+    script(src=`javascripts/xwingquickbuilds.min.js?${now_ts}`)
+    script(src=`javascripts/xwingrules.min.js?${now_ts}`)
+    script(src=`javascripts/translation-en.min.js?${now_ts}`)
     script(src=`javascripts/translations.min.js?${now_ts}`)
 	
     script
@@ -151,45 +200,49 @@ html
 
           $('.site-placeholder').text """http://\#{window.location.host}\#{window.location.pathname}"""
           $('#rebelTab').click (e) ->
-            gtag 'config', 'G-WQ43KS2P7F',
+            gtag 'config', 'UA-123324723-1',
               page_path: '/rebels'
               page_title: 'Rebel Alliance'
           $('#empireTab').click (e) ->
-            gtag 'config', 'G-WQ43KS2P7F',
+            gtag 'config', 'UA-123324723-1',
               page_path: '/empire'
               page_title: 'Galactic Empire'
           $('#scumTab').click (e) ->
-            gtag 'config', 'G-WQ43KS2P7F',
+            gtag 'config', 'UA-123324723-1',
               page_path: '/scum'
               page_title: 'Scum and Villainy'
           $('#resistanceTab').click (e) ->
-            gtag 'config', 'G-WQ43KS2P7F',
+            gtag 'config', 'UA-123324723-1',
               page_path: '/resistance'
               page_title: 'Resistance'
           $('#firstorderTab').click (e) ->
-            gtag 'config', 'G-WQ43KS2P7F',
+            gtag 'config', 'UA-123324723-1',
               page_path: '/firstorder'
               page_title: 'First Order'
           $('#republicTab').click (e) ->
-            gtag 'config', 'G-WQ43KS2P7F',
+            gtag 'config', 'UA-123324723-1',
               page_path: '/republic'
               page_title: 'Galactic Republic'
           $('#separatistTab').click (e) ->
-            gtag 'config', 'G-WQ43KS2P7F',
+            gtag 'config', 'UA-123324723-1',
               page_path: '/separatist'
               page_page_title: 'Separatist Alliance'
           $('#allTab').click (e) ->
-            gtag 'config', 'G-WQ43KS2P7F',
+            gtag 'config', 'UA-123324723-1',
               page_path: '/all'
               page_page_title: 'All'
           $('#browserTab').click (e) ->
-            gtag 'config', 'G-WQ43KS2P7F',
+            gtag 'config', 'UA-123324723-1',
               page_path: '/browser'
               page_title: 'Card Browser'
           $('#rulesTab').click (e) ->
-            gtag 'config', 'G-WQ43KS2P7F',
+            gtag 'config', 'UA-123324723-1',
               page_path: '/rules-browser'
               page_title: 'Rules'
+          $('#aboutTab').click (e) ->
+            gtag 'config', 'UA-123324723-1',
+              page_path: '/about'
+              page_title: 'About'
 
           window.rebel_sb = new window.SquadBuilder
               tab: '#rebelTab'
@@ -249,53 +302,53 @@ html
 
           switch $.getParameterByName 'f'
             when 'Rebel Alliance'
-                gtag 'config', 'G-WQ43KS2P7F',
+                gtag 'config', 'UA-123324723-1',
                   page_path: '/rebels'
                   page_title: 'Rebel Alliance'
                 $('#rebelTab').tab 'show'
             when 'Galactic Empire'
-                gtag 'config', 'G-WQ43KS2P7F',
+                gtag 'config', 'UA-123324723-1',
                   page_path: '/empire'
                   page_title: 'Galactic Empire'
                 $('#empireTab').tab 'show'
             when 'Scum and Villainy'
-                gtag 'config', 'G-WQ43KS2P7F',
+                gtag 'config', 'UA-123324723-1',
                   page_path: '/scum'
                   page_title: 'Scum and Villainy'
                 $('#scumTab').tab 'show'
             when 'Resistance'
-                gtag 'config', 'G-WQ43KS2P7F',
+                gtag 'config', 'UA-123324723-1',
                   page_path: '/resistance'
                   page_title: 'Resistance'
                 $('#resistanceTab').tab 'show'
             when 'First Order'
-                gtag 'config', 'G-WQ43KS2P7F',
+                gtag 'config', 'UA-123324723-1',
                   page_path: '/firstorder'
                   page_title: 'First Order'
                 $('#firstorderTab').tab 'show'
             when 'Galactic Republic'
-                gtag 'config', 'G-WQ43KS2P7F',
+                gtag 'config', 'UA-123324723-1',
                   page_path: '/republic'
                   page_title: 'Galactic Republic'
                 $('#republicTab').tab 'show'
             when 'Separatist Alliance'
-                gtag 'config', 'G-WQ43KS2P7F',
+                gtag 'config', 'UA-123324723-1',
                   page_path: '/separatist'
                   page_title: 'Separatist Alliance'
                 $('#separatistTab').tab 'show'
             when 'All'
-                gtag 'config', 'G-WQ43KS2P7F',
+                gtag 'config', 'UA-123324723-1',
                   page_path: '/all'
                   page_title: 'All'
                 $('#allTab').tab 'show'
             else
-                gtag 'config', 'G-WQ43KS2P7F',
+                gtag 'config', 'UA-123324723-1',
                   page_path: '/default'
                   page_title: 'Main Page'
                 $('#rebelTab').tab 'show'
 
           window.backend = new SquadBuilderBackend
-              server: 'https://login.yasb.app'
+              server: 'https://xwing-legacy-backend.onrender.com'
               builders: [
                 window.rebel_sb
                 window.empire_sb
@@ -309,10 +362,10 @@ html
               login_logout_button: '#login-logout'
               auth_status: '#auth-status'
 
-          window.cardBrowser = new CardBrowser
+          window.browser = new CardBrowser
               container: '#card-browser'
 
-          window.rulesBrowser = new RulesBrowser
+          window.browser = new RulesBrowser
               container: '#rules-browser'
 
           window.backend.getSettings (settings) ->
@@ -338,33 +391,5 @@ html
         | &nbsp;
       span(style="font-family: XWingShip")
         | &nbsp;
-    img.d-none(src="images/coreasteroid0.png")
-    img.d-none(src="images/coreasteroid1.png")
-    img.d-none(src="images/coreasteroid2.png")
-    img.d-none(src="images/coreasteroid3.png")
-    img.d-none(src="images/coreasteroid4.png")
-    img.d-none(src="images/coreasteroid5.png")
-    img.d-none(src="images/yt2400debris0.png")
-    img.d-none(src="images/yt2400debris1.png")
-    img.d-none(src="images/yt2400debris2.png")
-    img.d-none(src="images/vt49decimatordebris0.png")
-    img.d-none(src="images/vt49decimatordebris1.png")
-    img.d-none(src="images/vt49decimatordebris2.png")
-    img.d-none(src="images/core2asteroid0.png")
-    img.d-none(src="images/core2asteroid1.png")
-    img.d-none(src="images/core2asteroid2.png")
-    img.d-none(src="images/core2asteroid3.png")
-    img.d-none(src="images/core2asteroid4.png")
-    img.d-none(src="images/core2asteroid5.png")
-    img.d-none(src="images/gascloud1.png")
-    img.d-none(src="images/gascloud2.png")
-    img.d-none(src="images/gascloud3.png")
-    img.d-none(src="images/gascloud4.png")
-    img.d-none(src="images/gascloud5.png")
-    img.d-none(src="images/gascloud6.png")
-    img.d-none(src="images/pomasteroid1.png")
-    img.d-none(src="images/pomasteroid2.png")
-    img.d-none(src="images/pomasteroid3.png")
-    img.d-none(src="images/pomdebris1.png")
-    img.d-none(src="images/pomdebris2.png")
-    img.d-none(src="images/pomdebris3.png")
+
+

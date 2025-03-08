@@ -18,249 +18,9 @@ String::canonicalize = ->
 # modules.
 exportObj.basicCardData = ->
     ships:
-        "T-65 X-wing":
-            name: "T-65 X-wing"
-            factions: [ "Rebel Alliance" ]
-            attack: 3
-            agility: 2
-            hull: 4
-            shields: 2
-            actions: [
-                "Focus"
-                "Lock"
-                "Barrel Roll"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 1, 1, 1, 0, 0, 0, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0]
-                [ 2, 2, 2, 2, 2, 0, 0, 0, 3, 3]
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
-            ]
-            autoequip: [
-                "Servomotor S-Foils"
-            ]
-        "BTL-A4 Y-wing":
-            name: "BTL-A4 Y-wing"
-            factions: [ "Rebel Alliance", "Scum and Villainy" ]
-            attack: 2
-            agility: 1
-            hull: 6
-            shields: 2
-            actions: [
-                "Focus"
-                "Lock"
-                "R-Barrel Roll"
-                "R-Reload"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0]
-                [ 0, 1, 1, 1, 0, 0]
-                [ 2, 2, 1, 2, 2, 0]
-                [ 3, 2, 2, 2, 3, 0]
-                [ 0, 0, 3, 0, 0, 3]
-            ]
-        "RZ-1 A-wing":
-            name: "RZ-1 A-wing"
-            factions: [ "Rebel Alliance" ]
-            attack: 2
-            agility: 3
-            hull: 2
-            shields: 2
-            chassis: "Vectored Thrusters"
-            actions: [
-                "Focus"
-                "Evade"
-                "Lock"
-                "Barrel Roll"
-                "Boost"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 2, 0, 0, 0, 2, 0, 0, 0]
-                [ 1, 1, 1, 1, 1, 0, 0, 0]
-                [ 2, 2, 1, 2, 2, 0, 3, 3]
-                [ 0, 0, 1, 0, 0, 0, 0, 0]
-                [ 0, 0, 1, 0, 0, 3, 0, 0]
-            ]
-        "Modified YT-1300 Light Freighter":
-            name: "Modified YT-1300 Light Freighter"
-            factions: [ "Rebel Alliance" ]
-            attackdt: 3
-            agility: 1
-            hull: 8
-            shields: 5
-            keyword: ["Freighter"]
-            actions: [
-                "Focus"
-                "Lock"
-                "Rotate Arc"
-                "R-Boost"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 2, 1, 2, 0, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 0, 0]
-                [ 2, 2, 1, 2, 2, 0, 3, 3]
-                [ 0, 0, 2, 0, 0, 3, 0, 0]
-            ]
-            base: "Large"
-        "Customized YT-1300 Light Freighter":
-            name: "Customized YT-1300 Light Freighter"
-            factions: [ "Scum and Villainy" ]
-            attackdt: 2
-            agility: 1
-            hull: 8
-            shields: 3
-            keyword: ["Freighter"]
-            actions: [
-                "Focus"
-                "Lock"
-                "Rotate Arc"
-                "R-Boost"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 1, 1, 1, 0, 0, 0, 0]
-                [ 2, 2, 1, 2, 2, 0, 0, 0]
-                [ 2, 2, 1, 2, 2, 0, 3, 3]
-                [ 0, 0, 2, 0, 0, 3, 0, 0]
-            ]
-            base: "Large"
-        "TIE/ln Fighter":
-            name: "TIE/ln Fighter"
-            factions: ["Rebel Alliance", "Galactic Empire"]
-            attack: 2
-            agility: 3
-            hull: 3
-            shields: 0
-            actions: [
-                "Focus"
-                "Barrel Roll"
-                "Evade"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0]
-                [ 2, 0, 0, 0, 2, 0]
-                [ 2, 1, 1, 1, 2, 0]
-                [ 2, 2, 1, 2, 2, 3]
-                [ 0, 0, 2, 0, 0, 3]
-                [ 0, 0, 2, 0, 0, 0]
-            ]
-        "TIE Advanced x1":
-            name: "TIE Advanced x1"
-            factions: [ "Galactic Empire" ]
-            attack: 2
-            agility: 3
-            hull: 3
-            shields: 2
-            chassis: "Advanced Targeting Computer"
-            actions: [
-                "Focus"
-                "R-> Barrel Roll"
-                "Lock"
-                "Barrel Roll"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 1, 2, 1, 0, 0, 0, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3]
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
-            ]
-        "TIE/in Interceptor":
-            name: "TIE/in Interceptor"
-            icon: "tieinterceptor"
-            factions: [ "Galactic Empire" ]
-            attack: 3
-            agility: 3
-            hull: 3
-            shields: 0
-            chassis: "Autothrusters"
-            actions: [
-                "Focus"
-                "Barrel Roll"
-                "Boost"
-                "Evade"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 2, 0, 0, 0, 2, 0, 0, 0]
-                [ 1, 1, 1, 1, 1, 0, 0, 0]
-                [ 2, 2, 1, 2, 2, 0, 3, 3]
-                [ 0, 0, 1, 0, 0, 3, 0, 0]
-                [ 0, 0, 2, 0, 0, 0, 0, 0]
-            ]
-        "Firespray-class Patrol Craft":
-            name: "Firespray-class Patrol Craft"
-            factions: [ "Scum and Villainy", "Separatist Alliance"]
-            attack: 3
-            attackb: 3
-            agility: 2
-            hull: 6
-            shields: 4
-            base: "Medium"
-            actions: [
-                "Focus"
-                "Lock"
-                "Boost"
-                "R-Reinforce"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0]
-                [ 0, 2, 1, 2, 0, 0, 0, 0, 3, 3]
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
-            ]
-        "HWK-290 Light Freighter":
-            name: "HWK-290 Light Freighter"
-            factions: [ "Rebel Alliance", "Scum and Villainy" ]
-            attackt: 2
-            agility: 2
-            hull: 3
-            shields: 2
-            keyword: ["Freighter"]
-            actions: [
-                "Focus"
-                "R-> Rotate Arc"
-                "Lock"
-                "R-> Rotate Arc"
-                "Rotate Arc"
-                "R-Boost"
-                "R-Jam"
-            ]
-            maneuvers: [
-                [ 0, 0, 3, 0, 0]
-                [ 0, 1, 1, 1, 0]
-                [ 2, 2, 1, 2, 2]
-                [ 3, 2, 1, 2, 3]
-                [ 0, 0, 2, 0, 0]
-            ]
-        "Lambda-class T-4a Shuttle":
-            name: "Lambda-class T-4a Shuttle"
-            factions: [ "Galactic Empire" ]
-            attack: 3
-            attackb: 2
-            agility: 1
-            hull: 6
-            shields: 4
-            actions: [
-                "Focus"
-                "Coordinate"
-                "Reinforce"
-                "R-Jam"
-            ]
-            maneuvers: [
-                [ 0, 0, 3, 0, 0]
-                [ 0, 1, 1, 1, 0]
-                [ 3, 2, 1, 2, 3]
-                [ 0, 3, 2, 3, 0]
-            ]
-            base: "Large"
         "A/SF-01 B-wing":
             name: "A/SF-01 B-wing"
+            xws: "A/SF-01 B-wing".canonicalize()
             factions: [ "Rebel Alliance" ]
             attack: 3
             agility: 1
@@ -282,36 +42,236 @@ exportObj.basicCardData = ->
             autoequip: [
                 'Stabilized S-Foils'
             ]
-        "TIE/sa Bomber":
-            name: "TIE/sa Bomber"
-            factions: [ "Galactic Empire" ]
+        "Aggressor Assault Fighter":
+            name: "Aggressor Assault Fighter"
+            xws: "Aggressor Assault Fighter".canonicalize()
+            factions: [ "Scum and Villainy" ]
+            attack: 3
+            agility: 3
+            hull: 5
+            shields: 3
+            chassis: "Advanced Droid Brain"
+            actions: [
+                "Calculate"
+                "Evade"
+                "Lock"
+                "Boost"
+            ]
+            medium: true
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 2, 1, 1, 1, 2, 0, 0, 0 ]
+                [ 2, 1, 1, 1, 2, 0, 0, 0 ]
+                [ 0, 1, 1, 1, 0, 0, 3, 3 ]
+                [ 0, 0, 2, 0, 0, 3, 0, 0 ]
+            ]
+        "Alpha-Class Star Wing":
+            name: "Alpha-Class Star Wing"
+            xws: "Alpha-Class Star Wing".canonicalize()
+            factions: ["Galactic Empire"]
             attack: 2
             agility: 2
+            hull: 4
+            shields: 3
+            actions: [
+                "Focus"
+                "Lock"
+                "Slam"
+                "Reload"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 2, 1, 2, 0, 0, 0, 0 ]
+                [ 2, 1, 1, 1, 2, 0, 0, 0 ]
+                [ 2, 2, 2, 2, 2, 0, 0, 0 ]
+                [ 0, 0, 3, 0, 0, 0, 0, 0 ]
+            ]
+        "ARC-170 Starfighter":
+            name: "ARC-170 Starfighter"
+            xws: "ARC-170 Starfighter".canonicalize()
+            factions: ["Rebel Alliance","Galactic Republic"]
+            attack: 3
+            attackb: 2
+            agility: 1
             hull: 6
-            shields: 0
-            chassis: "Nimble Bomber"
+            shields: 3
+            medium: true
+            actions: [
+                "Focus"
+                "Lock"
+                "R-Barrel Roll"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0 ]
+                [ 0, 1, 1, 1, 0, 0 ]
+                [ 2, 1, 1, 1, 2, 0 ]
+                [ 3, 2, 2, 2, 3, 0 ]
+                [ 0, 0, 3, 0, 0, 3 ]
+            ]
+        "Attack Shuttle":
+            name: "Attack Shuttle"
+            xws: "Attack Shuttle".canonicalize()
+            factions: ["Rebel Alliance"]
+            attack: 3
+            agility: 2
+            hull: 3
+            shields: 1
+            chassis: "Locked and Loaded"
+            actions: [
+                "Focus"
+                "Evade"
+                "Barrel Roll"
+                "R-> Evade"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0 ]
+                [ 3, 1, 1, 1, 3, 0 ]
+                [ 2, 2, 1, 2, 2, 0 ]
+                [ 3, 2, 2, 2, 3, 0 ]
+                [ 0, 0, 2, 0, 0, 3 ]
+            ]
+        "Auzituck Gunship":
+            name: "Auzituck Gunship"
+            xws: "Auzituck Gunship".canonicalize()
+            factions: ["Rebel Alliance"]
+            attackf: 3
+            agility: 1
+            hull: 6
+            shields: 2
+            actions: [
+                "Focus"
+                "R-Barrel Roll"
+                "Reinforce"
+            ]
+            maneuvers: [
+                [ 0, 0, 3, 0, 0, 0, 0, 0 ]
+                [ 0, 1, 1, 1, 0, 0, 0, 0 ]
+                [ 2, 2, 1, 2, 2, 0, 0, 0 ]
+                [ 2, 2, 1, 2, 2, 0, 0, 0 ]
+                [ 0, 0, 2, 0, 0, 0, 0, 0 ]
+            ]
+        "Belbullab-22 Starfighter":
+            name: "Belbullab-22 Starfighter"
+            xws: "Belbullab-22 Starfighter".canonicalize()
+            factions: ["Separatist Alliance"]
+            attack: 3
+            agility: 2
+            hull: 3
+            shields: 2
             actions: [
                 "Focus"
                 "Lock"
                 "Barrel Roll"
-                "R-> Lock"
+                "R-> Focus"
+                "Boost"
+                "R-> Focus"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 2, 2, 0, 2, 2, 0, 0, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0]
+                [ 3, 2, 1, 2, 3, 0, 3, 3, 0, 0]
+                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+            ]
+        "BTA-NR2 Y-wing":
+            name: "BTA-NR2 Y-wing"
+            xws: "BTA-NR2 Y-wing".canonicalize()
+            factions: ["Resistance"]
+            attack: 2
+            agility: 1
+            hull: 4
+            shields: 3
+            chassis: "Intuitive Interface"
+            actions: [
+                "Focus"
+                "R-Lock"
+                "R-Barrel Roll"
+                "R-Boost"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0]
+                [ 0, 1, 1, 1, 0, 0]
+                [ 2, 2, 1, 2, 2, 0]
+                [ 3, 2, 1, 2, 3, 0]
+                [ 0, 0, 3, 0, 0, 0]
+                [ 0, 0, 0, 0, 0, 3]
+            ]
+        "BTL-A4 Y-wing":
+            name: "BTL-A4 Y-wing"
+            xws: "BTL-A4 Y-wing".canonicalize()
+            factions: [ "Rebel Alliance", "Scum and Villainy" ]
+            attack: 2
+            agility: 1
+            hull: 6
+            shields: 2
+            actions: [
+                "Focus"
+                "Lock"
+                "R-Barrel Roll"
+                "R-Reload"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0]
+                [ 0, 1, 1, 1, 0, 0]
+                [ 2, 2, 1, 2, 2, 0]
+                [ 3, 2, 2, 2, 3, 0]
+                [ 0, 0, 3, 0, 0, 3]
+            ]
+        "BTL-B Y-wing":
+            name: "BTL-B Y-wing"
+            xws: "BTL-B Y-wing".canonicalize()
+            factions: ["Galactic Republic"]
+            attack: 2
+            agility: 1
+            hull: 5
+            shields: 3
+            chassis: "Plated Hull"
+            actions: [
+                "Focus"
+                "Lock"
+                "R-Barrel Roll"
                 "R-Reload"
             ]
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0]
                 [ 0, 2, 1, 2, 0, 0]
-                [ 2, 1, 1, 1, 2, 0]
-                [ 2, 2, 1, 2, 2, 3]
-                [ 0, 0, 2, 0, 0, 0]
-                [ 0, 0, 0, 0, 0, 3]
+                [ 2, 2, 1, 2, 2, 0]
+                [ 3, 2, 2, 2, 3, 0]
+                [ 0, 0, 3, 0, 0, 3]
+                [ 0, 0, 0, 0, 0, 0]
             ]
-        "Z-95-AF4 Headhunter":
-            name: "Z-95-AF4 Headhunter"
-            factions: [ "Rebel Alliance", "Scum and Villainy" ]
+        "BTL-S8 K-wing":
+            name: "BTL-S8 K-wing"
+            xws: "BTL-S8 K-wing".canonicalize()
+            factions: ["Rebel Alliance"]
+            attackdt: 2
+            agility: 1
+            hull: 6
+            shields: 3
+            medium: true
+            actions: [
+                "Focus"
+                "Lock"
+                "Slam"
+                "Rotate Arc"
+                "Reload"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0 ]
+                [ 0, 1, 1, 1, 0, 0 ]
+                [ 2, 2, 1, 2, 2, 0 ]
+                [ 0, 2, 2, 2, 0, 0 ]
+            ]
+        "Clone Z-95 Headhunter":
+            name: "Clone Z-95 Headhunter"
+            xws: "Clone Z-95 Headhunter".canonicalize()
+            factions: ["Galactic Republic"]
             attack: 2
             agility: 2
             hull: 2
             shields: 2
+            chassis: "Versatile Frame"
             actions: [
                 "Focus"
                 "Lock"
@@ -324,31 +284,83 @@ exportObj.basicCardData = ->
                 [ 2, 2, 1, 2, 2, 3]
                 [ 0, 0, 2, 0, 0, 3]
             ]
-        "TIE/d Defender":
-            name: "TIE/d Defender"
-            factions: [ "Galactic Empire" ]
-            attack: 3
-            agility: 3
-            hull: 3
-            shields: 4
-            chassis: "Full Throttle"
+        "Customized YT-1300 Light Freighter":
+            name: "Customized YT-1300 Light Freighter"
+            xws: "Customized YT-1300 Light Freighter".canonicalize()
+            factions: [ "Scum and Villainy" ]
+            attackdt: 2
+            agility: 1
+            hull: 8
+            shields: 3
+            keyword: ["Freighter"]
             actions: [
                 "Focus"
-                "Evade"
+                "Lock"
+                "Rotate Arc"
+                "R-Boost"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 1, 1, 1, 0, 0, 0, 0]
+                [ 2, 2, 1, 2, 2, 0, 0, 0]
+                [ 2, 2, 1, 2, 2, 0, 3, 3]
+                [ 0, 0, 2, 0, 0, 3, 0, 0]
+            ]
+            large: true
+        "Delta-7 Aethersprite":
+            name: "Delta-7 Aethersprite"
+            xws: "Delta-7 Aethersprite".canonicalize()
+            factions: ["Galactic Republic"]
+            attack: 2
+            agility: 3
+            hull: 3
+            shields: 1
+            chassis: "Fine-Tuned Controls"
+            actions: [
+                "Focus"
+                "F-Evade"
                 "Lock"
                 "Barrel Roll"
                 "Boost"
             ]
             maneuvers: [
-                [ 0, 0, 0, 0, 0, 0]
-                [ 3, 1, 0, 1, 3, 0]
-                [ 3, 2, 1, 2, 3, 3]
-                [ 2, 2, 1, 2, 2, 0]
-                [ 0, 0, 1, 0, 0, 2]
-                [ 0, 0, 1, 0, 0, 0]
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 2, 1, 0, 1, 2, 0, 0, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0, 3, 3, 0, 0]
+                [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0]
+                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
+                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
             ]
+        "Droid Tri-fighter":
+            name: "Droid Tri-fighter"
+            xws: "Droid Tri-fighter".canonicalize()
+            factions: ["Separatist Alliance"]
+            attack: 3
+            agility: 3
+            hull: 3
+            shields: 0
+            chassis: "Networked Calculations"
+            actions: [
+                "Calculate"
+                "Evade"
+                "Lock"
+                "Barrel Roll"
+                "R-> Evade"
+                "Boost"
+                "R-> Calculate"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 2, 0, 0, 0, 2, 0, 0, 0, 3, 3 ]
+                [ 1, 2, 1, 2, 1, 0, 0, 0, 0, 0 ]
+                [ 1, 2, 1, 2, 1, 3, 0, 0, 0, 0 ]
+                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
+            ]
+            autoequip: ['Intercept Booster']
         "E-wing":
             name: "E-wing"
+            xws: "E-wing".canonicalize()
             factions: [ "Rebel Alliance" ]
             attack: 3
             agility: 3
@@ -372,354 +384,54 @@ exportObj.basicCardData = ->
                 [ 0, 0, 1, 0, 0, 3, 0, 0 ]
                 [ 0, 0, 2, 0, 0, 0, 0, 0 ]
             ]
-        "TIE/ph Phantom":
-            name: "TIE/ph Phantom"
-            factions: [ "Galactic Empire" ]
-            attack: 3
-            agility: 2
-            hull: 3
-            shields: 2
-            chassis: "Stygium Array"
-            actions: [
-                "Focus"
-                "Evade"
-                "Barrel Roll"
-                "Cloak"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0]
-                [ 2, 2, 0, 2, 2, 0]
-                [ 2, 1, 1, 1, 2, 0]
-                [ 2, 2, 1, 2, 2, 3]
-                [ 0, 0, 2, 0, 0, 3]
-            ]
-        "YT-2400 Light Freighter":
-            name: "YT-2400 Light Freighter"
-            factions: [ "Rebel Alliance" ]
-            attackdt: 4
-            agility: 2
-            hull: 6
-            shields: 4
-            keyword: ["Freighter"]
-            chassis: "Sensor Blindspot"
-            actions: [
-                "Focus"
-                "Lock"
-                "R-Barrel Roll"
-                "Rotate Arc"
-            ]
-            base: "Large"
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0]
-                [ 2, 2, 1, 2, 2, 0]
-                [ 2, 2, 2, 2, 2, 0]
-                [ 0, 0, 2, 0, 0, 3]
-            ]
-        "VT-49 Decimator":
-            name: "VT-49 Decimator"
-            factions: [ "Galactic Empire" ]
-            attackdt: 3
-            agility: 0
-            hull: 12
-            shields: 4
-            actions: [
-                "Focus"
-                "Lock"
-                "Reinforce"
-                "Rotate Arc"
-                "R-Coordinate"
-            ]
-            base: "Large"
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0]
-                [ 3, 1, 1, 1, 3, 0]
-                [ 2, 2, 1, 2, 2, 0]
-                [ 2, 2, 2, 2, 2, 0]
-                [ 0, 0, 2, 0, 0, 0]
-            ]
-        "StarViper-class Attack Platform":
-            name: "StarViper-class Attack Platform"
+        "Escape Craft":
+            name: "Escape Craft"
+            xws: "Escape Craft".canonicalize()
             factions: ["Scum and Villainy"]
-            attack: 3
-            agility: 3
-            hull: 4
-            shields: 1
-            chassis: "Microthrusters"
-            actions: [
-                "Focus"
-                "Lock"
-                "Barrel Roll"
-                "R-> Focus"
-                "Boost"
-                "R-> Focus"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 0, 0]
-                [ 0, 2, 1, 2, 0, 0, 3, 3]
-                [ 0, 0, 2, 0, 0, 0, 0, 0]
-            ]
-        "M3-A Interceptor":
-            name: "M3-A Interceptor"
-            factions: [ "Scum and Villainy" ]
             attack: 2
-            agility: 3
-            hull: 3
-            shields: 1
-            chassis: "Weapon Hardpoint"
-            actions: [
-                "Focus"
-                "Evade"
-                "Lock"
-                "Barrel Roll"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0 ]
-                [ 2, 1, 0, 1, 2, 0 ]
-                [ 2, 2, 1, 2, 2, 0 ]
-                [ 0, 2, 1, 2, 0, 3 ]
-                [ 0, 0, 2, 0, 0, 0 ]
-                [ 0, 0, 2, 0, 0, 3 ]
-            ]
-        "Aggressor Assault Fighter":
-            name: "Aggressor Assault Fighter"
-            factions: [ "Scum and Villainy" ]
-            attack: 3
-            agility: 3
-            hull: 5
-            shields: 3
-            chassis: "Advanced Droid Brain"
-            actions: [
-                "Calculate"
-                "Evade"
-                "Lock"
-                "Boost"
-            ]
-            base: "Medium"
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 2, 1, 1, 1, 2, 0, 0, 0 ]
-                [ 2, 1, 1, 1, 2, 0, 0, 0 ]
-                [ 0, 1, 1, 1, 0, 0, 3, 3 ]
-                [ 0, 0, 2, 0, 0, 3, 0, 0 ]
-            ]
-        "YV-666 Light Freighter":
-            name: "YV-666 Light Freighter"
-            factions: [ "Scum and Villainy" ]
-            attackf: 3
-            agility: 1
-            hull: 9
-            shields: 3
-            base: "Large"
-            actions: [
-                "Focus"
-                "Reinforce"
-                "Lock"
-            ]
-            maneuvers: [
-                [ 0, 0, 3, 0, 0, 0 ]
-                [ 0, 1, 1, 1, 0, 0 ]
-                [ 3, 2, 1, 2, 3, 0 ]
-                [ 2, 2, 1, 2, 2, 0 ]
-                [ 0, 0, 2, 0, 0, 0 ]
-            ]
-        "Kihraxz Fighter":
-            name: "Kihraxz Fighter"
-            factions: ["Scum and Villainy"]
-            attack: 3
             agility: 2
-            hull: 5
-            shields: 1
-            actions: [
-                "Focus"
-                "Lock"
-                "Barrel Roll"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 2, 1, 0, 1, 2, 0, 0, 0, 0, 0 ]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 3, 3 ]
-                [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
-            ]
-        "BTL-S8 K-wing":
-            name: "BTL-S8 K-wing"
-            factions: ["Rebel Alliance"]
-            attackdt: 2
-            agility: 1
-            hull: 6
-            shields: 3
-            base: "Medium"
-            actions: [
-                "Focus"
-                "Lock"
-                "Slam"
-                "Rotate Arc"
-                "Reload"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0 ]
-                [ 0, 1, 1, 1, 0, 0 ]
-                [ 2, 2, 1, 2, 2, 0 ]
-                [ 0, 2, 2, 2, 0, 0 ]
-            ]
-        "TIE/ca Punisher":
-            name: "TIE/ca Punisher"
-            factions: ["Galactic Empire"]
-            attack: 2
-            agility: 1
-            hull: 6
-            shields: 3
-            base: "Medium"
-            actions: [
-                "Focus"
-                "Lock"
-                "R-Barrel Roll"
-                "Boost"
-                "R-> Lock"
-                "Reload"
-            ]
-            maneuvers: [
-                [ 0, 0, 3, 0, 0, 0 ]
-                [ 0, 1, 1, 1, 0, 0 ]
-                [ 2, 2, 1, 2, 2, 0 ]
-                [ 3, 2, 2, 2, 3, 0 ]
-                [ 0, 0, 0, 0, 0, 3 ]
-            ]
-        "VCX-100 Light Freighter":
-            name: "VCX-100 Light Freighter"
-            factions: ["Rebel Alliance"]
-            attack: 4
-            agility: 0
-            hull: 10
-            shields: 4
-            base: "Large"
-            keyword: ["Freighter"]
-            chassis: "Tail Gun"
-            actions: [
-                "Focus"
-                "Lock"
-                "Reinforce"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0 ]
-                [ 3, 2, 1, 2, 3, 0 ]
-                [ 2, 1, 1, 1, 2, 0 ]
-                [ 3, 2, 2, 2, 3, 0 ]
-                [ 0, 0, 2, 0, 0, 3 ]
-            ]
-        "Attack Shuttle":
-            name: "Attack Shuttle"
-            factions: ["Rebel Alliance"]
-            attack: 3
-            agility: 2
-            hull: 3
-            shields: 1
-            chassis: "Locked and Loaded"
-            actions: [
-                "Focus"
-                "Evade"
-                "Barrel Roll"
-                "R-> Evade"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0 ]
-                [ 3, 1, 1, 1, 3, 0 ]
-                [ 2, 2, 1, 2, 2, 0 ]
-                [ 3, 2, 2, 2, 3, 0 ]
-                [ 0, 0, 2, 0, 0, 3 ]
-            ]
-        "TIE Advanced v1":
-            name: "TIE Advanced v1"
-            factions: ["Galactic Empire"]
-            attack: 2
-            agility: 3
             hull: 2
             shields: 2
+            chassis: "Co-Pilot"
+            actions: [
+                "Focus"
+                "Barrel Roll"
+                "R-Coordinate"
+            ]
+            maneuvers: [
+                [ 0, 0, 3, 0, 0, 0, 0, 0 ]
+                [ 0, 1, 1, 1, 0, 0, 0, 0 ]
+                [ 3, 2, 1, 2, 3, 0, 0, 0 ]
+                [ 0, 2, 2, 2, 0, 3, 0, 0 ]
+            ]
+        "Eta-2 Actis":
+            name: "Eta-2 Actis"
+            xws: "Eta-2 Actis".canonicalize()
+            factions: ["Galactic Republic"]
+            attackbull: 3
+            attack: 2
+            agility: 3
+            hull: 3
+            shields: 0
+            chassis: "Intuitive Controls"
             actions: [
                 "Focus"
                 "Evade"
-                "Lock"
+                "F-Lock"
                 "Barrel Roll"
-                "R-> Focus"
                 "Boost"
-                "R-> Focus"
             ]
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 1, 1, 0, 1, 1, 0, 0, 0, 0, 0 ]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3 ]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
+                [ 2, 0, 0, 0, 2, 0, 0, 0, 0, 0 ]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 4, 4 ]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 1, 0, 0, 3, 0, 0, 0, 0 ]
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
-            ]
-        "G-1A Starfighter":
-            name: "G-1A Starfighter"
-            factions: ["Scum and Villainy"]
-            attack: 3
-            agility: 1
-            hull: 5
-            shields: 4
-            base: "Medium"
-            actions: [
-                "Focus"
-                "Lock"
-                "Jam"
-            ]
-            maneuvers: [
-                [ 0, 0, 3, 0, 0, 0 ]
-                [ 3, 1, 1, 1, 3, 0 ]
-                [ 2, 2, 1, 2, 2, 3 ]
-                [ 0, 3, 2, 3, 0, 0 ]
-                [ 0, 0, 3, 0, 0, 3 ]
-            ]
-        "JumpMaster 5000":
-            name: "JumpMaster 5000"
-            factions: ["Scum and Villainy"]
-            base: "Large"
-            attackt: 2
-            agility: 2
-            hull: 6
-            shields: 3
-            actions: [
-                "Focus"
-                "R-> Rotate Arc"
-                "Lock"
-                "R-> Rotate Arc"
-                "R-Barrel Roll"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 2, 1, 1, 2, 3, 0, 0, 0 ]
-                [ 2, 1, 1, 2, 3, 0, 0, 0 ]
-                [ 0, 1, 1, 2, 0, 0, 3, 0 ]
-                [ 0, 0, 2, 0, 0, 3, 0, 0 ]
-            ]
-        "ARC-170 Starfighter":
-            name: "ARC-170 Starfighter"
-            factions: ["Rebel Alliance","Galactic Republic"]
-            attack: 3
-            attackb: 2
-            agility: 1
-            hull: 6
-            shields: 3
-            base: "Medium"
-            actions: [
-                "Focus"
-                "Lock"
-                "R-Barrel Roll"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0 ]
-                [ 0, 1, 1, 1, 0, 0 ]
-                [ 2, 1, 1, 1, 2, 0 ]
-                [ 3, 2, 2, 2, 3, 0 ]
-                [ 0, 0, 3, 0, 0, 3 ]
             ]
         "Fang Fighter":
             name: "Fang Fighter"
+            xws: "Fang Fighter".canonicalize()
             factions: ["Scum and Villainy", "Rebel Alliance"]
             attack: 3
             agility: 3
@@ -742,10 +454,274 @@ exportObj.basicCardData = ->
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
             ]
+        "Fireball":
+            name: "Fireball"
+            xws: "Fireball".canonicalize()
+            factions: ["Resistance"]
+            attack: 2
+            agility: 2
+            hull: 6
+            shields: 0
+            chassis: "Explosion with Wings"
+            actions: [
+                "Focus"
+                "Evade"
+                "Barrel Roll"
+                "Slam"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ]
+                [ 3, 2, 2, 2, 3, 0, 0, 0, 3, 3 ]
+                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+            ]
+        "Firespray-class Patrol Craft":
+            name: "Firespray-class Patrol Craft"
+            xws: "Firespray-class Patrol Craft".canonicalize()
+            factions: [ "Scum and Villainy", "Separatist Alliance"]
+            attack: 3
+            attackb: 3
+            agility: 2
+            hull: 6
+            shields: 4
+            medium: true
+            actions: [
+                "Focus"
+                "Lock"
+                "Boost"
+                "R-Reinforce"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0]
+                [ 0, 2, 1, 2, 0, 0, 0, 0, 3, 3]
+                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
+            ]
+        "G-1A Starfighter":
+            name: "G-1A Starfighter"
+            xws: "G-1A Starfighter".canonicalize()
+            factions: ["Scum and Villainy"]
+            attack: 3
+            agility: 1
+            hull: 5
+            shields: 4
+            medium: true
+            actions: [
+                "Focus"
+                "Lock"
+                "Jam"
+            ]
+            maneuvers: [
+                [ 0, 0, 3, 0, 0, 0 ]
+                [ 3, 1, 1, 1, 3, 0 ]
+                [ 2, 2, 1, 2, 2, 3 ]
+                [ 0, 3, 2, 3, 0, 0 ]
+                [ 0, 0, 3, 0, 0, 3 ]
+            ]
+        "Gauntlet Fighter":
+            name: "Gauntlet Fighter"
+            xws: "Gauntlet Fighter".canonicalize()
+            factions: ["Rebel Alliance", "Galactic Empire", "Scum and Villainy", "Galactic Republic", "Separatist Alliance"]
+            attack: 3
+            attackb: 2
+            agility: 2
+            hull: 9
+            shields: 2
+            large: true
+            actions: [
+                "Focus"
+                "R-Reinforce"
+                "Lock"
+                "R-Coordinate"
+            ]
+            autoequip: [
+                "Swivel Wing"
+            ]
+            maneuvers: [
+                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 1, 0, 1, 0, 0, 0, 0, 0, 0 ]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ]
+                [ 3, 2, 2, 2, 3, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+            ]
+        "HMP Droid Gunship":
+            name: "HMP Droid Gunship"
+            xws: "HMP Droid Gunship".canonicalize()
+            factions: ["Separatist Alliance"]
+            attackf: 2
+            agility: 1
+            hull: 5
+            shields: 3
+            chassis: "Networked Aim"
+            actions: [
+                "Calculate"
+                "Lock"
+                "R-Barrel Roll"
+                "Reload"
+                "R-> Calculate"
+            ]
+            maneuvers: [
+                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 3, 1, 3, 0, 0, 0, 0, 0, 0 ]
+                [ 1, 2, 1, 2, 1, 0, 0, 0, 0, 0 ]
+                [ 2, 3, 2, 3, 2, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
+            ]
+            autoequip: [
+                'Repulsorlift Stabilizers'
+            ]
+        "HWK-290 Light Freighter":
+            name: "HWK-290 Light Freighter"
+            xws: "HWK-290 Light Freighter".canonicalize()
+            factions: [ "Rebel Alliance", "Scum and Villainy" ]
+            attackt: 2
+            agility: 2
+            hull: 3
+            shields: 2
+            keyword: ["Freighter"]
+            actions: [
+                "Focus"
+                "R-> Rotate Arc"
+                "Lock"
+                "R-> Rotate Arc"
+                "Rotate Arc"
+                "R-Boost"
+                "R-Jam"
+            ]
+            maneuvers: [
+                [ 0, 0, 3, 0, 0]
+                [ 0, 1, 1, 1, 0]
+                [ 2, 2, 1, 2, 2]
+                [ 3, 2, 1, 2, 3]
+                [ 0, 0, 2, 0, 0]
+            ]
+        "Hyena-class Droid Bomber":
+            name: "Hyena-class Droid Bomber"
+            xws: "Hyena-class Droid Bomber".canonicalize()
+            factions: ["Separatist Alliance"]
+            attack: 2
+            agility: 2
+            hull: 5
+            shields: 0
+            chassis: "Networked Calculations"
+            actions: [
+                "Calculate"
+                "Lock"
+                "Barrel Roll"
+                "R-> Lock"
+                "R-Reload"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 2, 3, 2, 3, 2, 0, 0, 0, 0, 0]
+                [ 1, 2, 1, 2, 1, 3, 0, 0, 3, 3]
+                [ 2, 0, 1, 0, 2, 0, 0, 0, 0, 0]
+                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
+            ]
+            autoequip: [
+                'Landing Struts'
+            ]
+        "JumpMaster 5000":
+            name: "JumpMaster 5000"
+            xws: "JumpMaster 5000".canonicalize()
+            factions: ["Scum and Villainy"]
+            large: true
+            attackt: 2
+            agility: 2
+            hull: 6
+            shields: 3
+            actions: [
+                "Focus"
+                "R-> Rotate Arc"
+                "Lock"
+                "R-> Rotate Arc"
+                "R-Barrel Roll"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 2, 1, 1, 2, 3, 0, 0, 0 ]
+                [ 2, 1, 1, 2, 3, 0, 0, 0 ]
+                [ 0, 1, 1, 2, 0, 0, 3, 0 ]
+                [ 0, 0, 2, 0, 0, 3, 0, 0 ]
+            ]
+        "Kihraxz Fighter":
+            name: "Kihraxz Fighter"
+            xws: "Kihraxz Fighter".canonicalize()
+            factions: ["Scum and Villainy"]
+            attack: 3
+            agility: 2
+            hull: 5
+            shields: 1
+            actions: [
+                "Focus"
+                "Lock"
+                "Barrel Roll"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 2, 1, 0, 1, 2, 0, 0, 0, 0, 0 ]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 3, 3 ]
+                [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
+            ]
+        "LAAT/i Gunship":
+            name: "LAAT/i Gunship"
+            xws: "LAAT/i Gunship".canonicalize()
+            factions: ["Galactic Republic"]
+            attackdt: 2
+            agility: 1
+            hull: 8
+            shields: 2
+            medium: true
+            chassis: "Fire Convergence"
+            actions: [
+                "Focus"
+                "Lock"
+                "Rotate Arc"
+                "R-Reinforce"
+                "Reload"
+            ]
+            maneuvers: [
+                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0 ]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ]
+                [ 3, 2, 2, 2, 3, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+            ]
+        "Lambda-class T-4a Shuttle":
+            name: "Lambda-class T-4a Shuttle"
+            xws: "Lambda-class T-4a Shuttle".canonicalize()
+            factions: [ "Galactic Empire" ]
+            attack: 3
+            attackb: 2
+            agility: 1
+            hull: 6
+            shields: 4
+            actions: [
+                "Focus"
+                "Coordinate"
+                "Reinforce"
+                "R-Jam"
+            ]
+            maneuvers: [
+                [ 0, 0, 3, 0, 0]
+                [ 0, 1, 1, 1, 0]
+                [ 3, 2, 1, 2, 3]
+                [ 0, 3, 2, 3, 0]
+            ]
+            large: true
         "Lancer-Class Pursuit Craft":
             name: "Lancer-Class Pursuit Craft"
+            xws: "Lancer-Class Pursuit Craft".canonicalize()
             factions: ["Scum and Villainy"]
-            base: "Large"
+            large: true
             attack: 3
             attackt: 2
             agility: 2
@@ -765,8 +741,196 @@ exportObj.basicCardData = ->
                 [ 0, 0, 1, 0, 0, 0]
                 [ 0, 0, 2, 0, 0, 3]
             ]
+        "M3-A Interceptor":
+            name: "M3-A Interceptor"
+            xws: "M3-A Interceptor".canonicalize()
+            factions: [ "Scum and Villainy" ]
+            attack: 2
+            agility: 3
+            hull: 3
+            shields: 1
+            chassis: "Weapon Hardpoint"
+            actions: [
+                "Focus"
+                "Evade"
+                "Lock"
+                "Barrel Roll"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0 ]
+                [ 2, 1, 0, 1, 2, 0 ]
+                [ 2, 2, 1, 2, 2, 0 ]
+                [ 0, 2, 1, 2, 0, 3 ]
+                [ 0, 0, 2, 0, 0, 0 ]
+                [ 0, 0, 2, 0, 0, 3 ]
+            ]
+        "M12-L Kimogila Fighter":
+            name: "M12-L Kimogila Fighter"
+            xws: "M12-L Kimogila Fighter".canonicalize()
+            factions: ["Scum and Villainy"]
+            attack: 3
+            agility: 1
+            hull: 7
+            shields: 2
+            medium: true
+            chassis: "Dead to Rights"
+            actions: [
+                "Focus"
+                "Lock"
+                "R-Barrel Roll"
+                "Reload"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0]
+                [ 3, 2, 1, 2, 3, 0]
+                [ 2, 1, 1, 1, 2, 0]
+                [ 2, 2, 1, 2, 2, 0]
+                [ 0, 0, 0, 0, 0, 3]
+            ]
+        "MG-100 StarFortress":
+            name: "MG-100 StarFortress"
+            xws: "MG-100 StarFortress".canonicalize()
+            factions: ["Resistance"]
+            attack: 3
+            attackdt: 2
+            agility: 1
+            hull: 9
+            shields: 3
+            actions: [
+                "Focus"
+                "Lock"
+                "Rotate Arc"
+                "Reload"
+            ]
+            maneuvers: [
+                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
+                [ 3, 1, 1, 1, 3, 0, 0, 0, 0, 0]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0]
+                [ 0, 3, 2, 3, 0, 0, 0, 0, 0, 0]
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            ]
+            large: true
+        "Modified TIE/ln Fighter":
+            name: "Modified TIE/ln Fighter"
+            xws: "Modified TIE/ln Fighter".canonicalize()
+            factions: ["Scum and Villainy"]
+            attack: 2
+            agility: 3
+            hull: 3
+            shields: 0
+            chassis: "Notched Stabilizers"
+            actions: [
+                "Focus"
+                "Barrel Roll"
+                "Evade"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0]
+                [ 2, 0, 0, 0, 2, 0]
+                [ 2, 1, 1, 1, 2, 0]
+                [ 2, 2, 1, 2, 2, 3]
+                [ 0, 0, 2, 0, 0, 0]
+                [ 0, 0, 3, 0, 0, 0]
+            ]
+        "Modified YT-1300 Light Freighter":
+            name: "Modified YT-1300 Light Freighter"
+            xws: "Modified YT-1300 Light Freighter".canonicalize()
+            factions: [ "Rebel Alliance" ]
+            attackdt: 3
+            agility: 1
+            hull: 8
+            shields: 5
+            keyword: ["Freighter"]
+            actions: [
+                "Focus"
+                "Lock"
+                "Rotate Arc"
+                "R-Boost"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 2, 1, 2, 0, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0, 0, 0]
+                [ 2, 2, 1, 2, 2, 0, 3, 3]
+                [ 0, 0, 2, 0, 0, 3, 0, 0]
+            ]
+            large: true
+        "Naboo Royal N-1 Starfighter":
+            name: "Naboo Royal N-1 Starfighter"
+            xws: "Naboo Royal N-1 Starfighter".canonicalize()
+            factions: ["Galactic Republic"]
+            attack: 2
+            agility: 2
+            hull: 3
+            shields: 2
+            chassis: "Full Throttle"
+            actions: [
+                "Focus"
+                "Lock"
+                "Barrel Roll"
+                "Boost"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 2, 2, 2, 0, 0, 0, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 3, 3]
+                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+            ]
+        "Nantex-Class Starfighter":
+            name: "Nantex-Class Starfighter"
+            xws: "Nantex-Class Starfighter".canonicalize()
+            factions: ["Separatist Alliance"]
+            attackbull: 3
+            attackt: 2
+            agility: 3
+            hull: 4
+            shields: 0
+            chassis: "Pinpoint Tractor Array"
+            actions: [
+                "Focus"
+                "Evade"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 2, 1, 0, 1, 2, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0, 3, 3]
+                [ 0, 0, 2, 0, 0, 0, 0, 0]
+                [ 0, 0, 2, 0, 0, 3, 0, 0]
+            ]
+        "Nimbus-class V-wing":
+            name: "Nimbus-class V-wing"
+            xws: "Nimbus-class V-wing".canonicalize()
+            factions: ["Galactic Republic"]
+            attack: 2
+            agility: 3
+            hull: 2
+            shields: 2
+            chassis: "Twin Ion Engines"
+            actions: [
+                "Focus"
+                "Lock"
+                "R-Barrel Roll"
+                "Boost"
+                "R-> Lock"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 2, 3, 0, 3, 2, 0, 0, 0, 0, 0 ]
+                [ 1, 1, 1, 1, 1, 3, 0, 0, 0, 0 ]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
+                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
+            ]
+            autoequip: [
+                'Alpha-3E "Esk"'
+            ]
         "Quadrijet Transfer Spacetug":
             name: "Quadrijet Transfer Spacetug"
+            xws: "Quadrijet Transfer Spacetug".canonicalize()
             factions: ["Scum and Villainy"]
             attack: 2
             agility: 2
@@ -784,234 +948,102 @@ exportObj.basicCardData = ->
                 [ 2, 1, 1, 1, 2, 0, 3, 3, 0, 0, 0, 3, 0 ]
                 [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
             ]
-        "UT-60D U-wing":
-            name: "UT-60D U-wing"
-            factions: ["Rebel Alliance"]
-            base: "Medium"
-            attack: 3
-            agility: 2
+        "Resistance Transport":
+            name: "Resistance Transport"
+            xws: "Resistance Transport".canonicalize()
+            factions: ["Resistance"]
+            attack: 2
+            agility: 1
             hull: 5
             shields: 3
             actions: [
                 "Focus"
                 "Lock"
                 "R-Coordinate"
+                "R-Jam"
             ]
             maneuvers: [
-                [ 0, 0, 3, 0, 0 ]
-                [ 0, 1, 1, 1, 0 ]
-                [ 2, 1, 1, 1, 2 ]
-                [ 0, 2, 2, 2, 0 ]
-                [ 0, 0, 2, 0, 0 ]
+                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 3, 1, 1, 1, 3, 0, 0, 0, 0, 0, 3, 0, 3 ]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 3, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
             ]
-            autoequip: [
-                "Pivot Wing"
-            ]
-        "TIE/sk Striker":
-            name: "TIE/sk Striker"
-            factions: ["Galactic Empire"]
-            attack: 3
-            agility: 2
-            hull: 4
-            shields: 0
-            chassis: "Adaptive Ailerons"
-            actions: [
-                "Focus"
-                "Evade"
-                "Barrel Roll"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 2, 1, 1, 1, 2, 3, 0, 0 ]
-                [ 2, 1, 1, 1, 2, 0, 3, 3 ]
-                [ 0, 2, 1, 2, 0, 0, 0, 0 ]
-            ]
-        "Auzituck Gunship":
-            name: "Auzituck Gunship"
-            factions: ["Rebel Alliance"]
-            attackf: 3
-            agility: 1
-            hull: 6
-            shields: 2
-            actions: [
-                "Focus"
-                "R-Barrel Roll"
-                "Reinforce"
-            ]
-            maneuvers: [
-                [ 0, 0, 3, 0, 0, 0, 0, 0 ]
-                [ 0, 1, 1, 1, 0, 0, 0, 0 ]
-                [ 2, 2, 1, 2, 2, 0, 0, 0 ]
-                [ 2, 2, 1, 2, 2, 0, 0, 0 ]
-                [ 0, 0, 2, 0, 0, 0, 0, 0 ]
-            ]
-        "Scurrg H-6 Bomber":
-            name: "Scurrg H-6 Bomber"
-            factions: ["Scum and Villainy"]
-            attack: 3
-            agility: 1
-            hull: 6
-            shields: 4
-            base: "Medium"
-            actions: [
-                "Focus"
-                "Lock"
-                "R-Barrel Roll"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 1, 1, 1, 0, 0, 0, 0, 0, 0 ]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ]
-                [ 3, 2, 2, 2, 3, 0, 0, 0, 3, 3 ]
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
-            ]
-        "TIE/ag Aggressor":
-            name: "TIE/ag Aggressor"
-            factions: ["Galactic Empire"]
+        "Resistance Transport Pod":
+            name: "Resistance Transport Pod"
+            xws: "Resistance Transport Pod".canonicalize()
+            factions: ["Resistance"]
             attack: 2
             agility: 2
-            hull: 4
+            hull: 3
             shields: 1
             actions: [
                 "Focus"
-                "Lock"
-                "Barrel Roll"
-                "R-> Evade"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0 ]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
-            ]
-        "Alpha-Class Star Wing":
-            name: "Alpha-Class Star Wing"
-            factions: ["Galactic Empire"]
-            attack: 2
-            agility: 2
-            hull: 4
-            shields: 3
-            actions: [
-                "Focus"
-                "Lock"
-                "Slam"
-                "Reload"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 2, 1, 2, 0, 0, 0, 0 ]
-                [ 2, 1, 1, 1, 2, 0, 0, 0 ]
-                [ 2, 2, 2, 2, 2, 0, 0, 0 ]
-                [ 0, 0, 3, 0, 0, 0, 0, 0 ]
-            ]
-        "M12-L Kimogila Fighter":
-            name: "M12-L Kimogila Fighter"
-            factions: ["Scum and Villainy"]
-            attack: 3
-            agility: 1
-            hull: 7
-            shields: 2
-            base: "Medium"
-            chassis: "Dead to Rights"
-            actions: [
-                "Focus"
-                "Lock"
+                "R-Lock"
                 "R-Barrel Roll"
-                "Reload"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0]
-                [ 3, 2, 1, 2, 3, 0]
-                [ 2, 1, 1, 1, 2, 0]
-                [ 2, 2, 1, 2, 2, 0]
-                [ 0, 0, 0, 0, 0, 3]
-            ]
-        "Sheathipede-Class Shuttle":
-            name: "Sheathipede-Class Shuttle"
-            factions: ["Rebel Alliance"]
-            attack: 2
-            attackb: 2
-            agility: 2
-            hull: 4
-            shields: 1
-            chassis: "Comms Shuttle"
-            actions: [
-                "Focus"
-                "Coordinate"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 3, 0]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 3, 2, 1, 2, 3, 3, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-            ]
-        "TIE Reaper":
-            name: "TIE Reaper"
-            factions: ["Galactic Empire"]
-            attack: 3
-            agility: 1
-            hull: 6
-            shields: 2
-            base: "Medium"
-            chassis: "Controlled Ailerons"
-            actions: [
-                "Focus"
-                "Evade"
-                "Jam"
-                "R-Coordinate"
-            ]
-            maneuvers: [
-                [ 0, 0, 3, 0, 0, 0, 0, 0 ]
-                [ 3, 1, 1, 1, 3, 0, 3, 3 ]
-                [ 3, 2, 1, 2, 3, 0, 0, 0 ]
-                [ 0, 2, 1, 2, 0, 0, 0, 0 ]
-            ]
-        "Escape Craft":
-            name: "Escape Craft"
-            factions: ["Scum and Villainy"]
-            attack: 2
-            agility: 2
-            hull: 2
-            shields: 2
-            chassis: "Co-Pilot"
-            actions: [
-                "Focus"
-                "Barrel Roll"
-                "R-Coordinate"
-            ]
-            maneuvers: [
-                [ 0, 0, 3, 0, 0, 0, 0, 0 ]
-                [ 0, 1, 1, 1, 0, 0, 0, 0 ]
-                [ 3, 2, 1, 2, 3, 0, 0, 0 ]
-                [ 0, 2, 2, 2, 0, 3, 0, 0 ]
-            ]
-        "T-70 X-wing":
-            name: "T-70 X-wing"
-            factions: [ "Resistance"]
-            attack: 3
-            agility: 2
-            hull: 4
-            shields: 3
-            chassis: "Weapon Hardpoint"
-            actions: [
-                "Focus"
-                "Lock"
-                "Boost"
+                "R-Jam"
             ]
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 1, 1, 1, 0, 0, 0, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3]
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
+                [ 3, 1, 1, 1, 3, 0, 0, 0, 0, 0]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0]
+                [ 0, 3, 2, 3, 0, 3, 0, 0, 0, 0]
+                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
             ]
-            autoequip: [
-                "Integrated S-Foils"
+        "Rogue-class Starfighter":
+            name: "Rogue-class Starfighter"
+            xws: "Rogue-class Starfighter".canonicalize()
+            factions: ["Separatist Alliance", "Scum and Villainy"]
+            attack: 2
+            agility: 2
+            hull: 5
+            shields: 2
+            chassis: "Dead to Rights"
+            actions: [
+                "Focus"
+                "R-> Boost"
+                "Focus"
+                "R-> Barrel Roll"
+                "Evade"
+                "R-> Barrel Roll"
+                "Lock"
+                "R-Boost"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 2, 1, 0, 1, 2, 0, 0, 0, 0, 0 ]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 3, 3 ]
+                [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
+            ]
+        "RZ-1 A-wing":
+            name: "RZ-1 A-wing"
+            xws: "RZ-1 A-wing".canonicalize()
+            factions: [ "Rebel Alliance" ]
+            attack: 2
+            agility: 3
+            hull: 2
+            shields: 2
+            chassis: "Vectored Thrusters"
+            actions: [
+                "Focus"
+                "Evade"
+                "Lock"
+                "Barrel Roll"
+                "Boost"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 2, 0, 0, 0, 2, 0, 0, 0]
+                [ 1, 1, 1, 1, 1, 0, 0, 0]
+                [ 2, 2, 1, 2, 2, 0, 3, 3]
+                [ 0, 0, 1, 0, 0, 0, 0, 0]
+                [ 0, 0, 1, 0, 0, 3, 0, 0]
             ]
         "RZ-2 A-wing":
             name: "RZ-2 A-wing"
+            xws: "RZ-2 A-wing".canonicalize()
             factions: ["Resistance"]
             attackt: 2
             agility: 3
@@ -1033,8 +1065,343 @@ exportObj.basicCardData = ->
                 [ 0, 0, 1, 0, 0, 0, 0, 0]
                 [ 0, 0, 1, 0, 0, 3, 0, 0]
             ]
+        "Scavenged YT-1300":
+            name: "Scavenged YT-1300"
+            xws: "Scavenged YT-1300".canonicalize()
+            factions: [ "Resistance" ]
+            attackdt: 3
+            agility: 1
+            hull: 8
+            shields: 3
+            keyword: ["Freighter"]
+            actions: [
+                "Focus"
+                "Lock"
+                "R-Boost"
+                "R-Rotate Arc"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 2, 1, 2, 0, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0, 0, 0]
+                [ 2, 2, 2, 2, 2, 0, 3, 3]
+                [ 0, 0, 3, 0, 0, 0, 0, 0]
+            ]
+            large: true
+        "Scurrg H-6 Bomber":
+            name: "Scurrg H-6 Bomber"
+            xws: "Scurrg H-6 Bomber".canonicalize()
+            factions: ["Scum and Villainy"]
+            attack: 3
+            agility: 1
+            hull: 6
+            shields: 4
+            medium: true
+            actions: [
+                "Focus"
+                "Lock"
+                "R-Barrel Roll"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 1, 1, 1, 0, 0, 0, 0, 0, 0 ]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ]
+                [ 3, 2, 2, 2, 3, 0, 0, 0, 3, 3 ]
+                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
+            ]
+        "Sheathipede-Class Shuttle":
+            name: "Sheathipede-Class Shuttle"
+            xws: "Sheathipede-Class Shuttle".canonicalize()
+            factions: ["Rebel Alliance"]
+            attack: 2
+            attackb: 2
+            agility: 2
+            hull: 4
+            shields: 1
+            chassis: "Comms Shuttle"
+            actions: [
+                "Focus"
+                "Coordinate"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 3, 0]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 3, 2, 1, 2, 3, 3, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            ]
+        "Sith Infiltrator":
+            name: "Sith Infiltrator"
+            xws: "Sith Infiltrator".canonicalize()
+            factions: ["Separatist Alliance"]
+            attack: 3
+            agility: 1
+            hull: 6
+            large: true
+            shields: 4
+            actions: [
+                "Focus"
+                "Lock"
+                "R-Barrel Roll"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 3, 1, 1, 1, 3, 0, 0, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0, 3, 3, 0, 0]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0]
+                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 0, 0, 0, 0, 3, 0, 0, 0, 0]
+            ]
+        "ST-70 Assault Ship":
+            name: "ST-70 Assault Ship"
+            xws: "ST-70 Assault Ship".canonicalize()
+            factions: ["Scum and Villainy"]
+            attack: 3
+            agility: 2
+            hull: 7
+            shields: 2
+            medium: true
+            actions: [
+                "Focus"
+                "Evade"
+                "Lock"
+                "R-Barrel Roll"
+            ]
+            maneuvers: [
+                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3 ]
+                [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 0, 0, 0, 3, 0, 0, 0, 0 ]
+            ]
+        "StarViper-class Attack Platform":
+            name: "StarViper-class Attack Platform"
+            xws: "StarViper-class Attack Platform".canonicalize()
+            factions: ["Scum and Villainy"]
+            attack: 3
+            agility: 3
+            hull: 4
+            shields: 1
+            chassis: "Microthrusters"
+            actions: [
+                "Focus"
+                "Lock"
+                "Barrel Roll"
+                "R-> Focus"
+                "Boost"
+                "R-> Focus"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0, 0, 0]
+                [ 0, 2, 1, 2, 0, 0, 3, 3]
+                [ 0, 0, 2, 0, 0, 0, 0, 0]
+            ]
+        "Syliure-class Hyperspace Ring":
+            name: "Syliure-class Hyperspace Ring"
+            xws: "Syliure-class Hyperspace Ring".canonicalize()
+            factions: ["Galactic Republic"]
+            agility: 1
+            hull: 1
+            shields: 2
+            actions: [
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+            ]
+        "T-65 X-wing":
+            name: "T-65 X-wing"
+            xws: "T-65 X-wing".canonicalize()
+            factions: [ "Rebel Alliance" ]
+            attack: 3
+            agility: 2
+            hull: 4
+            shields: 2
+            actions: [
+                "Focus"
+                "Lock"
+                "Barrel Roll"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 1, 1, 1, 0, 0, 0, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0]
+                [ 2, 2, 2, 2, 2, 0, 0, 0, 3, 3]
+                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
+            ]
+            autoequip: [
+                "Servomotor S-Foils"
+            ]
+        "T-70 X-wing":
+            name: "T-70 X-wing"
+            xws: "T-70 X-wing".canonicalize()
+            factions: [ "Resistance"]
+            attack: 3
+            agility: 2
+            hull: 4
+            shields: 3
+            chassis: "Weapon Hardpoint"
+            actions: [
+                "Focus"
+                "Lock"
+                "Boost"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 1, 1, 1, 0, 0, 0, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3]
+                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
+            ]
+            autoequip: [
+                "Integrated S-Foils"
+            ]
+        "TIE Advanced v1":
+            name: "TIE Advanced v1"
+            xws: "TIE Advanced v1".canonicalize()
+            factions: ["Galactic Empire"]
+            attack: 2
+            agility: 3
+            hull: 2
+            shields: 2
+            actions: [
+                "Focus"
+                "Evade"
+                "Lock"
+                "Barrel Roll"
+                "R-> Focus"
+                "Boost"
+                "R-> Focus"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 1, 1, 0, 1, 1, 0, 0, 0, 0, 0 ]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3 ]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
+                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
+            ]
+        "TIE Advanced x1":
+            name: "TIE Advanced x1"
+            xws: "TIE Advanced x1".canonicalize()
+            factions: [ "Galactic Empire" ]
+            attack: 2
+            agility: 3
+            hull: 3
+            shields: 2
+            chassis: "Advanced Targeting Computer"
+            actions: [
+                "Focus"
+                "R-> Barrel Roll"
+                "Lock"
+                "Barrel Roll"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 1, 2, 1, 0, 0, 0, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3]
+                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
+                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+            ]
+        "TIE/ag Aggressor":
+            name: "TIE/ag Aggressor"
+            xws: "TIE/ag Aggressor".canonicalize()
+            factions: ["Galactic Empire"]
+            attack: 2
+            agility: 2
+            hull: 4
+            shields: 1
+            actions: [
+                "Focus"
+                "Lock"
+                "Barrel Roll"
+                "R-> Evade"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0 ]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
+            ]
+        "TIE/ba Interceptor":
+            name: "TIE/ba Interceptor"
+            xws: "TIE/ba Interceptor".canonicalize()
+            factions: ["First Order"]
+            attack: 3
+            agility: 3
+            hull: 2
+            shields: 2
+            chassis: "Fine-Tuned Thrusters"
+            actions: [
+                "Focus"
+                "Evade"
+                "Lock"
+                "Barrel Roll"
+                "Boost"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 1, 1, 0, 1, 1, 0, 0, 0, 0, 0 ]
+                [ 2, 1, 1, 1, 2, 0, 3, 3, 0, 0 ]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
+            ]
+        "TIE/ca Punisher":
+            name: "TIE/ca Punisher"
+            xws: "TIE/ca Punisher".canonicalize()
+            factions: ["Galactic Empire"]
+            attack: 2
+            agility: 1
+            hull: 6
+            shields: 3
+            medium: true
+            actions: [
+                "Focus"
+                "Lock"
+                "R-Barrel Roll"
+                "Boost"
+                "R-> Lock"
+                "Reload"
+            ]
+            maneuvers: [
+                [ 0, 0, 3, 0, 0, 0 ]
+                [ 0, 1, 1, 1, 0, 0 ]
+                [ 2, 2, 1, 2, 2, 0 ]
+                [ 3, 2, 2, 2, 3, 0 ]
+                [ 0, 0, 0, 0, 0, 3 ]
+            ]
+        "TIE/d Defender":
+            name: "TIE/d Defender"
+            xws: "TIE/d Defender".canonicalize()
+            factions: [ "Galactic Empire" ]
+            attack: 3
+            agility: 3
+            hull: 3
+            shields: 4
+            chassis: "Full Throttle"
+            actions: [
+                "Focus"
+                "Evade"
+                "Lock"
+                "Barrel Roll"
+                "Boost"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0]
+                [ 3, 1, 0, 1, 3, 0]
+                [ 3, 2, 1, 2, 3, 3]
+                [ 2, 2, 1, 2, 2, 0]
+                [ 0, 0, 1, 0, 0, 2]
+                [ 0, 0, 1, 0, 0, 0]
+            ]
         "TIE/fo Fighter":
             name: "TIE/fo Fighter"
+            xws: "TIE/fo Fighter".canonicalize()
             factions: ["First Order"]
             attack: 2
             agility: 3
@@ -1054,30 +1421,176 @@ exportObj.basicCardData = ->
                 [ 0, 0, 2, 0, 0, 3, 0, 0]
                 [ 0, 0, 2, 0, 0, 0, 0, 0]
             ]
-        "TIE/vn Silencer":
-            name: "TIE/vn Silencer"
-            factions: ["First Order"]
+        "TIE/in Interceptor":
+            name: "TIE/in Interceptor"
+            xws: "TIE/in Interceptor".canonicalize()
+            factions: [ "Galactic Empire" ]
             attack: 3
             agility: 3
-            hull: 4
-            shields: 2
+            hull: 3
+            shields: 0
             chassis: "Autothrusters"
             actions: [
                 "Focus"
-                "Boost"
-                "Lock"
                 "Barrel Roll"
+                "Boost"
+                "Evade"
             ]
             maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 2, 0, 0, 0, 2, 0, 0, 0, 0, 0]
-                [ 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3]
-                [ 0, 0, 1, 0, 0, 3, 0, 0, 0, 0]
-                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 2, 0, 0, 0, 2, 0, 0, 0]
+                [ 1, 1, 1, 1, 1, 0, 0, 0]
+                [ 2, 2, 1, 2, 2, 0, 3, 3]
+                [ 0, 0, 1, 0, 0, 3, 0, 0]
+                [ 0, 0, 2, 0, 0, 0, 0, 0]
+            ]
+        "TIE/ln Fighter":
+            name: "TIE/ln Fighter"
+            xws: "TIE/ln Fighter".canonicalize()
+            factions: ["Rebel Alliance", "Galactic Empire"]
+            attack: 2
+            agility: 3
+            hull: 3
+            shields: 0
+            actions: [
+                "Focus"
+                "Barrel Roll"
+                "Evade"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0]
+                [ 2, 0, 0, 0, 2, 0]
+                [ 2, 1, 1, 1, 2, 0]
+                [ 2, 2, 1, 2, 2, 3]
+                [ 0, 0, 2, 0, 0, 3]
+                [ 0, 0, 2, 0, 0, 0]
+            ]
+        "TIE/ph Phantom":
+            name: "TIE/ph Phantom"
+            xws: "TIE/ph Phantom".canonicalize()
+            factions: [ "Galactic Empire" ]
+            attack: 3
+            agility: 2
+            hull: 3
+            shields: 2
+            chassis: "Stygium Array"
+            actions: [
+                "Focus"
+                "Evade"
+                "Barrel Roll"
+                "Cloak"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0]
+                [ 2, 2, 0, 2, 2, 0]
+                [ 2, 1, 1, 1, 2, 0]
+                [ 2, 2, 1, 2, 2, 3]
+                [ 0, 0, 2, 0, 0, 3]
+            ]
+        "TIE/rb Heavy":
+            name: "TIE/rb Heavy"
+            xws: "TIE/rb Heavy".canonicalize()
+            factions: ["Galactic Empire"]
+            attackt: 2
+            agility: 1
+            hull: 8
+            shields: 0
+            medium: true
+            chassis: "Rotating Cannons"
+            actions: [
+                "Focus"
+                "Reinforce"
+                "Lock"
+                "R-Barrel Roll"
+                "Rotate Arc"
+                "R-> Calculate"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ]
+                [ 3, 2, 2, 2, 3, 0, 0, 0, 3, 3 ]
+                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+            ]
+            autoequip: [
+                'Maneuver-Assist MGK-300'
+            ]
+        "TIE Reaper":
+            name: "TIE Reaper"
+            xws: "TIE Reaper".canonicalize()
+            factions: ["Galactic Empire"]
+            attack: 3
+            agility: 1
+            hull: 6
+            shields: 2
+            medium: true
+            chassis: "Adaptive Ailerons"
+            actions: [
+                "Focus"
+                "Evade"
+                "Jam"
+                "R-Coordinate"
+            ]
+            maneuvers: [
+                [ 0, 0, 3, 0, 0, 0, 0, 0 ]
+                [ 3, 1, 1, 1, 3, 0, 3, 3 ]
+                [ 3, 2, 1, 2, 3, 0, 0, 0 ]
+                [ 0, 2, 1, 2, 0, 0, 0, 0 ]
+            ]
+        "TIE/sa Bomber":
+            name: "TIE/sa Bomber"
+            xws: "TIE/sa Bomber".canonicalize()
+            factions: [ "Galactic Empire" ]
+            attack: 2
+            agility: 2
+            hull: 6
+            shields: 0
+            chassis: "Nimble Bomber"
+            actions: [
+                "Focus"
+                "Lock"
+                "Barrel Roll"
+                "R-> Lock"
+                "R-Reload"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0]
+                [ 0, 2, 1, 2, 0, 0]
+                [ 2, 1, 1, 1, 2, 0]
+                [ 2, 2, 1, 2, 2, 3]
+                [ 0, 0, 2, 0, 0, 0]
+                [ 0, 0, 0, 0, 0, 3]
+            ]
+        "TIE/se Bomber":
+            name: "TIE/se Bomber"
+            xws: "TIE/se Bomber".canonicalize()
+            factions: ["First Order"]
+            attack: 2
+            agility: 2
+            hull: 4
+            shields: 2
+            chassis: "Pursuit Thrusters"
+            actions: [
+                "Focus"
+                "Lock"
+                "Barrel Roll"
+                "R-> Lock"
+                "R-Boost"
+                "Reload"
+                "R-> Evade"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ]
+                [ 2, 2, 1, 2, 2, 0, 3, 3, 0, 0 ]
+                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
             ]
         "TIE/sf Fighter":
             name: "TIE/sf Fighter"
+            xws: "TIE/sf Fighter".canonicalize()
             factions: ["First Order"]
             attack: 2
             attackt: 2
@@ -1103,618 +1616,52 @@ exportObj.basicCardData = ->
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
             ]
-        "Upsilon-Class Command Shuttle":
-            name: "Upsilon-Class Command Shuttle"
-            factions: ["First Order"]
-            attack: 4
-            agility: 1
-            hull: 6
-            shields: 6
-            chassis: "Linked Battery"
-            actions: [
-                "Focus"
-                "Lock"
-                "Reinforce"
-                "Coordinate"
-                "Jam"
-            ]
-            maneuvers: [
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
-                [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0]
-                [ 3, 2, 2, 2, 3, 0, 0, 0, 0, 0]
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-            ]
-            base: "Large"
-        "MG-100 StarFortress":
-            name: "MG-100 StarFortress"
-            factions: ["Resistance"]
-            attack: 3
-            attackdt: 2
-            agility: 1
-            hull: 9
-            shields: 3
-            actions: [
-                "Focus"
-                "Lock"
-                "Rotate Arc"
-                "Reload"
-            ]
-            maneuvers: [
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
-                [ 3, 1, 1, 1, 3, 0, 0, 0, 0, 0]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0]
-                [ 0, 3, 2, 3, 0, 0, 0, 0, 0, 0]
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-            ]
-            base: "Large"
-        "Scavenged YT-1300":
-            name: "Scavenged YT-1300"
-            factions: [ "Resistance" ]
-            attackdt: 3
-            agility: 1
-            hull: 8
-            shields: 3
-            keyword: ["Freighter"]
-            actions: [
-                "Focus"
-                "Lock"
-                "R-Boost"
-                "R-Rotate Arc"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 2, 1, 2, 0, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 0, 0]
-                [ 2, 2, 2, 2, 2, 0, 3, 3]
-                [ 0, 0, 3, 0, 0, 0, 0, 0]
-            ]
-            base: "Large"
-        "Modified TIE/ln Fighter":
-            name: "Modified TIE/ln Fighter"
-            factions: ["Scum and Villainy"]
-            attack: 2
-            agility: 3
-            hull: 3
-            shields: 0
-            chassis: "Notched Stabilizers"
-            actions: [
-                "Focus"
-                "Barrel Roll"
-                "Evade"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0]
-                [ 2, 0, 0, 0, 2, 0]
-                [ 2, 1, 1, 1, 2, 0]
-                [ 2, 2, 1, 2, 2, 3]
-                [ 0, 0, 2, 0, 0, 0]
-                [ 0, 0, 3, 0, 0, 0]
-            ]
-        "V-19 Torrent Starfighter":
-            name: "V-19 Torrent Starfighter"
-            factions: ["Galactic Republic"]
-            attack: 2
-            agility: 2
-            hull: 5
-            shields: 0
-            actions: [
-                "Focus"
-                "Evade"
-                "Lock"
-                "Barrel Roll"
-                "R-> Evade"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 3, 1, 1, 1, 3, 0, 0, 0, 0, 0]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3]
-                [ 0, 3, 1, 3, 0, 3, 0, 0, 0, 0]
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-            ]
-        "Delta-7 Aethersprite":
-            name: "Delta-7 Aethersprite"
-            factions: ["Galactic Republic"]
-            attack: 2
-            agility: 3
-            hull: 3
-            shields: 1
-            chassis: "Fine-Tuned Controls"
-            actions: [
-                "Focus"
-                "F-Evade"
-                "Lock"
-                "Barrel Roll"
-                "Boost"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 2, 1, 0, 1, 2, 0, 0, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 3, 3, 0, 0]
-                [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0]
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
-            ]
-            autoequip: [
-                "Calibrated Laser Targeting"
-            ]
-        "Delta-7b Aethersprite":
-            name: "Delta-7b Aethersprite"
-            icon: "delta7aethersprite"
-            factions: ["Galactic Republic"]
-            attack: 3
-            agility: 2
-            hull: 3
-            shields: 3
-            chassis: "Fine-Tuned Controls"
-            actions: [
-                "Focus"
-                "F-Evade"
-                "Lock"
-                "Barrel Roll"
-                "Boost"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 2, 1, 0, 1, 2, 0, 0, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 3, 3, 0, 0]
-                [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0]
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
-            ]
-        "Sith Infiltrator":
-            name: "Sith Infiltrator"
-            factions: ["Separatist Alliance"]
-            attack: 3
-            agility: 1
-            hull: 6
-            base: "Large"
-            shields: 4
-            actions: [
-                "Focus"
-                "Lock"
-                "R-Barrel Roll"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 3, 1, 1, 1, 3, 0, 0, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 3, 3, 0, 0]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0]
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 0, 0, 0, 0, 3, 0, 0, 0, 0]
-            ]
-        "Vulture-class Droid Fighter":
-            name: "Vulture-class Droid Fighter"
-            factions: ["Separatist Alliance"]
-            attack: 2
-            agility: 2
-            hull: 3
-            shields: 0
-            chassis: "Networked Calculations"
-            actions: [
-                "Calculate"
-                "Lock"
-                "Barrel Roll"
-                "R-> Calculate"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 2, 0, 0, 0, 2, 3, 0, 0, 0, 0]
-                [ 1, 2, 1, 2, 1, 0, 0, 0, 3, 3]
-                [ 2, 3, 1, 3, 2, 0, 0, 0, 0, 0]
-                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
-            ]
-            autoequip: [
-                'Grappling Struts'
-            ]
-        "Belbullab-22 Starfighter":
-            name: "Belbullab-22 Starfighter"
-            factions: ["Separatist Alliance"]
-            attack: 3
-            agility: 2
-            hull: 3
-            shields: 2
-            actions: [
-                "Focus"
-                "Lock"
-                "Barrel Roll"
-                "R-> Focus"
-                "Boost"
-                "R-> Focus"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 2, 2, 0, 2, 2, 0, 0, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0]
-                [ 3, 2, 1, 2, 3, 0, 3, 3, 0, 0]
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
-            ]
-        "Naboo Royal N-1 Starfighter":
-            name: "Naboo Royal N-1 Starfighter"
-            factions: ["Galactic Republic"]
-            attack: 2
-            agility: 2
-            hull: 3
-            shields: 2
-            chassis: "Full Throttle"
-            actions: [
-                "Focus"
-                "Lock"
-                "Barrel Roll"
-                "Boost"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 2, 2, 2, 0, 0, 0, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 3, 3]
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
-            ]
-        "Hyena-class Droid Bomber":
-            name: "Hyena-class Droid Bomber"
-            factions: ["Separatist Alliance"]
-            attack: 2
-            agility: 2
-            hull: 5
-            shields: 0
-            chassis: "Networked Calculations"
-            actions: [
-                "Calculate"
-                "Lock"
-                "Barrel Roll"
-                "R-> Lock"
-                "R-Reload"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 2, 3, 2, 3, 2, 0, 0, 0, 0, 0]
-                [ 1, 2, 1, 2, 1, 3, 0, 0, 3, 3]
-                [ 2, 0, 1, 0, 2, 0, 0, 0, 0, 0]
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
-            ]
-            autoequip: [
-                'Landing Struts'
-            ]
-        "Resistance Transport Pod":
-            name: "Resistance Transport Pod"
-            factions: ["Resistance"]
-            attack: 2
-            agility: 2
-            hull: 3
-            shields: 1
-            actions: [
-                "Focus"
-                "R-Lock"
-                "R-Barrel Roll"
-                "R-Jam"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 3, 1, 1, 1, 3, 0, 0, 0, 0, 0]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0]
-                [ 0, 3, 2, 3, 0, 3, 0, 0, 0, 0]
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
-            ]
-        "Resistance Transport":
-            name: "Resistance Transport"
-            factions: ["Resistance"]
-            attack: 2
-            agility: 1
-            hull: 5
-            shields: 3
-            actions: [
-                "Focus"
-                "Lock"
-                "R-Coordinate"
-                "R-Jam"
-            ]
-            maneuvers: [
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 3, 1, 1, 1, 3, 0, 0, 0, 0, 0, 3, 0, 3 ]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 3, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-            ]
-        "Nantex-Class Starfighter":
-            name: "Nantex-Class Starfighter"
-            factions: ["Separatist Alliance"]
-            attackbull: 3
-            attackt: 2
-            agility: 3
-            hull: 4
-            shields: 0
-            chassis: "Pinpoint Tractor Array"
-            actions: [
-                "Focus"
-                "Evade"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0]
-                [ 2, 1, 0, 1, 2, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 0, 0]
-                [ 2, 1, 1, 1, 2, 0, 3, 3]
-                [ 0, 0, 2, 0, 0, 0, 0, 0]
-                [ 0, 0, 2, 0, 0, 3, 0, 0]
-            ]
-        "BTL-B Y-wing":
-            name: "BTL-B Y-wing"
-            factions: ["Galactic Republic"]
-            attack: 2
-            agility: 1
-            hull: 5
-            shields: 3
-            chassis: "Plated Hull"
-            actions: [
-                "Focus"
-                "Lock"
-                "R-Barrel Roll"
-                "R-Reload"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0]
-                [ 0, 2, 1, 2, 0, 0]
-                [ 2, 2, 1, 2, 2, 0]
-                [ 3, 2, 2, 2, 3, 0]
-                [ 0, 0, 3, 0, 0, 3]
-                [ 0, 0, 0, 0, 0, 0]
-            ]
-        "Fireball":
-            name: "Fireball"
-            factions: ["Resistance"]
-            attack: 2
-            agility: 2
-            hull: 6
-            shields: 0
-            chassis: "Explosion with Wings"
-            actions: [
-                "Focus"
-                "Evade"
-                "Barrel Roll"
-                "Slam"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ]
-                [ 3, 2, 2, 2, 3, 0, 0, 0, 3, 3 ]
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-            ]
-        "TIE/ba Interceptor":
-            name: "TIE/ba Interceptor"
-            factions: ["First Order"]
-            attack: 3
-            agility: 3
-            hull: 2
-            shields: 2
-            chassis: "Fine-Tuned Thrusters"
-            actions: [
-                "Focus"
-                "Evade"
-                "Lock"
-                "Barrel Roll"
-                "Boost"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 1, 1, 0, 1, 1, 0, 0, 0, 0, 0 ]
-                [ 2, 1, 1, 1, 2, 0, 3, 3, 0, 0 ]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
-            ]
-        "Xi-class Light Shuttle":
-            name: "Xi-class Light Shuttle"
-            factions: ["First Order"]
-            attack: 2
-            agility: 2
-            hull: 5
-            shields: 2
-            base: "Medium"
-            actions: [
-                "Focus"
-                "R-Lock"
-                "R-Coordinate"
-                "Jam"
-            ]
-            maneuvers: [
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 1, 1, 1, 0, 0, 0, 0, 0, 0 ]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ]
-                [ 3, 2, 2, 2, 3, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-            ]
-        "HMP Droid Gunship":
-            name: "HMP Droid Gunship"
-            factions: ["Separatist Alliance"]
-            attackf: 2
-            agility: 1
-            hull: 5
-            shields: 3
-            chassis: "Networked Aim"
-            actions: [
-                "Calculate"
-                "Lock"
-                "R-Barrel Roll"
-                "Reload"
-                "R-> Calculate"
-            ]
-            maneuvers: [
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 3, 1, 3, 0, 0, 0, 0, 0, 0 ]
-                [ 1, 2, 1, 2, 1, 0, 0, 0, 0, 0 ]
-                [ 2, 3, 2, 3, 2, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
-            ]
-            autoequip: [
-                'Repulsorlift Stabilizers'
-            ]
-        "LAAT/i Gunship":
-            name: "LAAT/i Gunship"
-            factions: ["Galactic Republic"]
-            attackdt: 2
-            agility: 1
-            hull: 8
-            shields: 2
-            base: "Medium"
-            chassis: "Fire Convergence"
-            actions: [
-                "Focus"
-                "Lock"
-                "Rotate Arc"
-                "R-Reinforce"
-                "Reload"
-            ]
-            maneuvers: [
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0 ]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ]
-                [ 3, 2, 2, 2, 3, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-            ]
-        "TIE/rb Heavy":
-            name: "TIE/rb Heavy"
+        "TIE/sk Striker":
+            name: "TIE/sk Striker"
+            xws: "TIE/sk Striker".canonicalize()
             factions: ["Galactic Empire"]
-            attackt: 2
-            agility: 1
-            hull: 8
+            attack: 3
+            agility: 2
+            hull: 4
             shields: 0
-            base: "Medium"
-            chassis: "Rotating Cannons"
+            chassis: "Adaptive Ailerons"
             actions: [
                 "Focus"
-                "Reinforce"
-                "Lock"
-                "R-Barrel Roll"
-                "Rotate Arc"
-                "R-> Calculate"
+                "Evade"
+                "Barrel Roll"
             ]
             maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ]
-                [ 3, 2, 2, 2, 3, 0, 0, 0, 3, 3 ]
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 2, 1, 1, 1, 2, 3, 0, 0 ]
+                [ 2, 1, 1, 1, 2, 0, 3, 3 ]
+                [ 0, 2, 1, 2, 0, 0, 0, 0 ]
             ]
-        "Droid Tri-fighter":
-            name: "Droid Tri-fighter"
-            factions: ["Separatist Alliance"]
+        "TIE/vn Silencer":
+            name: "TIE/vn Silencer"
+            xws: "TIE/vn Silencer".canonicalize()
+            factions: ["First Order"]
             attack: 3
             agility: 3
-            hull: 3
-            shields: 0
-            chassis: "Networked Calculations"
-            actions: [
-                "Calculate"
-                "Evade"
-                "Lock"
-                "Barrel Roll"
-                "R-> Evade"
-                "Boost"
-                "R-> Calculate"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 2, 0, 0, 0, 2, 0, 0, 0, 3, 3 ]
-                [ 1, 2, 1, 2, 1, 0, 0, 0, 0, 0 ]
-                [ 1, 2, 1, 2, 1, 3, 0, 0, 0, 0 ]
-                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
-            ]
-        "Nimbus-class V-wing":
-            name: "Nimbus-class V-wing"
-            factions: ["Galactic Republic"]
-            attack: 2
-            agility: 3
-            hull: 2
-            shields: 2
-            keyword: ["TIE"]
-            chassis: "Twin Ion Engines"
-            actions: [
-                "Focus"
-                "Lock"
-                "R-Barrel Roll"
-                "Boost"
-                "R-> Lock"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 2, 3, 0, 3, 2, 0, 0, 0, 0, 0 ]
-                [ 1, 1, 1, 1, 1, 3, 0, 0, 0, 0 ]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
-            ]
-        "Eta-2 Actis":
-            name: "Eta-2 Actis"
-            factions: ["Galactic Republic"]
-            attackbull: 3
-            attack: 2
-            agility: 3
-            hull: 3
-            shields: 0
-            chassis: "Intuitive Controls"
-            actions: [
-                "Focus"
-                "Evade"
-                "F-Lock"
-                "Barrel Roll"
-                "Boost"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 2, 0, 0, 0, 2, 0, 0, 0, 0, 0 ]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 4, 4 ]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 1, 0, 0, 3, 0, 0, 0, 0 ]
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
-            ]
-        "Syliure-class Hyperspace Ring":
-            name: "Syliure-class Hyperspace Ring"
-            factions: ["Galactic Republic"]
-            agility: 1
-            hull: 1
-            shields: 2
-            actions: [
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-            ]
-        "BTA-NR2 Y-wing":
-            name: "BTA-NR2 Y-wing"
-            factions: ["Resistance"]
-            attack: 2
-            agility: 1
             hull: 4
-            shields: 3
-            chassis: "Intuitive Interface"
+            shields: 2
+            chassis: "Autothrusters"
             actions: [
                 "Focus"
-                "R-Lock"
-                "R-Barrel Roll"
-                "R-Boost"
+                "Boost"
+                "Lock"
+                "Barrel Roll"
             ]
             maneuvers: [
-                [ 0, 0, 0, 0, 0, 0]
-                [ 0, 1, 1, 1, 0, 0]
-                [ 2, 2, 1, 2, 2, 0]
-                [ 3, 2, 1, 2, 3, 0]
-                [ 0, 0, 3, 0, 0, 0]
-                [ 0, 0, 0, 0, 0, 3]
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 2, 0, 0, 0, 2, 0, 0, 0, 0, 0]
+                [ 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3]
+                [ 0, 0, 1, 0, 0, 3, 0, 0, 0, 0]
+                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
             ]
         "TIE/wi Whisper Modified Interceptor":
             name: "TIE/wi Whisper Modified Interceptor"
+            xws: "TIE/wi Whisper Modified Interceptor".canonicalize()
             factions: ["First Order"]
             attackbull: 3
             attackt: 2
@@ -1743,87 +1690,250 @@ exportObj.basicCardData = ->
             autoequip: [
                 "Enhanced Jamming Suite"
             ]
-        "TIE/se Bomber":
-            name: "TIE/se Bomber"
+        "Upsilon-Class Command Shuttle":
+            name: "Upsilon-Class Command Shuttle"
+            xws: "Upsilon-Class Command Shuttle".canonicalize()
             factions: ["First Order"]
-            attack: 2
-            agility: 2
-            hull: 4
-            shields: 2
-            chassis: "Pursuit Thrusters"
+            attack: 4
+            agility: 1
+            hull: 6
+            shields: 6
+            chassis: "Linked Battery"
             actions: [
                 "Focus"
                 "Lock"
-                "Barrel Roll"
-                "R-> Lock"
-                "R-Boost"
-                "Reload"
-                "R-> Evade"
+                "Reinforce"
+                "Coordinate"
+                "Jam"
             ]
             maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ]
-                [ 2, 2, 1, 2, 2, 0, 3, 3, 0, 0 ]
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
+                [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0]
+                [ 3, 2, 2, 2, 3, 0, 0, 0, 0, 0]
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
             ]
-        "Gauntlet Fighter":
-            name: "Gauntlet Fighter"
-            factions: ["Rebel Alliance", "Galactic Empire", "Scum and Villainy", "Galactic Republic", "Separatist Alliance"]
+            large: true
+        "UT-60D U-wing":
+            name: "UT-60D U-wing"
+            xws: "UT-60D U-wing".canonicalize()
+            factions: ["Rebel Alliance"]
+            medium: true
             attack: 3
-            attackb: 2
             agility: 2
-            hull: 9
-            shields: 2
-            base: "Large"
+            hull: 5
+            shields: 3
             actions: [
                 "Focus"
-                "R-Reinforce"
                 "Lock"
                 "R-Coordinate"
             ]
+            maneuvers: [
+                [ 0, 0, 3, 0, 0 ]
+                [ 0, 1, 1, 1, 0 ]
+                [ 2, 1, 1, 1, 2 ]
+                [ 0, 2, 2, 2, 0 ]
+                [ 0, 0, 2, 0, 0 ]
+            ]
             autoequip: [
-                "Swivel Wing"
+                "Pivot Wing"
+            ]
+        "VCX-100 Light Freighter":
+            name: "VCX-100 Light Freighter"
+            xws: "VCX-100 Light Freighter".canonicalize()
+            factions: ["Rebel Alliance"]
+            attack: 4
+            agility: 0
+            hull: 10
+            shields: 4
+            chassis: "Tail Gun"
+            large: true
+            keyword: ["Freighter"]
+            actions: [
+                "Focus"
+                "Lock"
+                "Reinforce"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0 ]
+                [ 3, 2, 1, 2, 3, 0 ]
+                [ 2, 1, 1, 1, 2, 0 ]
+                [ 3, 2, 2, 2, 3, 0 ]
+                [ 0, 0, 2, 0, 0, 3 ]
+            ]
+        "V-19 Torrent Starfighter":
+            name: "V-19 Torrent Starfighter"
+            xws: "V-19 Torrent Starfighter".canonicalize()
+            factions: ["Galactic Republic"]
+            attack: 2
+            agility: 2
+            hull: 5
+            shields: 0
+            actions: [
+                "Focus"
+                "Evade"
+                "Lock"
+                "Barrel Roll"
+                "R-> Evade"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 3, 1, 1, 1, 3, 0, 0, 0, 0, 0]
+                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3]
+                [ 0, 3, 1, 3, 0, 3, 0, 0, 0, 0]
+                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            ]
+        "VT-49 Decimator":
+            name: "VT-49 Decimator"
+            xws: "VT-49 Decimator".canonicalize()
+            factions: [ "Galactic Empire" ]
+            attackdt: 3
+            agility: 0
+            hull: 12
+            shields: 4
+            actions: [
+                "Focus"
+                "Lock"
+                "Reinforce"
+                "Rotate Arc"
+                "R-Coordinate"
+            ]
+            large: true
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0]
+                [ 3, 1, 1, 1, 3, 0]
+                [ 2, 2, 1, 2, 2, 0]
+                [ 2, 2, 2, 2, 2, 0]
+                [ 0, 0, 2, 0, 0, 0]
+            ]
+        "Vulture-class Droid Fighter":
+            name: "Vulture-class Droid Fighter"
+            xws: "Vulture-class Droid Fighter".canonicalize()
+            factions: ["Separatist Alliance"]
+            attack: 2
+            agility: 2
+            hull: 3
+            shields: 0
+            chassis: "Networked Calculations"
+            actions: [
+                "Calculate"
+                "Lock"
+                "Barrel Roll"
+                "R-> Calculate"
+            ]
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                [ 2, 0, 0, 0, 2, 3, 0, 0, 0, 0]
+                [ 1, 2, 1, 2, 1, 0, 0, 0, 3, 3]
+                [ 2, 3, 1, 3, 2, 0, 0, 0, 0, 0]
+                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+            ]
+            autoequip: [
+                'Grappling Struts'
+            ]
+        "Xi-class Light Shuttle":
+            name: "Xi-class Light Shuttle"
+            xws: "Xi-class Light Shuttle".canonicalize()
+            factions: ["First Order"]
+            attack: 2
+            agility: 2
+            hull: 5
+            shields: 2
+            medium: true
+            actions: [
+                "Focus"
+                "R-Lock"
+                "R-Coordinate"
+                "Jam"
             ]
             maneuvers: [
                 [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 1, 0, 1, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 1, 1, 1, 0, 0, 0, 0, 0, 0 ]
                 [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ]
                 [ 3, 2, 2, 2, 3, 0, 0, 0, 0, 0 ]
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
             ]
-        "ST-70 Assault Ship":
-            name: "ST-70 Assault Ship"
-            factions: ["Scum and Villainy"]
-            attack: 3
+        "YT-2400 Light Freighter":
+            name: "YT-2400 Light Freighter"
+            xws: "YT-2400 Light Freighter".canonicalize()
+            factions: [ "Rebel Alliance" ]
+            attackdt: 4
             agility: 2
-            hull: 7
-            shields: 2
-            base: "Medium"
+            hull: 6
+            shields: 4
+            chassis: "Sensor Blindspot"
+            keyword: ["Freighter"]
             actions: [
                 "Focus"
-                "Evade"
                 "Lock"
                 "R-Barrel Roll"
+                "Rotate Arc"
+            ]
+            large: true
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0]
+                [ 2, 2, 1, 2, 2, 0]
+                [ 2, 2, 2, 2, 2, 0]
+                [ 0, 0, 2, 0, 0, 3]
+            ]
+        "YT-2400 Light Freighter (2023)":
+            name: "YT-2400 Light Freighter (2023)"
+            xws: "YT-2400 Light Freighter (2023)".canonicalize()
+            factions: ["Rebel Alliance", "Scum and Villainy"]
+            attackdt: 3
+            agility: 2
+            hull: 6
+            shields: 4
+            chassis: "Sensor Blackout"
+            keyword: ["Freighter"]
+            actions: [
+                "Focus"
+                "Lock"
+                "R-Barrel Roll"
+                "Rotate Arc"
+            ]
+            large: true
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0]
+                [ 2, 1, 1, 1, 2, 0]
+                [ 2, 2, 1, 2, 2, 0]
+                [ 2, 2, 2, 2, 2, 0]
+                [ 0, 0, 2, 0, 0, 3]
+            ]
+        "YV-666 Light Freighter":
+            name: "YV-666 Light Freighter"
+            xws: "YV-666 Light Freighter".canonicalize()
+            factions: [ "Scum and Villainy" ]
+            attackf: 3
+            agility: 1
+            hull: 9
+            shields: 3
+            large: true
+            actions: [
+                "Focus"
+                "Reinforce"
+                "Lock"
             ]
             maneuvers: [
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ]
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3 ]
-                [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 0, 0, 0, 3, 0, 0, 0, 0 ]
+                [ 0, 0, 3, 0, 0, 0 ]
+                [ 0, 1, 1, 1, 0, 0 ]
+                [ 3, 2, 1, 2, 3, 0 ]
+                [ 2, 2, 1, 2, 2, 0 ]
+                [ 0, 0, 2, 0, 0, 0 ]
             ]
-        "Clone Z-95 Headhunter":
-            name: "Clone Z-95 Headhunter"
-            factions: [ "Galactic Republic" ]
+        "Z-95-AF4 Headhunter":
+            name: "Z-95-AF4 Headhunter"
+            xws: "Z-95-AF4 Headhunter".canonicalize()
+            factions: [ "Rebel Alliance", "Scum and Villainy" ]
             attack: 2
             agility: 2
             hull: 2
             shields: 2
-            chassis: "Versatile Frame"
             actions: [
                 "Focus"
                 "Lock"
@@ -1836,39 +1946,41 @@ exportObj.basicCardData = ->
                 [ 2, 2, 1, 2, 2, 3]
                 [ 0, 0, 2, 0, 0, 3]
             ]
-        "Rogue-class Starfighter":
-            name: "Rogue-class Starfighter"
-            factions: [ "Separatist Alliance", "Scum and Villainy" ]
-            attack: 2
-            agility: 2
-            hull: 5
-            shields: 2
-            chassis: "Dead to Rights"
-            actions: [
-                "Focus"
-                "R-> Boost"
-                "Focus"
-                "R-> Barrel Roll"
-                "Evade"
-                "R-> Barrel Roll"
-                "Lock"
-                "R-Boost"
-            ]
-            maneuvers: [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 2, 1, 0, 1, 2, 0, 0, 0, 0, 0 ]
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 3, 3 ]
-                [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ]
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
-            ]
 
         # Epic Section
+        "C-ROC Cruiser":
+            name: "C-ROC Cruiser"
+            xws: "C-ROC Cruiser".canonicalize()
+            factions: ["Separatist Alliance", "Scum and Villainy"]
+            huge: true
+            attack: 3
+            agility: 0
+            hull: 12
+            shields: 4
+            shieldrecurr: 1
+            energy: 4
+            energyrecurr: 1
+            actions: [
+                "Focus"
+                "Reinforce"
+                "Lock"
+                "R-Coordinate"
+                "Jam"
+            ]
+            maneuvers: [
+                [ 0, 3, 3, 3, 0]
+                [ 0, 2, 1, 2, 0]
+                [ 0, 2, 1, 2, 0]
+                [ 0, 3, 2, 3, 0]
+                [ 0, 0, 3, 0, 0]
+                [ 0, 0, 3, 0, 0]
+            ]
         "CR90 Corellian Corvette":
             name: "CR90 Corellian Corvette"
+            xws: "CR90 Corellian Corvette".canonicalize()
             icon: "cr90corvette"
             factions: ["Galactic Republic", "Rebel Alliance"]
-            base: "Huge"
+            huge: true
             attackl: 4
             attackr: 4
             agility: 0
@@ -1892,10 +2004,63 @@ exportObj.basicCardData = ->
                 [ 0, 0, 3, 0, 0]
                 [ 0, 0, 3, 0, 0]
             ]
+        "Gozanti-class Cruiser":
+            name: "Gozanti-class Cruiser"
+            xws: "Gozanti-class Cruiser".canonicalize()
+            factions: ["Galactic Empire", "First Order"]
+            huge: true
+            attack: 3
+            agility: 0
+            hull: 11
+            shields: 5
+            shieldrecurr: 1
+            energy: 3
+            energyrecurr: 1
+            actions: [
+                "Focus"
+                "Reinforce"
+                "Lock"
+                "Coordinate"
+                "Jam"
+            ]
+            maneuvers: [
+                [ 0, 3, 3, 3, 0]
+                [ 0, 2, 1, 2, 0]
+                [ 0, 3, 1, 3, 0]
+                [ 0, 0, 1, 0, 0]
+                [ 0, 0, 3, 0, 0]
+            ]
+        "GR-75 Medium Transport":
+            name: "GR-75 Medium Transport"
+            xws: "GR-75 Medium Transport".canonicalize()
+            factions: ["Rebel Alliance", "Resistance"]
+            huge: true
+            attack: 2
+            agility: 0
+            hull: 12
+            shields: 3
+            shieldrecurr: 1
+            energy: 4
+            energyrecurr: 1
+            actions: [
+                "Focus"
+                "R-Lock"
+                "Coordinate"
+                "R-Reinforce"
+                "Jam"
+            ]
+            maneuvers: [
+                [ 0, 3, 3, 3, 0]
+                [ 0, 1, 1, 1, 0]
+                [ 0, 2, 2, 2, 0]
+                [ 0, 0, 3, 0, 0]
+                [ 0, 0, 3, 0, 0]
+            ]
         "Raider-class Corvette":
             name: "Raider-class Corvette"
+            xws: "Raider-class Corvette".canonicalize()
             factions: ["Galactic Empire", "First Order"]
-            base: "Huge"
+            huge: true
             attackf: 4
             agility: 0
             hull: 20
@@ -1918,86 +2083,11 @@ exportObj.basicCardData = ->
                 [ 0, 0, 2, 0, 0]
                 [ 0, 0, 3, 0, 0]
             ]
-        "GR-75 Medium Transport":
-            name: "GR-75 Medium Transport"
-            factions: ["Rebel Alliance", "Resistance"]
-            base: "Huge"
-            attack: 2
-            agility: 0
-            hull: 12
-            shields: 3
-            shieldrecurr: 1
-            energy: 4
-            energyrecurr: 1
-            actions: [
-                "Focus"
-                "R-Lock"
-                "Coordinate"
-                "R-Reinforce"
-                "Jam"
-            ]
-            maneuvers: [
-                [ 0, 3, 3, 3, 0]
-                [ 0, 1, 1, 1, 0]
-                [ 0, 2, 2, 2, 0]
-                [ 0, 0, 3, 0, 0]
-                [ 0, 0, 3, 0, 0]
-            ]
-        "Gozanti-class Cruiser":
-            name: "Gozanti-class Cruiser"
-            factions: ["Galactic Empire", "First Order"]
-            base: "Huge"
-            attack: 3
-            agility: 0
-            hull: 11
-            shields: 5
-            shieldrecurr: 1
-            energy: 3
-            energyrecurr: 1
-            actions: [
-                "Focus"
-                "Reinforce"
-                "Lock"
-                "Coordinate"
-                "Jam"
-            ]
-            maneuvers: [
-                [ 0, 3, 3, 3, 0]
-                [ 0, 2, 1, 2, 0]
-                [ 0, 3, 1, 3, 0]
-                [ 0, 0, 1, 0, 0]
-                [ 0, 0, 3, 0, 0]
-            ]
-        "C-ROC Cruiser":
-            name: "C-ROC Cruiser"
-            factions: ["Separatist Alliance", "Scum and Villainy"]
-            base: "Huge"
-            attack: 3
-            agility: 0
-            hull: 12
-            shields: 4
-            shieldrecurr: 1
-            energy: 4
-            energyrecurr: 1
-            actions: [
-                "Focus"
-                "Reinforce"
-                "Lock"
-                "R-Coordinate"
-                "Jam"
-            ]
-            maneuvers: [
-                [ 0, 3, 3, 3, 0]
-                [ 0, 2, 1, 2, 0]
-                [ 0, 2, 1, 2, 0]
-                [ 0, 3, 2, 3, 0]
-                [ 0, 0, 3, 0, 0]
-                [ 0, 0, 3, 0, 0]
-            ]
         "Trident-class Assault Ship":
             name: "Trident-class Assault Ship"
+            xws: "Trident-class Assault Ship".canonicalize()
             factions: ["Separatist Alliance", "Scum and Villainy"]
-            base: "Huge"
+            huge: true
             attack: 3
             agility: 0
             hull: 10
@@ -2033,11 +2123,12 @@ exportObj.basicCardData = ->
             ship: "T-65 X-wing"
             keyword: ["Partisan"]
             skill: 1
-            points: 5
-            loadout: 4
+            points: 38
             slots: [
-                "Astromech"
                 "Illicit"
+                "Torpedo"
+                "Astromech"
+                "Modification"
                 "Configuration"
             ]
         }
@@ -2047,10 +2138,11 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "T-65 X-wing"
             skill: 2
-            points: 5
-            loadout: 4
+            points: 38
             slots: [
+                "Torpedo"
                 "Astromech"
+                "Modification"
                 "Configuration"
             ]
         }
@@ -2060,11 +2152,12 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "T-65 X-wing"
             skill: 3
-            points: 5
-            loadout: 3
+            points: 40
             slots: [
                 "Talent"
+                "Torpedo"
                 "Astromech"
+                "Modification"
                 "Configuration"
             ]
         }
@@ -2075,12 +2168,12 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "T-65 X-wing"
             skill: 4
-            points: 5
-            loadout: 15
+            points: 42
             slots: [
                 "Talent"
                 "Torpedo"
                 "Astromech"
+                "Modification"
                 "Configuration"
             ]
         }
@@ -2093,11 +2186,9 @@ exportObj.basicCardData = ->
             skill: 5
             keyword: ["Light Side"]
             force: 2
-            points: 6
-            loadout: 22
+            points: 60
             slots: [
                 "Force"
-                "Talent"
                 "Torpedo"
                 "Astromech"
                 "Modification"
@@ -2111,10 +2202,8 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "T-65 X-wing"
             skill: 6
-            points: 6
-            loadout: 18
+            points: 57
             slots: [
-                "Talent"
                 "Talent"
                 "Torpedo"
                 "Astromech"
@@ -2131,8 +2220,7 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "T-65 X-wing"
             skill: 4
-            points: 5
-            loadout: 16
+            points: 46
             slots: [
                 "Talent"
                 "Torpedo"
@@ -2148,8 +2236,7 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "T-65 X-wing"
             skill: 3
-            points: 5
-            loadout: 18
+            points: 44
             slots: [
                 "Torpedo"
                 "Astromech"
@@ -2164,12 +2251,13 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "T-65 X-wing"
             skill: 2
-            points: 4
-            loadout: 10
+            points: 41
             keyword: ["Partisan"]
             slots: [
-                "Missile"
                 "Illicit"
+                "Torpedo"
+                "Astromech"
+                "Modification"
                 "Configuration"
             ]
         }
@@ -2180,12 +2268,12 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "T-65 X-wing"
             skill: 5
-            points: 5
-            loadout: 14
+            points: 47
             slots: [
                 "Talent"
                 "Torpedo"
                 "Astromech"
+                "Modification"
                 "Configuration"
             ]
         }
@@ -2196,14 +2284,14 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "T-65 X-wing"
             skill: 3
-            points: 4
-            loadout: 8
+            points: 41
             keyword: ["Partisan"]
             slots: [
-                "Talent"
-                "Missile"
-                "Astromech"
                 "Illicit"
+                "Talent"
+                "Torpedo"
+                "Astromech"
+                "Modification"
                 "Configuration"
             ]
         }
@@ -2219,14 +2307,14 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "T-65 X-wing"
             skill: 4
-            points: 4
-            loadout: 7
+            points: 42
             keyword: ["Partisan"]
             slots: [
-                "Talent"
-                "Missile"
-                "Astromech"
                 "Illicit"
+                "Talent"
+                "Torpedo"
+                "Astromech"
+                "Modification"
                 "Configuration"
             ]
         }
@@ -2239,12 +2327,10 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "TIE/ln Fighter"
             skill: 3
-            points: 3
-            loadout: 7
+            points: 25
             keyword: ["Spectre", "Mandalorian"]
             slots: [
                 "Talent"
-                "Missile"
                 "Modification"
             ]
         }
@@ -2257,13 +2343,12 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "TIE/ln Fighter"
             skill: 3
+            keyword: ["Light Side"]
             force: 1
-            points: 3
-            loadout: 6
+            points: 25
             keyword: ["Light Side","Spectre"]
             slots: [
                 "Force"
-                "Crew"
                 "Modification"
             ]
         }
@@ -2276,11 +2361,9 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "TIE/ln Fighter"
             skill: 2
-            points: 3
-            loadout: 8
+            points: 21
             keyword: ["Spectre"]
             slots: [
-                "Crew"
                 "Modification"
             ]
         }
@@ -2291,12 +2374,9 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "TIE/ln Fighter"
             skill: 2
-            points: 3
-            loadout: 8
+            points: 25
             keyword: ["Clone"]
             slots: [
-                "Talent"
-                "Talent"
                 "Modification"
             ]
             applies_condition: 'Suppressive Fire'.canonicalize()
@@ -2308,10 +2388,10 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "BTL-S8 K-wing"
             skill: 4
-            points: 5
-            loadout: 14
+            points: 40
             slots: [
                 "Torpedo"
+                "Missile"
                 "Missile"
                 "Gunner"
                 "Crew"
@@ -2327,14 +2407,14 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "BTL-S8 K-wing"
             skill: 3
-            points: 5
-            loadout: 16
+            points: 42
             slots: [
                 "Torpedo"
                 "Missile"
                 "Missile"
                 "Gunner"
                 "Crew"
+                "Device"
                 "Device"
                 "Modification"
             ]
@@ -2350,14 +2430,16 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "BTL-S8 K-wing"
             skill: 2
-            points: 5
-            loadout: 7
+            points: 38
             slots: [
                 "Torpedo"
                 "Missile"
+                "Missile"
                 "Gunner"
+                "Crew"
                 "Device"
                 "Device"
+                "Modification"
             ]
         }
         {
@@ -2367,12 +2449,10 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "E-wing"
             skill: 5
-            points: 7
-            loadout: 20
+            points: 60
             slots: [
                 "Talent"
                 "Tech"
-                "Sensor"
                 "Sensor"
                 "Torpedo"
                 "Astromech"
@@ -2386,8 +2466,7 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "E-wing"
             skill: 4
-            points: 6
-            loadout: 18
+            points: 55
             slots: [
                 "Talent"
                 "Tech"
@@ -2403,9 +2482,10 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "E-wing"
             skill: 4
-            points: 6
-            loadout: 12
+            points: 51
             slots: [
+                "Talent"
+                "Tech"
                 "Sensor"
                 "Torpedo"
                 "Astromech"
@@ -2418,10 +2498,10 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "E-wing"
             skill: 2
-            points: 6
-            loadout: 14
+            points: 48
             slots: [
                 "Tech"
+                "Sensor"
                 "Torpedo"
                 "Astromech"
                 "Modification"
@@ -2436,12 +2516,12 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "BTL-A4 Y-wing"
             skill: 5
-            points: 5
-            loadout: 18
+            points: 39
             slots: [
                 "Talent"
                 "Turret"
                 "Torpedo"
+                "Missile"
                 "Astromech"
                 "Modification"
                 "Device"
@@ -2454,16 +2534,15 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "BTL-A4 Y-wing"
             skill: 4
-            points: 4
-            loadout: 14
+            points: 36
             slots: [
                 "Talent"
                 "Turret"
                 "Torpedo"
                 "Missile"
                 "Astromech"
-                "Device"
                 "Modification"
+                "Device"
             ]
         }
         {
@@ -2473,17 +2552,15 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "BTL-A4 Y-wing"
             skill: 4
-            points: 4
-            loadout: 12
+            points: 40
             slots: [
                 "Talent"
                 "Turret"
                 "Torpedo"
                 "Missile"
                 "Astromech"
-                "Device"
-                "Device"
                 "Modification"
+                "Device"
             ]
         }
         {
@@ -2493,17 +2570,15 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "BTL-A4 Y-wing"
             skill: 3
-            points: 4
-            loadout: 15
+            points: 32
             slots: [
                 "Talent"
                 "Turret"
                 "Torpedo"
                 "Missile"
                 "Astromech"
+                "Modification"
                 "Device"
-                "Modification"
-                "Modification"
             ]
         }
         {
@@ -2512,12 +2587,15 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "BTL-A4 Y-wing"
             skill: 3
-            points: 4
-            loadout: 6
+            points: 31
             slots: [
+                "Talent"
                 "Turret"
+                "Torpedo"
                 "Missile"
+                "Astromech"
                 "Modification"
+                "Device"
             ]
         }
         {
@@ -2526,12 +2604,14 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "BTL-A4 Y-wing"
             skill: 2
-            points: 4
-            loadout: 8
+            points: 29
             slots: [
-                "Device"
+                "Turret"
+                "Torpedo"
                 "Missile"
+                "Astromech"
                 "Modification"
+                "Device"
             ]
         }
         {
@@ -2541,9 +2621,9 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "UT-60D U-wing"
             skill: 4
-            points: 5
-            loadout: 10
+            points: 47
             slots: [
+                "Talent"
                 "Sensor"
                 "Crew"
                 "Crew"
@@ -2558,11 +2638,11 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "UT-60D U-wing"
             skill: 3
-            points: 5
-            loadout: 12
+            points: 50
             slots: [
                 "Talent"
                 "Sensor"
+                "Crew"
                 "Crew"
                 "Modification"
                 "Configuration"
@@ -2575,8 +2655,7 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "UT-60D U-wing"
             skill: 2
-            points: 5
-            loadout: 9
+            points: 44
             slots: [
                 "Talent"
                 "Sensor"
@@ -2593,17 +2672,16 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "UT-60D U-wing"
             skill: 3
-            points: 5
-            loadout: 14
+            points: 48
             keyword: ["Partisan"]
             slots: [
                 "Talent"
                 "Sensor"
                 "Crew"
                 "Crew"
-                "Illicit"
                 "Modification"
                 "Configuration"
+                "Illicit"
             ]
         }
         {
@@ -2613,8 +2691,7 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "UT-60D U-wing"
             skill: 4
-            points: 5
-            loadout: 18
+            points: 52
             keyword: ["Partisan"]
             slots: [
                 "Talent"
@@ -2633,11 +2710,9 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "UT-60D U-wing"
             skill: 2
-            points: 5
-            loadout: 16
+            points: 45
             keyword: ["Partisan"]
             slots: [
-                "Talent"
                 "Sensor"
                 "Crew"
                 "Crew"
@@ -2652,9 +2727,11 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "UT-60D U-wing"
             skill: 2
-            points: 5
-            loadout: 6
+            points: 43
             slots: [
+                "Sensor"
+                "Crew"
+                "Crew"
                 "Modification"
                 "Configuration"
             ]
@@ -2665,11 +2742,14 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "UT-60D U-wing"
             skill: 1
-            points: 5
-            loadout: 6
+            points: 43
             keyword: ["Partisan"]
             slots: [
+                "Sensor"
+                "Crew"
+                "Crew"
                 "Illicit"
+                "Modification"
                 "Configuration"
             ]
         }
@@ -2680,16 +2760,15 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "YT-2400 Light Freighter"
             skill: 5
-            points: 10
-            loadout: 22
+            points: 83
             slots: [
                 "Talent"
                 "Missile"
                 "Crew"
-                "Illicit"
-                "Illicit"
+                "Crew"
                 "Modification"
                 "Title"
+                "Illicit"
             ]
         }
         {
@@ -2699,16 +2778,15 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "YT-2400 Light Freighter"
             skill: 3
-            points: 8
-            loadout: 16
+            points: 75
             keyword: ["Droid"]
             slots: [
                 "Talent"
                 "Missile"
-                "Illicit"
-                "Illicit"
                 "Modification"
                 "Title"
+                "Illicit"
+                "Illicit"
             ]
         }
         {
@@ -2717,10 +2795,13 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "YT-2400 Light Freighter"
             skill: 1
-            points: 8
-            loadout: 7
+            points: 69
             slots: [
                 "Missile"
+                "Crew"
+                "Crew"
+                "Modification"
+                "Title"
                 "Illicit"
             ]
         }
@@ -2732,15 +2813,13 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Modified YT-1300 Light Freighter"
             skill: 6
-            points: 8
-            loadout: 20
+            points: 81
             slots: [
                 "Talent"
                 "Missile"
-                "Crew"
-                "Crew"
                 "Gunner"
-                "Illicit"
+                "Crew"
+                "Crew"
                 "Modification"
                 "Modification"
                 "Title"
@@ -2754,15 +2833,13 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Modified YT-1300 Light Freighter"
             skill: 5
-            points: 8
-            loadout: 21
+            points: 79
             slots: [
                 "Talent"
                 "Missile"
-                "Crew"
-                "Crew"
                 "Gunner"
-                "Illicit"
+                "Crew"
+                "Crew"
                 "Modification"
                 "Modification"
                 "Title"
@@ -2777,15 +2854,13 @@ exportObj.basicCardData = ->
             skill: 4
             charge: 1
             recurring: 1
-            points: 7
-            loadout: 18
+            points: 68
             slots: [
                 "Talent"
                 "Missile"
-                "Crew"
-                "Crew"
                 "Gunner"
-                "Illicit"
+                "Crew"
+                "Crew"
                 "Modification"
                 "Modification"
                 "Title"
@@ -2797,11 +2872,15 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Modified YT-1300 Light Freighter"
             skill: 1
-            points: 7
-            loadout: 6
+            points: 67
             slots: [
                 "Missile"
                 "Gunner"
+                "Crew"
+                "Crew"
+                "Modification"
+                "Modification"
+                "Title"
             ]
         }
         {
@@ -2811,13 +2890,11 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "HWK-290 Light Freighter"
             skill: 5
-            points: 6
-            loadout: 10
+            points: 44
             slots: [
                 "Talent"
+                "Device"
                 "Crew"
-                "Device"
-                "Device"
                 "Modification"
                 "Modification"
                 "Title"
@@ -2830,12 +2907,11 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "HWK-290 Light Freighter"
             skill: 4
-            points: 6
-            loadout: 15
+            points: 37
             slots: [
                 "Talent"
-                "Crew"
                 "Device"
+                "Crew"
                 "Modification"
                 "Modification"
                 "Title"
@@ -2848,13 +2924,12 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "HWK-290 Light Freighter"
             skill: 3
-            points: 6
-            loadout: 12
+            points: 32
             slots: [
                 "Talent"
-                "Talent"
-                "Crew"
                 "Device"
+                "Crew"
+                "Modification"
                 "Modification"
                 "Title"
             ]
@@ -2865,11 +2940,13 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "HWK-290 Light Freighter"
             skill: 2
-            points: 4
-            loadout: 6
+            points: 26
             slots: [
                 "Device"
+                "Crew"
                 "Modification"
+                "Modification"
+                "Title"
             ]
         }
         {
@@ -2879,13 +2956,11 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "RZ-1 A-wing"
             skill: 4
-            points: 4
-            loadout: 8
+            points: 36
             slots: [
                 "Talent"
                 "Talent"
                 "Missile"
-                "Modification"
                 "Configuration"
             ]
         }
@@ -2896,11 +2971,11 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "RZ-1 A-wing"
             skill: 3
-            points: 3
-            loadout: 5
+            points: 32
             slots: [
                 "Talent"
                 "Talent"
+                "Missile"
                 "Configuration"
             ]
         }
@@ -2910,11 +2985,11 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "RZ-1 A-wing"
             skill: 3
-            points: 4
-            loadout: 4
+            points: 30
             slots: [
                 "Talent"
                 "Talent"
+                "Missile"
                 "Configuration"
             ]
         }
@@ -2924,10 +2999,10 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "RZ-1 A-wing"
             skill: 1
-            points: 4
-            loadout: 3
+            points: 28
             slots: [
                 "Talent"
+                "Missile"
                 "Configuration"
             ]
         }
@@ -2938,12 +3013,10 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Z-95-AF4 Headhunter"
             skill: 5
-            points: 3
-            loadout: 9
+            points: 35
             slots: [
                 "Talent"
-                "Sensor"
-                "Torpedo"
+                "Missile"
                 "Modification"
             ]
         }
@@ -2954,11 +3027,10 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Z-95-AF4 Headhunter"
             skill: 4
-            points: 3
-            loadout: 6
+            points: 28
             slots: [
                 "Talent"
-                "Talent"
+                "Missile"
                 "Modification"
             ]
         }
@@ -2968,10 +3040,10 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Z-95-AF4 Headhunter"
             skill: 2
-            points: 3
-            loadout: 4
+            points: 23
             slots: [
                 "Talent"
+                "Missile"
                 "Modification"
             ]
         }
@@ -2981,8 +3053,7 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Z-95-AF4 Headhunter"
             skill: 1
-            points: 3
-            loadout: 5
+            points: 22
             slots: [
                 "Missile"
                 "Modification"
@@ -2995,8 +3066,7 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Auzituck Gunship"
             skill: 4
-            points: 5
-            loadout: 11
+            points: 54
             slots: [
                 "Talent"
                 "Crew"
@@ -3011,8 +3081,7 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Auzituck Gunship"
             skill: 3
-            points: 5
-            loadout: 10
+            points: 49
             slots: [
                 "Talent"
                 "Crew"
@@ -3026,9 +3095,9 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Auzituck Gunship"
             skill: 1
-            points: 5
-            loadout: 6
+            points: 44
             slots: [
+                "Crew"
                 "Crew"
                 "Modification"
             ]
@@ -3042,18 +3111,17 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "VCX-100 Light Freighter"
             skill: 5
-            points: 7
-            loadout: 20
+            points: 74
             keyword: ["Spectre"]
             slots: [
                 "Talent"
                 "Sensor"
-                "Turret"
                 "Torpedo"
+                "Turret"
                 "Crew"
                 "Crew"
-                "Gunner"
                 "Modification"
+                "Gunner"
                 "Title"
             ]
         }
@@ -3066,17 +3134,16 @@ exportObj.basicCardData = ->
             skill: 3
             keyword: ["Light Side", "Jedi", "Spectre"]
             force: 2
-            points: 8
-            loadout: 20
+            points: 75
             slots: [
                 "Force"
                 "Sensor"
-                "Turret"
                 "Torpedo"
+                "Turret"
                 "Crew"
                 "Crew"
-                "Gunner"
                 "Modification"
+                "Gunner"
                 "Title"
             ]
         }
@@ -3087,17 +3154,16 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "VCX-100 Light Freighter"
             skill: 2
-            points: 7
-            loadout: 18
+            points: 66
             keyword: ["Droid","Spectre"]
             slots: [
+                "Torpedo"
                 "Sensor"
                 "Turret"
-                "Torpedo"
                 "Crew"
                 "Crew"
-                "Gunner"
                 "Modification"
+                "Gunner"
                 "Title"
             ]
         }
@@ -3107,12 +3173,16 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "VCX-100 Light Freighter"
             skill: 2
-            points: 7
-            loadout: 8
+            points: 68
             slots: [
-                "Turret"
                 "Torpedo"
+                "Sensor"
+                "Turret"
+                "Crew"
+                "Crew"
+                "Modification"
                 "Gunner"
+                "Title"
             ]
         }
         {
@@ -3122,14 +3192,13 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Attack Shuttle"
             skill: 5
-            points: 4
-            loadout: 9
+            points: 38
             keyword: ["Spectre"]
             slots: [
                 "Talent"
-                "Turret"
                 "Crew"
                 "Modification"
+                "Turret"
                 "Title"
             ]
         }
@@ -3141,14 +3210,13 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Attack Shuttle"
             skill: 3
-            points: 4
-            loadout: 6
+            points: 41
             keyword: ["Mandalorian","Spectre"]
             slots: [
                 "Talent"
-                "Turret"
                 "Crew"
                 "Modification"
+                "Turret"
                 "Title"
             ]
         }
@@ -3161,13 +3229,12 @@ exportObj.basicCardData = ->
             skill: 3
             keyword: ["Light Side","Spectre"]
             force: 1
-            points: 4
-            loadout: 7
+            points: 40
             slots: [
                 "Force"
-                "Turret"
                 "Crew"
                 "Modification"
+                "Turret"
                 "Title"
             ]
         }
@@ -3179,14 +3246,13 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Attack Shuttle"
             skill: 2
-            points: 3
-            loadout: 10
+            points: 33
             keyword: ["Spectre"]
             slots: [
                 "Talent"
-                "Turret"
                 "Crew"
                 "Modification"
+                "Turret"
                 "Title"
             ]
         }
@@ -3199,14 +3265,13 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Sheathipede-Class Shuttle"
             skill: 6
-            points: 4
-            loadout: 9
+            points: 45
             keyword: ["Mandalorian","Spectre"]
             slots: [
                 "Talent"
                 "Crew"
-                "Astromech"
                 "Modification"
+                "Astromech"
                 "Title"
             ]
         }
@@ -3220,14 +3285,13 @@ exportObj.basicCardData = ->
             ship: "Sheathipede-Class Shuttle"
             skill: 3
             force: 1
-            points: 4
-            loadout: 6
+            points: 37
             keyword: ["Light Side","Spectre"]
             slots: [
                 "Force"
                 "Crew"
-                "Astromech"
                 "Modification"
+                "Astromech"
                 "Title"
             ]
         }
@@ -3240,14 +3304,13 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Sheathipede-Class Shuttle"
             skill: 2
-            points: 4
-            loadout: 11
+            points: 31
             keyword: ["Spectre"]
             slots: [
                 "Talent"
                 "Crew"
-                "Astromech"
                 "Modification"
+                "Astromech"
                 "Title"
             ]
         }
@@ -3258,10 +3321,10 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Sheathipede-Class Shuttle"
             skill: 1
-            points: 4
-            loadout: 4
+            points:31
             keyword: ["Droid","Spectre"]
             slots: [
+                "Talent"
                 "Crew"
                 "Modification"
                 "Astromech"
@@ -3275,17 +3338,16 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "A/SF-01 B-wing"
             skill: 4
-            points: 5
-            loadout: 12
+            points: 52
             slots: [
                 "Talent"
                 "Sensor"
                 "Cannon"
                 "Cannon"
                 "Torpedo"
-                "Device"
                 "Modification"
                 "Configuration"
+                "Title"
             ]
         }
         {
@@ -3295,17 +3357,16 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "A/SF-01 B-wing"
             skill: 4
-            points: 5
-            loadout: 14
+            points: 49
             slots: [
                 "Talent"
                 "Sensor"
                 "Cannon"
                 "Cannon"
                 "Torpedo"
-                "Device"
                 "Modification"
                 "Configuration"
+                "Title"
             ]
         }
         {
@@ -3314,14 +3375,16 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "A/SF-01 B-wing"
             skill: 3
-            points: 5
-            loadout: 6
+            points: 41
             slots: [
+                "Talent"
                 "Sensor"
                 "Cannon"
                 "Cannon"
                 "Torpedo"
+                "Modification"
                 "Configuration"
+                "Title"
             ]
         }
         {
@@ -3330,14 +3393,15 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "A/SF-01 B-wing"
             skill: 2
-            points: 5
-            loadout: 6
+            points: 39
             slots: [
                 "Sensor"
                 "Cannon"
                 "Cannon"
-                "Device"
+                "Torpedo"
+                "Modification"
                 "Configuration"
+                "Title"
             ]
         }
         {
@@ -3347,12 +3411,10 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "ARC-170 Starfighter"
             skill: 5
-            points: 6
-            loadout: 16
+            points: 53
             slots: [
                 "Talent"
                 "Torpedo"
-                "Crew"
                 "Crew"
                 "Gunner"
                 "Astromech"
@@ -3366,13 +3428,10 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "ARC-170 Starfighter"
             skill: 4
-            points: 5
-            loadout: 12
+            points: 49
             slots: [
                 "Talent"
                 "Torpedo"
-                "Missile"
-                "Crew"
                 "Crew"
                 "Gunner"
                 "Astromech"
@@ -3386,13 +3445,10 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "ARC-170 Starfighter"
             skill: 4
-            points: 5
-            loadout: 11
+            points: 50
             slots: [
                 "Talent"
-                "Cannon"
-                "Missile"
-                "Crew"
+                "Torpedo"
                 "Crew"
                 "Gunner"
                 "Astromech"
@@ -3406,12 +3462,10 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "ARC-170 Starfighter"
             skill: 3
-            points: 5
-            loadout: 14
+            points: 45
             slots: [
                 "Talent"
                 "Torpedo"
-                "Crew"
                 "Crew"
                 "Gunner"
                 "Astromech"
@@ -3425,8 +3479,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Aggressor Assault Fighter"
             skill: 4
-            points: 7
-            loadout: 16
+            points: 64
             keyword: ["Bounty Hunter","Droid"]
             slots: [
                 "Talent"
@@ -3446,8 +3499,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Aggressor Assault Fighter"
             skill: 4
-            points: 7
-            loadout: 16
+            points: 61
             keyword: ["Bounty Hunter","Droid"]
             slots: [
                 "Talent"
@@ -3467,8 +3519,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Aggressor Assault Fighter"
             skill: 4
-            points: 7
-            loadout: 16
+            points: 62
             keyword: ["Bounty Hunter","Droid"]
             slots: [
                 "Talent"
@@ -3488,8 +3539,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Aggressor Assault Fighter"
             skill: 4
-            points: 6
-            loadout: 13
+            points: 61
             keyword: ["Bounty Hunter","Droid"]
             slots: [
                 "Talent"
@@ -3509,8 +3559,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "BTL-A4 Y-wing"
             skill: 5
-            points: 5
-            loadout: 18
+            points: 40
             slots: [
                 "Talent"
                 "Turret"
@@ -3529,8 +3578,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "BTL-A4 Y-wing"
             skill: 4
-            points: 5
-            loadout: 10
+            points: 46
             slots: [
                 "Talent"
                 "Turret"
@@ -3548,14 +3596,16 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "BTL-A4 Y-wing"
             skill: 2
-            points: 4
-            loadout: 6
+            points: 30
             slots: [
+                "Talent"
                 "Turret"
                 "Torpedo"
                 "Missile"
+                "Astromech"
                 "Device"
                 "Illicit"
+                "Modification"
             ]
         }
         {
@@ -3564,13 +3614,15 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "BTL-A4 Y-wing"
             skill: 1
-            points: 4
-            loadout: 4
+            points: 29
             slots: [
                 "Turret"
+                "Torpedo"
                 "Missile"
+                "Astromech"
                 "Device"
                 "Illicit"
+                "Modification"
             ]
         }
         {
@@ -3581,8 +3633,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Customized YT-1300 Light Freighter"
             skill: 6
-            points: 6
-            loadout: 20
+            points: 49
             slots: [
                 "Talent"
                 "Missile"
@@ -3602,14 +3653,13 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Customized YT-1300 Light Freighter"
             skill: 4
-            points: 6
-            loadout: 17
+            points: 43
             slots: [
                 "Talent"
                 "Missile"
                 "Crew"
+                "Crew"
                 "Gunner"
-                "Illicit"
                 "Illicit"
                 "Modification"
                 "Title"
@@ -3622,8 +3672,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Customized YT-1300 Light Freighter"
             skill: 2
-            points: 6
-            loadout: 15
+            points: 41
             keyword: ["Droid"]
             slots: [
                 "Missile"
@@ -3641,12 +3690,15 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Customized YT-1300 Light Freighter"
             skill: 1
-            points: 6
-            loadout: 6
+            points: 41
             slots: [
                 "Missile"
+                "Crew"
+                "Crew"
                 "Gunner"
                 "Illicit"
+                "Modification"
+                "Title"
             ]
         }
         {
@@ -3658,8 +3710,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Escape Craft"
             skill: 4
-            points: 3
-            loadout: 4
+            points: 27
             slots: [
                 "Talent"
                 "Crew"
@@ -3673,8 +3724,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Escape Craft"
             skill: 3
-            points: 3
-            loadout: 4
+            points: 26
             slots: [
                 "Talent"
                 "Crew"
@@ -3690,8 +3740,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Escape Craft"
             skill: 2
-            points: 3
-            loadout: 4
+            points: 25
             keyword: ["Droid"]
             slots: [
                 "Talent"
@@ -3707,8 +3756,7 @@ exportObj.basicCardData = ->
             ship: "Escape Craft"
             skill: 1
             charge: 3
-            points: 2
-            loadout: 0
+            points: 11
             keyword: ["Droid"]
             chassis: "Rigged Energy Cells"
             slots: [
@@ -3721,14 +3769,11 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Fang Fighter"
             skill: 6
-            points: 7
-            loadout: 18
+            points: 69
             keyword: ["Mandalorian"]
             slots: [
                 "Talent"
-                "Talent"
                 "Torpedo"
-                "Modification"
             ]
         }
         {
@@ -3738,11 +3783,9 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Fang Fighter"
             skill: 5
-            points: 6
-            loadout: 16
+            points: 57
             keyword: ["Mandalorian"]
             slots: [
-                "Talent"
                 "Talent"
                 "Torpedo"
                 "Modification"
@@ -3755,12 +3798,11 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Fang Fighter"
             skill: 4
-            points: 5
-            loadout: 12
+            points: 48
             keyword: ["Mandalorian"]
             slots: [
                 "Talent"
-                "Missile"
+                "Torpedo"
                 "Modification"
             ]
         }
@@ -3771,12 +3813,10 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Fang Fighter"
             skill: 4
-            points: 5
-            loadout: 11
+            points: 46
             keyword: ["Mandalorian"]
             slots: [
                 "Talent"
-                "Missile"
                 "Torpedo"
                 "Modification"
             ]
@@ -3787,10 +3827,10 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Fang Fighter"
             skill: 4
-            points: 5
-            loadout: 6
+            points: 46
             keyword: ["Mandalorian"]
             slots: [
+                "Talent"
                 "Torpedo"
                 "Modification"
             ]
@@ -3801,11 +3841,10 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Fang Fighter"
             skill: 1
-            points: 5
-            loadout: 8
+            points: 41
             keyword: ["Mandalorian"]
             slots: [
-                "Modification"
+                "Torpedo"
                 "Modification"
             ]
         }
@@ -3816,8 +3855,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Firespray-class Patrol Craft"
             skill: 5
-            points: 9
-            loadout: 22
+            points: 90
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
@@ -3828,7 +3866,6 @@ exportObj.basicCardData = ->
                 "Modification"
                 "Modification"
                 "Title"
-                "Crew"
             ]
         }
         {
@@ -3838,8 +3875,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Firespray-class Patrol Craft"
             skill: 4
-            points: 7
-            loadout: 17
+            points: 69
             slots: [
                 "Talent"
                 "Cannon"
@@ -3858,8 +3894,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Firespray-class Patrol Craft"
             skill: 4
-            points: 7
-            loadout: 18
+            points: 67
             slots: [
                 "Talent"
                 "Cannon"
@@ -3878,8 +3913,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Firespray-class Patrol Craft"
             skill: 3
-            points: 7
-            loadout: 16
+            points: 69
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
@@ -3899,11 +3933,9 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Firespray-class Patrol Craft"
             skill: 3
-            points: 7
-            loadout: 18
+            points: 65
             slots: [
                 "Talent"
-                "Cannon"
                 "Cannon"
                 "Missile"
                 "Crew"
@@ -3919,14 +3951,16 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Firespray-class Patrol Craft"
             skill: 2
-            points: 7
-            loadout: 10
+            points: 62
             keyword: ["Bounty Hunter"]
             slots: [
                 "Cannon"
                 "Missile"
+                "Crew"
                 "Device"
                 "Illicit"
+                "Modification"
+                "Title"
             ]
         }
         {
@@ -3936,12 +3970,12 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "G-1A Starfighter"
             skill: 3
-            points: 5
-            loadout: 14
+            points: 45
             keyword: ["Bounty Hunter","Droid"]
             slots: [
                 "Talent"
                 "Sensor"
+                "Crew"
                 "Crew"
                 "Illicit"
                 "Modification"
@@ -3955,12 +3989,12 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "G-1A Starfighter"
             skill: 3
-            points: 5
-            loadout: 10
+            points: 42
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
                 "Sensor"
+                "Crew"
                 "Crew"
                 "Illicit"
                 "Modification"
@@ -3973,12 +4007,15 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "G-1A Starfighter"
             skill: 1
-            points: 5
-            loadout: 3
+            points: 39
             keyword: ["Bounty Hunter"]
             slots: [
+                "Sensor"
+                "Crew"
+                "Crew"
                 "Illicit"
-
+                "Modification"
+                "Title"
             ]
         }
         {
@@ -3988,8 +4025,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "HWK-290 Light Freighter"
             skill: 3
-            points: 5
-            loadout: 10
+            points: 40
             slots: [
                 "Talent"
                 "Crew"
@@ -4009,14 +4045,13 @@ exportObj.basicCardData = ->
             skill: 4
             charge: 3
             recurring: 1
-            points: 5
-            loadout: 14
+            points: 29
             slots: [
                 "Talent"
                 "Crew"
                 "Device"
                 "Illicit"
-                "Illicit"
+                "Modification"
                 "Modification"
                 "Title"
             ]
@@ -4028,14 +4063,14 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "HWK-290 Light Freighter"
             skill: 2
-            points: 4
-            loadout: 10
+            points: 38
             slots: [
                 "Crew"
                 "Device"
                 "Illicit"
                 "Modification"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -4047,8 +4082,7 @@ exportObj.basicCardData = ->
             skill: 6
             charge: 1
             recurring: 1
-            points: 7
-            loadout: 22
+            points: 54
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
@@ -4069,17 +4103,16 @@ exportObj.basicCardData = ->
             ship: "JumpMaster 5000"
             skill: 4
             charge: 1
-            points: 6
-            loadout: 20
+            points: 44
             slots: [
                 "Talent"
-                "Cannon"
-                "Cannon"
                 "Torpedo"
+                "Cannon"
                 "Crew"
                 "Gunner"
                 "Illicit"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -4089,8 +4122,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "JumpMaster 5000"
             skill: 3
-            points: 5
-            loadout: 15
+            points: 45
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
@@ -4109,13 +4141,15 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "JumpMaster 5000"
             skill: 2
-            points: 5
-            loadout: 4
+            points: 41
             slots: [
                 "Torpedo"
                 "Cannon"
+                "Crew"
+                "Gunner"
                 "Illicit"
-
+                "Modification"
+                "Title"
             ]
         }
         {
@@ -4125,8 +4159,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Kihraxz Fighter"
             skill: 5
-            points: 5
-            loadout: 12
+            points: 48
             slots: [
                 "Talent"
                 "Missile"
@@ -4143,8 +4176,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Kihraxz Fighter"
             skill: 4
-            points: 4
-            loadout: 8
+            points: 44
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
@@ -4162,8 +4194,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Kihraxz Fighter"
             skill: 4
-            points: 4
-            loadout: 10
+            points: 42
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
@@ -4181,8 +4212,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Kihraxz Fighter"
             skill: 3
-            points: 4
-            loadout: 12
+            points: 41
             slots: [
                 "Missile"
                 "Illicit"
@@ -4197,10 +4227,14 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Kihraxz Fighter"
             skill: 3
-            points: 4
-            loadout: 3
+            points: 38
             slots: [
                 "Talent"
+                "Missile"
+                "Illicit"
+                "Illicit"
+                "Modification"
+                "Modification"
             ]
         }
         {
@@ -4209,10 +4243,13 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Kihraxz Fighter"
             skill: 2
-            points: 4
-            loadout: 7
+            points: 37
             slots: [
+                "Missile"
                 "Illicit"
+                "Illicit"
+                "Modification"
+                "Modification"
             ]
         }
         {
@@ -4222,17 +4259,16 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Lancer-Class Pursuit Craft"
             skill: 4
-            points: 8
-            loadout: 20
+            points: 66
             force: 2
             keyword: ["Bounty Hunter","Dark Side"]
             slots: [
                 "Force"
-                "Talent"
                 "Crew"
                 "Illicit"
                 "Illicit"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -4242,9 +4278,8 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Lancer-Class Pursuit Craft"
             skill: 5
-            points: 7
-            loadout: 15
-            keyword: ["Bounty Hunter","Mandalorian"]
+            points: 66
+            keyword: ["Bounty Hunter", "Mandalorian"]
             slots: [
                 "Talent"
                 "Crew"
@@ -4262,9 +4297,8 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Lancer-Class Pursuit Craft"
             skill: 3
-            points: 6
-            loadout: 9
-            keyword: ["Bounty Hunter","Mandalorian"]
+            points: 56
+            keyword: ["Bounty Hunter", "Mandalorian"]
             slots: [
                 "Talent"
                 "Crew"
@@ -4280,12 +4314,14 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Lancer-Class Pursuit Craft"
             skill: 2
-            points: 6
-            loadout: 6
+            points: 52
             keyword: ["Bounty Hunter"]
             slots: [
+                "Crew"
                 "Illicit"
                 "Illicit"
+                "Modification"
+                "Title"
             ]
         }
         {
@@ -4295,10 +4331,10 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "M12-L Kimogila Fighter"
             skill: 4
-            points: 5
-            loadout: 10
+            points: 47
             keyword: ["Bounty Hunter"]
             slots: [
+                "Talent"
                 "Talent"
                 "Torpedo"
                 "Missile"
@@ -4315,10 +4351,10 @@ exportObj.basicCardData = ->
             ship: "M12-L Kimogila Fighter"
             skill: 3
             charge: 2
-            points: 5
-            loadout: 12
+            points: 42
             keyword: ["Bounty Hunter"]
             slots: [
+                "Talent"
                 "Talent"
                 "Torpedo"
                 "Missile"
@@ -4333,10 +4369,15 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "M12-L Kimogila Fighter"
             skill: 3
-            points: 5
-            loadout: 3
+            points: 41
             slots: [
+                "Talent"
+                "Talent"
+                "Torpedo"
                 "Missile"
+                "Astromech"
+                "Illicit"
+                "Modification"
             ]
         }
         {
@@ -4346,12 +4387,9 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "M3-A Interceptor"
             skill: 5
-            points: 4
-            loadout: 12
+            points: 40
             slots: [
                 "Talent"
-                "Talent"
-                "Modification"
                 "Modification"
                 "HardpointShip"
             ]
@@ -4363,8 +4401,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "M3-A Interceptor"
             skill: 4
-            points: 4
-            loadout: 14
+            points: 31
             slots: [
                 "Talent"
                 "Modification"
@@ -4378,8 +4415,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "M3-A Interceptor"
             skill: 3
-            points: 3
-            loadout: 7
+            points: 30
             slots: [
                 "Talent"
                 "Modification"
@@ -4393,8 +4429,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "M3-A Interceptor"
             skill: 3
-            points: 3
-            loadout: 7
+            points: 28
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
@@ -4408,9 +4443,9 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "M3-A Interceptor"
             skill: 3
-            points: 3
-            loadout: 3
+            points: 28
             slots: [
+                "Talent"
                 "Modification"
                 "HardpointShip"
             ]
@@ -4422,8 +4457,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "M3-A Interceptor"
             skill: 2
-            points: 3
-            loadout: 6
+            points: 27
             slots: [
                 "Modification"
                 "HardpointShip"
@@ -4436,8 +4470,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "M3-A Interceptor"
             skill: 1
-            points: 3
-            loadout: 5
+            points: 27
             slots: [
                 "Modification"
                 "HardpointShip"
@@ -4449,8 +4482,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "M3-A Interceptor"
             skill: 1
-            points: 3
-            loadout: 4
+            points: 26
             slots: [
                 "Modification"
                 "HardpointShip"
@@ -4463,12 +4495,11 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Quadrijet Transfer Spacetug"
             skill: 4
-            points: 4
-            loadout: 13
+            points: 30
             slots: [
                 "Talent"
                 "Tech"
-                "Device"
+                "Crew"
                 "Device"
                 "Illicit"
                 "Modification"
@@ -4481,14 +4512,12 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Quadrijet Transfer Spacetug"
             skill: 2
-            points: 4
-            loadout: 6
+            points: 29
             keyword: ["Bounty Hunter"]
             slots: [
                 "Tech"
                 "Crew"
                 "Device"
-                "Illicit"
                 "Illicit"
                 "Modification"
             ]
@@ -4500,8 +4529,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Quadrijet Transfer Spacetug"
             skill: 2
-            points: 4
-            loadout: 7
+            points: 29
             slots: [
                 "Tech"
                 "Crew"
@@ -4516,12 +4544,13 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Quadrijet Transfer Spacetug"
             skill: 1
-            points: 4
-            loadout: 4
+            points: 28
             slots: [
+                "Tech"
+                "Crew"
                 "Device"
                 "Illicit"
-                "Illicit"
+                "Modification"
             ]
         }
         {
@@ -4533,8 +4562,7 @@ exportObj.basicCardData = ->
             skill: 5
             charge: 1
             recurring: 1
-            points: 6
-            loadout: 17
+            points: 46
             slots: [
                 "Talent"
                 "Turret"
@@ -4553,8 +4581,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Scurrg H-6 Bomber"
             skill: 3
-            points: 5
-            loadout: 12
+            points: 44
             slots: [
                 "Talent"
                 "Turret"
@@ -4563,6 +4590,7 @@ exportObj.basicCardData = ->
                 "Device"
                 "Device"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -4571,13 +4599,15 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Scurrg H-6 Bomber"
             skill: 2
-            points: 5
-            loadout: 7
+            points: 42
             slots: [
                 "Turret"
+                "Crew"
                 "Gunner"
                 "Device"
                 "Device"
+                "Modification"
+                "Title"
             ]
         }
         {
@@ -4587,8 +4617,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "StarViper-class Attack Platform"
             skill: 5
-            points: 7
-            loadout: 20
+            points: 59
             keyword: ["Droid"]
             slots: [
                 "Talent"
@@ -4605,8 +4634,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "StarViper-class Attack Platform"
             skill: 4
-            points: 5
-            loadout: 7
+            points: 46
             slots: [
                 "Talent"
                 "Tech"
@@ -4624,14 +4652,14 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "StarViper-class Attack Platform"
             skill: 4
-            points: 5
-            loadout: 10
+            points: 46
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
                 "Tech"
                 "Torpedo"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -4640,10 +4668,13 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "StarViper-class Attack Platform"
             skill: 3
-            points: 5
-            loadout: 6
+            points: 45
             slots: [
+                "Talent"
                 "Tech"
+                "Torpedo"
+                "Modification"
+                "Title"
             ]
         }
         {
@@ -4652,10 +4683,12 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "StarViper-class Attack Platform"
             skill: 2
-            points: 5
-            loadout: 6
+            points: 42
             slots: [
                 "Tech"
+                "Torpedo"
+                "Modification"
+                "Title"
             ]
         }
         {
@@ -4666,8 +4699,7 @@ exportObj.basicCardData = ->
             ship: "YV-666 Light Freighter"
             skill: 4
             charge: 2
-            points: 7
-            loadout: 20
+            points: 62
             slots: [
                 "Talent"
                 "Cannon"
@@ -4677,6 +4709,7 @@ exportObj.basicCardData = ->
                 "Gunner"
                 "Illicit"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -4686,8 +4719,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "YV-666 Light Freighter"
             skill: 4
-            points: 7
-            loadout: 22
+            points: 63
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
@@ -4708,8 +4740,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "YV-666 Light Freighter"
             skill: 3
-            points: 6
-            loadout: 16
+            points: 53
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
@@ -4729,12 +4760,16 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "YV-666 Light Freighter"
             skill: 2
-            points: 6
-            loadout: 6
+            points: 51
             slots: [
                 "Cannon"
                 "Missile"
+                "Crew"
+                "Crew"
+                "Gunner"
+                "Illicit"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -4744,13 +4779,12 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Z-95-AF4 Headhunter"
             skill: 4
-            points: 3
-            loadout: 7
+            points: 27
             slots: [
                 "Talent"
                 "Missile"
-                "Missile"
                 "Illicit"
+                "Modification"
             ]
         }
         {
@@ -4760,8 +4794,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Z-95-AF4 Headhunter"
             skill: 3
-            points: 3
-            loadout: 11
+            points: 22
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
@@ -4776,9 +4809,9 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Z-95-AF4 Headhunter"
             skill: 3
-            points: 3
-            loadout: 4
+            points: 23
             slots: [
+                "Talent"
                 "Missile"
                 "Illicit"
                 "Modification"
@@ -4790,10 +4823,11 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Z-95-AF4 Headhunter"
             skill: 1
-            points: 3
-            loadout: 2
+            points: 22
             slots: [
+                "Missile"
                 "Illicit"
+                "Modification"
             ]
         }
         {
@@ -4803,9 +4837,11 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Z-95-AF4 Headhunter"
             skill: "*"
-            points: 1
-            loadout: 0
+            points: 4
             slots: [
+                "Missile"
+                "Illicit"
+                "Modification"
             ]
             restrictions: [
                 ["Unique", "Hound's Tooth"]
@@ -4832,12 +4868,12 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "Alpha-Class Star Wing"
             skill: 4
-            points: 6
-            loadout: 21
+            points: 39
             slots: [
                 "Talent"
                 "Sensor"
                 "Torpedo"
+                "Missile"
                 "Modification"
                 "Configuration"
             ]
@@ -4849,11 +4885,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "Alpha-Class Star Wing"
             skill: 3
-            points: 5
-            loadout: 11
+            points: 33
             slots: [
                 "Talent"
                 "Sensor"
+                "Torpedo"
                 "Missile"
                 "Modification"
                 "Configuration"
@@ -4865,11 +4901,12 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "Alpha-Class Star Wing"
             skill: 3
-            points: 5
-            loadout: 9
+            points: 34
             slots: [
                 "Talent"
                 "Sensor"
+                "Torpedo"
+                "Missile"
                 "Modification"
                 "Configuration"
             ]
@@ -4880,11 +4917,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "Alpha-Class Star Wing"
             skill: 2
-            points: 5
-            loadout: 7
+            points: 32
             slots: [
                 "Sensor"
-                "Cannon"
+                "Torpedo"
+                "Missile"
                 "Modification"
                 "Configuration"
             ]
@@ -4896,8 +4933,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "Lambda-class T-4a Shuttle"
             skill: 4
-            points: 6
-            loadout: 22
+            points: 47
             slots: [
                 "Sensor"
                 "Cannon"
@@ -4914,8 +4950,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "Lambda-class T-4a Shuttle"
             skill: 3
-            points: 5
-            loadout: 14
+            points: 45
             slots: [
                 "Sensor"
                 "Cannon"
@@ -4933,12 +4968,11 @@ exportObj.basicCardData = ->
             ship: "Lambda-class T-4a Shuttle"
             skill: 3
             charge: 2
-            points: 6
-            loadout: 20
+            points: 49
             slots: [
                 "Sensor"
                 "Cannon"
-                "Cannon"
+                "Crew"
                 "Crew"
                 "Modification"
                 "Title"
@@ -4950,12 +4984,14 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "Lambda-class T-4a Shuttle"
             skill: 1
-            points: 5
-            loadout: 8
+            points: 41
             slots: [
                 "Sensor"
                 "Cannon"
+                "Crew"
+                "Crew"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -4965,14 +5001,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE Advanced v1"
             skill: 5
-            points: 6
-            loadout: 17
+            points: 52
             force: 2
             keyword: ["Dark Side"]
             slots: [
                 "Force"
-                "Force"
-                "Talent"
                 "Sensor"
                 "Missile"
             ]
@@ -4984,14 +5017,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE Advanced v1"
             skill: 4
-            points: 5
-            loadout: 14
+            points: 43
             force: 2
             keyword: ["Dark Side"]
             slots: [
                 "Force"
-                "Talent"
-                "Talent"
                 "Sensor"
                 "Missile"
             ]
@@ -5002,13 +5032,13 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE Advanced v1"
             skill: 3
-            points: 4
-            loadout: 5
+            points: 38
             force: 1
             keyword: ["Dark Side"]
             slots: [
                 "Force"
                 "Sensor"
+                "Missile"
             ]
         }
         {
@@ -5017,8 +5047,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE Advanced v1"
             skill: 3
-            points: 4
-            loadout: 4
+            points: 30
             slots: [
                 "Talent"
                 "Sensor"
@@ -5033,17 +5062,12 @@ exportObj.basicCardData = ->
             ship: "TIE Advanced x1"
             skill: 6
             keyword: ["Dark Side","Sith"]
-            points: 7
-            loadout: 21
+            points: 68
             force: 3
             slots: [
                 "Force"
-                "Force"
-                "Talent"
-                "Tech"
                 "Sensor"
                 "Missile"
-                "Modification"
                 "Modification"
             ]
         }
@@ -5054,10 +5078,8 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE Advanced x1"
             skill: 5
-            points: 5
-            loadout: 14
+            points: 44
             slots: [
-                "Talent"
                 "Talent"
                 "Sensor"
                 "Missile"
@@ -5071,8 +5093,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE Advanced x1"
             skill: 4
-            points: 4
-            loadout: 8
+            points: 42
             slots: [
                 "Talent"
                 "Sensor"
@@ -5087,8 +5108,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE Advanced x1"
             skill: 3
-            points: 4
-            loadout: 6
+            points: 39
             slots: [
                 "Sensor"
                 "Missile"
@@ -5101,11 +5121,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE Advanced x1"
             skill: 3
-            points: 4
-            loadout: 2
+            points: 37
             slots: [
                 "Talent"
                 "Sensor"
+                "Missile"
                 "Modification"
             ]
         }
@@ -5115,10 +5135,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE Advanced x1"
             skill: 2
-            points: 4
-            loadout: 4
+            points: 35
             slots: [
                 "Sensor"
+                "Missile"
                 "Modification"
             ]
         }
@@ -5129,11 +5149,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/in Interceptor"
             skill: 6
-            points: 6
-            loadout: 15
+            points: 56
             slots: [
                 "Talent"
-                "Talent"
+                "Modification"
                 "Modification"
                 "Configuration"
             ]
@@ -5145,11 +5164,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/in Interceptor"
             skill: 4
-            points: 4
-            loadout: 9
+            points: 39
             slots: [
                 "Talent"
-                "Talent"
+                "Modification"
                 "Modification"
                 "Configuration"
             ]
@@ -5160,10 +5178,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/in Interceptor"
             skill: 4
-            points: 4
-            loadout: 3
+            points: 37
             slots: [
                 "Talent"
+                "Modification"
+                "Modification"
                 "Configuration"
             ]
         }
@@ -5173,10 +5192,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/in Interceptor"
             skill: 1
-            points: 4
-            loadout: 2
+            points: 32
             slots: [
-                "Talent"
+                "Modification"
+                "Modification"
                 "Configuration"
             ]
         }
@@ -5187,8 +5206,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE Reaper"
             skill: 4
-            points: 5
-            loadout: 16
+            points: 48
             slots: [
                 "Talent"
                 "Crew"
@@ -5203,12 +5221,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE Reaper"
             skill: 3
-            points: 4
-            loadout: 9
+            points: 46
             slots: [
                 "Talent"
                 "Crew"
-                "Modification"
+                "Crew"
                 "Modification"
             ]
         }
@@ -5219,8 +5236,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE Reaper"
             skill: 2
-            points: 4
-            loadout: 12
+            points: 41
             slots: [
                 "Crew"
                 "Crew"
@@ -5233,9 +5249,9 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE Reaper"
             skill: 1
-            points: 4
-            loadout: 6
+            points: 38
             slots: [
+                "Crew"
                 "Crew"
                 "Modification"
             ]
@@ -5247,15 +5263,14 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ag Aggressor"
             skill: 4
-            points: 5
-            loadout: 19
+            points: 28
             slots: [
                 "Talent"
+                "Sensor"
                 "Turret"
                 "Missile"
                 "Missile"
                 "Gunner"
-                "Modification"
                 "Modification"
             ]
         }
@@ -5266,10 +5281,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ag Aggressor"
             skill: 2
-            points: 4
-            loadout: 13
+            points: 27
             slots: [
                 "Talent"
+                "Sensor"
                 "Turret"
                 "Missile"
                 "Missile"
@@ -5283,13 +5298,15 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ag Aggressor"
             skill: 3
-            points: 4
-            loadout: 12
+            points: 27
             slots: [
                 "Talent"
+                "Sensor"
                 "Turret"
                 "Missile"
+                "Missile"
                 "Gunner"
+                "Modification"
             ]
         }
         {
@@ -5298,10 +5315,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ag Aggressor"
             skill: 2
-            points: 4
-            loadout: 8
+            points: 26
             slots: [
+                "Sensor"
                 "Turret"
+                "Missile"
                 "Missile"
                 "Gunner"
                 "Modification"
@@ -5314,8 +5332,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ca Punisher"
             skill: 5
-            points: 7
-            loadout: 25
+            points: 50
             slots: [
                 "Sensor"
                 "Torpedo"
@@ -5323,7 +5340,7 @@ exportObj.basicCardData = ->
                 "Missile"
                 "Gunner"
                 "Device"
-                "Modification"
+                "Device"
                 "Modification"
             ]
         }
@@ -5334,12 +5351,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ca Punisher"
             skill: 4
-            points: 6
-            loadout: 20
+            points: 44
             slots: [
-                "Talent"
                 "Sensor"
                 "Torpedo"
+                "Missile"
                 "Missile"
                 "Gunner"
                 "Device"
@@ -5353,13 +5369,14 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ca Punisher"
             skill: 2
-            points: 5
-            loadout: 6
+            points: 34
             slots: [
                 "Sensor"
                 "Torpedo"
                 "Missile"
+                "Missile"
                 "Gunner"
+                "Device"
                 "Device"
                 "Modification"
             ]
@@ -5371,8 +5388,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/d Defender"
             skill: 4
-            points: 7
-            loadout: 10
+            points: 78
             slots: [
                 "Talent"
                 "Sensor"
@@ -5388,11 +5404,9 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/d Defender"
             skill: 4
-            points: 7
-            loadout: 12
+            points: 76
             slots: [
                 "Talent"
-                "Sensor"
                 "Sensor"
                 "Cannon"
                 "Missile"
@@ -5406,13 +5420,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/d Defender"
             skill: 5
-            points: 7
-            loadout: 13
+            points: 78
             slots: [
                 "Talent"
                 "Sensor"
                 "Cannon"
-                "Missile"
                 "Missile"
                 "Configuration"
             ]
@@ -5423,8 +5435,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/d Defender"
             skill: 4
-            points: 7
-            loadout: 6
+            points: 71
             slots: [
                 "Talent"
                 "Sensor"
@@ -5439,11 +5450,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/d Defender"
             skill: 1
-            points: 7
-            loadout: 4
+            points: 67
             slots: [
                 "Sensor"
                 "Cannon"
+                "Missile"
                 "Configuration"
             ]
         }
@@ -5454,13 +5465,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ph Phantom"
             skill: 5
-            points: 7
-            loadout: 15
+            points: 61
             slots: [
                 "Talent"
                 "Sensor"
                 "Gunner"
-                "Modification"
                 "Modification"
             ]
         }
@@ -5471,10 +5480,8 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ph Phantom"
             skill: 4
-            points: 6
-            loadout: 11
+            points: 51
             slots: [
-                "Talent"
                 "Talent"
                 "Sensor"
                 "Gunner"
@@ -5487,8 +5494,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ph Phantom"
             skill: 4
-            points: 6
-            loadout: 9
+            points: 48
             slots: [
                 "Talent"
                 "Sensor"
@@ -5502,8 +5508,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ph Phantom"
             skill: 3
-            points: 5
-            loadout: 6
+            points: 43
             slots: [
                 "Sensor"
                 "Gunner"
@@ -5517,8 +5522,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/sa Bomber"
             skill: 4
-            points: 5
-            loadout: 10
+            points: 44
             slots: [
                 "Talent"
                 "Torpedo"
@@ -5537,8 +5541,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/sa Bomber"
             skill: 4
-            points: 5
-            loadout: 12
+            points: 35
             slots: [
                 "Talent"
                 "Torpedo"
@@ -5557,11 +5560,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/sa Bomber"
             skill: 5
-            points: 4
-            loadout: 10
+            points: 34
             slots: [
                 "Talent"
-                "Talent"
+                "Torpedo"
                 "Missile"
                 "Missile"
                 "Gunner"
@@ -5577,13 +5579,13 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/sa Bomber"
             skill: 2
-            points: 4
-            loadout: 11
+            points: 29
             slots: [
                 "Torpedo"
-                "Torpedo"
+                "Missile"
                 "Missile"
                 "Gunner"
+                "Device"
                 "Device"
                 "Modification"
             ]
@@ -5594,10 +5596,12 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/sa Bomber"
             skill: 3
-            points: 4
-            loadout: 10
+            points: 29
             slots: [
+                "Talent"
                 "Torpedo"
+                "Missile"
+                "Missile"
                 "Gunner"
                 "Device"
                 "Device"
@@ -5610,9 +5614,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/sa Bomber"
             skill: 2
-            points: 4
-            loadout: 6
+            points: 27
             slots: [
+                "Torpedo"
+                "Missile"
                 "Missile"
                 "Gunner"
                 "Device"
@@ -5627,10 +5632,8 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/sk Striker"
             skill: 4
-            points: 4
-            loadout: 8
+            points: 40
             slots: [
-                "Talent"
                 "Talent"
                 "Gunner"
                 "Device"
@@ -5644,8 +5647,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/sk Striker"
             skill: 4
-            points: 4
-            loadout: 7
+            points: 42
             slots: [
                 "Talent"
                 "Gunner"
@@ -5660,10 +5662,8 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/sk Striker"
             skill: 5
-            points: 5
-            loadout: 15
+            points: 44
             slots: [
-                "Talent"
                 "Talent"
                 "Gunner"
                 "Device"
@@ -5676,12 +5676,12 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/sk Striker"
             skill: 3
-            points: 4
-            loadout: 5
+            points: 34
             slots: [
                 "Talent"
                 "Gunner"
                 "Device"
+                "Modification"
             ]
         }
         {
@@ -5690,8 +5690,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/sk Striker"
             skill: 1
-            points: 4
-            loadout: 4
+            points: 32
             slots: [
                 "Gunner"
                 "Device"
@@ -5705,8 +5704,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "VT-49 Decimator"
             skill: 5
-            points: 8
-            loadout: 26
+            points: 76
             slots: [
                 "Talent"
                 "Torpedo"
@@ -5726,12 +5724,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "VT-49 Decimator"
             skill: 3
-            points: 7
-            loadout: 19
+            points: 69
             slots: [
                 "Talent"
-                "Talent"
                 "Torpedo"
+                "Crew"
                 "Crew"
                 "Crew"
                 "Gunner"
@@ -5746,14 +5743,16 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "VT-49 Decimator"
             skill: 2
-            points: 7
-            loadout: 12
+            points: 67
             slots: [
                 "Torpedo"
+                "Crew"
+                "Crew"
                 "Crew"
                 "Gunner"
                 "Device"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -5763,10 +5762,8 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 5
-            points: 4
-            loadout: 8
+            points: 39
             slots: [
-                "Talent"
                 "Talent"
                 "Modification"
             ]
@@ -5779,13 +5776,9 @@ exportObj.basicCardData = ->
             ship: "TIE/ln Fighter"
             skill: 4
             charge: 1
-            points: 3
-            loadout: 8
+            points: 42
             slots: [
                 "Talent"
-                "Talent"
-                "Cannon"
-                "Missile"
                 "Modification"
             ]
         }
@@ -5796,11 +5789,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 5
-            points: 3
-            loadout: 4
+            points: 29
             slots: [
                 "Talent"
-                "Cannon"
+                "Modification"
             ]
         }
         {
@@ -5810,10 +5802,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 5
-            points: 3
-            loadout: 3
+            points: 28
             slots: [
                 "Talent"
+                "Modification"
             ]
         }
         {
@@ -5825,10 +5817,8 @@ exportObj.basicCardData = ->
             skill: 1
             recurring: 1
             charge: 1
-            points: 3
-            loadout: 5
+            points: 27
             slots: [
-                "Talent"
                 "Modification"
             ]
         }
@@ -5839,11 +5829,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 4
-            points: 3
-            loadout: 6
+            points: 27
             slots: [
                 "Talent"
-                "Cannon"
+                "Modification"
             ]
         }
         {
@@ -5853,12 +5842,9 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 4
-            points: 3
-            loadout: 8
+            points: 27
             slots: [
                 "Talent"
-                "Talent"
-                "Missile"
                 "Modification"
             ]
         }
@@ -5869,8 +5855,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 4
-            points: 3
-            loadout: 8
+            points: 27
             slots: [
                 "Talent"
                 "Modification"
@@ -5883,11 +5868,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 3
-            points: 3
-            loadout: 5
+            points: 23
             slots: [
                 "Talent"
-                "Talent"
+                "Modification"
             ]
         }
         {
@@ -5897,11 +5881,9 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 2
-            points: 3
-            loadout: 4
+            points: 22
             slots: [
-                "Talent"
-                "Talent"
+                "Modification"
             ]
         }
         {
@@ -5910,9 +5892,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 3
-            points: 2
-            loadout: 0
+            points: 24
             slots: [
+                "Talent"
+                "Modification"
             ]
         }
         {
@@ -5921,9 +5904,9 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 2
-            points: 2
-            loadout: 0
+            points: 23
             slots: [
+                "Modification"
             ]
         }
         {
@@ -5932,9 +5915,9 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 1
-            points: 2
-            loadout: 0
+            points: 22
             slots: [
+                "Modification"
             ]
         }
         {
@@ -5943,11 +5926,14 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "HWK-290 Light Freighter"
             skill: 1
-            points: 3
-            loadout: 4
+            points: 26
             slots: [
+                "Crew"
                 "Device"
                 "Illicit"
+                "Modification"
+                "Modification"
+                "Title"
             ]
         }
         {
@@ -5957,16 +5943,13 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 6
-            points: 7
-            loadout: 25
+            points: 64
             charge: 1
             recurring: 1
             slots: [
                 "Talent"
                 "Astromech"
                 "Tech"
-                "Torpedo"
-                "Modification"
                 "Modification"
                 "Configuration"
                 "Title"
@@ -5984,14 +5967,10 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/fo Fighter"
             skill: 6
-            points: 4
-            loadout: 15
+            points: 35
             slots: [
                 "Talent"
-                "Talent"
-                "Missile"
                 "Tech"
-                "Modification"
                 "Modification"
             ]
         }
@@ -6003,11 +5982,9 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/fo Fighter"
             skill: 3
-            points: 3
-            loadout: 3
+            points: 32
             slots: [
                 "Talent"
-                "Tech"
                 "Tech"
                 "Modification"
             ]
@@ -6019,9 +5996,9 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/fo Fighter"
             skill: 2
-            points: 3
-            loadout: 9
+            points: 29
             slots: [
+                "Talent"
                 "Tech"
                 "Modification"
             ]
@@ -6035,9 +6012,8 @@ exportObj.basicCardData = ->
             skill: 5
             force: 2
             keyword: ["Dark Side"]
-            points: 7
-            loadout: 16
-            applies_condition: '''I'll Show You the Dark Side'''.canonicalize()
+            points: 79
+            applies_condition: """I'll Show You the Dark Side""".canonicalize()
             slots: [
                 "Force"
                 "Tech"
@@ -6053,11 +6029,9 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/vn Silencer"
             skill: 5
-            points: 6
-            loadout: 20
+            points: 60
             slots: [
                 "Talent"
-                "Tech"
                 "Tech"
                 "Torpedo"
                 "Missile"
@@ -6071,17 +6045,15 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "Upsilon-Class Command Shuttle"
             skill: 2
-            points: 8
-            loadout: 20
+            points: 64
             slots: [
-                "Sensor"
-                "Sensor"
                 "Tech"
                 "Tech"
                 "Crew"
                 "Crew"
                 "Crew"
                 "Cannon"
+                "Sensor"
                 "Modification"
             ]
         }
@@ -6092,13 +6064,12 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "RZ-2 A-wing"
             skill: 5
-            points: 5
-            loadout: 16
+            points: 41
             slots: [
                 "Talent"
                 "Talent"
+                "Missile"
                 "Tech"
-                "Modification"
             ]
         }
         {
@@ -6110,15 +6081,12 @@ exportObj.basicCardData = ->
             skill: 5
             charge: 1
             recurring: 1
-            points: 5
-            loadout: 12
+            points: 38
             slots: [
                 "Talent"
                 "Talent"
-                "Talent"
-                "Torpedo"
+                "Missile"
                 "Tech"
-                "Modification"
             ]
         }
         {
@@ -6133,14 +6101,13 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/sf Fighter"
             skill: 4
-            points: 4
-            loadout: 12
+            points: 37
             slots: [
                 "Talent"
-                "Sensor"
                 "Tech"
                 "Missile"
                 "Gunner"
+                "Sensor"
                 "Modification"
             ]
         }
@@ -6153,12 +6120,11 @@ exportObj.basicCardData = ->
             skill: 6
             charge: 1
             recurring: 1
-            points: 6
-            loadout: 25
+            points: 43
             slots: [
                 "Talent"
-                "Talent"
                 "Tech"
+                "Missile"
                 "Gunner"
                 "Sensor"
                 "Modification"
@@ -6172,12 +6138,10 @@ exportObj.basicCardData = ->
             ship: "Scavenged YT-1300"
             keyword: ["Light Side"]
             skill: 5
-            points: 8
-            loadout: 25
+            points: 70
             force: 2
             slots: [
                 "Force"
-                "Talent"
                 "Missile"
                 "Crew"
                 "Crew"
@@ -6195,8 +6159,7 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "Scavenged YT-1300"
             skill: 6
-            points: 6
-            loadout: 15
+            points: 60
             slots: [
                 "Talent"
                 "Missile"
@@ -6204,9 +6167,8 @@ exportObj.basicCardData = ->
                 "Crew"
                 "Gunner"
                 "Illicit"
-                "Illicit"
                 "Modification"
-                "Modification"
+                "Title"
             ]
         }
         {
@@ -6217,16 +6179,13 @@ exportObj.basicCardData = ->
             xws: "chewbacca-scavengedyt1300"
             ship: "Scavenged YT-1300"
             skill: 4
-            points: 7
-            loadout: 18
+            points: 59
             slots: [
-                "Talent"
                 "Talent"
                 "Missile"
                 "Crew"
                 "Crew"
                 "Gunner"
-                "Illicit"
                 "Illicit"
                 "Modification"
                 "Title"
@@ -6241,12 +6200,9 @@ exportObj.basicCardData = ->
             skill: 3
             charge: 1
             recurring: 1
-            points: 4
-            loadout: 10
+            points: 28
             slots: [
                 "Talent"
-                "Cannon"
-                "Missile"
                 "Modification"
             ]
         }
@@ -6256,10 +6212,10 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Modified TIE/ln Fighter"
             skill: 2
-            points: 3
-            loadout: 1
+            points: 23
             slots: [
                 "Talent"
+                "Modification"
             ]
         }
         {
@@ -6269,12 +6225,9 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Modified TIE/ln Fighter"
             skill: 3
-            points: 3
-            loadout: 8
+            points: 27
             slots: [
                 "Talent"
-                "Illicit"
-                "Illicit"
                 "Modification"
             ]
         }
@@ -6285,12 +6238,10 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "MG-100 StarFortress"
             skill: 4
-            points: 6
-            loadout: 14
+            points: 52
             slots: [
                 "Sensor"
                 "Tech"
-                "Missile"
                 "Crew"
                 "Gunner"
                 "Gunner"
@@ -6306,8 +6257,7 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "Upsilon-Class Command Shuttle"
             skill: 4
-            points: 7
-            loadout: 13
+            points: 61
             slots: [
                 "Tech"
                 "Tech"
@@ -6326,15 +6276,14 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 4
-            points: 5
-            loadout: 10
+            points: 47
             slots: [
                 "Talent"
                 "Astromech"
                 "Tech"
-                "Cannon"
                 "Modification"
                 "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -6345,14 +6294,14 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 3
-            points: 5
-            loadout: 9
+            points: 45
             slots: [
                 "Talent"
                 "Astromech"
                 "Tech"
                 "Modification"
                 "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -6363,13 +6312,13 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 2
-            points: 5
-            loadout: 10
+            points: 48
             slots: [
                 "Astromech"
                 "Tech"
                 "Modification"
                 "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -6380,13 +6329,13 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 1
-            points: 5
-            loadout: 13
+            points: 45
             slots: [
                 "Astromech"
                 "Tech"
                 "Modification"
                 "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -6397,14 +6346,14 @@ exportObj.basicCardData = ->
             xws: "blacksquadronace-t70xwing"
             ship: "T-70 X-wing"
             skill: 4
-            points: 5
-            loadout: 10
+            points: 46
             slots: [
                 "Talent"
                 "Astromech"
                 "Tech"
                 "Modification"
                 "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -6414,14 +6363,14 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 3
-            points: 5
-            loadout: 2
+            points: 44
             slots: [
                 "Talent"
                 "Astromech"
                 "Tech"
                 "Modification"
                 "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -6431,13 +6380,13 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 1
-            points: 5
-            loadout: 4
+            points: 42
             slots: [
                 "Astromech"
                 "Tech"
                 "Modification"
                 "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -6447,13 +6396,13 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/sf Fighter"
             skill: 2
-            points: 4
-            loadout: 4
+            points: 32
             slots: [
-                "Talent"
                 "Tech"
+                "Missile"
                 "Gunner"
                 "Sensor"
+                "Modification"
             ]
         }
         {
@@ -6462,11 +6411,11 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "MG-100 StarFortress"
             skill: 1
-            points: 6
-            loadout: 11
+            points: 49
             slots: [
                 "Sensor"
                 "Tech"
+                "Crew"
                 "Gunner"
                 "Gunner"
                 "Device"
@@ -6481,8 +6430,7 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/fo Fighter"
             skill: 2
-            points: 3
-            loadout: 5
+            points: 28
             slots: [
                 "Tech"
                 "Modification"
@@ -6495,10 +6443,8 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/fo Fighter"
             skill: 4
-            points: 3
-            loadout: 8
+            points: 33
             slots: [
-                "Talent"
                 "Talent"
                 "Tech"
                 "Modification"
@@ -6511,11 +6457,9 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/fo Fighter"
             skill: 3
-            points: 3
-            loadout: 8
+            points: 30
             slots: [
                 "Talent"
-                "Tech"
                 "Tech"
                 "Modification"
             ]
@@ -6527,13 +6471,10 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/fo Fighter"
             skill: 4
-            points: 3
-            loadout: 8
+            points: 30
             slots: [
                 "Talent"
-                "Talent"
-                "Tech" 
-                "Cannon"
+                "Tech"
                 "Modification"
             ]
         }
@@ -6544,11 +6485,9 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/fo Fighter"
             skill: 1
-            points: 3
-            loadout: 4
-            slots: [ 
-                "Talent"
-                "Tech" 
+            points: 28
+            slots: [
+                "Tech"
                 "Modification"
             ]
         }
@@ -6559,13 +6498,10 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/fo Fighter"
             skill: 5
-            points: 3
-            loadout: 4
+            points: 34
             charge: 2
             slots: [
                 "Talent"
-                "Talent"
-                "Missile"
                 "Tech"
                 "Modification"
             ]
@@ -6576,12 +6512,10 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/fo Fighter"
             skill: 3
-            points: 3
-            loadout: 4
+            points: 28
             slots: [
                 "Talent"
                 "Tech"
-                "Modification"
                 "Modification"
             ]
         }
@@ -6591,8 +6525,7 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/fo Fighter"
             skill: 2
-            points: 3
-            loadout: 3
+            points: 27
             slots: [
                 "Tech"
                 "Modification"
@@ -6604,10 +6537,10 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/fo Fighter"
             skill: 1
-            points: 3
-            loadout: 2
+            points: 26
             slots: [
                 "Tech"
+                "Modification"
             ]
         }
         {
@@ -6617,13 +6550,12 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "RZ-2 A-wing"
             skill: 4
-            points: 4
-            loadout: 7
+            points: 36
             slots: [
+                "Talent"
                 "Talent"
                 "Missile"
                 "Tech"
-                "Modification"
             ]
         }
         {
@@ -6633,15 +6565,12 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "RZ-2 A-wing"
             skill: 3
-            points: 5
-            loadout: 11
+            points: 34
             slots: [
                 "Talent"
                 "Talent"
                 "Missile"
                 "Tech"
-                "Tech"
-                "Modification"
             ]
         }
         {
@@ -6653,10 +6582,8 @@ exportObj.basicCardData = ->
             skill: 5
             force: 3
             keyword: ["Dark Side","Sith"]
-            points: 8
-            loadout: 20
+            points: 62
             slots: [
-                "Force"
                 "Force"
                 "Cannon"
                 "Torpedo"
@@ -6676,16 +6603,13 @@ exportObj.basicCardData = ->
             ship: "Delta-7 Aethersprite"
             skill: 6
             force: 3
-            points: 6
-            loadout: 10
+            points: 55
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
-                "Force"
-                "Talent"
                 "Astromech"
-                "Modification"
                 "Configuration"
+                "Modification"
             ]
         }
         {
@@ -6696,14 +6620,13 @@ exportObj.basicCardData = ->
             ship: "Delta-7 Aethersprite"
             skill: 4
             force: 2
-            points: 4
-            loadout: 7
+            points: 39
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
                 "Astromech"
-                "Modification"
                 "Configuration"
+                "Modification"
             ]
         }
         {
@@ -6714,14 +6637,13 @@ exportObj.basicCardData = ->
             ship: "Delta-7 Aethersprite"
             skill: 4
             force: 1
-            points: 4
-            loadout: 9
+            points: 35
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
                 "Astromech"
-                "Modification"
                 "Configuration"
+                "Modification"
             ]
         }
         {
@@ -6732,14 +6654,13 @@ exportObj.basicCardData = ->
             ship: "Delta-7 Aethersprite"
             skill: 3
             force: 2
-            points: 4
-            loadout: 7
+            points: 38
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
                 "Astromech"
-                "Modification"
                 "Configuration"
+                "Modification"
             ]
         }
         {
@@ -6749,8 +6670,7 @@ exportObj.basicCardData = ->
             ship: "Delta-7 Aethersprite"
             skill: 3
             force: 1
-            points: 4
-            loadout: 3
+            points: 35
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
@@ -6767,16 +6687,12 @@ exportObj.basicCardData = ->
             ship: "Delta-7 Aethersprite"
             skill: 5
             force: 3
-            points: 5
-            loadout: 10
+            points: 48
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
-                "Force"
-                "Talent"
                 "Astromech"
                 "Configuration"
-                "Modification"
                 "Modification"
             ]
         }
@@ -6786,10 +6702,10 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Vulture-class Droid Fighter"
             skill: 1
-            points: 2
-            loadout: 0
+            points: 21
             keyword: ["Droid"]
             slots: [
+                "Missile"
                 "Configuration"
                 "Modification"
             ]
@@ -6801,14 +6717,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "ARC-170 Starfighter"
             skill: 3
-            points: 6
-            loadout: 18
+            points: 51
             keyword: ["Clone"]
             slots: [
-                "Talent"
                 "Torpedo"
                 "Crew"
-                "Gunner"
                 "Gunner"
                 "Astromech"
                 "Modification"
@@ -6821,8 +6734,7 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "Upsilon-Class Command Shuttle"
             skill: 1
-            points: 7
-            loadout: 14
+            points: 59
             charge: 1
             recurring: 1
             slots: [
@@ -6831,7 +6743,6 @@ exportObj.basicCardData = ->
                 "Crew"
                 "Crew"
                 "Crew"
-                "Cannon"
                 "Cannon"
                 "Sensor"
                 "Modification"
@@ -6844,11 +6755,9 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "Upsilon-Class Command Shuttle"
             skill: 4
-            points: 7
-            loadout: 12
+            points: 60
             charge: 2
             slots: [
-                "Talent"
                 "Tech"
                 "Tech"
                 "Crew"
@@ -6866,8 +6775,7 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/vn Silencer"
             skill: 3
-            points: 5
-            loadout: 6
+            points: 55
             slots: [
                 "Talent"
                 "Tech"
@@ -6883,8 +6791,7 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/vn Silencer"
             skill: 4
-            points: 5
-            loadout: 6
+            points: 55
             slots: [
                 "Talent"
                 "Tech"
@@ -6899,9 +6806,9 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/sf Fighter"
             skill: 3
-            points: 4
-            loadout: 10
+            points: 33
             slots: [
+                "Talent"
                 "Tech"
                 "Missile"
                 "Gunner"
@@ -6915,13 +6822,11 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/vn Silencer"
             skill: 1
-            points: 5
-            loadout: 5
+            points: 49
             slots: [
                 "Tech"
                 "Torpedo"
                 "Missile"
-                "Modification"
                 "Configuration"
             ]
         }
@@ -6931,8 +6836,7 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/vn Silencer"
             skill: 4
-            points: 5
-            loadout: 5
+            points: 55
             slots: [
                 "Talent"
                 "Tech"
@@ -6947,11 +6851,11 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "Upsilon-Class Command Shuttle"
             skill: 2
-            points: 7
-            loadout: 8
+            points: 58
             slots: [
                 "Tech"
                 "Tech"
+                "Crew"
                 "Crew"
                 "Crew"
                 "Cannon"
@@ -6968,11 +6872,11 @@ exportObj.basicCardData = ->
             skill: 3
             charge: 2
             recurring: 1
-            points: 8
-            loadout: 17
+            points: 64
             slots: [
                 "Tech"
                 "Tech"
+                "Crew"
                 "Crew"
                 "Crew"
                 "Cannon"
@@ -6987,13 +6891,10 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/fo Fighter"
             skill: 0
-            points: 3
-            loadout: 5
+            points: 29
             slots: [
-                "Talent"
-                "Talent"
                 "Tech"
-                "Tech"
+                "Modification"
             ]
         }
         {
@@ -7003,10 +6904,8 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "MG-100 StarFortress"
             skill: 1
-            points: 5
-            loadout: 7
+            points: 50
             slots: [
-                "Talent"
                 "Sensor"
                 "Tech"
                 "Crew"
@@ -7024,11 +6923,9 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "MG-100 StarFortress"
             skill: 3
-            points: 5
-            loadout: 9
+            points: 51
             slots: [
                 "Sensor"
-                "Tech"
                 "Tech"
                 "Crew"
                 "Gunner"
@@ -7046,12 +6943,10 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "MG-100 StarFortress"
             skill: 3
-            points: 6
-            loadout: 14
+            points: 52
             slots: [
                 "Sensor"
                 "Tech"
-                "Cannon"
                 "Crew"
                 "Gunner"
                 "Gunner"
@@ -7067,11 +6962,10 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "MG-100 StarFortress"
             skill: 2
-            points: 6
-            loadout: 14
+            points: 51
             slots: [
                 "Sensor"
-                "Torpedo"
+                "Tech"
                 "Crew"
                 "Gunner"
                 "Gunner"
@@ -7086,14 +6980,15 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "Scavenged YT-1300"
             skill: 2
-            points: 6
-            loadout: 10
+            points: 55
             slots: [
-                "Talent"
                 "Missile"
+                "Crew"
+                "Crew"
                 "Gunner"
+                "Illicit"
                 "Modification"
-                "Modification"
+                "Title"
             ]
         }
         {
@@ -7103,15 +6998,15 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 3
-            points: 5
-            loadout: 11
+            points: 51
             charge: 1
             recurring: 1
             slots: [
-                "Tech"
                 "Astromech"
+                "Tech"
                 "Modification"
                 "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -7122,15 +7017,14 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 4
-            points: 5
-            loadout: 11
+            points: 46
             slots: [
                 "Talent"
-                "Tech"
                 "Astromech"
-                "Modification"
+                "Tech"
                 "Modification"
                 "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -7141,15 +7035,14 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 5
-            points: 5
-            loadout: 10
+            points: 56
             slots: [
                 "Talent"
-                "Tech"
-                "Missile"
                 "Astromech"
+                "Tech"
                 "Modification"
                 "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -7160,15 +7053,14 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 5
-            points: 5
-            loadout: 11
+            points: 53
             slots: [
                 "Talent"
-                "Talent"
-                "Tech"
                 "Astromech"
+                "Tech"
                 "Modification"
                 "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -7178,11 +7070,11 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "RZ-2 A-wing"
             skill: 3
-            points: 4
-            loadout: 2
+            points: 33
             slots: [
                 "Talent"
                 "Talent"
+                "Missile"
                 "Tech"
             ]
         }
@@ -7192,10 +7084,10 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "RZ-2 A-wing"
             skill: 1
-            points: 4
-            loadout: 4
+            points: 32
             slots: [
                 "Talent"
+                "Missile"
                 "Tech"
             ]
         }
@@ -7206,10 +7098,8 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Modified TIE/ln Fighter"
             skill: 4
-            points: 3
-            loadout: 6
+            points: 27
             slots: [
-                "Talent"
                 "Talent"
                 "Modification"
             ]
@@ -7221,12 +7111,10 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Modified TIE/ln Fighter"
             skill: 2
-            loadout: 6
             charge: 1
             recurring: 1
-            points: 3
+            points: 22
             slots: [
-                "Talent"
                 "Modification"
             ]
         }
@@ -7236,10 +7124,9 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Modified TIE/ln Fighter"
             skill: 1
-            points: 3
-            loadout: 3
+            points: 22
             slots: [
-                "Illicit"
+                "Modification"
             ]
         }
         {
@@ -7249,12 +7136,10 @@ exportObj.basicCardData = ->
             ship: "Belbullab-22 Starfighter"
             unique: true
             skill: 4
-            points: 5
-            loadout: 12
+            points: 44
             slots: [
                 "Talent"
-                "Missile"
-                "Modification"
+                "Tactical Relay"
                 "Modification"
                 "Title"
             ]
@@ -7266,13 +7151,12 @@ exportObj.basicCardData = ->
             ship: "Belbullab-22 Starfighter"
             unique: true
             skill: 3
-            points: 4
-            loadout: 7
+            points: 40
             slots: [
                 "Talent"
                 "Tactical Relay"
                 "Modification"
-                "Modification"
+                "Title"
             ]
         }
         {
@@ -7281,12 +7165,12 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Belbullab-22 Starfighter"
             skill: 1
-            points: 4
-            loadout: 5
+            points: 34
             keyword: ["Droid"]
             slots: [
                 "Tactical Relay"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -7296,12 +7180,11 @@ exportObj.basicCardData = ->
             ship: "Belbullab-22 Starfighter"
             unique: true
             skill: 2
-            points: 5
-            loadout: 15
+            points: 44
             slots: [
                 "Tactical Relay"
                 "Modification"
-                "Modification"
+                "Title"
             ]
         }
         {
@@ -7310,12 +7193,11 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Vulture-class Droid Fighter"
             skill: 3
-            points: 3
-            loadout: 8
+            points: 23
             max_per_squad: 3
             keyword: ["Droid"]
             slots: [
-                "Cannon"
+                "Missile"
                 "Configuration"
                 "Modification"
             ]
@@ -7326,14 +7208,13 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Vulture-class Droid Fighter"
             skill: 1
-            points: 2
-            loadout: 4
+            points: 22
             max_per_squad: 2
             keyword: ["Droid"]
             slots: [
                 "Missile"
-                "Modification"
                 "Configuration"
+                "Modification"
             ]
         }
         {
@@ -7342,14 +7223,13 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Vulture-class Droid Fighter"
             skill: 3
-            points: 2
-            loadout: 7
+            points: 22
             unique: true
             keyword: ["Droid"]
             slots: [
                 "Missile"
-                "Modification"
                 "Configuration"
+                "Modification"
             ]
         }
         {
@@ -7360,15 +7240,13 @@ exportObj.basicCardData = ->
             ship: "Delta-7 Aethersprite"
             skill: 5
             force: 2
-            points: 5
-            loadout: 8
+            points: 45
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
-                "Talent"
                 "Astromech"
-                "Modification"
                 "Configuration"
+                "Modification"
             ]
         }
         {
@@ -7379,14 +7257,13 @@ exportObj.basicCardData = ->
             ship: "Delta-7 Aethersprite"
             skill: 4
             force: 2
-            points: 4
-            loadout: 8
+            points: 39
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
                 "Astromech"
-                "Modification"
                 "Configuration"
+                "Modification"
             ]
         }
         {
@@ -7397,15 +7274,13 @@ exportObj.basicCardData = ->
             ship: "Delta-7 Aethersprite"
             skill: 4
             force: 3
-            points: 4
-            loadout: 7
+            points: 42
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
-                "Force"
                 "Astromech"
-                "Modification"
                 "Configuration"
+                "Modification"
             ]
         }
         {
@@ -7415,8 +7290,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "V-19 Torrent Starfighter"
             skill: 4
-            points: 3
-            loadout: 8
+            points: 27
             keyword: ["Clone"]
             slots: [
                 "Talent"
@@ -7431,12 +7305,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "V-19 Torrent Starfighter"
             skill: 5
-            points: 4
-            loadout: 16
+            points: 29
             keyword: ["Clone"]
             slots: [
                 "Talent"
-                "Torpedo"
                 "Missile"
                 "Modification"
             ]
@@ -7448,12 +7320,9 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "V-19 Torrent Starfighter"
             skill: 3
-            points: 4
-            loadout: 13
+            points: 26
             keyword: ["Clone"]
             slots: [
-                "Talent"
-                "Missile"
                 "Missile"
                 "Modification"
             ]
@@ -7465,8 +7334,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "V-19 Torrent Starfighter"
             skill: 3
-            points: 3
-            loadout: 8
+            points: 26
             keyword: ["Clone"]
             slots: [
                 "Talent"
@@ -7481,12 +7349,9 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "V-19 Torrent Starfighter"
             skill: 2
-            points: 4
-            loadout: 13
+            points: 25
             keyword: ["Clone"]
             slots: [
-                "Talent"
-                "Missile"
                 "Missile"
                 "Modification"
             ]
@@ -7497,10 +7362,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "V-19 Torrent Starfighter"
             skill: 3
-            points: 4
-            loadout: 4
+            points: 26
             keyword: ["Clone"]
             slots: [
+                "Talent"
                 "Missile"
                 "Modification"
             ]
@@ -7511,11 +7376,9 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "V-19 Torrent Starfighter"
             skill: 2
-            points: 4
-            loadout: 6
+            points: 25
             keyword: ["Clone"]
             slots: [
-                "Talent"
                 "Missile"
                 "Modification"
             ]
@@ -7530,8 +7393,7 @@ exportObj.basicCardData = ->
             ship: "Naboo Royal N-1 Starfighter"
             skill: 4
             force: 1
-            points: 5
-            loadout: 20
+            points: 41
             keyword: ["Light Side"]
             slots: [
                 "Talent"
@@ -7546,8 +7408,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Naboo Royal N-1 Starfighter"
             skill: 2
-            points: 4
-            loadout: 8
+            points: 28
             slots: [
                 "Sensor"
                 "Astromech"
@@ -7560,11 +7421,11 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Hyena-class Droid Bomber"
             skill: 1
-            points: 3
-            loadout: 6
+            points: 26
             keyword: ["Droid"]
             slots: [
                 "Torpedo"
+                "Missile"
                 "Device"
                 "Modification"
                 "Configuration"
@@ -7578,9 +7439,9 @@ exportObj.basicCardData = ->
             skill: 3
             max_per_squad: 3
             keyword: ["Droid"]
-            points: 3
-            loadout: 8
+            points: 31
             slots: [
+                "Sensor"
                 "Device"
                 "Device"
                 "Modification"
@@ -7594,8 +7455,7 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Hyena-class Droid Bomber"
             skill: 4
-            points: 4
-            loadout: 10
+            points: 31
             keyword: ["Droid"]
             slots: [
                 "Torpedo"
@@ -7611,10 +7471,10 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Hyena-class Droid Bomber"
             skill: 3
-            points: 3
-            loadout: 4
+            points: 28
             keyword: ["Droid"]
             slots: [
+                "Torpedo"
                 "Missile"
                 "Device"
                 "Modification"
@@ -7628,8 +7488,7 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Hyena-class Droid Bomber"
             skill: 3
-            points: 4
-            loadout: 16
+            points: 37
             keyword: ["Droid"]
             slots: [
                 "Sensor"
@@ -7653,8 +7512,7 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Hyena-class Droid Bomber"
             skill: 1
-            points: 3
-            loadout: 9
+            points: 26
             keyword: ["Droid"]
             slots: [
                 "Sensor"
@@ -7671,13 +7529,13 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Naboo Royal N-1 Starfighter"
             skill: 1
-            points: 4
-            loadout: 8
+            points: 31
             applies_condition: '''Decoyed'''.canonicalize()
             slots: [
+                "Talent"
                 "Sensor"
                 "Astromech"
-                "Modification"
+                "Torpedo"
             ]
         }
         {
@@ -7688,9 +7546,9 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Naboo Royal N-1 Starfighter"
             skill: 3
-            points: 4
-            loadout: 14
+            points: 31
             slots: [
+                "Talent"
                 "Talent"
                 "Sensor"
                 "Astromech"
@@ -7705,9 +7563,9 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Naboo Royal N-1 Starfighter"
             skill: 4
-            points: 5
-            loadout: 22
+            points: 35
             slots: [
+                "Talent"
                 "Talent"
                 "Sensor"
                 "Astromech"
@@ -7722,9 +7580,9 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Naboo Royal N-1 Starfighter"
             skill: 5
-            points: 5
-            loadout: 15
+            points: 44
             slots: [
+                "Talent"
                 "Talent"
                 "Sensor"
                 "Astromech"
@@ -7739,9 +7597,8 @@ exportObj.basicCardData = ->
             ship: "Sith Infiltrator"
             skill: 3
             force: 3
-            points: 7
-            loadout: 24
             keyword: ["Dark Side","Sith"]
+            points: 60
             slots: [
                 "Force"
                 "Cannon"
@@ -7761,16 +7618,18 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Sith Infiltrator"
             skill: 3
-            points: 6
-            loadout: 16
+            points: 46
             keyword: ["Droid"]
             slots: [
                 "Talent"
                 "Cannon"
                 "Torpedo"
                 "Crew"
+                "Crew"
                 "Device"
                 "Modification"
+                "Title"
+                "Tactical Relay"
             ]
         }
         {
@@ -7779,13 +7638,16 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Sith Infiltrator"
             skill: 2
-            points: 6
-            loadout: 9
+            points: 45
             slots: [
                 "Cannon"
                 "Torpedo"
+                "Crew"
+                "Crew"
                 "Device"
                 "Modification"
+                "Title"
+                "Tactical Relay"
             ]
         }
         {
@@ -7794,15 +7656,13 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Vulture-class Droid Fighter"
             skill: 1
-            points: 3
-            loadout: 10
+            points: 23
             unique: true
             keyword: ["Droid"]
             slots: [
                 "Missile"
-                "Modification"
-                "Modification"
                 "Configuration"
+                "Modification"
             ]
         }
         {
@@ -7814,15 +7674,12 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "ARC-170 Starfighter"
             skill: 5
-            points: 5
-            loadout: 15
+            points: 48
             keyword: ["Clone"]
             slots: [
                 "Talent"
-                "Sensor"
                 "Torpedo"
-                "Torpedo"
-                "Gunner"
+                "Crew"
                 "Gunner"
                 "Astromech"
                 "Modification"
@@ -7835,16 +7692,13 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "ARC-170 Starfighter"
             skill: 3
-            points: 5
-            loadout: 14
+            points: 47
             keyword: ["Clone"]
             slots: [
-                "Talent"
                 "Torpedo"
-                "Gunner"
+                "Crew"
                 "Gunner"
                 "Astromech"
-                "Modification"
                 "Modification"
             ]
         }
@@ -7854,12 +7708,12 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "ARC-170 Starfighter"
             skill: 3
-            points: 5
-            loadout: 10
+            points: 44
             keyword: ["Clone"]
             slots: [
                 "Talent"
-                "Gunner"
+                "Torpedo"
+                "Crew"
                 "Gunner"
                 "Astromech"
                 "Modification"
@@ -7871,12 +7725,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "ARC-170 Starfighter"
             skill: 2
-            points: 5
-            loadout: 8
+            points: 42
             keyword: ["Clone"]
             slots: [
                 "Torpedo"
-                "Gunner"
+                "Crew"
                 "Gunner"
                 "Astromech"
                 "Modification"
@@ -7890,13 +7743,12 @@ exportObj.basicCardData = ->
             ship: "ARC-170 Starfighter"
             skill: 4
             charge: 1
-            points: 5
-            loadout: 12
+            points: 49
             keyword: ["Clone"]
             slots: [
                 "Talent"
                 "Torpedo"
-                "Gunner"
+                "Crew"
                 "Gunner"
                 "Astromech"
                 "Modification"
@@ -7908,8 +7760,7 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Vulture-class Droid Fighter"
             skill: 3
-            points: 2
-            loadout: 3
+            points: 22
             keyword: ["Droid"]
             slots: [
                 "Missile"
@@ -7923,12 +7774,12 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Belbullab-22 Starfighter"
             skill: 3
-            points: 4
-            loadout: 4
+            points: 38
             slots: [
                 "Talent"
+                "Tactical Relay"
                 "Modification"
-                "Modification"
+                "Title"
             ]
         }
         {
@@ -7938,13 +7789,11 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "Resistance Transport Pod"
             skill: 3
-            points: 3
-            loadout: 8
+            points: 26
             slots: [
                 "Talent"
                 "Tech"
                 "Crew"
-                "Modification"
                 "Modification"
             ]
         }
@@ -7954,13 +7803,16 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "Resistance Transport"
             skill: 1
-            points: 4
-            loadout: 6
+            points: 30
             slots: [
+                "Tech"
                 "Cannon"
+                "Cannon"
+                "Torpedo"
+                "Crew"
                 "Crew"
                 "Astromech"
-                "Astromech"
+                "Modification"
             ]
         }
         {
@@ -7970,11 +7822,9 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "Resistance Transport"
             skill: 3
-            points: 4
-            loadout: 12
+            points: 31
             slots: [
                 "Tech"
-                "Sensor"
                 "Cannon"
                 "Cannon"
                 "Torpedo"
@@ -7991,8 +7841,7 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "Resistance Transport Pod"
             skill: 1
-            points: 3
-            loadout: 6
+            points: 24
             applies_condition: '''Compromising Intel'''.canonicalize()
             slots: [
                 "Tech"
@@ -8007,11 +7856,10 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "Resistance Transport Pod"
             skill: 3
-            points: 2
-            loadout: 4
+            points: 23
             keyword: ["Droid"]
             slots: [
-                "Tech"
+                "Talent"
                 "Tech"
                 "Crew"
                 "Modification"
@@ -8024,10 +7872,8 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "Resistance Transport Pod"
             skill: 2
-            points: 3
-            loadout: 12
+            points: 31
             slots: [
-                "Talent"
                 "Talent"
                 "Tech"
                 "Crew"
@@ -8041,8 +7887,7 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "Resistance Transport"
             skill: 4
-            points: 5
-            loadout: 20
+            points: 38
             slots: [
                 "Talent"
                 "Tech"
@@ -8062,14 +7907,13 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "Resistance Transport"
             skill: 2
-            points: 5
-            loadout: 20
+            points: 33
             slots: [
                 "Tech"
                 "Cannon"
                 "Cannon"
                 "Torpedo"
-                "Missile"
+                "Crew"
                 "Crew"
                 "Astromech"
                 "Modification"
@@ -8081,8 +7925,7 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Nantex-Class Starfighter"
             skill: 3
-            points: 4
-            loadout: 4
+            points: 33
             slots: [
                 "Talent"
             ]
@@ -8093,8 +7936,7 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Nantex-Class Starfighter"
             skill: 4
-            points: 4
-            loadout: 6
+            points: 36
             slots: [
                 "Talent"
                 "Talent"
@@ -8107,8 +7949,7 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Nantex-Class Starfighter"
             skill: 2
-            points: 4
-            loadout: 9
+            points: 29
             slots: [
                 "Talent"
                 "Modification"
@@ -8121,8 +7962,7 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Nantex-Class Starfighter"
             skill: 4
-            points: 5
-            loadout: 15
+            points: 36
             slots: [
                 "Talent"
                 "Talent"
@@ -8135,13 +7975,10 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Nantex-Class Starfighter"
             skill: 6
-            points: 6
-            loadout: 18
+            points: 42
             slots: [
                 "Talent"
                 "Talent"
-                "Talent"
-                "Modification"
             ]
         }
         {
@@ -8151,8 +7988,7 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Nantex-Class Starfighter"
             skill: 5
-            points: 4
-            loadout: 7
+            points: 36
             slots: [
                 "Talent"
                 "Talent"
@@ -8168,8 +8004,7 @@ exportObj.basicCardData = ->
             ship: "BTL-B Y-wing"
             skill: 6
             force: 3
-            points: 6
-            loadout: 23
+            points: 48
             keyword: ["Jedi", "Light Side"]
             slots: [
                 "Force"
@@ -8187,10 +8022,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "BTL-B Y-wing"
             skill: 3
-            points: 4
-            loadout: 4
+            points: 31
             keyword: ["Clone"]
             slots: [
+                "Talent"
                 "Turret"
                 "Torpedo"
                 "Gunner"
@@ -8205,8 +8040,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "BTL-B Y-wing"
             skill: 2
-            points: 4
-            loadout: 6
+            points: 30
             keyword: ["Clone"]
             slots: [
                 "Turret"
@@ -8214,6 +8048,7 @@ exportObj.basicCardData = ->
                 "Gunner"
                 "Astromech"
                 "Device"
+                "Modification"
             ]
         }
         {
@@ -8223,16 +8058,14 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "BTL-B Y-wing"
             skill: 2
-            points: 4
-            loadout: 14
+            points: 31
             keyword: ["Droid"]
             slots: [
-                "Sensor"
+                "Talent"
                 "Turret"
                 "Torpedo"
                 "Gunner"
                 "Crew"
-                "Device"
                 "Device"
                 "Modification"
             ]
@@ -8244,16 +8077,13 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "BTL-B Y-wing"
             skill: 2
-            points: 4
-            loadout: 12
+            points: 29
             keyword: ["Clone"]
             slots: [
-                "Talent"
                 "Turret"
+                "Torpedo"
                 "Gunner"
                 "Astromech"
-                "Device"
-                "Device"
                 "Device"
                 "Modification"
             ]
@@ -8265,8 +8095,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "BTL-B Y-wing"
             skill: 3
-            points: 4
-            loadout: 13
+            points: 35
             keyword: ["Clone"]
             slots: [
                 "Talent"
@@ -8285,8 +8114,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "BTL-B Y-wing"
             skill: 4
-            points: 5
-            loadout: 18
+            points: 39
             keyword: ["Clone"]
             slots: [
                 "Talent"
@@ -8307,16 +8135,15 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "BTL-B Y-wing"
             skill: 5
-            points: 4
-            loadout: 15
+            points: 37
             keyword: ["Clone"]
             slots: [
                 "Talent"
                 "Turret"
                 "Torpedo"
-                "Torpedo"
                 "Gunner"
                 "Astromech"
+                "Device"
                 "Modification"
             ]
         }
@@ -8327,8 +8154,7 @@ exportObj.basicCardData = ->
             ship: "CR90 Corellian Corvette"
             skill: 8
             engagement: 0
-            points: 0
-            loadout: 99
+            points: 128
             slots: [
                 "Command"
                 "Hardpoint"
@@ -8339,6 +8165,7 @@ exportObj.basicCardData = ->
                 "Team"
                 "Team"
                 "Cargo"
+                "Title"
             ]
         }
         {
@@ -8348,8 +8175,7 @@ exportObj.basicCardData = ->
             ship: "CR90 Corellian Corvette"
             skill: 8
             engagement: 0
-            points: 0
-            loadout: 99
+            points: 128
             slots: [
                 "Command"
                 "Hardpoint"
@@ -8370,8 +8196,7 @@ exportObj.basicCardData = ->
             ship: "Raider-class Corvette"
             skill: 8
             engagement: 0
-            points: 0
-            loadout: 99
+            points: 134
             slots: [
                 "Command"
                 "Torpedo"
@@ -8393,8 +8218,7 @@ exportObj.basicCardData = ->
             ship: "Raider-class Corvette"
             skill: 8
             engagement: 0
-            points: 0
-            loadout: 99
+            points: 131
             slots: [
                 "Command"
                 "Torpedo"
@@ -8415,8 +8239,7 @@ exportObj.basicCardData = ->
             ship: "GR-75 Medium Transport"
             skill: 7
             engagement: 1
-            points: 0
-            loadout: 99
+            points: 62
             slots: [
                 "Command"
                 "Hardpoint"
@@ -8436,8 +8259,7 @@ exportObj.basicCardData = ->
             ship: "GR-75 Medium Transport"
             skill: 7
             engagement: 1
-            points: 0
-            loadout: 99
+            points: 62
             slots: [
                 "Command"
                 "Hardpoint"
@@ -8456,8 +8278,7 @@ exportObj.basicCardData = ->
             ship: "Gozanti-class Cruiser"
             skill: 7
             engagement: 1
-            points: 0
-            loadout: 99
+            points: 66
             slots: [
                 "Command"
                 "Hardpoint"
@@ -8477,8 +8298,7 @@ exportObj.basicCardData = ->
             ship: "Gozanti-class Cruiser"
             skill: 7
             engagement: 1
-            points: 0
-            loadout: 99
+            points: 66
             slots: [
                 "Command"
                 "Hardpoint"
@@ -8497,8 +8317,7 @@ exportObj.basicCardData = ->
             ship: "C-ROC Cruiser"
             skill: 7
             engagement: 1
-            points: 0
-            loadout: 99
+            points: 63
             slots: [
                 "Command"
                 "Hardpoint"
@@ -8518,8 +8337,7 @@ exportObj.basicCardData = ->
             ship: "C-ROC Cruiser"
             skill: 7
             engagement: 1
-            points: 0
-            loadout: 99
+            points: 63
             slots: [
                 "Command"
                 "Hardpoint"
@@ -8540,10 +8358,8 @@ exportObj.basicCardData = ->
             unique: true
             ship: "Fireball"
             skill: 5
-            points: 3
-            loadout: 9
+            points: 30
             slots: [
-                "Talent"
                 "Talent"
                 "Missile"
                 "Astromech"
@@ -8560,8 +8376,7 @@ exportObj.basicCardData = ->
             unique: true
             ship: "Fireball"
             skill: 4
-            points: 4
-            loadout: 14
+            points: 38
             slots: [
                 "Talent"
                 "Missile"
@@ -8579,12 +8394,13 @@ exportObj.basicCardData = ->
             unique: true
             ship: "Fireball"
             skill: 1
-            points: 3
-            loadout: 8
+            points: 24
             keyword: ["Droid"]
             slots: [
                 "Missile"
                 "Crew"
+                "Illicit"
+                "Modification"
                 "Modification"
                 "Title"
             ]
@@ -8595,11 +8411,14 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "Fireball"
             skill: 2
-            points: 3
-            loadout: 5
+            points: 26
             slots: [
                 "Missile"
+                "Astromech"
+                "Illicit"
                 "Modification"
+                "Modification"
+                "Title"
             ]
         }
         {
@@ -8609,14 +8428,11 @@ exportObj.basicCardData = ->
             unique: true
             skill: 6
             ship: "TIE/ba Interceptor"
-            points: 6
-            loadout: 18
+            points: 54
             slots: [
-                "Talent"
                 "Talent"
                 "Tech"
                 "Missile"
-                "Modification"
                 "Modification"
             ]
         }
@@ -8627,13 +8443,11 @@ exportObj.basicCardData = ->
             unique: true
             skill: 5
             ship: "TIE/ba Interceptor"
-            points: 5
-            loadout: 12
+            points: 52
             slots: [
                 "Talent"
                 "Tech"
                 "Missile"
-                "Modification"
                 "Modification"
             ]
         }
@@ -8644,10 +8458,8 @@ exportObj.basicCardData = ->
             unique: true
             skill: 4
             ship: "TIE/ba Interceptor"
-            points: 4
-            loadout: 7
+            points: 44
             slots: [
-                "Talent"
                 "Talent"
                 "Tech"
                 "Missile"
@@ -8660,11 +8472,11 @@ exportObj.basicCardData = ->
             faction: "First Order"
             skill: 3
             ship: "TIE/ba Interceptor"
-            points: 5
-            loadout: 3
+            points: 41
             slots: [
                 "Talent"
                 "Tech"
+                "Missile"
                 "Modification"
             ]
         }
@@ -8675,15 +8487,13 @@ exportObj.basicCardData = ->
             unique: true
             skill: 4
             ship: "TIE/sf Fighter"
-            points: 4
-            loadout: 14
+            points: 34
             slots: [
                 "Talent"
-                "Sensor"
                 "Tech"
                 "Missile"
                 "Gunner"
-                "Modification"
+                "Sensor"
                 "Modification"
             ]
         }
@@ -8694,12 +8504,10 @@ exportObj.basicCardData = ->
             unique: true
             skill: 2
             ship: "TIE/vn Silencer"
-            points: 5
-            loadout: 7
+            points: 57
             slots: [
-                "Talent"
-                "Talent"
                 "Tech"
+                "Torpedo"
                 "Missile"
                 "Configuration"
             ]
@@ -8713,14 +8521,12 @@ exportObj.basicCardData = ->
             charge: 1
             recurring: 1
             ship: "RZ-2 A-wing"
-            points: 5
-            loadout: 15
+            points: 44
             slots: [
                 "Talent"
                 "Talent"
                 "Missile"
                 "Tech"
-                "Modification"
             ]
         }
         {
@@ -8730,13 +8536,11 @@ exportObj.basicCardData = ->
             unique: true
             skill: 2
             ship: "RZ-2 A-wing"
-            points: 4
-            loadout: 8
+            points: 33
             slots: [
                 "Talent"
                 "Missile"
                 "Tech"
-                "Modification"
             ]
         }
         {
@@ -8746,8 +8550,7 @@ exportObj.basicCardData = ->
             unique: true
             skill: 5
             ship: "MG-100 StarFortress"
-            points: 6
-            loadout: 15
+            points: 53
             charge: 1
             recurring: 1
             slots: [
@@ -8755,6 +8558,7 @@ exportObj.basicCardData = ->
                 "Sensor"
                 "Tech"
                 "Crew"
+                "Gunner"
                 "Gunner"
                 "Device"
                 "Device"
@@ -8768,10 +8572,10 @@ exportObj.basicCardData = ->
             unique: true
             skill: 3
             ship: "UT-60D U-wing"
-            points: 5
-            loadout: 10
+            points: 46
             keyword: ["Droid"]
             slots: [
+                "Talent"
                 "Sensor"
                 "Crew"
                 "Crew"
@@ -8786,17 +8590,16 @@ exportObj.basicCardData = ->
             unique: true
             skill: 5
             ship: "A/SF-01 B-wing"
-            points: 5
-            loadout: 16
+            points: 47
             slots: [
                 "Talent"
                 "Sensor"
                 "Cannon"
                 "Cannon"
                 "Torpedo"
-                "Device"
                 "Modification"
                 "Configuration"
+                "Title"
             ]
         }
         {
@@ -8806,8 +8609,7 @@ exportObj.basicCardData = ->
             unique: true
             skill: 4
             ship: "VCX-100 Light Freighter"
-            points: 7
-            loadout: 16
+            points: 68
             keyword: ["Spectre"]
             slots: [
                 "Talent"
@@ -8829,8 +8631,7 @@ exportObj.basicCardData = ->
             skill: 5
             ship: "Modified YT-1300 Light Freighter"
             keyword: ["Light Side"]
-            points: 8
-            loadout: 24
+            points: 74
             force: 1
             slots: [
                 "Force"
@@ -8851,14 +8652,12 @@ exportObj.basicCardData = ->
             skill: 4
             keyword: ["Dark Side"]
             ship: "TIE Advanced v1"
-            points: 5
-            loadout: 10
+            points: 44
             force: 2
             slots: [
                 "Force"
-                "Talent"
                 "Sensor"
-                "Cannon"
+                "Missile"
             ]
         }
         {
@@ -8868,12 +8667,10 @@ exportObj.basicCardData = ->
             unique: true
             skill: 2
             ship: "TIE/sk Striker"
-            points: 4
-            loadout: 10
+            points: 32
             slots: [
                 "Talent"
                 "Gunner"
-                "Device"
                 "Device"
                 "Modification"
             ]
@@ -8885,17 +8682,16 @@ exportObj.basicCardData = ->
             unique: true
             skill: 4
             ship: "VT-49 Decimator"
-            points: 7
-            loadout: 22
+            points: 70
             charge: 3
             slots: [
                 "Talent"
                 "Torpedo"
                 "Crew"
                 "Crew"
+                "Crew"
                 "Gunner"
                 "Device"
-                "Modification"
                 "Modification"
                 "Title"
             ]
@@ -8907,12 +8703,10 @@ exportObj.basicCardData = ->
             unique: true
             skill: 5
             ship: "TIE/sf Fighter"
-            points: 5
-            loadout: 18
+            points: 37
             slots: [
                 "Talent"
                 "Tech"
-                "Missile"
                 "Missile"
                 "Gunner"
                 "Sensor"
@@ -8928,12 +8722,10 @@ exportObj.basicCardData = ->
             unique: true
             skill: 4
             ship: "Z-95-AF4 Headhunter"
-            points: 3
-            loadout: 10
+            points: 25
             keyword: ["Bounty Hunter"]
             chassis: "Pursuit Craft"
             slots: [
-                "Talent"
                 "Talent"
                 "Missile"
                 "Illicit"
@@ -8947,8 +8739,7 @@ exportObj.basicCardData = ->
             unique: true
             skill: 0
             ship: "M3-A Interceptor"
-            points: 3
-            loadout: 6
+            points: 25
             keyword: ["Droid"]
             slots: [
                 "Modification"
@@ -8962,17 +8753,16 @@ exportObj.basicCardData = ->
             unique: true
             skill: 1
             ship: "JumpMaster 5000"
-            points: 5
-            loadout: 11
+            points: 39
             keyword: ["Bounty Hunter"]
             slots: [
-                "Cannon"
-                "Cannon"
                 "Torpedo"
+                "Cannon"
                 "Crew"
                 "Gunner"
                 "Illicit"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -8981,11 +8771,11 @@ exportObj.basicCardData = ->
             faction: "First Order"
             skill: 2
             ship: "Xi-class Light Shuttle"
-            points: 4
-            loadout: 10
+            points: 32
             slots: [
                 "Tech"
                 "Tech"
+                "Crew"
                 "Crew"
                 "Modification"
             ]
@@ -8997,12 +8787,12 @@ exportObj.basicCardData = ->
             unique: true
             skill: 3
             ship: "Xi-class Light Shuttle"
-            points: 4
-            loadout: 13
+            points: 35
             slots: [
                 "Talent"
                 "Tech"
                 "Tech"
+                "Crew"
                 "Crew"
                 "Illicit"
                 "Illicit"
@@ -9019,10 +8809,8 @@ exportObj.basicCardData = ->
             unique: true
             skill: 4
             ship: "Xi-class Light Shuttle"
-            points: 4
-            loadout: 15
+            points: 40
             slots: [
-                "Talent"
                 "Talent"
                 "Tech"
                 "Tech"
@@ -9040,15 +8828,13 @@ exportObj.basicCardData = ->
             unique: true
             skill: 5
             ship: "Xi-class Light Shuttle"
-            points: 4
-            loadout: 15
+            points: 44
             slots: [
                 "Talent"
                 "Tech"
                 "Tech"
                 "Crew"
                 "Crew"
-                "Modification"
                 "Modification"
             ]
         }
@@ -9058,11 +8844,13 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             skill: 1
             ship: "HMP Droid Gunship"
-            points: 5
-            loadout: 10
+            points: 37
             keyword: ["Droid"]
             slots: [
                 "Missile"
+                "Missile"
+                "Tactical Relay"
+                "Crew"
                 "Device"
                 "Modification"
                 "Configuration"
@@ -9074,9 +8862,12 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             skill: "*"
             ship: "Syliure-class Hyperspace Ring"
-            points: 2
+            points: 4
             slots: [
                 "Hyperdrive"
+            ]
+            autoequip: [
+                "Syliure-31 Hyperdrive"
             ]
         }
         {
@@ -9085,12 +8876,13 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             skill: 3
             ship: "HMP Droid Gunship"
-            points: 5
-            loadout: 8
+            points: 38
             keyword: ["Droid"]
             slots: [
                 "Missile"
                 "Missile"
+                "Tactical Relay"
+                "Crew"
                 "Device"
                 "Modification"
                 "Configuration"
@@ -9103,8 +8895,7 @@ exportObj.basicCardData = ->
             skill: 2
             max_per_squad: 2
             ship: "HMP Droid Gunship"
-            points: 5
-            loadout: 18
+            points: 38
             keyword: ["Droid"]
             slots: [
                 "Missile"
@@ -9123,8 +8914,7 @@ exportObj.basicCardData = ->
             skill: 1
             unique: true
             ship: "HMP Droid Gunship"
-            points: 5
-            loadout: 14
+            points: 38
             keyword: ["Droid"]
             slots: [
                 "Missile"
@@ -9143,12 +8933,11 @@ exportObj.basicCardData = ->
             skill: 3
             unique: true
             ship: "HMP Droid Gunship"
-            points: 5
-            loadout: 20
+            points: 39
             keyword: ["Droid"]
             slots: [
-                "Torpedo"
-                "Torpedo"
+                "Missile"
+                "Missile"
                 "Tactical Relay"
                 "Crew"
                 "Device"
@@ -9163,11 +8952,12 @@ exportObj.basicCardData = ->
             skill: 3
             max_per_squad: 2
             ship: "HMP Droid Gunship"
-            points: 4
-            loadout: 7
+            points: 39
             keyword: ["Droid"]
             slots: [
                 "Missile"
+                "Missile"
+                "Tactical Relay"
                 "Crew"
                 "Device"
                 "Modification"
@@ -9182,8 +8972,7 @@ exportObj.basicCardData = ->
             charge: 2
             recurring: 1
             ship: "LAAT/i Gunship"
-            points: 5
-            loadout: 7
+            points: 46
             keyword: ["Clone"]
             slots: [
                 "Missile"
@@ -9204,11 +8993,10 @@ exportObj.basicCardData = ->
             charge: 2
             recurring: 1
             ship: "LAAT/i Gunship"
-            points: 6
-            loadout: 20
+            points: 47
             keyword: ["Clone"]
             slots: [
-                "Sensor"
+                "Talent"
                 "Missile"
                 "Missile"
                 "Crew"
@@ -9227,12 +9015,10 @@ exportObj.basicCardData = ->
             charge: 2
             recurring: 1
             ship: "LAAT/i Gunship"
-            points: 6
-            loadout: 18
+            points: 51
             keyword: ["Clone"]
             slots: [
-                "Talent"
-                "Torpedo"
+                "Missile"
                 "Missile"
                 "Crew"
                 "Crew"
@@ -9250,8 +9036,7 @@ exportObj.basicCardData = ->
             recurring: 1
             unique: true
             ship: "LAAT/i Gunship"
-            points: 5
-            loadout: 12
+            points: 50
             keyword: ["Clone"]
             slots: [
                 "Talent"
@@ -9270,11 +9055,12 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             skill: 1
             ship: "TIE/rb Heavy"
-            points: 5
-            loadout: 8
+            points: 32
             slots: [
                 "Cannon"
                 "Cannon"
+                "Modification"
+                "Modification"
                 "Configuration"
             ]
         }
@@ -9284,11 +9070,12 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             skill: 3
             ship: "TIE/rb Heavy"
-            points: 5
-            loadout: 7
+            points: 35
             slots: [
+                "Talent"
                 "Cannon"
                 "Cannon"
+                "Modification"
                 "Modification"
                 "Configuration"
             ]
@@ -9300,13 +9087,11 @@ exportObj.basicCardData = ->
             skill: 3
             unique: true
             ship: "TIE/rb Heavy"
-            points: 5
-            loadout: 14
+            points: 37
             slots: [
-                "Sensor"
                 "Cannon"
                 "Cannon"
-                "Gunner"
+                "Modification"
                 "Modification"
                 "Configuration"
             ]
@@ -9318,13 +9103,12 @@ exportObj.basicCardData = ->
             skill: 4
             unique: true
             ship: "TIE/rb Heavy"
-            points: 5
-            loadout: 16
+            points: 37
             slots: [
                 "Talent"
                 "Cannon"
                 "Cannon"
-                "Gunner"
+                "Modification"
                 "Modification"
                 "Configuration"
             ]
@@ -9336,13 +9120,11 @@ exportObj.basicCardData = ->
             max_per_squad: 3
             skill: 3
             ship: "Droid Tri-fighter"
-            points: 4
-            loadout: 16
+            points: 35
             slots: [
                 "Talent"
                 "Sensor"
                 "Missile"
-                "Modification"
                 "Modification"
                 "Configuration"
             ]
@@ -9355,13 +9137,11 @@ exportObj.basicCardData = ->
             skill: 3
             unique: true
             ship: "Droid Tri-fighter"
-            points: 4
-            loadout: 14
+            points: 36
             slots: [
                 "Talent"
                 "Sensor"
                 "Missile"
-                "Modification"
                 "Modification"
                 "Configuration"
             ]
@@ -9373,13 +9153,11 @@ exportObj.basicCardData = ->
             skill: 4
             unique: true
             ship: "Droid Tri-fighter"
-            points: 4
-            loadout: 12
+            points: 36
             slots: [
                 "Talent"
                 "Sensor"
-                "Cannon"
-                "Modification"
+                "Missile"
                 "Modification"
                 "Configuration"
             ]
@@ -9391,13 +9169,11 @@ exportObj.basicCardData = ->
             skill: 5
             max_per_squad: 2
             ship: "Droid Tri-fighter"
-            points: 4
-            loadout: 14
+            points: 38
             slots: [
                 "Talent"
                 "Sensor"
                 "Missile"
-                "Modification"
                 "Modification"
                 "Configuration"
             ]
@@ -9408,10 +9184,10 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             skill: 1
             ship: "Droid Tri-fighter"
-            points: 4
-            loadout: 4
+            points: 34
             slots: [
-                "Talent"
+                "Sensor"
+                "Missile"
                 "Modification"
                 "Configuration"
             ]
@@ -9422,10 +9198,10 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             skill: 3
             ship: "Droid Tri-fighter"
-            points: 4
-            loadout: 3
+            points: 35
             slots: [
                 "Talent"
+                "Sensor"
                 "Missile"
                 "Modification"
                 "Configuration"
@@ -9437,25 +9213,27 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             skill: 2
             ship: "Firespray-class Patrol Craft"
-            points: 7
-            loadout: 10
+            points: 62
             slots: [
                 "Cannon"
                 "Missile"
+                "Crew"
                 "Device"
+                "Illicit"
+                "Modification"
+                "Title"
             ]
         }
         {
             name: "Boba Fett (Separatist)"
             canonical_name: 'Boba Fett'.canonicalize()
-            xws: "bobafett-separatistalliance"
+            xws: "bobafett-firesprayclasspatrolcraft"
             id: 427
             faction: "Separatist Alliance"
             unique: true
             skill: 3
             ship: "Firespray-class Patrol Craft"
-            points: 7
-            loadout: 16
+            points: 68
             keyword: ["Bounty Hunter"]
             slots: [
                 "Cannon"
@@ -9475,8 +9253,7 @@ exportObj.basicCardData = ->
             skill: 5
             charge: 4
             ship: "Firespray-class Patrol Craft"
-            points: 9
-            loadout: 22
+            points: 83
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
@@ -9488,7 +9265,7 @@ exportObj.basicCardData = ->
                 "Modification"
                 "Title"
             ]
-            applies_condition: ['''You'd Better Mean Business'''.canonicalize(),'You Should Thank Me'.canonicalize()]
+            applies_condition: ["""You'd Better Mean Business""".canonicalize(),'You Should Thank Me'.canonicalize()]
         }
         {
             name: "Jango Fett"
@@ -9497,8 +9274,7 @@ exportObj.basicCardData = ->
             skill: 6
             unique: true
             ship: "Firespray-class Patrol Craft"
-            points: 8
-            loadout: 27
+            points: 78
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
@@ -9506,7 +9282,6 @@ exportObj.basicCardData = ->
                 "Missile"
                 "Crew"
                 "Device"
-                "Illicit"
                 "Illicit"
                 "Modification"
                 "Title"
@@ -9518,9 +9293,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             skill: 2
             ship: "Nimbus-class V-wing"
-            points: 3
-            loadout: 4
+            points: 26
+            keyword: ["TIE"]
             slots: [
+                "Astromech"
                 "Modification"
                 "Configuration"
             ]
@@ -9531,10 +9307,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             skill: 3
             ship: "Nimbus-class V-wing"
-            points: 3
-            loadout: 3
-            keyword: ["Clone"]
+            points: 28
+            keyword: ["Clone", "TIE"]
             slots: [
+                "Talent"
+                "Astromech"
                 "Modification"
                 "Configuration"
             ]
@@ -9546,11 +9323,10 @@ exportObj.basicCardData = ->
             skill: 3
             unique: true
             ship: "Nimbus-class V-wing"
-            points: 3
-            loadout: 8
+            points: 30
+            keyword: ["TIE"]
             slots: [
                 "Talent"
-                "Missile"
                 "Astromech"
                 "Modification"
                 "Configuration"
@@ -9563,11 +9339,10 @@ exportObj.basicCardData = ->
             skill: 4
             unique: true
             ship: "Nimbus-class V-wing"
-            points: 3
-            loadout: 8
+            points: 31
             charge: 1
             recurring: 1
-            keyword: ["Clone"]
+            keyword: ["Clone", "TIE"]
             slots: [
                 "Talent"
                 "Astromech"
@@ -9582,9 +9357,8 @@ exportObj.basicCardData = ->
             skill: 5
             unique: true
             ship: "Nimbus-class V-wing"
-            points: 3
-            loadout: 11
-            keyword: ["Clone"]
+            points: 32
+            keyword: ["Clone", "TIE"]
             slots: [
                 "Talent"
                 "Astromech"
@@ -9593,7 +9367,7 @@ exportObj.basicCardData = ->
             ]
         }
         {
-            name: '"Odd Ball" (V-wing)'
+            name: '"Odd Ball" (V-Wing)'
             canonical_name: '"Oddball"'.canonicalize()
             xws: "oddball-nimbusclassvwing"
             id: 435
@@ -9601,12 +9375,10 @@ exportObj.basicCardData = ->
             skill: 5
             unique: true
             ship: "Nimbus-class V-wing"
-            points: 4
-            loadout: 12
-            keyword: ["Clone"]
+            points: 31
+            keyword: ["Clone", "TIE"]
             slots: [
                 "Talent"
-                "Torpedo"
                 "Astromech"
                 "Modification"
                 "Configuration"
@@ -9618,13 +9390,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             skill: 4
             ship: "Eta-2 Actis"
-            points: 5
-            loadout: 4
+            points: 41
             force: 2
             keyword: ["Jedi", "Light Side"]
             slots: [
                 "Force"
-                "Cannon"
                 "Astromech"
                 "Modification"
             ]
@@ -9636,14 +9406,12 @@ exportObj.basicCardData = ->
             skill: 3
             unique: true
             ship: "Eta-2 Actis"
-            points: 5
-            loadout: 16
+            points: 44
             force: 3
             keyword: ["Jedi", "Light Side"]
             slots: [
                 "Force"
                 "Force"
-                "Cannon"
                 "Astromech"
                 "Modification"
             ]
@@ -9655,15 +9423,12 @@ exportObj.basicCardData = ->
             skill: 4
             unique: true
             ship: "Eta-2 Actis"
-            points: 5
-            loadout: 18
+            points: 45
             force: 2
             keyword: ["Jedi", "Light Side"]
             slots: [
                 "Force"
-                "Force"
                 "Talent"
-                "Cannon"
                 "Astromech"
                 "Modification"
             ]
@@ -9675,15 +9440,12 @@ exportObj.basicCardData = ->
             skill: 5
             unique: true
             ship: "Eta-2 Actis"
-            points: 5
-            loadout: 15
+            points: 48
             force: 2
             keyword: ["Jedi", "Light Side"]
             slots: [
                 "Force"
-                "Force"
                 "Talent"
-                "Cannon"
                 "Astromech"
                 "Modification"
             ]
@@ -9698,14 +9460,11 @@ exportObj.basicCardData = ->
             unique: true
             ship: "Eta-2 Actis"
             force: 3
-            points: 5
-            loadout: 15
+            points: 49
             keyword: ["Jedi", "Light Side"]
             slots: [
                 "Force"
-                "Force"
                 "Talent"
-                "Cannon"
                 "Astromech"
                 "Modification"
             ]
@@ -9720,14 +9479,11 @@ exportObj.basicCardData = ->
             unique: true
             force: 3
             ship: "Eta-2 Actis"
-            points: 6
-            loadout: 20
+            points: 52
             keyword: ["Jedi", "Light Side", "Dark Side"]
             slots: [
                 "Force"
-                "Force"
                 "Talent"
-                "Cannon"
                 "Astromech"
                 "Modification"
             ]
@@ -9741,18 +9497,16 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 6
-            points: 6
-            loadout: 19
+            points: 57
             charge: 2
             recurring: 1
             slots: [
                 "Talent"
-                "Talent"
-                "Tech"
-                "Tech"
                 "Astromech"
+                "Tech"
                 "Modification"
                 "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -9765,15 +9519,14 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 4
-            points: 6
-            loadout: 17
+            points: 53
             slots: [
                 "Talent"
-                "Tech"
-                "Tech"
                 "Astromech"
+                "Tech"
                 "Modification"
                 "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -9784,13 +9537,11 @@ exportObj.basicCardData = ->
             unique: true
             skill: 1
             ship: "RZ-2 A-wing"
-            points: 4
-            loadout: 7
+            points: 34
             slots: [
                 "Talent"
                 "Missile"
                 "Tech"
-                "Modification"
             ]
         }
         {
@@ -9800,14 +9551,12 @@ exportObj.basicCardData = ->
             unique: true
             skill: 3
             ship: "RZ-2 A-wing"
-            points: 4
-            loadout: 10
+            points: 34
             slots: [
                 "Talent"
                 "Talent"
-                "Cannon"
+                "Missile"
                 "Tech"
-                "Modification"
             ]
         }
         {
@@ -9817,13 +9566,12 @@ exportObj.basicCardData = ->
             unique: true
             skill: 4
             ship: "RZ-2 A-wing"
-            points: 4
-            loadout: 7
+            points: 35
             slots: [
+                "Talent"
                 "Talent"
                 "Missile"
                 "Tech"
-                "Modification"
             ]
         }
         {
@@ -9833,14 +9581,12 @@ exportObj.basicCardData = ->
             unique: true
             skill: 5
             ship: "RZ-2 A-wing"
-            points: 4
-            loadout: 5
+            points: 37
             slots: [
                 "Talent"
                 "Talent"
                 "Missile"
                 "Tech"
-                "Modification"
             ]
         }
         {
@@ -9850,13 +9596,13 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 2
-            points: 5
-            loadout: 10
+            points: 48
             slots: [
                 "Astromech"
                 "Tech"
                 "Modification"
                 "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -9867,14 +9613,14 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 4
-            points: 5
-            loadout: 13
+            points: 47
             slots: [
                 "Talent"
                 "Astromech"
                 "Tech"
                 "Modification"
                 "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -9888,16 +9634,13 @@ exportObj.basicCardData = ->
             keyword: ["Spectre"]
             ship: "A/SF-01 B-wing"
             skill: 6
-            points: 6
-            loadout: 20
+            points: 50
             slots: [
                 "Talent"
                 "Sensor"
                 "Cannon"
                 "Cannon"
                 "Torpedo"
-                "Missile"
-                "Device"
                 "Modification"
                 "Configuration"
                 "Title"
@@ -9913,15 +9656,12 @@ exportObj.basicCardData = ->
             ship: "RZ-1 A-wing"
             keyword: ["Spectre"]
             skill: 6
-            points: 5
-            loadout: 14
+            points: 48
             slots: [
                 "Talent"
                 "Talent"
-                "Sensor"
                 "Missile"
                 "Configuration"
-                "Modification"
             ]
         }
         {
@@ -9933,13 +9673,11 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "RZ-1 A-wing"
             skill: 4
-            points: 4
-            loadout: 10
+            points: 38
             slots: [
                 "Talent"
                 "Talent"
                 "Missile"
-                "Modification"
                 "Configuration"
             ]
         }
@@ -9953,12 +9691,11 @@ exportObj.basicCardData = ->
             keyword: ["Mandalorian"]
             ship: "RZ-1 A-wing"
             skill: 3
-            points: 4
-            loadout: 11
+            points: 35
             slots: [
                 "Talent"
-                "Torpedo"
-                "Modification"
+                "Talent"
+                "Missile"
                 "Configuration"
             ]
         }
@@ -9971,10 +9708,8 @@ exportObj.basicCardData = ->
             skill: 5
             charge: 1
             recurring: -1
-            points: 7
-            loadout: 13
+            points: 76
             slots: [
-                "Talent"
                 "Talent"
                 "Sensor"
                 "Cannon"
@@ -9989,11 +9724,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/in Interceptor"
             skill: 6
-            points: 5
-            loadout: 10
+            points: 47
             slots: [
                 "Talent"
-                "Talent"
+                "Modification"
                 "Modification"
                 "Configuration"
             ]
@@ -10007,12 +9741,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/in Interceptor"
             skill: 4
-            points: 5
-            loadout: 12
+            points: 46
             slots: [
                 "Talent"
-                "Talent"
-                "Missile"
+                "Modification"
                 "Modification"
                 "Configuration"
             ]
@@ -10028,8 +9760,7 @@ exportObj.basicCardData = ->
             ship: "HWK-290 Light Freighter"
             skill: 3
             force: 1
-            points: 4
-            loadout: 10
+            points: 40
             slots: [
                 "Force"
                 "Crew"
@@ -10037,6 +9768,7 @@ exportObj.basicCardData = ->
                 "Illicit"
                 "Modification"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -10046,8 +9778,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "BTL-A4 Y-wing"
             skill: 5
-            points: 4
-            loadout: 14
+            points: 37
             slots: [
                 "Talent"
                 "Tech"
@@ -10065,8 +9796,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "BTL-A4 Y-wing"
             skill: 4
-            points: 4
-            loadout: 13
+            points: 35
             slots: [
                 "Talent"
                 "Tech"
@@ -10084,8 +9814,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "BTL-A4 Y-wing"
             skill: 3
-            points: 4
-            loadout: 10
+            points: 32
             slots: [
                 "Talent"
                 "Tech"
@@ -10094,7 +9823,6 @@ exportObj.basicCardData = ->
                 "Missile"
                 "Astromech"
                 "Device"
-                "Modification"
             ]
         }
         {
@@ -10104,9 +9832,9 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "RZ-1 A-wing"
             skill: 3
-            points: 3
-            loadout: 6
+            points: 30
             slots: [
+                "Talent"
                 "Talent"
                 "Missile"
                 "Configuration"
@@ -10121,9 +9849,9 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "RZ-1 A-wing"
             skill: 4
-            points: 4
-            loadout: 7
+            points: 32
             slots: [
+                "Talent"
                 "Talent"
                 "Missile"
                 "Configuration"
@@ -10140,14 +9868,11 @@ exportObj.basicCardData = ->
             keyword: ["Light Side"]
             skill: 5
             force: 3
-            points: 5
-            loadout: 12
+            points: 50
             slots: [
                 "Force"
                 "Force"
-                "Talent"
                 "Missile"
-                "Modification"
                 "Configuration"
             ]
         }
@@ -10158,17 +9883,16 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "A/SF-01 B-wing"
             skill: 3
-            points: 5
-            loadout: 18
+            points: 42
             slots: [
                 "Talent"
                 "Sensor"
                 "Cannon"
                 "Cannon"
-                "Missile"
-                "Device"
+                "Torpedo"
                 "Modification"
                 "Configuration"
+                "Title"
             ]
         }
         {
@@ -10178,10 +9902,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/in Interceptor"
             skill: 4
-            points: 4
-            loadout: 8
+            points: 43
             slots: [
                 "Talent"
+                "Modification"
                 "Modification"
                 "Configuration"
             ]
@@ -10195,10 +9919,10 @@ exportObj.basicCardData = ->
             skill: 2
             charge: 1
             recurring: 1
-            points: 4
-            loadout: 6
+            points: 41
             slots: [
-                "Missile"
+                "Talent"
+                "Modification"
                 "Modification"
                 "Configuration"
             ]
@@ -10210,10 +9934,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/in Interceptor"
             skill: 3
-            points: 4
-            loadout: 6
+            points: 37
             slots: [
                 "Talent"
+                "Modification"
                 "Modification"
                 "Configuration"
             ]
@@ -10229,10 +9953,10 @@ exportObj.basicCardData = ->
             skill: 5
             charge: 1
             recurring: -1
-            points: 4
-            loadout: 6
+            points: 44
             slots: [
                 "Talent"
+                "Modification"
                 "Modification"
                 "Configuration"
             ]
@@ -10248,12 +9972,9 @@ exportObj.basicCardData = ->
             keyword: ["Dark Side", "Sith"]
             skill: 6
             force: 3
-            points: 9
-            loadout: 14
+            points: 116
             slots: [
                 "Force"
-                "Talent"
-                "Tech"
                 "Cannon"
                 "Missile"            
                 "Configuration"
@@ -10266,8 +9987,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/d Defender"
             skill: 3
-            points: 7
-            loadout: 15
+            points: 71
             slots: [
                 "Talent"
                 "Sensor"
@@ -10282,12 +10002,13 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "BTL-A4 Y-wing"
             skill: 2
-            points: 4
-            loadout: 5
+            points: 29
             slots: [
+                "Tech"
                 "Turret"
                 "Torpedo"
                 "Missile"
+                "Astromech"
                 "Device"
             ]
         }
@@ -10297,9 +10018,10 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "BTL-A4 Y-wing"
             skill: 3
-            points: 4
-            loadout: 6
+            points: 31
             slots: [
+                "Talent"
+                "Tech"
                 "Turret"
                 "Torpedo"
                 "Missile"
@@ -10316,8 +10038,7 @@ exportObj.basicCardData = ->
             skill: 3
             charge: 2
             recurring: 1
-            points: 3
-            loadout: 8
+            points: 31
             slots: [
                 "Talent"
                 "Crew"
@@ -10325,6 +10046,7 @@ exportObj.basicCardData = ->
                 "Illicit"
                 "Modification"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -10337,8 +10059,7 @@ exportObj.basicCardData = ->
             skill: 5
             charge: 2
             recurring: 1
-            points: 4
-            loadout: 10
+            points: 33
             slots: [
                 "Talent"
                 "Crew"
@@ -10346,6 +10067,7 @@ exportObj.basicCardData = ->
                 "Illicit"
                 "Modification"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -10397,8 +10119,7 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "BTA-NR2 Y-wing"
             skill: 5
-            points: 5
-            loadout: 19
+            points: 38
             charge: 1
             recurring: 1
             slots: [
@@ -10419,8 +10140,7 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "BTA-NR2 Y-wing"
             skill: 4
-            points: 4
-            loadout: 12
+            points: 35
             slots: [
                 "Talent"
                 "Tech"
@@ -10439,13 +10159,11 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "BTA-NR2 Y-wing"
             skill: 4
-            points: 4
-            loadout: 12
+            points: 31
             slots: [
                 "Tech"
                 "Turret"
                 "Astromech"
-                "Device"
                 "Device"
                 "Modification"
                 "Modification"
@@ -10459,10 +10177,8 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "BTA-NR2 Y-wing"
             skill: 3
-            points: 4
-            loadout: 13
+            points: 32
             slots: [
-                "Talent"
                 "Tech"
                 "Turret"
                 "Astromech"
@@ -10479,13 +10195,11 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "BTA-NR2 Y-wing"
             skill: 3
-            points: 4
-            loadout: 14
+            points: 31
             slots: [
                 "Talent"
                 "Tech"
                 "Turret"
-                "Missile"
                 "Astromech"
                 "Device"
                 "Modification"
@@ -10500,15 +10214,14 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "BTA-NR2 Y-wing"
             skill: 2
-            points: 4
-            loadout: 13
+            points: 32
             slots: [
-                "Talent"
                 "Talent"
                 "Tech"
                 "Turret"
                 "Astromech"
                 "Device"
+                "Modification"
                 "Modification"
                 "Configuration"
             ]
@@ -10520,30 +10233,27 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "BTA-NR2 Y-wing"
             skill: 1
-            points: 4
-            loadout: 15
+            points: 31
             slots: [
                 "Tech"
                 "Turret"
                 "Astromech"
                 "Device"
                 "Modification"
-                "Modification"
                 "Illicit"
                 "Configuration"
             ]
         }
         {
-            name: "C'ai Threnalli (Y-Wing)"
-            canonical_name: '''C'ai Threnalli'''.canonicalize()
+            name: """C'ai Threnalli (Y-Wing)"""
+            canonical_name: """C'ai Threnalli""".canonicalize()
             xws: "caithrenalli-btanr2ywing"
             id: 484
             unique: true
             faction: "Resistance"
             ship: "BTA-NR2 Y-wing"
             skill: 2
-            points: 4
-            loadout: 10
+            points: 31
             slots: [
                 "Talent"
                 "Tech"
@@ -10561,14 +10271,14 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "BTA-NR2 Y-wing"
             skill: 3
-            points: 4
-            loadout: 7
+            points: 30
             slots: [
                 "Talent"
                 "Tech"
                 "Turret"
                 "Astromech"
                 "Device"
+                "Modification"
                 "Modification"
                 "Configuration"
             ]
@@ -10579,8 +10289,7 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "BTA-NR2 Y-wing"
             skill: 2
-            points: 4
-            loadout: 4
+            points: 29
             slots: [
                 "Tech"
                 "Turret"
@@ -10602,16 +10311,13 @@ exportObj.basicCardData = ->
             keyword: ["Dark Side", "Light Side"]
             skill: 5
             force: 3
-            points: 6
-            loadout: 18
+            points: 61
             slots: [
-                "Force"
                 "Force"
                 "Talent"
                 "Missile"
                 "Tech"
                 "Tech"
-                "Modification"
                 "Configuration"
             ]
         }
@@ -10622,12 +10328,11 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/wi Whisper Modified Interceptor"
             skill: 5
-            points: 5
-            loadout: 15
+            points: 48
             slots: [
                 "Talent"
                 "Talent"
-                "Cannon"
+                "Missile"
                 "Tech"
                 "Tech"
                 "Configuration"
@@ -10640,9 +10345,9 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/wi Whisper Modified Interceptor"
             skill: 4
-            points: 4
-            loadout: 10
+            points: 45
             slots: [
+                "Talent"
                 "Talent"
                 "Missile"
                 "Tech"
@@ -10657,8 +10362,7 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/wi Whisper Modified Interceptor"
             skill: 3
-            points: 4
-            loadout: 12
+            points: 45
             slots: [
                 "Talent"
                 "Talent"
@@ -10674,9 +10378,9 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/wi Whisper Modified Interceptor"
             skill: 4
-            points: 4
-            loadout: 10
+            points: 44
             slots: [
+                "Talent"
                 "Talent"
                 "Missile"
                 "Tech"
@@ -10690,8 +10394,7 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/wi Whisper Modified Interceptor"
             skill: 2
-            points: 4
-            loadout: 3
+            points: 41
             slots: [
                 "Talent"
                 "Missile"
@@ -10707,16 +10410,14 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/se Bomber"
             skill: 5
-            points: 5
-            loadout: 18
+            points: 37
             slots: [
-                "Talent"
                 "Talent"
                 "Tech"
                 "Torpedo"
-                "Torpedo"
                 "Missile"
                 "Gunner"
+                "Device"
                 "Device"
                 "Modification"
             ]
@@ -10730,16 +10431,15 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/se Bomber"
             skill: 4
-            points: 4
-            loadout: 10
+            points: 33
             slots: [
                 "Talent"
                 "Tech"
+                "Torpedo"
                 "Missile"
                 "Gunner"
                 "Device"
                 "Device"
-                "Modification"
                 "Modification"
             ]
         }
@@ -10750,9 +10450,9 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/se Bomber"
             skill: 3
-            points: 4
-            loadout: 12
+            points: 32
             slots: [
+                "Talent"
                 "Tech"
                 "Torpedo"
                 "Missile"
@@ -10769,11 +10469,10 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/se Bomber"
             skill: 2
-            points: 4
-            loadout: 15
+            points: 38
             slots: [
-                "Talent"
                 "Tech"
+                "Torpedo"
                 "Missile"
                 "Gunner"
                 "Device"
@@ -10787,9 +10486,9 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/se Bomber"
             skill: 3
-            points: 4
-            loadout: 7
+            points: 32
             slots: [
+                "Talent"
                 "Tech"
                 "Torpedo"
                 "Missile"
@@ -10805,12 +10504,12 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/se Bomber"
             skill: 2
-            points: 4
-            loadout: 8
+            points: 31
             slots: [
                 "Tech"
-                "Tech"
+                "Torpedo"
                 "Missile"
+                "Gunner"
                 "Device"
                 "Device"
                 "Modification"
@@ -10823,11 +10522,9 @@ exportObj.basicCardData = ->
             unique: true
             ship: "Fang Fighter"
             skill: 4
-            points: 5
-            loadout: 6
+            points: 56
             keyword: ["Mandalorian"]
             slots: [
-                "Talent"
                 "Talent"
                 "Torpedo"
                 "Modification"
@@ -10840,8 +10537,7 @@ exportObj.basicCardData = ->
             unique: true
             ship: "Fang Fighter"
             skill: 3
-            points: 5
-            loadout: 10
+            points: 46
             keyword: ["Mandalorian"]
             slots: [
                 "Torpedo"
@@ -10853,15 +10549,13 @@ exportObj.basicCardData = ->
             id: 501
             faction: "Rebel Alliance"
             canonical_name: 'Fenn Rau'.canonicalize()
-            xws: "fennrau-rebel-fang"
+            xws: "fennrau-fangfighter"
             unique: true
             ship: "Fang Fighter"
             skill: 6
-            points: 6
-            loadout: 16
+            points: 55
             keyword: ["Mandalorian"]
             slots: [
-                "Talent"
                 "Talent"
                 "Torpedo"
                 "Modification"
@@ -10873,14 +10567,12 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Fang Fighter"
             skill: 3
-            points: 5
-            loadout: 10
+            points: 44
             max_per_squad: 2
             keyword: ["Mandalorian"]
             slots: [
                 "Talent"
                 "Torpedo"
-                "Modification"
                 "Modification"
             ]
         }
@@ -10893,13 +10585,10 @@ exportObj.basicCardData = ->
             skill: 4
             charge: 2
             recurring: 1
-            points: 3
-            loadout: 8
+            points: 31
             slots: [
                 "Talent"
-                "Missile"
-                "Illicit"
-                "Illicit"
+                "Talent"
                 "Modification"
             ]
         }
@@ -10909,12 +10598,12 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 4
-            points: 3
-            loadout: 5
+            points: 28
             max_per_squad: 2
             slots: [
                 "Talent"
                 "Illicit"
+                "Modification"
             ]
         }
         {
@@ -10923,13 +10612,12 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Fang Fighter"
             skill: 4
-            points: 5
-            loadout: 10
+            points: 48
             max_per_squad: 2
             keyword: ["Mandalorian"]
             slots: [
                 "Talent"
-                "Missile"
+                "Torpedo"
                 "Modification"
             ]
         }
@@ -10944,8 +10632,7 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Gauntlet Fighter"
             skill: 3
-            points: 7
-            loadout: 18
+            points: 61
             charge: 2
             recurring: 1
             unique: true
@@ -10954,9 +10641,10 @@ exportObj.basicCardData = ->
                 "Talent"
                 "Crew"
                 "Gunner"
-                "Missile"
                 "Device"
+                "Illicit"
                 "Modification"
+                "Title"
                 "Configuration"
             ]
         }
@@ -10966,8 +10654,7 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Gauntlet Fighter"
             skill: 2
-            points: 7
-            loadout: 10
+            points: 53
             unique: true
             keyword: ["Mandalorian"]
             slots: [
@@ -10975,19 +10662,20 @@ exportObj.basicCardData = ->
                 "Crew"
                 "Gunner"
                 "Device"
+                "Illicit"
                 "Modification"
+                "Title"
                 "Configuration"
             ]
         }
         {
             name: "Bo-Katan Kryze"
             id: 509
-            faction: "Separatist Alliance"
             xws: "bokatankryze-separatistalliance"
+            faction: "Separatist Alliance"
             ship: "Gauntlet Fighter"
             skill: 4
-            points: 7
-            loadout: 20
+            points: 57
             charge: 1
             recurring: 1
             unique: true
@@ -10996,10 +10684,8 @@ exportObj.basicCardData = ->
                 "Talent"
                 "Crew"
                 "Gunner"
-                "Missile"
-                "Missile"
                 "Device"
-                "Modification"
+                "Illicit"
                 "Modification"
                 "Title"
                 "Configuration"
@@ -11013,19 +10699,15 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Gauntlet Fighter"
             skill: 4
-            points: 7
-            loadout: 20
+            points: 56
             unique: true
             keyword: ["Mandalorian"]
             slots: [
                 "Talent"
                 "Crew"
                 "Gunner"
-                "Torpedo"
-                "Missile"
-                "Missile"
                 "Device"
-                "Modification"
+                "Illicit"
                 "Modification"
                 "Title"
                 "Configuration"
@@ -11037,8 +10719,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Gauntlet Fighter"
             skill: 2
-            points: 7
-            loadout: 16
+            points: 54
             unique: true
             keyword: ["Mandalorian"]
             slots: [
@@ -11046,30 +10727,29 @@ exportObj.basicCardData = ->
                 "Crew"
                 "Gunner"
                 "Device"
+                "Illicit"
                 "Modification"
+                "Title"
                 "Configuration"
             ]
         }
         {
             name: "Maul"
             id: 512
+            xws: "maul"
             faction: "Scum and Villainy"
             ship: "Gauntlet Fighter"
             skill: 5
-            points: 9
-            loadout: 20
+            points: 73
             unique: true
             force: 3
             keyword: ["Dark Side", "Sith"]
             slots: [
                 "Force"
-                "Talent"
                 "Crew"
                 "Gunner"
-                "Missile"
                 "Device"
                 "Illicit"
-                "Modification"
                 "Modification"
                 "Title"
                 "Configuration"
@@ -11081,16 +10761,15 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Gauntlet Fighter"
             skill: 1
-            points: 7
-            loadout: 10
+            points: 53
             keyword: ["Mandalorian"]
             slots: [
                 "Crew"
                 "Gunner"
                 "Device"
-                "Device"
-                "Modification"
                 "Illicit"
+                "Modification"
+                "Title"
                 "Configuration"
             ]
         }
@@ -11100,8 +10779,7 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Gauntlet Fighter"
             skill: 3
-            points: 7
-            loadout: 18
+            points: 61
             unique: true
             keyword: ["Mandalorian"]
             slots: [
@@ -11109,8 +10787,9 @@ exportObj.basicCardData = ->
                 "Crew"
                 "Gunner"
                 "Device"
-                "Modification"
                 "Illicit"
+                "Modification"
+                "Title"
                 "Configuration"
             ]
         }
@@ -11120,8 +10799,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "Gauntlet Fighter"
             skill: 3
-            points: 7
-            loadout: 15
+            points: 53
             unique: true
             keyword: ["Mandalorian"]
             slots: [
@@ -11139,14 +10817,12 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "Gauntlet Fighter"
             skill: 2
-            points: 7
-            loadout: 10
+            points: 54
             keyword: ["Mandalorian"]
             slots: [
                 "Talent"
                 "Crew"
                 "Gunner"
-                "Device"
                 "Device"
                 "Modification"
                 "Configuration"
@@ -11158,8 +10834,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "Gauntlet Fighter"
             skill: 3
-            points: 8
-            loadout: 18
+            points: 61
             charge: 2
             recurring: 1
             unique: true
@@ -11168,7 +10843,6 @@ exportObj.basicCardData = ->
                 "Talent"
                 "Crew"
                 "Gunner"
-                "Torpedo"
                 "Device"
                 "Modification"
                 "Configuration"
@@ -11180,8 +10854,7 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Gauntlet Fighter"
             skill: 2
-            points: 7
-            loadout: 10
+            points: 54
             unique: true
             keyword: ["Mandalorian"]
             slots: [
@@ -11190,6 +10863,7 @@ exportObj.basicCardData = ->
                 "Gunner"
                 "Device"
                 "Modification"
+                "Title"
                 "Configuration"
             ]
         }
@@ -11201,18 +10875,16 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "Gauntlet Fighter"
             skill: 2
-            points: 7
-            loadout: 18
-            keyword: ["Droid","Spectre"]
+            points: 53
             unique: true
+            keyword: ["Droid","Spectre"]
             slots: [
                 "Crew"
                 "Gunner"
                 "Device"
                 "Modification"
-                "Modification"
-                "Configuration"
                 "Title"
+                "Configuration"
             ]
         }
         {
@@ -11224,19 +10896,14 @@ exportObj.basicCardData = ->
             ship: "Gauntlet Fighter"
             skill: 3
             force: 1
-            points: 7
-            loadout: 16
+            points: 65
             keyword: ["Light Side","Spectre"]
             unique: true
             slots: [
                 "Force"
-                "Talent"
                 "Crew"
                 "Gunner"
-                "Missile"
                 "Device"
-                "Illicit"
-                "Modification"
                 "Modification"
                 "Title"
                 "Configuration"
@@ -11248,14 +10915,13 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "ST-70 Assault Ship"
             skill: 5
-            points: 6
-            loadout: 16
+            points: 50
             unique: true
             keyword: ["Droid"]
             slots: [
+                "Talent"
                 "Crew"
                 "Crew"
-                "Cannon"
                 "Gunner"
                 "Illicit"
                 "Illicit"
@@ -11269,16 +10935,13 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "ST-70 Assault Ship"
             skill: 5
-            points: 7
-            loadout: 20
+            points: 49
             unique: true
-            keyword: ["Bounty Hunter", "Mandalorian"]
+            keyword: ["Mandalorian","Bounty Hunter"]
             slots: [
                 "Talent"
-                "Talent"
                 "Crew"
                 "Crew"
-                "Cannon"
                 "Gunner"
                 "Illicit"
                 "Illicit"
@@ -11292,17 +10955,17 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "ST-70 Assault Ship"
             skill: 3
-            points: 6
-            loadout: 14
+            points: 46
             max_per_squad: 2
             keyword: ["Bounty Hunter"]
             slots: [
-                "Talent"
+                "Crew"
                 "Crew"
                 "Gunner"
                 "Illicit"
                 "Illicit"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -11311,31 +10974,31 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "ST-70 Assault Ship"
             skill: 2
-            points: 6
-            loadout: 10
+            points: 45
             slots: [
+                "Crew"
                 "Crew"
                 "Gunner"
                 "Illicit"
+                "Illicit"
                 "Modification"
-                "Modification"
+                "Title"
             ]
         }
         {
             name: "Plo Koon (Delta-7b)"
             xws: "plokoon-delta7baethersprite"
             id: 525
+            skip: true
             unique: true
             faction: "Galactic Republic"
             ship: "Delta-7b Aethersprite"
             skill: 5
             force: 2
-            points: 7
-            loadout: 17
+            points: 63
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
-                "Talent"
                 "Astromech"
                 "Modification"
             ]
@@ -11345,13 +11008,13 @@ exportObj.basicCardData = ->
             canonical_name: 'Saesee Tiin'.canonicalize()
             xws: "saeseetiin-delta7baethersprite"
             id: 526
+            skip: true
             unique: true
             faction: "Galactic Republic"
             ship: "Delta-7b Aethersprite"
             skill: 4
             force: 2
-            points: 6
-            loadout: 9
+            points: 57
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
@@ -11364,16 +11027,15 @@ exportObj.basicCardData = ->
             canonical_name: 'Mace Windu'.canonicalize()
             xws: "macewindu-delta7baethersprite"
             id: 527
+            skip: true
             unique: true
             faction: "Galactic Republic"
             ship: "Delta-7b Aethersprite"
             skill: 4
             force: 3
-            points: 6
-            loadout: 8
+            points: 61
             keyword: ["Jedi","Light Side"]
             slots: [
-                "Force"
                 "Force"
                 "Astromech"
                 "Modification"
@@ -11384,18 +11046,16 @@ exportObj.basicCardData = ->
             canonical_name: 'Anakin Skywalker'.canonicalize()
             xws: "anakinskywalker-delta7baethersprite"
             id: 528
+            skip: true
             unique: true
             faction: "Galactic Republic"
             ship: "Delta-7b Aethersprite"
             skill: 6
             force: 3
-            points: 7
-            loadout: 15
+            points: 83
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
-                "Force"
-                "Talent"
                 "Astromech"
                 "Modification"
             ]
@@ -11405,13 +11065,13 @@ exportObj.basicCardData = ->
             canonical_name: 'Luminara Unduli'.canonicalize()
             xws: "luminaraunduli-delta7baethersprite"
             id: 529
+            skip: true
             unique: true
             faction: "Galactic Republic"
             ship: "Delta-7b Aethersprite"
             skill: 4
             force: 2
-            points: 6
-            loadout: 7
+            points: 57
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
@@ -11424,13 +11084,13 @@ exportObj.basicCardData = ->
             canonical_name: 'Barriss Offee'.canonicalize()
             xws: "barrissoffee-delta7baethersprite"
             id: 530
+            skip: true
             unique: true
             faction: "Galactic Republic"
             ship: "Delta-7b Aethersprite"
             skill: 4
             force: 1
-            points: 5
-            loadout: 10
+            points: 53
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
@@ -11443,13 +11103,13 @@ exportObj.basicCardData = ->
             canonical_name: 'Ahsoka Tano'.canonicalize()
             xws: "ahsokatano-delta7baethersprite"
             id: 531
+            skip: true
             unique: true
             faction: "Galactic Republic"
             ship: "Delta-7b Aethersprite"
             skill: 3
             force: 2
-            points: 6
-            loadout: 10
+            points: 55
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
@@ -11462,12 +11122,12 @@ exportObj.basicCardData = ->
             canonical_name: 'Jedi Knight'.canonicalize()
             xws: "jediknight-delta7baethersprite"
             id: 532
+            skip: true
             faction: "Galactic Republic"
             ship: "Delta-7b Aethersprite"
             skill: 3
             force: 1
-            points: 6
-            loadout: 8
+            points: 50
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
@@ -11480,18 +11140,16 @@ exportObj.basicCardData = ->
             canonical_name: 'Obi-Wan Kenobi'.canonicalize()
             xws: "obiwankenobi-delta7baethersprite"
             id: 533
+            skip: true
             unique: true
             faction: "Galactic Republic"
             ship: "Delta-7b Aethersprite"
             skill: 5
             force: 3
-            points: 7
-            loadout: 15
+            points: 67
             keyword: ["Jedi","Light Side"]
             slots: [
                 "Force"
-                "Force"
-                "Talent"
                 "Astromech"
                 "Modification"
             ]
@@ -11505,15 +11163,12 @@ exportObj.basicCardData = ->
             skill: 4
             charge: 2
             recurring: 1
-            points: 5
-            loadout: 18
+            points: 40
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
                 "Cannon"
                 "Cannon"
-                "Missile"
-                "Illicit"
                 "Illicit"
                 "Modification"
                 "Title"
@@ -11528,16 +11183,15 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Rogue-class Starfighter"
             skill: 4
-            points: 5
-            loadout: 16
+            points: 39
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
                 "Cannon"
                 "Cannon"
-                "Missile"
                 "Illicit"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -11549,17 +11203,15 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Rogue-class Starfighter"
             skill: 1
-            points: 5
-            loadout: 19
+            points: 35
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
                 "Cannon"
                 "Cannon"
-                "Missile"
                 "Illicit"
                 "Modification"
-                "Modification"
+                "Title"
             ]
         }
         {
@@ -11568,13 +11220,14 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Rogue-class Starfighter"
             skill: 3
-            points: 5
-            loadout: 4
+            points: 35
+            keyword: ["Bounty Hunter"]
             slots: [
                 "Cannon"
                 "Cannon"
                 "Illicit"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -11588,15 +11241,12 @@ exportObj.basicCardData = ->
             skill: 4
             charge: 1
             recurring: 1
-            points: 5
-            loadout: 18
+            points: 44
             keyword: ["Bounty Hunter"]
             slots: [
                 "Talent"
                 "Cannon"
                 "Cannon"
-                "Missile"
-                "Illicit"
                 "Illicit"
                 "Modification"
                 "Title"
@@ -11609,15 +11259,15 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Rogue-class Starfighter"
             skill: 4
-            points: 5
-            loadout: 19
-            chassis: "Networked Calculations"
+            points: 39
             keyword: ["Droid"]
+            chassis: "Networked Calculations"
             slots: [
+                "Talent"
                 "Cannon"
                 "Cannon"
                 "Modification"
-                "Modification"
+                "Title"
             ]
         }
         {
@@ -11627,15 +11277,15 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Rogue-class Starfighter"
             skill: 4
-            points: 5
-            loadout: 19
-            chassis: "Networked Calculations"
+            points: 39
             keyword: ["Droid"]
+            chassis: "Networked Calculations"
             slots: [
+                "Talent"
                 "Cannon"
                 "Cannon"
                 "Modification"
-                "Modification"
+                "Title"
             ]
         }
         {
@@ -11645,15 +11295,15 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Rogue-class Starfighter"
             skill: 1
-            points: 5
-            loadout: 21
-            chassis: "Networked Calculations"
+            points: 38
             keyword: ["Droid"]
+            chassis: "Networked Calculations"
             slots: [
+                "Talent"
                 "Cannon"
                 "Cannon"
                 "Modification"
-                "Modification"
+                "Title"
             ]
         }
         {
@@ -11663,15 +11313,15 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Rogue-class Starfighter"
             skill: 4
-            points: 5
-            loadout: 18
-            chassis: "Networked Calculations"
+            points: 40
             keyword: ["Droid"]
+            chassis: "Networked Calculations"
             slots: [
+                "Talent"
                 "Cannon"
                 "Cannon"
-                "Missile"
                 "Modification"
+                "Title"
             ]
             applies_condition: 'Guarded'.canonicalize()
         }
@@ -11681,14 +11331,15 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Rogue-class Starfighter"
             skill: 3
-            points: 4
-            loadout: 4
-            chassis: "Networked Calculations"
+            points: 37
             keyword: ["Droid"]
+            chassis: "Networked Calculations"
             slots: [
+                "Talent"
                 "Cannon"
                 "Cannon"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -11698,8 +11349,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Clone Z-95 Headhunter"
             skill: 5
-            points: 3
-            loadout: 7
+            points: 26
             keyword: ["Clone"]
             slots: [
                 "Talent"
@@ -11718,14 +11368,11 @@ exportObj.basicCardData = ->
             skill: 4
             charge: 2
             recurring: 1
-            points: 3
-            loadout: 8
+            points: 26
             keyword: ["Clone"]
             slots: [
                 "Talent"
-                "Talent"
                 "Sensor"
-                "Modification"
                 "Modification"
                 "VersatileShip"
             ]
@@ -11739,13 +11386,12 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Clone Z-95 Headhunter"
             skill: 4
-            points: 3
-            loadout: 8
+            points: 25
             keyword: ["Clone"]
             slots: [
                 "Talent"
+                "Talent"
                 "Sensor"
-                "Modification"
                 "Modification"
                 "VersatileShip"
             ]
@@ -11759,8 +11405,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Clone Z-95 Headhunter"
             skill: 3
-            points: 3
-            loadout: 10
+            points: 29
             keyword: ["Clone"]
             slots: [
                 "Talent"
@@ -11776,11 +11421,9 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Clone Z-95 Headhunter"
             skill: 3
-            points: 3
-            loadout: 8
+            points: 25
             keyword: ["Clone"]
             slots: [
-                "Talent"
                 "Talent"
                 "Sensor"
                 "Modification"
@@ -11794,8 +11437,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Clone Z-95 Headhunter"
             skill: 3
-            points: 3
-            loadout: 5
+            points: 30
             keyword: ["Clone"]
             slots: [
                 "Talent"
@@ -11811,8 +11453,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Clone Z-95 Headhunter"
             skill: 3
-            points: 3
-            loadout: 8
+            points: 30
             keyword: ["Clone"]
             slots: [
                 "Talent"
@@ -11828,14 +11469,10 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Clone Z-95 Headhunter"
             skill: 2
-            points: 3
-            loadout: 11
+            points: 25
             keyword: ["Clone"]
             slots: [
-                "Talent"
-                "Talent"
                 "Sensor"
-                "Cannon"
                 "Modification"
                 "VersatileShip"
             ]
@@ -11846,12 +11483,12 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Clone Z-95 Headhunter"
             skill: 3
-            points: 3
-            loadout: 2
+            points: 24
             keyword: ["Clone"]
             slots: [
                 "Talent"
                 "Sensor"
+                "Modification"
                 "VersatileShip"
             ]
         }
@@ -11861,8 +11498,7 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Clone Z-95 Headhunter"
             skill: 2
-            points: 3
-            loadout: 3
+            points: 22
             keyword: ["Clone"]
             slots: [
                 "Sensor"
@@ -11873,356 +11509,411 @@ exportObj.basicCardData = ->
         {
             name: "Garven Dreis (BoY)"
             canonical_name: 'Garven Dreis'.canonicalize()
-            xws: "garvendreis-battleofyavin"
+            xws: "garvendreis-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 554
+            image_id: 6
             faction: "Rebel Alliance"
             ship: "T-65 X-wing"
             skill: 4
-            points: 4
+            points: 47
             chassis: "Hope"
-            upgrades: [
-                "Adv. Proton Torpedoes"
-                "R5-K6 (BoY)"
+            slots: [
+                "Torpedo"
+                "Astromech"
+                "Modification"
+                "Configuration"
             ]
         }
         {
             name: "Luke Skywalker (BoY)"
             canonical_name: 'Luke Skywalker'.canonicalize()
-            xws: "lukeskywalker-battleofyavin"
+            xws: "lukeskywalker-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 555
+            image_id: 4
             faction: "Rebel Alliance"
             ship: "T-65 X-wing"
             skill: 5
-            points: 6
             force: 2
+            points: 61
             chassis: "Hope"
-            upgrades: [
-                "Instinctive Aim"
-                "Attack Speed (BoY)"
-                "Proton Torpedoes"
-                "R2-D2 (BoY)"
+            slots: [
+                "Force"
+                "Torpedo"
+                "Astromech"
+                "Modification"
+                "Configuration"
             ]
         }
         {
             name: "Jek Porkins (BoY)"
             canonical_name: 'Jek Porkins'.canonicalize()
-            xws: "jekporkins-battleofyavin"
+            xws: "jekporkins-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 556
+            image_id: 3
             faction: "Rebel Alliance"
             ship: "T-65 X-wing"
             skill: 4
-            points: 4
+            points: 42
             chassis: "Hope"
-            upgrades: [
-                "Adv. Proton Torpedoes"
-                "R5-D8 (BoY)"
-                "Unstable Sublight Engines (BoY)"
+            slots: [
+                "Torpedo"
+                "Astromech"
+                "Modification"
+                "Configuration"
             ]
         }
         {
             name: "Biggs Darklighter (BoY)"
             canonical_name: 'Biggs Darklighter'.canonicalize()
-            xws: "biggsdarklighter-battleofyavin"
+            xws: "biggsdarklighter-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 557
+            image_id: 7
             faction: "Rebel Alliance"
             ship: "T-65 X-wing"
             skill: 3
-            points: 5
+            points: 44
             chassis: "Hope"
-            upgrades: [
-                "Attack Speed (BoY)"
-                "Selfless"
-                "Proton Torpedoes"
-                "R2-F2 (BoY)"
+            slots: [
+                "Torpedo"
+                "Astromech"
+                "Modification"
+                "Configuration"
             ]
         }
         {
             name: "Wedge Antilles (BoY)"
             canonical_name: 'Wedge Antilles'.canonicalize()
-            xws: "wedgeantilles-battleofyavin"
+            xws: "wedgeantilles-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 558
+            image_id: 5
             faction: "Rebel Alliance"
             ship: "T-65 X-wing"
             skill: 5
-            points: 5
+            points: 49
             chassis: "Hope"
-            upgrades: [
-                "Attack Speed (BoY)"
-                "Marksmanship"
-                "Proton Torpedoes"
-                "R2-A3 (BoY)"
+            slots: [
+                "Torpedo"
+                "Astromech"
+                "Modification"
+                "Configuration"
             ]
         }
         {
             name: "Han Solo (BoY)"
             canonical_name: 'Han Solo'.canonicalize()
-            xws: "hansolo-battleofyavin"
+            xws: "hansolo-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 559
             faction: "Rebel Alliance"
             ship: "Modified YT-1300 Light Freighter"
             skill: 6
-            points: 7
+            points: 84
             charge: 4
             chassis: "Solo"
-            upgrades: [
-                "Chewbacca (BoY)"
-                "Rigged Cargo Chute"
-                "Millennium Falcon"
-                "L3-37's Programming (BoY)"
+            slots: [
+                "Talent"
+                "Missile"
+                "Gunner"
+                "Crew"
+                "Crew"
+                "Modification"
+                "Modification"
+                "Title"
             ]
         }
         {
             name: '"Dutch" Vander (BoY)'
             canonical_name: '"Dutch" Vander'.canonicalize()
-            xws: "dutchvander-battleofyavin"
+            xws: "jondutchvader-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 560
+            image_id: 27
             faction: "Rebel Alliance"
             ship: "BTL-A4 Y-wing"
             skill: 4
-            points: 4
+            points: 44
             chassis: "Hope"
-            upgrades: [
-                "Ion Cannon Turret"
-                "Adv. Proton Torpedoes"
-                "Targeting Astromech (BoY)"
+            slots: [
+                "Turret"
+                "Torpedo"
+                "Missile"
+                "Astromech"
+                "Modification"
+                "Device"
             ]
         }
         {
             name: "Dex Tiree (BoY)"
             canonical_name: 'Dex Tiree'.canonicalize()
-            xws: "dextiree-battleofyavin"
+            xws: "dextiree-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 561
             faction: "Rebel Alliance"
             ship: "BTL-A4 Y-wing"
             skill: 2
-            points: 4
+            points: 31
             chassis: "Hope"
-            upgrades: [
-                "Dorsal Turret"
-                "Adv. Proton Torpedoes"
-                "R4 Astromech"
+            slots: [
+                "Turret"
+                "Torpedo"
+                "Missile"
+                "Astromech"
+                "Modification"
+                "Device"
             ]
         }
         {
             name: '"Pops" Krail (BoY)'
             canonical_name: '"Pops" Krail'.canonicalize()
-            xws: "popskrail-battleofyavin"
+            xws: "popskrail-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 562
             faction: "Rebel Alliance"
             ship: "BTL-A4 Y-wing"
             skill: 4
-            points: 4
+            points: 35
             chassis: "Hope"
-            upgrades: [
-                "Ion Cannon Turret"
-                "Adv. Proton Torpedoes"
-                "R4 Astromech"
+            slots: [
+                "Turret"
+                "Torpedo"
+                "Missile"
+                "Astromech"
+                "Modification"
+                "Device"
             ]
         }
         {
             name: "Hol Okand (BoY)"
             canonical_name: 'Hol Okand'.canonicalize()
-            xws: "holokand-battleofyavin"
+            xws: "holokand-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 563
             faction: "Rebel Alliance"
             ship: "BTL-A4 Y-wing"
             skill: 4
-            points: 4
+            points: 34
             chassis: "Hope"
-            upgrades: [
-                "Dorsal Turret"
-                "Adv. Proton Torpedoes"
-                "Precise Astromech (BoY)"
+            slots: [
+                "Turret"
+                "Torpedo"
+                "Missile"
+                "Astromech"
+                "Modification"
+                "Device"
             ]
         }
         {
             name: "Darth Vader (BoY)"
             canonical_name: 'Darth Vader'.canonicalize()
-            xws: "darthvader-battleofyavin"
+            xws: "darthvader-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 564
+            image_id: 173
             faction: "Galactic Empire"
             ship: "TIE Advanced x1"
             skill: 6
-            points: 6
+            points: 73
             force: 3
             keyword: ["Dark Side", "Sith"]
             ship_override:
                 shields: 3
-            upgrades: [
-                "Marksmanship"
-                "Hate"
-                "Afterburners"
+            slots: [
+                "Force"
+                "Sensor"
+                "Missile"
             ]
         }
         {
             name: '"Backstabber" (BoY)'
             canonical_name: '"Backstabber"'.canonicalize()
-            xws: "backstabber-battleofyavin"
+            xws: "backstabber-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 565
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 5
-            points: 4
+            points: 36
             ship_override:
                 hull: 4
-            upgrades: [
-                "Crack Shot"
-                "Disciplined"
-                "Afterburners"
+            slots: [
+                "Talent"
             ]
         }
         {
             name: '"Mauler" Mithel (BoY)'
             canonical_name: '"Mauler" Mithel'.canonicalize()
-            xws: "maulermithel-battleofyavin"
+            xws: "maulermithel-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 566
+            image_id: 219
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 5
-            points: 3
+            points: 33
             ship_override:
                 hull: 4
-            upgrades: [
-                "Predator"
-                "Afterburners"
+            slots: [
+                "Talent"
             ]
         }
         {
             name: '"Dark Curse" (BoY)'
-            xws: "darkcurse-battleofyavin"
+            canonical_name: '"Dark Curse"'.canonicalize()
+            xws: "darkcurse-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 567
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 6
-            points: 4
+            points: 34
             ship_override:
                 hull: 4
-            upgrades: [
-                "Ruthless"
-                "Precision Ion Engines"
+            slots: [
+                "Talent"
             ]
         }
         {
             name: '"Wampa" (BoY)'
             canonical_name: '"Wampa"'.canonicalize()
-            xws: "wampa-battleofyavin"
+            xws: "wampa-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 568
+            image_id: 221
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 1
             charge: 1
             recurring: 1
-            points: 3
+            points: 31
             ship_override:
                 hull: 4
-            upgrades: [
-                "Elusive"
-                "Vengeful (BoY)"
+                actions: [
+                    "Focus"
+                    "Evade"
+                    "Barrel Roll"
+                    "Lock"
+                ]
+            slots: [
             ]
         }
         {
             name: "Iden Versio (BoY)"
             canonical_name: 'Iden Versio'.canonicalize()
-            xws: "idenversio-battleofyavin"
+            xws: "idenversio-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 569
             faction: "Galactic Empire"
             ship: "TIE/in Interceptor"
             skill: 4
-            points: 6
+            points: 64
             charge: 2
             recurring: 1
+            keyword: ["AlreadyHasShieldUpgrade"]
             chassis: "Sensitive Controls"
             ship_override:
                 shields: 1
-            upgrades: [
-                "Predator"
-                "Fanatic (BoY)"
+            slots: [
+                "Talent"
+                "Modification"
             ]
         }
         {
             name: "Sigma 4 (BoY)"
             canonical_name: 'Sigma 4'.canonicalize()
-            xws: "sigma4-battleofyavin"
+            xws: "sigma4-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 570
             faction: "Galactic Empire"
             ship: "TIE/in Interceptor"
             skill: 4
-            points: 4
+            points: 40
             charge: 2
+            keyword: ["AlreadyHasHullUpgrade"]
             chassis: "Sensitive Controls"
             ship_override:
                 hull: 4
-            upgrades: [
-                "Disciplined"
-                "Primed Thrusters"
+            slots: [
+                "Talent"
+                "Modification"
             ]
         }
         {
             name: "Sigma 5 (BoY)"
             canonical_name: 'Sigma 5'.canonicalize()
-            xws: "sigma5-battleofyavin"
+            xws: "sigma5-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 571
             faction: "Galactic Empire"
             ship: "TIE/in Interceptor"
             skill: 4
-            points: 4
+            points: 41
             charge: 2
+            keyword: ["AlreadyHasHullUpgrade"]
             chassis: "Sensitive Controls"
             ship_override:
                 hull: 4
-            upgrades: [
-                "Sensor Jammer (BoY)"
-                "Elusive"
+            slots: [
+                "Talent"
+                "Modification"
             ]
         }
         {
             name: "Sigma 6 (BoY)"
             canonical_name: 'Sigma 6'.canonicalize()
-            xws: "sigma6-battleofyavin"
+            xws: "sigma6-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 572
             faction: "Galactic Empire"
             ship: "TIE/in Interceptor"
             skill: 4
-            points: 4
+            points: 41
             charge: 2
+            keyword: ["AlreadyHasHullUpgrade"]
             chassis: "Sensitive Controls"
             ship_override:
                 hull: 4
-            upgrades: [
-                "Daredevil"
-                "Afterburners"
+            slots: [
+                "Talent"
+                "Modification"
             ]
         }
         {
             name: "Sigma 7 (BoY)"
             canonical_name: 'Sigma 7'.canonicalize()
-            xws: "sigma7-battleofyavin"
+            xws: "sigma7-battleofyavin-lsl"
             unique: true
+            standard_loadout: true
             id: 573
             faction: "Galactic Empire"
             ship: "TIE/in Interceptor"
             skill: 4
-            points: 4
+            points: 43
             charge: 2
+            keyword: ["AlreadyHasHullUpgrade"]
             chassis: "Sensitive Controls"
             ship_override:
                 hull: 4
@@ -12233,224 +11924,276 @@ exportObj.basicCardData = ->
                     "Boost"
                     "Lock"
                 ]
-            upgrades: [
-                "Marksmanship"
-                "Fire-Control System"
+            slots: [
+                "Talent"
             ]
         }
         {
             name: "Anakin Skywalker (SoC)"
             canonical_name: 'Anakin Skywalker'.canonicalize()
-            xws: "anakinskywalker-siegeofcoruscant"
+            xws: "anakinskywalker-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 574
+            image_id: 441
             faction: "Galactic Republic"
             ship: "Eta-2 Actis"
             skill: 6
-            points: 5
+            points: 52
             force: 3
-            chassis: "Intuitive Controls"
-            keyword: ["Dark Side"]
-            upgrades: [
-                "Malice"
-                "Ancillary Ion Weapons (SoC)"
-                "R2-D2 (Republic)"
+            keyword: ["Dark Side", "Light Side"]
+            slots: [
+                "Force"
+                "Talent"
+                "Astromech"
+                "Modification"
             ]
         }
         {
             name: "Obi-Wan Kenobi (SoC)"
             canonical_name: 'Obi-Wan Kenobi'.canonicalize()
-            xws: "obiwankenobi-siegeofcoruscant"
+            xws: "obiwankenobi-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 575
+            image_id: 440
             faction: "Galactic Republic"
             ship: "Eta-2 Actis"
             skill: 5
-            points: 4
+            points: 48
             force: 3
-            chassis: "Intuitive Controls"
-            upgrades: [
-                "Patience"
-                "Ancillary Ion Weapons (SoC)"
-                "R4-P17 (SoC)"
+            keyword: ["Light Side"]
+            slots: [
+                "Force"
+                "Talent"
+                "Astromech"
+                "Modification"
             ]
         }
         {
             name: "Shaak Ti (SoC)"
             canonical_name: 'Shaak Ti'.canonicalize()
-            xws: "shaakti-siegeofcoruscant"
+            xws: "shaakti-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 576
+            image_id: 438
             faction: "Galactic Republic"
             ship: "Eta-2 Actis"
             skill: 4
-            points: 4
+            points: 42
             force: 2
-            chassis: "Intuitive Controls"
-            upgrades: [
-                "Marksmanship"
-                "Brilliant Evasion"
-                "Ancillary Ion Weapons (SoC)"
-                "R4-P Astromech"
+            keyword: ["Light Side"]
+            slots: [
+                "Force"
+                "Talent"
+                "Astromech"
+                "Modification"
             ]
         }
         {
             name: '"Odd Ball" (SoC)'
             canonical_name: 'Odd Ball'.canonicalize()
-            xws: "oddball-siegeofcoruscant"
+            xws: "oddball-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 577
+            image_id: 338
             faction: "Galactic Republic"
             ship: "ARC-170 Starfighter"
             skill: 5
-            points: 5
+            points: 51
             chassis: "Born for This"
+            keyword: ["Clone"]
             ship_override:
                 shields: 4
-            upgrades: [
-                "Selfless"
-                "Veteran Tail Gunner"
-                "R4-P Astromech"
+            slots: [
+                "Talent"
+                "Torpedo"
+                "Crew"
+                "Gunner"
+                "Astromech"
             ]
         }
         {
             name: '"Wolffe" (SoC)'
             canonical_name: 'Wolffe'.canonicalize()
-            xws: "wolffe-siegeofcoruscant"
+            xws: "wolffe-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 578
+            image_id: 342
             faction: "Galactic Republic"
             ship: "ARC-170 Starfighter"
             skill: 4
             charge: 1
-            points: 4
+            points: 50
             chassis: "Born for This"
-            upgrades: [
-                "Wolfpack (SoC)"
-                "Veteran Tail Gunner"
-                "Q7 Astromech"
+            keyword: ["Clone"]
+            slots: [
+                "Talent"
+                "Torpedo"
+                "Crew"
+                "Gunner"
+                "Astromech"
+                "Modification"
             ]
         }
         {
             name: '"Jag" (SoC)'
             canonical_name: 'Jag'.canonicalize()
-            xws: "jag-siegeofcoruscant"
+            xws: "jag-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 579
+            image_id: 339
             faction: "Galactic Republic"
             ship: "ARC-170 Starfighter"
             skill: 3
-            points: 4
+            points: 47
             chassis: "Born for This"
-            upgrades: [
-                "Veteran Tail Gunner"
-                "R4-P Astromech"
-                "Synchronized Console"
+            keyword: ["Clone"]
+            slots: [
+                "Torpedo"
+                "Crew"
+                "Gunner"
+                "Astromech"
+                "Modification"
             ]
         }
         {
             name: '"Contrail" (SoC)'
             canonical_name: 'Contrail'.canonicalize()
-            xws: "contrail-siegeofcoruscant"
+            xws: "contrail-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 580
+            image_id: 434
             faction: "Galactic Republic"
             ship: "Nimbus-class V-wing"
             skill: 5
-            points: 3
+            points: 33
             chassis: "Born for This"
-            upgrades: [
-                "Ion Limiter Override"
-                "Precise Astromech (BoY)"
-                "Ion Bombs"
-                'Alpha-3B "Besh"'
+            keyword: ["Clone"]
+            slots: [
+                "Talent"
+                "Astromech"
+                "Modification"
+                "Configuration"
             ]
         }
         {
             name: '"Klick" (SoC)'
             canonical_name: 'Klick'.canonicalize()
-            xws: "klick-siegeofcoruscant"
+            xws: "klick-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 581
+            image_id: 433
             faction: "Galactic Republic"
             ship: "Nimbus-class V-wing"
             skill: 4
-            points: 3
+            points: 37
             charge: 1
             recurring: 1
             chassis: "Born for This"
+            keyword: ["Clone"]
             ship_override:
                 shields: 3
-            upgrades: [
-                "R3 Astromech"
-                "Precision Ion Engines"
-                'Alpha-3E "Esk"'
+            slots: [
+                "Talent"
+                "Astromech"
+                "Configuration"
             ]
         }
         {
             name: '"Kickback" (SoC)'
             canonical_name: 'Kickback'.canonicalize()
-            xws: "kickback-siegeofcoruscant"
+            xws: "kickback-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 582
+            image_id: 315
             faction: "Galactic Republic"
             ship: "V-19 Torrent Starfighter"
             skill: 5
-            points: 3
+            points: 33
             chassis: "Born for This"
+            keyword: ["Clone"]
             ship_override:
                 hull: 6
-            upgrades: [
-                "Diamond-Boron Missiles"
-                "Munitions Failsafe"
+            slots: [
+                "Talent"
+                "Missile"
             ]
         }
         {
             name: '"Axe" (SoC)'
             canonical_name: 'Axe'.canonicalize()
-            xws: "axe-siegeofcoruscant"
+            xws: "axe-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 583
+            image_id: 318
             faction: "Galactic Republic"
             ship: "V-19 Torrent Starfighter"
             skill: 3
-            points: 4
+            points: 31
             chassis: "Born for This"
+            keyword: ["Clone"]
             ship_override:
                 hull: 6
-            upgrades: [
-                "Deadeye Shot"
-                "Barrage Rockets"
+            slots: [
+                "Talent"
+                "Missile"
             ]
         }
         {
             name: "Count Dooku (SoC)"
             canonical_name: 'Count Dooku'.canonicalize()
-            xws: "countdooku-siegeofcoruscant"
+            xws: "countdooku-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 584
+            image_id: 334
             faction: "Separatist Alliance"
             ship: "Sith Infiltrator"
             skill: 5
-            points: 6
+            points: 64
             force: 3
             keyword: ["Dark Side"]
-            upgrades: [
-                "Malice"
-                "Roiling Anger (SoC)"
-                "Scimitar"
+            ship_override:
+                actions: [
+                    "Focus"
+                    "Lock"
+                    "Jam"
+                    "R-Barrel Roll"
+                    "R-Cloak"
+                ]
+            slots: [
+                "Force"
+                "Cannon"
+                "Torpedo"
+                "Crew"
+                "Crew"
+                "Device"
+                "Modification"
+                "Tactical Relay"
             ]
         }
         {
             name: "DBS-32C (SoC)"
             canonical_name: 'DBS-32C'.canonicalize()
-            xws: "dbs32c-siegeofcoruscant"
+            xws: "dbs32c-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 585
+            image_id: 328
             faction: "Separatist Alliance"
             ship: "Hyena-class Droid Bomber"
             skill: 3
-            points: 3
+            points: 30
+            charge: 2
             ship_override:
                 actions: [
                     "Calculate"
@@ -12459,153 +12202,184 @@ exportObj.basicCardData = ->
                     "R-> Lock"
                     "R-Jam"
                 ]
-            upgrades: [
-                "Plasma Torpedoes"
-                "Contingency Protocol (SoC)"
-                "Strut-Lock Override (SoC)"
+            slots: [
+                "Sensor"
+                "Tactical Relay"
+                "Modification"
+                "Configuration"
             ]
         }
         {
             name: "DBS-404 (SoC)"
             canonical_name: 'DBS-404'.canonicalize()
-            xws: "dbs404-siegeofcoruscant"
+            xws: "dbs404-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 586
+            image_id: 326
             faction: "Separatist Alliance"
             ship: "Hyena-class Droid Bomber"
             skill: 4
-            points: 3
-            upgrades: [
-                "Adv. Proton Torpedoes"
-                "Contingency Protocol (SoC)"
-                "Strut-Lock Override (SoC)"
+            points: 30
+            slots: [
+                "Torpedo"
+                "Missile"
+                "Device"
+                "Modification"
+                "Configuration"
             ]
         }
         {
             name: "Baktoid Prototype (SoC)"
             canonical_name: 'Baktoid Prototype'.canonicalize()
-            xws: "baktoidprototype-siegeofcoruscant"
+            xws: "baktoidprototype-siegeofcoruscant-lsl"
+            standard_loadout: true
             id: 587
+            image_id: 329
             faction: "Separatist Alliance"
             ship: "Hyena-class Droid Bomber"
             skill: 1
             max_per_squad: 2
-            points: 3
-            upgrades: [
-                "Homing Missiles"
-                "Contingency Protocol (SoC)"
-                "Strut-Lock Override (SoC)"
+            points: 26
+            slots: [
+                "Sensor"
+                "Missile"
+                "Missile"
+                "Modification"
+                "Configuration"
             ]
         }
         {
             name: "DIS-347 (SoC)"
             canonical_name: 'DIS-347'.canonicalize()
-            xws: "dis347-siegeofcoruscant"
+            xws: "dis347-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 588
+            image_id: 421
             faction: "Separatist Alliance"
             ship: "Droid Tri-fighter"
             skill: 3
-            points: 4
-            upgrades: [
-                "Marksmanship"
-                "Afterburners"
-                "Contingency Protocol (SoC)"
+            points: 36
+            slots: [
+                "Talent"
+                "Sensor"
+                "Missile"
+                "Modification"
+                "Configuration"
             ]
         }
         {
             name: "DIS-T81 (SoC)"
             canonical_name: 'DIS-T81'.canonicalize()
-            xws: "dist81-siegeofcoruscant"
+            xws: "dist81-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 589
+            image_id: 422
             faction: "Separatist Alliance"
             ship: "Droid Tri-fighter"
             skill: 4
-            points: 5
-            upgrades: [
-                "Outmaneuver"
-                "Afterburners"
-                "Contingency Protocol (SoC)"
+            points: 38
+            slots: [
+                "Talent"
+                "Sensor"
+                "Missile"
+                "Modification"
+                "Configuration"
             ]
         }
         {
             name: "Phlac-Arphocc Prototype (SoC)"
             canonical_name: 'Phlac-Arphocc Prototype'.canonicalize()
-            xws: "phlacarphoccprototype-siegeofcoruscant"
+            xws: "phlacarphoccprototype-siegeofcoruscant-lsl"
+            standard_loadout: true
             id: 590
+            image_id: 423
             faction: "Separatist Alliance"
             ship: "Droid Tri-fighter"
             skill: 5
-            points: 4
+            points: 41
             max_per_squad: 2
-            upgrades: [
-                "Afterburners"
-                "Contingency Protocol (SoC)"
-                "Evasion Sequence 7 (SoC)"
+            slots: [
+                "Talent"
+                "Sensor"
+                "Missile"
+                "Modification"
+                "Configuration"
             ]
         }
         {
             name: "DFS-081 (SoC)"
             canonical_name: 'DFS-081'.canonicalize()
-            xws: "dfs081-siegeofcoruscant"
+            xws: "dfs081-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 591
+            image_id: 311
             faction: "Separatist Alliance"
             ship: "Vulture-class Droid Fighter"
             skill: 3
             charge: 2
-            points: 2
-            upgrades: [
-                "Discord Missiles"
-                "Contingency Protocol (SoC)"
-                "Strut-Lock Override (SoC)"
+            points: 23
+            slots: [
+                "Missile"
+                "Configuration"
+                "Modification"
             ]
         }
         {
             name: "DFS-311 (SoC)"
             canonical_name: 'DFS-311'.canonicalize()
-            xws: "dfs311-siegeofcoruscant"
+            xws: "dfs311-siegeofcoruscant-lsl"
             unique: true
+            standard_loadout: true
             id: 592
+            image_id: 337
             faction: "Separatist Alliance"
             ship: "Vulture-class Droid Fighter"
             skill: 1
-            points: 3
-            upgrades: [
-                "Discord Missiles"
-                "Contingency Protocol (SoC)"
-                "Strut-Lock Override (SoC)"
+            points: 23
+            slots: [
+                "Missile"
+                "Configuration"
+                "Modification"
             ]
         }
         {
             name: "Haor Chall Prototype (SoC)"
             canonical_name: 'Haor Chall Prototype'.canonicalize()
-            xws: "haorchallprototype-siegeofcoruscant"
+            xws: "haorchallprototype-siegeofcoruscant-lsl"
+            standard_loadout: true
             id: 593
+            image_id: 310
             faction: "Separatist Alliance"
             ship: "Vulture-class Droid Fighter"
             skill: 1
             max_per_squad: 2
-            points: 2
-            upgrades: [
-                "Ion Missiles"
-                "Contingency Protocol (SoC)"
-                "Strut-Lock Override (SoC)"
+            points: 22
+            slots: [
+                "Missile"
+                "Configuration"
+                "Modification"
             ]
         }
         {
             name: "Corran Horn (X-Wing)"
+            canonical_name: 'Corran Horn'.canonicalize()
             id: 594
             unique: true
             xws: "corranhorn-t65xwing"
             faction: "Rebel Alliance"
             ship: "T-65 X-wing"
             skill: 5
-            points: 20
-            loadout: 99
+            points: 46
             slots: [
+                "Talent"
+                "Torpedo"
+                "Astromech"
                 "Modification"
+                "Configuration"
             ]
         }
         {
@@ -12617,10 +12391,13 @@ exportObj.basicCardData = ->
             skill: 5
             charge: 1
             recurring: 1
-            points: 20
-            loadout: 99
+            points: 49
             slots: [
+                "Talent"
+                "Torpedo"
+                "Astromech"
                 "Modification"
+                "Configuration"
             ]
         }
         {
@@ -12630,10 +12407,12 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "RZ-1 A-wing"
             skill: 5
-            points: 20
-            loadout: 99
+            points: 38
             slots: [
-                "Modification"
+                "Talent"
+                "Talent"
+                "Missile"
+                "Configuration"
             ]
         }
         {
@@ -12643,12 +12422,14 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "RZ-1 A-wing"
             skill: 3
-            points: 20
+            points: 35
             force: 1
             forcerecurring: 0
-            loadout: 99
             slots: [
-                "Modification"
+                "Talent"
+                "Talent"
+                "Missile"
+                "Configuration"
             ]
         }
         {
@@ -12658,10 +12439,14 @@ exportObj.basicCardData = ->
             faction: "Rebel Alliance"
             ship: "BTL-A4 Y-wing"
             skill: 3
-            points: 20
-            loadout: 99
+            points: 36
             slots: [
+                "Turret"
+                "Torpedo"
+                "Missile"
+                "Astromech"
                 "Modification"
+                "Device"
             ]
         }
         {
@@ -12671,10 +12456,14 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/rb Heavy"
             skill: 5
-            points: 20
-            loadout: 99
+            points: 42
             slots: [
+                "Talent"
+                "Cannon"
+                "Cannon"
                 "Modification"
+                "Modification"
+                "Configuration"
             ]
         }
         {
@@ -12684,9 +12473,11 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE Advanced x1"
             skill: 5
-            points: 20
-            loadout: 99
+            points: 44
             slots: [
+                "Talent"
+                "Sensor"
+                "Missile"
                 "Modification"
             ]
         }
@@ -12698,10 +12489,13 @@ exportObj.basicCardData = ->
             ship: "TIE/in Interceptor"
             skill: 4
             force: 2
-            points: 20
-            loadout: 99
+            points: 47
+            keyword: ["Dark Side"]
             slots: [
+                "Force"
                 "Modification"
+                "Modification"
+                "Configuration"
             ]
         }
         {
@@ -12711,9 +12505,9 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 3
-            points: 20
-            loadout: 99
+            points: 24
             slots: [
+                "Talent"
                 "Modification"
             ]
         }
@@ -12724,9 +12518,9 @@ exportObj.basicCardData = ->
             faction: "Galactic Empire"
             ship: "TIE/ln Fighter"
             skill: 3
-            points: 20
-            loadout: 99
+            points: 24
             slots: [
+                "Talent"
                 "Modification"
             ]
         }
@@ -12741,14 +12535,21 @@ exportObj.basicCardData = ->
             skill: 6
             charge: 2
             recurring: 1
-            points: 20
-            loadout: 99
+            points: 67
             slots: [
+                "Talent"
+                "Missile"
+                "Crew"
+                "Crew"
+                "Gunner"
+                "Illicit"
                 "Modification"
+                "Title"
             ]
         }
         {
             name: "Lando Calrissian (Resistance)"
+            canonical_name: 'Lando Calrissian'.canonicalize()
             xws: "landocalrissian-scavengedyt1300"
             id: 605
             unique: true
@@ -12757,10 +12558,16 @@ exportObj.basicCardData = ->
             skill: 5
             charge: 3
             recurring: 1
-            points: 20
-            loadout: 99
+            points: 70
             slots: [
+                "Talent"
+                "Missile"
+                "Crew"
+                "Crew"
+                "Gunner"
+                "Illicit"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -12770,10 +12577,14 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 4
-            points: 20
-            loadout: 99
+            points: 48
             slots: [
+                "Talent"
+                "Astromech"
+                "Tech"
                 "Modification"
+                "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -12784,10 +12595,14 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "T-70 X-wing"
             skill: 3
-            points: 20
-            loadout: 99
+            points: 46
             slots: [
+                "Talent"
+                "Astromech"
+                "Tech"
                 "Modification"
+                "Configuration"
+                "Title"
                 "HardpointShip"
             ]
         }
@@ -12798,9 +12613,15 @@ exportObj.basicCardData = ->
             faction: "Resistance"
             ship: "Resistance Transport"
             skill: 2
-            points: 20
-            loadout: 99
+            points: 31
             slots: [
+                "Tech"
+                "Cannon"
+                "Cannon"
+                "Torpedo"
+                "Crew"
+                "Crew"
+                "Astromech"
                 "Modification"
             ]
         }
@@ -12811,10 +12632,15 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Firespray-class Patrol Craft"
             skill: 1
-            points: 20
-            loadout: 99
+            points: 63
             slots: [
+                "Cannon"
+                "Missile"
+                "Crew"
+                "Device"
+                "Illicit"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -12824,9 +12650,11 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Fang Fighter"
             skill: 3
-            points: 20
-            loadout: 99
+            points: 47
+            keyword: ["Mandalorian"]
             slots: [
+                "Talent"
+                "Torpedo"
                 "Modification"
             ]
         }
@@ -12837,10 +12665,15 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "Rogue-class Starfighter"
             skill: 5
-            points: 20
-            loadout: 99
+            points: 43
+            keyword: ["Bounty Hunter"]
             slots: [
+                "Talent"
+                "Cannon"
+                "Cannon"
+                "Illicit"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -12850,11 +12683,18 @@ exportObj.basicCardData = ->
             faction: "Scum and Villainy"
             ship: "YV-666 Light Freighter"
             skill: 3
-            points: 20
-            loadout: 99
+            points: 53
             charge: 3
             slots: [
+                "Talent"
+                "Cannon"
+                "Missile"
+                "Crew"
+                "Crew"
+                "Gunner"
+                "Illicit"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -12863,9 +12703,8 @@ exportObj.basicCardData = ->
             unique: true
             faction: "Scum and Villainy"
             ship: "Modified TIE/ln Fighter"
-            skill: 2
-            points: 20
-            loadout: 99
+            skill: 3
+            points: 24
             slots: [
                 "Modification"
             ]
@@ -12877,11 +12716,16 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             ship: "Droid Tri-fighter"
             skill: 5
-            points: 20
-            loadout: 99
+            points: 41
             chassis: "Modified for Organics"
+            keyword: ["Bounty Hunter"]
             slots: [
+                "Talent"
+                "Sensor"
+                "Missile"
+                "Illicit"
                 "Modification"
+                "Configuration"
             ]
             ship_override:
                 actions: [
@@ -12902,25 +12746,38 @@ exportObj.basicCardData = ->
             ship: "Firespray-class Patrol Craft"
             skill: 4
             force: 1
-            points: 20
-            loadout: 99
+            points: 75
+            keyword: ["Dark Side", "Bounty Hunter"]
             slots: [
+                "Force"
+                "Cannon"
+                "Missile"
+                "Crew"
+                "Device"
+                "Illicit"
                 "Modification"
+                "Title"
             ]
         }
         {
             name: "Durge (Separatist)"
+            canonical_name: 'Durge'.canonicalize()
             xws: "durge-separatistalliance"
             id: 616
             unique: true
             faction: "Separatist Alliance"
             ship: "Rogue-class Starfighter"
-            skill: 1
+            skill: 5
             charge: 1
-            points: 20
-            loadout: 99
+            points: 45
+            keyword: ["Bounty Hunter"]
             slots: [
+                "Talent"
+                "Cannon"
+                "Cannon"
+                "Illicit"
                 "Modification"
+                "Title"
             ]
         }
         {
@@ -12931,9 +12788,10 @@ exportObj.basicCardData = ->
             ship: "Vulture-class Droid Fighter"
             skill: 1
             charge: 3
-            points: 20
-            loadout: 99
+            points: 22
             slots: [
+                "Missile"
+                "Configuration"
                 "Modification"
             ]
         }
@@ -12941,14 +12799,15 @@ exportObj.basicCardData = ->
             name: "Kelrodo-Ai Holdout"
             id: 618
             faction: "Separatist Alliance"
-            ship: "Droid Tri-fighter"
-            skill: 2
-            points: 20
+            ship: "Vulture-class Droid Fighter"
+            skill: 1
+            points: 22
             max_per_squad: 3
-            loadout: 99
             chassis: "Modified for Organics"
             slots: [
+                "Missile"
                 "Modification"
+                "Configuration"
             ]
             ship_override:
                 actions: [
@@ -12965,10 +12824,13 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Delta-7 Aethersprite"
             skill: 5
-            points: 20
+            points: 46
             force: 2
-            loadout: 99
+            keyword: ["Light Side"]
             slots: [
+                "Force"
+                "Astromech"
+                "Configuration"
                 "Modification"
             ]
         }
@@ -12977,6 +12839,7 @@ exportObj.basicCardData = ->
             canonical_name: 'Adi Gallia'.canonicalize()
             xws: "adigallia-delta7baethersprite"
             id: 620
+            skip : true
             unique: true
             faction: "Galactic Republic"
             ship: "Delta-7b Aethersprite"
@@ -12997,9 +12860,15 @@ exportObj.basicCardData = ->
             skill: 2
             charge: 2
             recurring: 1
-            points: 20
-            loadout: 99
+            points: 49
+            keyword: ["Clone"]
             slots: [
+                "Missile"
+                "Missile"
+                "Crew"
+                "Crew"
+                "Gunner"
+                "Gunner"
                 "Modification"
             ]
             applies_condition: 'Sickening Maneuver'.canonicalize()
@@ -13012,9 +12881,12 @@ exportObj.basicCardData = ->
             ship: "Eta-2 Actis"
             skill: 4
             force: 2
-            points: 20
-            loadout: 99
+            points: 42
+            keyword: ["Light Side"]
             slots: [
+                "Force"
+                "Talent"
+                "Astromech"
                 "Modification"
             ]
         }
@@ -13027,9 +12899,10 @@ exportObj.basicCardData = ->
             skill: 1
             charge: 2
             recurring: 1
-            points: 20
-            loadout: 99
+            points: 24
+            keyword: ["Clone"]
             slots: [
+                "Missile"
                 "Modification"
             ]
         }
@@ -13040,10 +12913,13 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             ship: "Naboo Royal N-1 Starfighter"
             skill: 3
-            points: 20
-            loadout: 99
+            points: 31
             slots: [
-                "Modification"
+                "Talent"
+                "Talent"
+                "Sensor"
+                "Astromech"
+                "Torpedo"
             ]
         }
         {
@@ -13053,9 +12929,10 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/fo Fighter"
             skill: 5
-            points: 20
-            loadout: 99
+            points: 32
             slots: [
+                "Talent"
+                "Tech"
                 "Modification"
             ]
         }
@@ -13067,9 +12944,15 @@ exportObj.basicCardData = ->
             ship: "TIE/se Bomber"
             skill: 4
             charge: 3
-            points: 20
-            loadout: 99
+            points: 34
             slots: [
+                "Talent"
+                "Tech"
+                "Torpedo"
+                "Missile"
+                "Gunner"
+                "Device"
+                "Device"
                 "Modification"
             ]
         }
@@ -13080,9 +12963,10 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/fo Fighter"
             skill: 4
-            points: 20
-            loadout: 99
+            points: 34
             slots: [
+                "Talent"
+                "Tech"
                 "Modification"
             ]
         }
@@ -13093,9 +12977,10 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "TIE/fo Fighter"
             skill: 3
-            points: 20
-            loadout: 99
+            points: 32
             slots: [
+                "Talent"
+                "Tech"
                 "Modification"
             ]
             applies_condition: '''Primed For Speed'''.canonicalize()
@@ -13107,12 +12992,2595 @@ exportObj.basicCardData = ->
             faction: "First Order"
             ship: "Xi-class Light Shuttle"
             skill: 3
-            points: 20
-            loadout: 99
+            points: 49
             slots: [
+                "Talent"
+                "Tech"
+                "Tech"
+                "Crew"
+                "Crew"
                 "Modification"
             ]
+            ship_override:
+                actions: [
+                    "Focus"
+                    "Lock"
+                    "R-Coordinate"
+                    "Jam"
+                ]
             applies_condition: '''Broken Trust'''.canonicalize()
+        }
+        {
+            name: "Garven Dreis (BoY SL)"
+            canonical_name: 'Garven Dreis'.canonicalize()
+            xws: "garvendreis-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 630
+            image_id: 6
+            faction: "Rebel Alliance"
+            ship: "T-65 X-wing"
+            skill: 4
+            points: 53
+            chassis: "Hope"
+            upgrades: [
+                "Adv. Proton Torpedoes"
+                "R5-K6 (BoY)"
+            ]
+        }
+        {
+            name: "Luke Skywalker (BoY SL)"
+            canonical_name: 'Luke Skywalker'.canonicalize()
+            xws: "lukeskywalker-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 631
+            image_id: 4
+            faction: "Rebel Alliance"
+            ship: "T-65 X-wing"
+            skill: 5
+            points: 79
+            force: 2
+            chassis: "Hope"
+            upgrades: [
+                "Instinctive Aim"
+                "Attack Speed (BoY)"
+                "Proton Torpedoes"
+                "R2-D2 (BoY)"
+            ]
+        }
+        {
+            name: "Jek Porkins (BoY SL)"
+            canonical_name: 'Jek Porkins'.canonicalize()
+            xws: "jekporkins-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 632
+            image_id: 3
+            faction: "Rebel Alliance"
+            ship: "T-65 X-wing"
+            skill: 4
+            points: 54
+            chassis: "Hope"
+            upgrades: [
+                "Adv. Proton Torpedoes"
+                "R5-D8 (BoY)"
+                "Unstable Sublight Engines (BoY)"
+            ]
+        }
+        {
+            name: "Biggs Darklighter (BoY SL)"
+            canonical_name: 'Biggs Darklighter'.canonicalize()
+            xws: "biggsdarklighter-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 633
+            image_id: 7
+            faction: "Rebel Alliance"
+            ship: "T-65 X-wing"
+            skill: 3
+            points: 56
+            chassis: "Hope"
+            upgrades: [
+                "Attack Speed (BoY)"
+                "Selfless (BoY)"
+                "Proton Torpedoes"
+                "R2-F2 (BoY)"
+            ]
+        }
+        {
+            name: "Wedge Antilles (BoY SL)"
+            canonical_name: 'Wedge Antilles'.canonicalize()
+            xws: "wedgeantilles-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 634
+            image_id: 5
+            faction: "Rebel Alliance"
+            ship: "T-65 X-wing"
+            skill: 5
+            points: 65
+            chassis: "Hope"
+            upgrades: [
+                "Attack Speed (BoY)"
+                "Marksmanship"
+                "Proton Torpedoes"
+                "R2-A3 (BoY)"
+            ]
+        }
+        {
+            name: "Han Solo (BoY SL)"
+            canonical_name: 'Han Solo'.canonicalize()
+            xws: "hansolo-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 635
+            image_id: 559
+            faction: "Rebel Alliance"
+            ship: "Modified YT-1300 Light Freighter"
+            skill: 6
+            points: 105
+            charge: 4
+            chassis: "Solo"
+            upgrades: [
+                "Chewbacca (BoY)"
+                "Rigged Cargo Chute"
+                "Millennium Falcon"
+                "L3-37's Programming (BoY)"
+            ]
+        }
+        {
+            name: '"Dutch" Vander (BoY SL)'
+            canonical_name: '"Dutch" Vander'.canonicalize()
+            xws: "dutchvander-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 636
+            image_id: 27
+            faction: "Rebel Alliance"
+            ship: "BTL-A4 Y-wing"
+            skill: 4
+            points: 61
+            chassis: "Hope"
+            upgrades: [
+                "Ion Cannon Turret"
+                "Adv. Proton Torpedoes"
+                "Targeting Astromech (BoY)"
+            ]
+        }
+        {
+            name: "Dex Tiree (BoY SL)"
+            canonical_name: 'Dex Tiree'.canonicalize()
+            xws: "dextiree-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 637
+            image_id: 561
+            faction: "Rebel Alliance"
+            ship: "BTL-A4 Y-wing"
+            skill: 2
+            points: 38
+            chassis: "Hope"
+            upgrades: [
+                "Dorsal Turret"
+                "Adv. Proton Torpedoes"
+                "R4 Astromech"
+            ]
+        }
+        {
+            name: '"Pops" Krail (BoY SL)'
+            canonical_name: '"Pops" Krail'.canonicalize()
+            xws: "popskrail-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 638
+            image_id: 562
+            faction: "Rebel Alliance"
+            ship: "BTL-A4 Y-wing"
+            skill: 4
+            points: 45
+            chassis: "Hope"
+            upgrades: [
+                "Ion Cannon Turret"
+                "Adv. Proton Torpedoes"
+                "R4 Astromech"
+            ]
+        }
+        {
+            name: "Hol Okand (BoY SL)"
+            canonical_name: 'Hol Okand'.canonicalize()
+            xws: "holokand-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 639
+            image_id: 563
+            faction: "Rebel Alliance"
+            ship: "BTL-A4 Y-wing"
+            skill: 4
+            points: 49
+            chassis: "Hope"
+            upgrades: [
+                "Dorsal Turret"
+                "Adv. Proton Torpedoes"
+                "Precise Astromech (BoY)"
+            ]
+        }
+        {
+            name: "Darth Vader (BoY SL)"
+            canonical_name: 'Darth Vader'.canonicalize()
+            xws: "darthvader-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 640
+            image_id: 173
+            faction: "Galactic Empire"
+            ship: "TIE Advanced x1"
+            skill: 6
+            points: 81
+            force: 3
+            keyword: ["Dark Side", "Sith"]
+            ship_override:
+                shields: 3
+            upgrades: [
+                "Marksmanship"
+                "Hate"
+                "Afterburners"
+            ]
+        }
+        {
+            name: '"Backstabber" (BoY SL)'
+            canonical_name: '"Backstabber"'.canonicalize()
+            xws: "backstabber-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 641
+            image_id: 565
+            faction: "Galactic Empire"
+            ship: "TIE/ln Fighter"
+            skill: 5
+            points: 38
+            ship_override:
+                hull: 4
+            upgrades: [
+                "Crack Shot"
+                "Disciplined"
+                "Afterburners"
+            ]
+        }
+        {
+            name: '"Mauler" Mithel (BoY SL)'
+            canonical_name: '"Mauler" Mithel'.canonicalize()
+            xws: "maulermithel-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 642
+            image_id: 219
+            faction: "Galactic Empire"
+            ship: "TIE/ln Fighter"
+            skill: 5
+            points: 37
+            ship_override:
+                hull: 4
+            upgrades: [
+                "Predator"
+                "Afterburners"
+            ]
+        }
+        {
+            name: '"Dark Curse" (BoY SL)'
+            xws: "darkcurse-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 643
+            image_id: 567
+            faction: "Galactic Empire"
+            ship: "TIE/ln Fighter"
+            skill: 6
+            points: 37
+            ship_override:
+                hull: 4
+            upgrades: [
+                "Ruthless"
+                "Precision Ion Engines"
+            ]
+        }
+        {
+            name: '"Wampa" (BoY SL)'
+            canonical_name: '"Wampa"'.canonicalize()
+            xws: "wampa-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 644
+            image_id: 221
+            faction: "Galactic Empire"
+            ship: "TIE/ln Fighter"
+            skill: 1
+            charge: 1
+            recurring: 1
+            points: 39
+            ship_override:
+                hull: 4
+                actions: [
+                    "Focus"
+                    "Lock"
+                    "Evade"
+                    "Barrel Roll"
+                ]
+            upgrades: [
+                "Elusive"
+                "Vengeful (BoY)"
+            ]
+        }
+        {
+            name: "Iden Versio (BoY SL)"
+            canonical_name: 'Iden Versio'.canonicalize()
+            xws: "idenversio-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 645
+            image_id: 569
+            faction: "Galactic Empire"
+            ship: "TIE/in Interceptor"
+            skill: 4
+            points: 67
+            charge: 2
+            recurring: 1
+            chassis: "Sensitive Controls"
+            ship_override:
+                shields: 1
+            upgrades: [
+                "Predator"
+                "Fanatic (BoY)"
+            ]
+        }
+        {
+            name: "Sigma 4 (BoY SL)"
+            canonical_name: 'Sigma 4'.canonicalize()
+            xws: "sigma4-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 646
+            image_id: 570
+            faction: "Galactic Empire"
+            ship: "TIE/in Interceptor"
+            skill: 4
+            points: 52
+            charge: 2
+            chassis: "Sensitive Controls"
+            ship_override:
+                hull: 4
+            upgrades: [
+                "Disciplined"
+                "Primed Thrusters"
+            ]
+        }
+        {
+            name: "Sigma 5 (BoY SL)"
+            canonical_name: 'Sigma 5'.canonicalize()
+            xws: "sigma5-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 647
+            image_id: 571
+            faction: "Galactic Empire"
+            ship: "TIE/in Interceptor"
+            skill: 4
+            points: 50
+            charge: 2
+            chassis: "Sensitive Controls"
+            ship_override:
+                hull: 4
+            upgrades: [
+                "Sensor Jammer (BoY)"
+                "Elusive"
+            ]
+        }
+        {
+            name: "Sigma 6 (BoY SL)"
+            canonical_name: 'Sigma 6'.canonicalize()
+            xws: "sigma6-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 648
+            image_id: 572
+            faction: "Galactic Empire"
+            ship: "TIE/in Interceptor"
+            skill: 4
+            points: 48
+            charge: 2
+            chassis: "Sensitive Controls"
+            ship_override:
+                hull: 4
+            upgrades: [
+                "Daredevil"
+                "Afterburners"
+            ]
+        }
+        {
+            name: "Sigma 7 (BoY SL)"
+            canonical_name: 'Sigma 7'.canonicalize()
+            xws: "sigma7-battleofyavin"
+            unique: true
+            standard_loadout: true
+            id: 649
+            image_id: 573
+            faction: "Galactic Empire"
+            ship: "TIE/in Interceptor"
+            skill: 4
+            points: 48
+            charge: 2
+            chassis: "Sensitive Controls"
+            ship_override:
+                hull: 4
+                actions: [
+                    "Focus"
+                    "Evade"
+                    "Barrel Roll"
+                    "Boost"
+                    "Lock"
+                ]
+            upgrades: [
+                "Marksmanship"
+                "Fire-Control System"
+            ]
+        }
+        {
+            name: "Anakin Skywalker (SoC SL)"
+            canonical_name: 'Anakin Skywalker'.canonicalize()
+            xws: "anakinskywalker-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 650
+            image_id: 441
+            faction: "Galactic Republic"
+            ship: "Eta-2 Actis"
+            skill: 6
+            points: 66
+            force: 3
+            chassis: "Intuitive Controls"
+            keyword: ["Jedi","Light Side","Dark Side"]
+            upgrades: [
+                "Malice"
+                "Ancillary Ion Weapons (SoC)"
+                "R2-D2 (Republic)"
+            ]
+        }
+        {
+            name: "Obi-Wan Kenobi (SoC SL)"
+            canonical_name: 'Obi-Wan Kenobi'.canonicalize()
+            xws: "obiwankenobi-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 651
+            image_id: 440
+            faction: "Galactic Republic"
+            ship: "Eta-2 Actis"
+            skill: 5
+            points: 52
+            force: 3
+            chassis: "Intuitive Controls"
+            keyword: ["Jedi","Light Side"]
+            upgrades: [
+                "Patience"
+                "Ancillary Ion Weapons (SoC)"
+                "R4-P17 (SoC)"
+            ]
+        }
+        {
+            name: "Shaak Ti (SoC SL)"
+            canonical_name: 'Shaak Ti'.canonicalize()
+            xws: "shaakti-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 652
+            image_id: 438
+            faction: "Galactic Republic"
+            ship: "Eta-2 Actis"
+            skill: 4
+            points: 49
+            force: 2
+            chassis: "Intuitive Controls"
+            keyword: ["Jedi","Light Side"]
+            upgrades: [
+                "Marksmanship"
+                "Brilliant Evasion"
+                "Ancillary Ion Weapons (SoC)"
+                "R4-P Astromech"
+            ]
+        }
+        {
+            name: '"Odd Ball" (SoC SL)'
+            canonical_name: 'Odd Ball'.canonicalize()
+            xws: "oddball-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 653
+            image_id: 338
+            faction: "Galactic Republic"
+            ship: "ARC-170 Starfighter"
+            skill: 5
+            points: 56
+            chassis: "Born for This"
+            ship_override:
+                shields: 4
+            upgrades: [
+                "Selfless"
+                "Veteran Tail Gunner"
+                "R4-P Astromech"
+            ]
+        }
+        {
+            name: '"Wolffe" (SoC SL)'
+            canonical_name: 'Wolffe'.canonicalize()
+            xws: "wolffe-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 654
+            image_id: 342
+            faction: "Galactic Republic"
+            ship: "ARC-170 Starfighter"
+            skill: 4
+            charge: 1
+            points: 56
+            chassis: "Born for This"
+            upgrades: [
+                "Wolfpack (SoC)"
+                "Veteran Tail Gunner"
+                "Q7 Astromech"
+            ]
+        }
+        {
+            name: '"Jag" (SoC SL)'
+            canonical_name: 'Jag'.canonicalize()
+            xws: "jag-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 655
+            image_id: 339
+            faction: "Galactic Republic"
+            ship: "ARC-170 Starfighter"
+            skill: 3
+            points: 51
+            chassis: "Born for This"
+            upgrades: [
+                "Veteran Tail Gunner"
+                "R4-P Astromech"
+                "Synchronized Console"
+            ]
+        }
+        {
+            name: '"Contrail" (SoC SL)'
+            canonical_name: 'Contrail'.canonicalize()
+            xws: "contrail-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 656
+            image_id: 434
+            faction: "Galactic Republic"
+            ship: "Nimbus-class V-wing"
+            skill: 5
+            points: 46
+            chassis: "Born for This"
+            upgrades: [
+                "Ion Limiter Override"
+                "Precise Astromech (BoY)"
+                "Ion Bombs"
+                'Alpha-3B "Besh"'
+            ]
+        }
+        {
+            name: '"Klick" (SoC SL)'
+            canonical_name: 'Klick'.canonicalize()
+            xws: "klick-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 657
+            image_id: 433
+            faction: "Galactic Republic"
+            ship: "Nimbus-class V-wing"
+            skill: 4
+            points: 41
+            charge: 1
+            recurring: 1
+            chassis: "Born for This"
+            ship_override:
+                shields: 3
+            upgrades: [
+                "R3 Astromech"
+                "Precision Ion Engines"
+                'Alpha-3E "Esk"'
+            ]
+        }
+        {
+            name: '"Kickback" (SoC SL)'
+            canonical_name: 'Kickback'.canonicalize()
+            xws: "kickback-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 658
+            image_id: 315
+            faction: "Galactic Republic"
+            ship: "V-19 Torrent Starfighter"
+            skill: 5
+            points: 41
+            chassis: "Born for This"
+            ship_override:
+                hull: 6
+            upgrades: [
+                "Diamond-Boron Missiles"
+                "Munitions Failsafe"
+            ]
+        }
+        {
+            name: '"Axe" (SoC SL)'
+            canonical_name: 'Axe'.canonicalize()
+            xws: "axe-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 659
+            image_id: 318
+            faction: "Galactic Republic"
+            ship: "V-19 Torrent Starfighter"
+            skill: 3
+            points: 40
+            chassis: "Born for This"
+            ship_override:
+                hull: 6
+            upgrades: [
+                "Deadeye Shot"
+                "Barrage Rockets"
+            ]
+        }
+        {
+            name: "Count Dooku (SoC SL)"
+            canonical_name: 'Count Dooku'.canonicalize()
+            xws: "countdooku-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 660
+            image_id: 334
+            faction: "Separatist Alliance"
+            ship: "Sith Infiltrator"
+            skill: 5
+            points: 75
+            force: 3
+            keyword: ["Dark Side"]
+            upgrades: [
+                "Malice"
+                "Roiling Anger (SoC)"
+                "Scimitar"
+            ]
+        }
+        {
+            name: "DBS-32C (SoC SL)"
+            canonical_name: 'DBS-32C'.canonicalize()
+            xws: "dbs32c-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 661
+            image_id: 328
+            faction: "Separatist Alliance"
+            ship: "Hyena-class Droid Bomber"
+            skill: 3
+            points: 38
+            charge: 2
+            ship_override:
+                actions: [
+                    "Calculate"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Lock"
+                    "R-Jam"
+                ]
+            upgrades: [
+                "Plasma Torpedoes"
+                "Contingency Protocol (SoC)"
+                "Strut-Lock Override (SoC)"
+            ]
+        }
+        {
+            name: "DBS-404 (SoC SL)"
+            canonical_name: 'DBS-404'.canonicalize()
+            xws: "dbs404-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 662
+            image_id: 326
+            faction: "Separatist Alliance"
+            ship: "Hyena-class Droid Bomber"
+            skill: 4
+            points: 36
+            upgrades: [
+                "Adv. Proton Torpedoes"
+                "Contingency Protocol (SoC)"
+                "Strut-Lock Override (SoC)"
+            ]
+        }
+        {
+            name: "Baktoid Prototype (SoC SL)"
+            canonical_name: 'Baktoid Prototype'.canonicalize()
+            xws: "baktoidprototype-siegeofcoruscant"
+            standard_loadout: true
+            id: 663
+            image_id: 329
+            faction: "Separatist Alliance"
+            ship: "Hyena-class Droid Bomber"
+            skill: 1
+            max_per_squad: 2
+            points: 34
+            upgrades: [
+                "Homing Missiles"
+                "Contingency Protocol (SoC)"
+                "Strut-Lock Override (SoC)"
+            ]
+        }
+        {
+            name: "DIS-347 (SoC SL)"
+            canonical_name: 'DIS-347'.canonicalize()
+            xws: "dis347-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 664
+            image_id: 421
+            faction: "Separatist Alliance"
+            ship: "Droid Tri-fighter"
+            skill: 3
+            points: 40
+            upgrades: [
+                "Marksmanship"
+                "Afterburners"
+                "Contingency Protocol (SoC)"
+            ]
+        }
+        {
+            name: "DIS-T81 (SoC SL)"
+            canonical_name: 'DIS-T81'.canonicalize()
+            xws: "dist81-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 665
+            image_id: 422
+            faction: "Separatist Alliance"
+            ship: "Droid Tri-fighter"
+            skill: 4
+            points: 48
+            upgrades: [
+                "Outmaneuver"
+                "Afterburners"
+                "Contingency Protocol (SoC)"
+            ]
+        }
+        {
+            name: "Phlac-Arphocc Prototype (SoC SL)"
+            canonical_name: 'Phlac-Arphocc Prototype'.canonicalize()
+            xws: "phlacarphoccprototype-siegeofcoruscant"
+            standard_loadout: true
+            id: 666
+            image_id: 423
+            faction: "Separatist Alliance"
+            ship: "Droid Tri-fighter"
+            skill: 5
+            points: 50
+            max_per_squad: 2
+            upgrades: [
+                "Afterburners"
+                "Contingency Protocol (SoC)"
+                "Evasion Sequence 7 (SoC)"
+            ]
+        }
+        {
+            name: "DFS-081 (SoC SL)"
+            canonical_name: 'DFS-081'.canonicalize()
+            xws: "dfs081-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 667
+            image_id: 311
+            faction: "Separatist Alliance"
+            ship: "Vulture-class Droid Fighter"
+            skill: 3
+            charge: 2
+            points: 28
+            upgrades: [
+                "Discord Missiles"
+                "Contingency Protocol (SoC)"
+                "Strut-Lock Override (SoC)"
+            ]
+        }
+        {
+            name: "DFS-311 (SoC SL)"
+            canonical_name: 'DFS-311'.canonicalize()
+            xws: "dfs311-siegeofcoruscant"
+            unique: true
+            standard_loadout: true
+            id: 668
+            image_id: 337
+            faction: "Separatist Alliance"
+            ship: "Vulture-class Droid Fighter"
+            skill: 1
+            points: 28
+            upgrades: [
+                "Discord Missiles"
+                "Contingency Protocol (SoC)"
+                "Strut-Lock Override (SoC)"
+            ]
+        }
+        {
+            name: "Haor Chall Prototype (SoC SL)"
+            canonical_name: 'Haor Chall Prototype'.canonicalize()
+            xws: "haorchallprototype-siegeofcoruscant"
+            standard_loadout: true
+            id: 669
+            image_id: 310
+            faction: "Separatist Alliance"
+            ship: "Vulture-class Droid Fighter"
+            skill: 1
+            max_per_squad: 2
+            points: 25
+            upgrades: [
+                "Ion Missiles"
+                "Contingency Protocol (SoC)"
+                "Strut-Lock Override (SoC)"
+            ]
+        }
+        {
+            name: "Darth Vader (SSP SL)"
+            canonical_name: 'Darth Vader'.canonicalize()
+            xws: "darthvader-swz105"
+            unique: true
+            id: 670
+            image_id: 173
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE Advanced x1"
+            skill: 6
+            points: 75
+            force: 3
+            keyword: ["Dark Side", "Sith"]
+            ship_override:
+                shields: 3
+            upgrades: [
+                "Hate"
+                "Ion Missiles"
+                "Afterburners"
+            ]
+        }
+        {
+            name: "Maarek Stele (SSP SL)"
+            canonical_name: 'Maarek Stele'.canonicalize()
+            xws: "maarekstele-swz105"
+            unique: true
+            id: 671
+            image_id: 174
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE Advanced x1"
+            skill: 5
+            points: 53
+            upgrades: [
+                "Elusive"
+                "Outmaneuver"
+                "Afterburners"            ]
+        }
+        {
+            name: "Captain Jonus (SSP SL)"
+            canonical_name: 'Captain Jonus'.canonicalize()
+            xws: "captainjonus-swz105"
+            unique: true
+            id: 672
+            image_id: 203
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/sa Bomber"
+            skill: 4
+            points: 54
+            upgrades: [
+                "Feedback Ping"
+                "Plasma Torpedoes"
+                "Proton Bombs"
+            ]
+        }
+        {
+            name: "Tomax Bren (SSP SL)"
+            canonical_name: 'Tomax Bren'.canonicalize()
+            xws: "tomaxbren-swz105"
+            unique: true
+            id: 673
+            image_id: 205
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/sa Bomber"
+            skill: 5
+            points: 48
+            upgrades: [
+                "Elusive"
+                "Barrage Rockets"
+                "Proximity Mines"
+            ]
+        }
+        {
+            name: "Iden Versio (SSP SL)"
+            canonical_name: 'Iden Versio'.canonicalize()
+            xws: "idenversio-swz105"
+            unique: true
+            id: 674
+            image_id: 218
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/ln Fighter"
+            skill: 4
+            points: 45
+            charge: 1
+            upgrades: [
+                "Disciplined"
+                "Elusive"
+            ]
+        }
+        {
+            name: '"Night Beast" (SSP SL)'
+            canonical_name: '"Night Beast"'.canonicalize()
+            xws: "nightbeast-swz105"
+            unique: true
+            id: 675
+            image_id: 226
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/ln Fighter"
+            skill: 2
+            points: 26
+            upgrades: [
+                "Disciplined"
+                "Predator"
+            ]
+        }
+        {
+            name: "Valen Rudor (SSP SL)"
+            canonical_name: 'Valen Rudor'.canonicalize()
+            xws: "valenrudor-swz105"
+            unique: true
+            id: 676
+            image_id: 225
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/ln Fighter"
+            skill: 3
+            points: 27
+            upgrades: [
+                "Disciplined"
+                "Precision Ion Engines"
+            ]
+        }
+        {
+            name: '"Dutch" Vander (SSP SL)'
+            canonical_name: '"Dutch" Vander'.canonicalize()
+            xws: "dutchvander-swz106"
+            unique: true
+            id: 677
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "BTL-A4 Y-wing"
+            skill: 4
+            points: 47
+            upgrades: [
+                "Ion Cannon Turret"
+                "Proton Bombs"
+            ]
+        }
+        {
+            name: "Horton Salm (SSP SL)"
+            canonical_name: 'Horton Salm'.canonicalize()
+            xws: "hortonsalm-swz106"
+            unique: true
+            id: 678
+            image_id: 26
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "BTL-A4 Y-wing"
+            skill: 4
+            points: 45
+            upgrades: [
+                "Ion Cannon Turret"
+                "Proximity Mines"
+            ]
+        }
+        {
+            name: "Arvel Crynyd (SSP SL)"
+            canonical_name: 'Arvel Crynyd'.canonicalize()
+            xws: "arvelcrynyd-swz106"
+            unique: true
+            id: 679
+            image_id: 51
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "RZ-1 A-wing"
+            skill: 3
+            points: 37
+            upgrades: [
+                "Predator"
+                "Afterburners"
+            ]
+        }
+        {
+            name: "Jake Farrell (SSP SL)"
+            canonical_name: 'Jake Farrell'.canonicalize()
+            xws: "jakefarrell-swz106"
+            unique: true
+            id: 680
+            image_id: 50
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "RZ-1 A-wing"
+            skill: 4
+            points: 43
+            upgrades: [
+                "Elusive"
+                "Outmaneuver"
+                "Ion Missiles"
+            ]
+        }
+        {
+            name: "Jek Porkins (SSP SL)"
+            canonical_name: 'Jek Porkins'.canonicalize()
+            xws: "jekporkins-swz106"
+            unique: true
+            id: 681
+            image_id: 3
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "T-65 X-wing"
+            skill: 4
+            points: 54
+            upgrades: [
+                "Predator"
+                "Proton Torpedoes"
+                "R5-D8"
+            ]
+        }
+        {
+            name: "Luke Skywalker (SSP SL)"
+            canonical_name: 'Luke Skywalker'.canonicalize()
+            xws: "lukeskywalker-swz106"
+            unique: true
+            id: 682
+            image_id: 4
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "T-65 X-wing"
+            skill: 5
+            force: 2
+            points: 75
+            upgrades: [
+                "Instinctive Aim"
+                "Proton Torpedoes"
+                "R2-D2"
+            ]
+        }
+        {
+            name: "Shara Bey (SSP SL)"
+            canonical_name: 'Shara Bey'.canonicalize()
+            xws: "sharabey-swz106"
+            unique: true
+            id: 683
+            image_id: 462
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "RZ-1 A-wing"
+            skill: 4
+            points: 36
+            upgrades: [
+                "Hopeful"
+                "Concussion Missiles"
+            ]
+        }
+        {
+            name: '"Deathfire" (TBE)'
+            canonical_name: '"Deathfire"'.canonicalize()
+            xws: "deathfire-swz98-lsl"
+            unique: true
+            id: 684
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/sa Bomber"
+            skill: 2
+            points: 33
+            charge: 2
+            recurring: 1
+            slots: [
+                "Torpedo"
+                "Missile"
+                "Missile"
+                "Gunner"
+                "Device"
+                "Device"
+                "Modification"
+            ]
+        }
+        {
+            name: '"Deathfire" (TBE SL)'
+            canonical_name: '"Deathfire"'.canonicalize()
+            xws: "deathfire-swz98"
+            unique: true
+            id: 685
+            image_id: 684
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/sa Bomber"
+            skill: 2
+            points: 45
+            charge: 2
+            recurring: 1
+            upgrades: [
+                "Swift Approach (TBE)"
+                "Conner Nets"
+                "Proton Bombs"
+            ]
+        }
+        {
+            name: "Major Rhymer (TBE)"
+            xws: "majorrhymer-swz98-lsl"
+            canonical_name: 'Major Rhymer'.canonicalize()
+            unique: true
+            id: 686
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/sa Bomber"
+            skill: 4
+            points: 33
+            slots: [
+                "Talent"
+                "Torpedo"
+                "Missile"
+                "Missile"
+                "Gunner"
+                "Device"
+                "Device"
+                "Modification"
+            ]
+        }
+        {
+            name: "Major Rhymer (TBE SL)"
+            xws: "majorrhymer-swz98"
+            canonical_name: 'Major Rhymer'.canonicalize()
+            unique: true
+            id: 687
+            image_id: 686
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/sa Bomber"
+            skill: 4
+            points: 41
+            upgrades: [
+                "Adv. Proton Torpedoes"
+                "Automated Loaders (TBE)"
+                "Afterburners"
+            ]
+        }
+        {
+            name: "Captain Jonus (TBE)"
+            xws: "captainjonus-swz98-lsl"
+            canonical_name: 'Captain Jonus'.canonicalize()
+            unique: true
+            id: 688
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/sa Bomber"
+            skill: 4
+            points: 36
+            slots: [
+                "Talent"
+                "Torpedo"
+                "Missile"
+                "Missile"
+                "Gunner"
+                "Device"
+                "Device"
+                "Modification"
+            ]
+            ship_override:
+                actions: [
+                    "Focus"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Lock"
+                    "Reload"
+                ]
+        }
+        {
+            name: "Captain Jonus (TBE SL)"
+            xws: "captainjonus-swz98"
+            canonical_name: 'Captain Jonus'.canonicalize()
+            unique: true
+            id: 689
+            image_id: 688
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/sa Bomber"
+            skill: 4
+            points: 51
+            upgrades: [
+                "Top Cover (TBE)"
+                "Barrage Rockets"
+                "Proton Bombs"
+            ]
+            ship_override:
+                actions: [
+                    "Focus"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Lock"
+                    "Reload"
+                ]
+        }
+        {
+            name: "Tomax Bren (TBE)"
+            xws: "tomaxbren-swz98-lsl"
+            canonical_name: 'Tomax Bren'.canonicalize()
+            unique: true
+            id: 690
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/sa Bomber"
+            skill: 5
+            points: 37
+            charge: 2
+            recurring: 1
+            slots: [
+                "Talent"
+                "Torpedo"
+                "Missile"
+                "Missile"
+                "Gunner"
+                "Device"
+                "Device"
+                "Modification"
+            ]
+        }
+        {
+            name: "Tomax Bren (TBE SL)"
+            xws: "tomaxbren-swz98"
+            canonical_name: 'Tomax Bren'.canonicalize()
+            unique: true
+            id: 691
+            image_id: 690
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/sa Bomber"
+            skill: 5
+            points: 53
+            charge: 2
+            recurring: 1
+            upgrades: [
+                "True Grit (TBE)"
+                "Plasma Torpedoes"
+                "Ion Bombs"
+            ]
+        }
+        {
+            name: "Dash Rendar (2023)"
+            xws: "dashrendar-swz103-rebelalliance"
+            canonical_name: 'Dash Rendar'.canonicalize()
+            unique: true
+            id: 692
+            faction: "Rebel Alliance"
+            ship: "YT-2400 Light Freighter (2023)"
+            skill: 5
+            points: 77
+            slots: [
+                "Talent"
+                "Missile"
+                "Crew"
+                "Illicit"
+                "Illicit"
+                "Modification"
+                "Title"
+            ]
+        }
+        {
+            name: "Dash Rendar (YLF)"
+            xws: "dashrendar-swz103-lsl-rebelalliance"
+            canonical_name: 'Dash Rendar'.canonicalize()
+            unique: true
+            id: 693
+            image_id: 39
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "YT-2400 Light Freighter (2023)"
+            skill: 5
+            points: 74
+            slots: [
+                "Talent"
+                "Missile"
+                "Crew"
+                "Illicit"
+                "Illicit"
+                "Modification"
+                "Title"
+            ]
+        }
+        {
+            name: "Dash Rendar (YLF SL)"
+            xws: "dashrendar-swz103-sl-rebelalliance"
+            canonical_name: 'Dash Rendar'.canonicalize()
+            unique: true
+            id: 694
+            image_id: 39
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "YT-2400 Light Freighter (2023)"
+            skill: 5
+            points: 90
+            upgrades: [
+                "Mercenary (YLF)"
+                "Seeker Missiles (YLF)"
+                '"Leebo" (YLF)'
+                "Outrider (2023)"
+            ]
+        }
+        {
+            name: "Dash Rendar (Scum)"
+            xws: "dashrendar-swz103-lsl-scumandvillainy"
+            canonical_name: 'Dash Rendar'.canonicalize()
+            unique: true
+            id: 695
+            image_id: 39
+            standard_loadout: true
+            faction: "Scum and Villainy"
+            ship: "YT-2400 Light Freighter (2023)"
+            skill: 5
+            points: 74
+            slots: [
+                "Talent"
+                "Missile"
+                "Crew"
+                "Illicit"
+                "Illicit"
+                "Modification"
+                "Title"
+            ]
+        }
+        {
+            name: "Dash Rendar (Scum SL)"
+            xws: "dashrendar-swz103-sl-scumandvillainy"
+            canonical_name: 'Dash Rendar'.canonicalize()
+            unique: true
+            id: 696
+            image_id: 39
+            standard_loadout: true
+            faction: "Scum and Villainy"
+            ship: "YT-2400 Light Freighter (2023)"
+            skill: 5
+            points: 88
+            upgrades: [
+                "Mercenary (YLF)"
+                "Seeker Missiles (YLF)"
+                '"Leebo" (YLF)'
+                "Outrider (2023)"
+            ]
+        }
+        {
+            name: '"Leebo" (2023)'
+            xws: "leebo-swz103-rebelalliance"
+            canonical_name: '"Leebo"'.canonicalize()
+            unique: true
+            id: 697
+            faction: "Rebel Alliance"
+            ship: "YT-2400 Light Freighter (2023)"
+            skill: 3
+            points: 71
+            keyword: ["Droid"]
+            slots: [
+                "Talent"
+                "Missile"
+                "Illicit"
+                "Illicit"
+                "Modification"
+                "Title"
+            ]
+        }
+        {
+            name: '"Leebo" (YLF)'
+            xws: "leebo-swz103-lsl-rebelalliance"
+            canonical_name: '"Leebo"'.canonicalize()            
+            unique: true
+            id: 698
+            image_id: 40
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "YT-2400 Light Freighter (2023)"
+            skill: 3
+            points: 69
+            slots: [
+                "Talent"
+                "Missile"
+                "Illicit"
+                "Illicit"
+                "Modification"
+                "Title"
+            ]
+            ship_override:
+                actions: [
+                    "Calculate"
+                    "Lock"
+                    "R-> Rotate Arc"
+                    "R-Barrel Roll"
+                    "Rotate Arc"
+                ]
+        }
+        {
+            name: '"Leebo" (YLF SL)'
+            xws: "leebo-swz103-sl-rebelalliance"
+            canonical_name: '"Leebo"'.canonicalize()            
+            unique: true
+            id: 699
+            image_id: 40
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "YT-2400 Light Freighter (2023)"
+            skill: 3
+            points: 83
+            upgrades: [
+                "Efficient Processing (YLF)"
+                "Seeker Missiles (YLF)"
+                "Outrider (2023)"
+            ]
+            ship_override:
+                actions: [
+                    "Calculate"
+                    "Lock"
+                    "R-> Rotate Arc"
+                    "R-Barrel Roll"
+                    "Rotate Arc"
+                ]
+        }
+        {
+            name: '"Leebo" (Scum)'
+            xws: "leebo-swz103-lsl-scumandvillainy"
+            canonical_name: '"Leebo"'.canonicalize()
+            unique: true
+            id: 700
+            image_id: 40
+            standard_loadout: true
+            faction: "Scum and Villainy"
+            ship: "YT-2400 Light Freighter (2023)"
+            skill: 3
+            points: 69
+            slots: [
+                "Talent"
+                "Missile"
+                "Illicit"
+                "Illicit"
+                "Modification"
+                "Title"
+            ]
+            ship_override:
+                actions: [
+                    "Calculate"
+                    "Lock"
+                    "R-> Rotate Arc"
+                    "R-Barrel Roll"
+                    "Rotate Arc"
+                ]
+        }
+        {
+            name: '"Leebo" (Scum SL)'
+            xws: "leebo-swz103-sl-scumandvillainy"
+            canonical_name: '"Leebo"'.canonicalize()
+            unique: true
+            id: 701
+            image_id: 40
+            standard_loadout: true
+            faction: "Scum and Villainy"
+            ship: "YT-2400 Light Freighter (2023)"
+            skill: 3
+            points: 83
+            upgrades: [
+                "Efficient Processing (YLF)"
+                "Seeker Missiles (YLF)"
+                "Outrider (2023)"
+            ]
+            ship_override:
+                actions: [
+                    "Calculate"
+                    "Lock"
+                    "R-> Rotate Arc"
+                    "R-Barrel Roll"
+                    "Rotate Arc"
+                ]
+        }
+        {
+            name: "Arvel Crynyd (BoE)"
+            xws: "arvelcrynyd-battleoverendor-lsl"
+            canonical_name: 'Arvel Crynyd'.canonicalize()
+            unique: true
+            id: 702
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "RZ-1 A-wing"
+            skill: 3
+            points: 38
+            chassis: "Vectored Cannons"
+            keyword: ["AlreadyHasShieldUpgrade"]
+            slots: [
+                "Talent"
+                "Talent"
+                "Missile"
+                "Configuration"
+            ]
+            ship_override:
+                attackt: 2
+                attack: 0
+                shields: 3
+                actions: [
+                    "Focus"
+                    "Evade"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Focus"
+                    "Boost"
+                    "Slam"
+                ]
+        }
+        {
+            name: "Arvel Crynyd (BoE SL)"
+            xws: "arvelcrynyd-battleoverendor"
+            canonical_name: 'Arvel Crynyd'.canonicalize()
+            unique: true
+            id: 703
+            image_id: 702
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "RZ-1 A-wing"
+            skill: 3
+            points: 51
+            chassis: "Vectored Cannons"
+            upgrades: [
+                "It's A Trap! (BoE)"
+                "Heroic Sacrifice (BoE)"
+                "Proton Rockets"
+            ]
+            ship_override:
+                attackt: 2
+                attack: 0
+                shields: 3
+                actions: [
+                    "Focus"
+                    "Evade"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Focus"
+                    "Boost"
+                    "Slam"
+                ]
+        }
+        {
+            name: "Gemmer Sojan (BoE)"
+            xws: "gemmersojan-battleoverendor-lsl"
+            canonical_name: 'Gemmer Sojan'.canonicalize()
+            unique: true
+            id: 704
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "RZ-1 A-wing"
+            skill: 2
+            points: 33
+            chassis: "Vectored Cannons"
+            slots: [
+                "Talent"
+                "Missile"
+                "Configuration"
+            ]
+            ship_override:
+                attackt: 2
+                attack: 0
+        }
+        {
+            name: "Gemmer Sojan (BoE SL)"
+            xws: "gemmersojan-battleoverendor"
+            canonical_name: 'Gemmer Sojan'.canonicalize()
+            unique: true
+            id: 705
+            image_id: 704
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "RZ-1 A-wing"
+            skill: 2
+            points: 46
+            chassis: "Vectored Cannons"
+            upgrades: [
+                "It's A Trap! (BoE)"
+                "Precision-Tuned Cannons (BoE)"
+                "Chaff Particles (BoE)"
+                "Target-Assist Algorithm (BoE)"
+            ]
+            ship_override:
+                attackt: 2
+                attack: 0
+        }
+        {
+            name: "Tycho Celchu (BoE)"
+            xws: "tychocelchu-battleoverendor-lsl"
+            canonical_name: 'Tycho Celchu'.canonicalize()
+            unique: true
+            id: 706
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "RZ-1 A-wing"
+            skill: 5
+            points: 41
+            chassis: "Vectored Cannons"
+            keyword: ["AlreadyHasShieldUpgrade"]
+            slots: [
+                "Talent"
+                "Talent"
+                "Missile"
+                "Configuration"
+            ]
+            ship_override:
+                attackt: 2
+                attack: 0
+                shields: 3
+                actions: [
+                    "Focus"
+                    "R-> Reload"
+                    "Evade"
+                    "Lock"
+                    "Barrel Roll"
+                    "Boost"
+                    "R-> Evade"
+                ]
+        }
+        {
+            name: "Tycho Celchu (BoE SL)"
+            xws: "tychocelchu-battleoverendor"
+            canonical_name: 'Tycho Celchu'.canonicalize()
+            unique: true
+            id: 707
+            image_id: 706
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "RZ-1 A-wing"
+            skill: 5
+            points: 57
+            chassis: "Vectored Cannons"
+            ship_override:
+                attackt: 2
+                attack: 0
+                shields: 3
+                actions: [
+                    "Focus"
+                    "R-> Reload"
+                    "Evade"
+                    "Lock"
+                    "Barrel Roll"
+                    "Boost"
+                    "R-> Evade"
+                ]
+            upgrades: [
+                "It's A Trap! (BoE)"
+                "Juke"
+                "Proton Rockets"
+                "Chaff Particles (BoE)"
+            ]
+        }
+        {
+            name: "Adon Fox (BoE)"
+            xws: "adonfox-battleoverendor-lsl"
+            canonical_name: 'Adon Fox'.canonicalize()
+            unique: true
+            id: 708
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "A/SF-01 B-wing"
+            skill: 1
+            points: 46
+            charge: 2
+            recurring: 1
+            chassis: "Gyro-Cockpit"
+            ship_override:
+                actions: [
+                    "Focus"
+                    "R-> Barrel Roll"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Lock"
+                    "R-Reload"
+                ]
+            slots: [
+                "Sensor"
+                "Cannon"
+                "Cannon"
+                "Torpedo"
+                "Modification"
+                "Configuration"
+                "Title"
+            ]
+        }
+        {
+            name: "Adon Fox (BoE SL)"
+            xws: "adonfox-battleoverendor"
+            canonical_name: 'Adon Fox'.canonicalize()
+            unique: true
+            id: 709
+            image_id: 708
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "A/SF-01 B-wing"
+            skill: 1
+            points: 65
+            charge: 2
+            recurring: 1
+            chassis: "Gyro-Cockpit"
+            ship_override:
+                actions: [
+                    "Focus"
+                    "R-> Barrel Roll"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Lock"
+                    "R-Reload"
+                ]
+            upgrades: [
+                "It's A Trap! (BoE)"
+                "Parting Gift (BoE)"
+                "Proton Rockets"
+                "Proton Bombs"
+            ]
+        }
+        {
+            name: "Braylen Stramm (BoE)"
+            xws: "braylenstramm-battleoverendor-lsl"
+            canonical_name: 'Braylen Stramm'.canonicalize()
+            unique: true
+            id: 710
+            image_id: 73
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "A/SF-01 B-wing"
+            skill: 4
+            points: 53
+            charge: 2
+            recurring: 1
+            chassis: "Gyro-Cockpit"
+            keyword: ["AlreadyHasShieldUpgrade"]
+            ship_override:
+                shields: 5
+                actions: [
+                    "Focus"
+                    "R-> Barrel Roll"
+                    "Lock"
+                    "Barrel Roll"            
+                    "R-> Lock"
+                    "R-Reload"
+                ]
+            slots: [
+                "Talent"
+                "Sensor"
+                "Cannon"
+                "Cannon"
+                "Torpedo"
+                "Configuration"
+                "Title"
+            ]
+        }
+        {
+            name: "Braylen Stramm (BoE SL)"
+            xws: "braylenstramm-battleoverendor"
+            canonical_name: 'Braylen Stramm'.canonicalize()
+            unique: true
+            id: 711
+            image_id: 73
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "A/SF-01 B-wing"
+            skill: 4
+            points: 68
+            charge: 2
+            recurring: 1
+            chassis: "Gyro-Cockpit"
+            ship_override:
+                shields: 5
+                actions: [
+                    "Focus"
+                    "R-> Barrel Roll"
+                    "Lock"
+                    "Barrel Roll"            
+                    "R-> Lock"
+                    "R-Reload"
+                ]
+            upgrades: [
+                "It's A Trap! (BoE)"
+                "Homing Missiles"
+                "Proton Bombs"
+                "Delayed Fuses"
+            ]
+        }
+        {
+            name: "Gina Moonsong (BoE)"
+            xws: "ginamoonsong-battleoverendor-lsl"
+            canonical_name: 'Gina Moonsong'.canonicalize()
+            unique: true
+            id: 712
+            image_id: 391
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "A/SF-01 B-wing"
+            skill: 5
+            points: 55
+            charge: 2
+            recurring: 1
+            chassis: "Gyro-Cockpit"
+            keyword: ["AlreadyHasShieldUpgrade"]
+            ship_override:
+                shields: 5
+                actions: [
+                    "Focus"
+                    "R-> Barrel Roll"
+                    "Lock"
+                    "Barrel Roll"            
+                    "R-> Lock"
+                    "R-Reload"
+                ]
+            slots: [
+                "Talent"
+                "Sensor"
+                "Cannon"
+                "Cannon"
+                "Torpedo"
+                "Configuration"
+                "Title"
+            ]
+        }
+        {
+            name: "Gina Moonsong (BoE SL)"
+            xws: "ginamoonsong-battleoverendor"
+            canonical_name: 'Gina Moonsong'.canonicalize()
+            unique: true
+            id: 713
+            image_id: 391
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "A/SF-01 B-wing"
+            skill: 5
+            points: 80
+            charge: 2
+            recurring: 1
+            chassis: "Gyro-Cockpit"
+            ship_override:
+                shields: 5
+                actions: [
+                    "Focus"
+                    "R-> Barrel Roll"
+                    "Lock"
+                    "Barrel Roll"            
+                    "R-> Lock"
+                    "R-Reload"
+                ]
+            upgrades: [
+                "It's A Trap! (BoE)"
+                "Juke"
+                "Proton Torpedoes"
+                "Ion Bombs"
+            ]
+        }
+        {
+            name: "Kendy Idele (BoE)"
+            xws: "kendyidele-battleoverendor-lsl"
+            canonical_name: 'Kendy Idele'.canonicalize()
+            unique: true
+            id: 714
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "T-65 X-wing"
+            skill: 4
+            points: 48
+            chassis: "Locked S-Foils"
+            ship_override:
+                actions: [
+                    "Focus"
+                    "R-> Boost"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Focus"
+                    "Boost"
+                ]
+            slots: [
+                "Talent"
+                "Torpedo"
+                "Astromech"
+                "Modification"
+            ]
+        }
+        {
+            name: "Kendy Idele (BoE SL)"
+            xws: "kendyidele-battleoverendor"
+            canonical_name: 'Kendy Idele'.canonicalize()
+            unique: true
+            id: 715
+            image_id: 714
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "T-65 X-wing"
+            skill: 4
+            points: 57
+            chassis: "Locked S-Foils"
+            ship_override:
+                actions: [
+                    "Focus"
+                    "R-> Boost"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Focus"
+                    "Boost"
+                ]
+            upgrades: [
+                "It's A Trap! (BoE)"
+                "Ion Missiles"
+                "Modified R4-P unit (BoE)"
+                "Chaff Particles (BoE)"
+            ]
+        }
+        {
+            name: "Wedge Antilles (BoE)"
+            xws: "wedgeantilles-battleoverendor-lsl"
+            canonical_name: 'Wedge Antilles'.canonicalize()
+            unique: true
+            id: 716
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "T-65 X-wing"
+            skill: 6
+            points: 55
+            chassis: "Locked S-Foils"
+            keyword: ["AlreadyHasShieldUpgrade"]
+            ship_override:
+                shields: 3
+                actions: [
+                    "Focus"
+                    "R-> Boost"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Focus"
+                    "Boost"
+                ]
+            slots: [
+                "Talent"
+                "Torpedo"
+                "Astromech"
+            ]
+        }
+        {
+            name: "Wedge Antilles (BoE SL)"
+            xws: "wedgeantilles-battleoverendor"
+            canonical_name: 'Wedge Antilles'.canonicalize()
+            unique: true
+            id: 717
+            image_id: 716
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "T-65 X-wing"
+            skill: 6
+            points: 70
+            chassis: "Locked S-Foils"
+            ship_override:
+                shields: 3
+                actions: [
+                    "Focus"
+                    "R-> Boost"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Focus"
+                    "Boost"
+                ]
+            upgrades: [
+                "It's A Trap! (BoE)"
+                "Predator"
+                "Adv. Proton Torpedoes"
+                "R2-A3 (BoE)"
+            ]
+        }
+        {
+            name: "Yendor (BoE)"
+            xws: "yendor-battleoverendor-lsl"
+            canonical_name: 'Yendor'.canonicalize()
+            unique: true
+            id: 718
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "T-65 X-wing"
+            skill: 5
+            points: 50
+            chassis: "Locked S-Foils"
+            ship_override:
+                actions: [
+                    "Focus"
+                    "R-> Boost"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Focus"
+                    "Boost"
+                ]
+            slots: [
+                "Talent"
+                "Torpedo"
+                "Astromech"
+                "Modification"
+            ]
+        }
+        {
+            name: "Yendor (BoE SL)"
+            xws: "yendor-battleoverendor"
+            canonical_name: 'Yendor'.canonicalize()
+            unique: true
+            id: 719
+            image_id: 718
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "T-65 X-wing"
+            skill: 5
+            points: 61
+            chassis: "Locked S-Foils"
+            ship_override:
+                actions: [
+                    "Focus"
+                    "R-> Boost"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Focus"
+                    "Boost"
+                ]
+            upgrades: [
+                "It's A Trap! (BoE)"
+                "Plasma Torpedoes"
+                "Stabilizing Astromech (BoE)"
+            ]
+        }
+        {
+            name: "Lando Calrissian (BoE)"
+            xws: "landocalrissian-battleoverendor-lsl"
+            canonical_name: 'Lando Calrissian'.canonicalize()
+            unique: true
+            id: 720
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "Modified YT-1300 Light Freighter"
+            skill: 5
+            points: 75
+            charge: 2
+            chassis: "High Stakes"
+            ship_override:
+                actions: [
+                    "Focus"
+                    "Lock"
+                    "Evade"
+                    "R-Boost"
+                    "Rotate Arc"
+                    "R-Coordinate"
+                    "R-> Focus"
+                ]
+            slots: [
+                "Talent"
+                "Missile"
+                "Gunner"
+                "Crew"
+                "Crew"
+                "Modification"
+                "Modification"
+                "Title"
+            ]
+        }
+        {
+            name: "Lando Calrissian (BoE SL)"
+            xws: "landocalrissian-battleoverendor"
+            canonical_name: 'Lando Calrissian'.canonicalize()
+            unique: true
+            id: 721
+            image_id: 720
+            standard_loadout: true
+            faction: "Rebel Alliance"
+            ship: "Modified YT-1300 Light Freighter"
+            skill: 5
+            points: 101
+            charge: 2
+            chassis: "High Stakes"
+            ship_override:
+                actions: [
+                    "Focus"
+                    "Lock"
+                    "Evade"
+                    "R-Boost"
+                    "Rotate Arc"
+                    "R-Coordinate"
+                    "R-> Focus"
+                ]
+            upgrades: [
+                "Ace In The Hole (BoE)"
+                "It's A Trap! (BoE)"
+                "Nien Nunb"
+                "Airen Cracken (BoE)"
+                "Millennium Falcon (BoE)"
+            ]
+        }
+        {
+            name: "Captain Yorr (BoE)"
+            xws: "captainyorr-battleoverendor-lsl"
+            canonical_name: 'Captain Yorr'.canonicalize()
+            id: 722
+            standard_loadout: true
+            unique: true
+            faction: "Galactic Empire"
+            ship: "TIE/d Defender"
+            skill: 4
+            charge: 2
+            points: 72
+            chassis: "Chiss Engineering"
+            ship_override:
+                actions: [
+                    "Focus"
+                    "Evade"
+                    "R-> Barrel Roll"
+                    "Lock"
+                    "Barrel Roll"
+                    "Boost"
+                ]
+            slots: [
+                "Talent"
+                "Sensor"
+                "Cannon"
+                "Missile"
+            ]
+        }
+        {
+            name: "Captain Yorr (BoE SL)"
+            xws: "captainyorr-battleoverendor"
+            canonical_name: 'Captain Yorr'.canonicalize()
+            id: 723
+            image_id: 722
+            standard_loadout: true
+            unique: true
+            faction: "Galactic Empire"
+            ship: "TIE/d Defender"
+            skill: 4
+            charge: 2
+            points: 85
+            chassis: "Chiss Engineering"
+            ship_override:
+                actions: [
+                    "Focus"
+                    "Evade"
+                    "R-> Barrel Roll"
+                    "Lock"
+                    "Barrel Roll"
+                    "Boost"
+                ]
+            upgrades: [
+                "No Escape (BoE)"
+                "Predator"
+                "Ion Cannon"
+                "Computer-Assisted Handling (BoE)"
+            ]
+        }
+        {
+            name: "Colonel Jendon (BoE)"
+            xws: "coloneljendon-battleoverendor-lsl"
+            canonical_name: 'Colonel Jendon'.canonicalize()
+            id: 724
+            standard_loadout: true
+            unique: true
+            faction: "Galactic Empire"
+            ship: "TIE/d Defender"
+            skill: 6
+            points: 80
+            chassis: "Chiss Engineering"
+            ship_override:
+                actions: [
+                    "Focus"
+                    "Evade"
+                    "R-> Barrel Roll"
+                    "Lock"
+                    "Barrel Roll"
+                    "Boost"
+                ]
+            slots: [
+                "Talent"
+                "Sensor"
+                "Cannon"
+                "Missile"
+            ]
+        }
+        {
+            name: "Colonel Jendon (BoE SL)"
+            xws: "coloneljendon-battleoverendor"
+            canonical_name: 'Colonel Jendon'.canonicalize()
+            id: 725
+            image_id: 724
+            standard_loadout: true
+            unique: true
+            faction: "Galactic Empire"
+            ship: "TIE/d Defender"
+            skill: 6
+            points: 87
+            chassis: "Chiss Engineering"
+            ship_override:
+                actions: [
+                    "Focus"
+                    "Evade"
+                    "R-> Barrel Roll"
+                    "Lock"
+                    "Barrel Roll"
+                    "Boost"
+                ]
+            upgrades: [
+                "No Escape (BoE)"
+                "Push The Limit (BoE)"
+                "Proton Cannons"
+                "Computer-Assisted Handling (BoE)"
+            ]
+        }
+        {
+            name: "Maus Monare (BoE)"
+            xws: "mausmonare-battleoverendor-lsl"
+            canonical_name: 'Maus Monare'.canonicalize()
+            unique: true
+            id: 726
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/in Interceptor"
+            skill: 3
+            points: 42
+            chassis: "Sensitive Controls"
+            keyword: ["AlreadyHasShieldUpgrade"]
+            slots: [
+                "Talent"
+                "Modification"
+            ]
+            ship_override:
+                shields: 1
+        }
+        {
+            name: "Maus Monare (BoE SL)"
+            xws: "mausmonare-battleoverendor"
+            canonical_name: 'Maus Monare'.canonicalize()
+            unique: true
+            id: 727
+            image_id: 726
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/in Interceptor"
+            skill: 3
+            points: 56
+            chassis: "Sensitive Controls"
+            upgrades: [
+                "No Escape (BoE)"
+                "Outmaneuver"
+                "Fuel Injection Override (BoE)"
+            ]
+            ship_override:
+                shields: 1
+        }
+        {
+            name: "Sapphire 2 (BoE)"
+            xws: "sapphire2-battleoverendor-lsl"
+            canonical_name: 'Sapphire 2'.canonicalize()
+            unique: true
+            id: 728
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/in Interceptor"
+            skill: 1
+            points: 38
+            chassis: "Sensitive Controls"
+            slots: [
+                "Modification"
+                "Modification"
+            ]
+        }
+        {
+            name: "Sapphire 2 (BoE SL)"
+            xws: "sapphire2-battleoverendor"
+            canonical_name: 'Sapphire 2'.canonicalize()
+            unique: true
+            id: 729
+            image_id: 728
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/in Interceptor"
+            skill: 1
+            points: 53
+            chassis: "Sensitive Controls"
+            upgrades: [
+                "No Escape (BoE)"
+                "Reckless (BoE)"
+                "Targeting Matrix (BoE)"
+                "Primed Thrusters"
+            ]
+        }
+        {
+            name: "Soontir Fel (BoE)"
+            xws: "soontirfel-battleoverendor-lsl"
+            canonical_name: 'Soontir Fel'.canonicalize()
+            unique: true
+            id: 730
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/in Interceptor"
+            skill: 6
+            charge: 2
+            points: 49
+            chassis: "Sensitive Controls"
+            slots: [
+                "Talent"
+                "Modification"
+                "Modification"
+            ]
+        }
+        {
+            name: "Soontir Fel (BoE SL)"
+            xws: "soontirfel-battleoverendor"
+            canonical_name: 'Soontir Fel'.canonicalize()
+            unique: true
+            id: 731
+            image_id: 730
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/in Interceptor"
+            skill: 6
+            charge: 2
+            points: 68
+            chassis: "Sensitive Controls"
+            upgrades: [
+                "Apex Predator (BoE)"
+                "No Escape (BoE)"
+                "Blank Signature (BoE)"
+                "Feedback Emitter (BoE)"
+            ]
+        }
+        {
+            name: "Lieutenant Hebsly (BoE)"
+            xws: "lieutenanthebsly-battleoverendor-lsl"
+            canonical_name: 'Lieutenant Hebsly'.canonicalize()
+            unique: true
+            id: 732
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/ln Fighter"
+            skill: 3
+            points: 38
+            chassis: "Formed Up"
+            keyword: ["AlreadyHasHullUpgrade"]
+            ship_override:
+                hull: 4
+                actions: [
+                    "Focus"
+                    "Evade"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Evade"
+                    "R-Boost"
+                ]
+            slots: [
+                "Talent"
+            ]
+        }
+        {
+            name: "Lieutenant Hebsly (BoE SL)"
+            xws: "lieutenanthebsly-battleoverendor"
+            canonical_name: 'Lieutenant Hebsly'.canonicalize()
+            unique: true
+            id: 733
+            image_id: 732
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/ln Fighter"
+            skill: 3
+            points: 51
+            chassis: "Formed Up"
+            ship_override:
+                hull: 4
+                actions: [
+                    "Focus"
+                    "Evade"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Evade"
+                    "R-Boost"
+                ]
+            upgrades: [
+                "Collected (BoE)"
+                "Elusive"
+                "No Escape (BoE)"
+            ]
+        }
+        {
+            name: "Major Mianda (BoE)"
+            xws: "majormianda-battleoverendor-lsl"
+            canonical_name: 'Major Mianda'.canonicalize()
+            unique: true
+            id: 734
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/ln Fighter"
+            skill: 5
+            points: 41
+            chassis: "Formed Up"
+            keyword: ["AlreadyHasShieldUpgrade"]
+            ship_override:
+                shields: 1
+                actions: [
+                    "Focus"
+                    "Evade"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Evade"
+                    "R-Coordinate"
+                ]
+            slots: [
+                "Talent"
+            ]
+        }
+        {
+            name: "Major Mianda (BoE SL)"
+            xws: "majormianda-battleoverendor"
+            canonical_name: 'Major Mianda'.canonicalize()
+            unique: true
+            id: 735
+            image_id: 734
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/ln Fighter"
+            skill: 5
+            points: 48
+            chassis: "Formed Up"
+            ship_override:
+                shields: 1
+                actions: [
+                    "Focus"
+                    "Evade"
+                    "Lock"
+                    "Barrel Roll"
+                    "R-> Evade"
+                    "R-Coordinate"
+                ]
+            upgrades: [
+                "Ruthless"
+                "Swarm Tactics"
+                "No Escape (BoE)"
+            ]
+        }
+        {
+            name: "Scythe 6 (BoE)"
+            xws: "scythe6-battleoverendor-lsl"
+            canonical_name: 'Scythe 6'.canonicalize()
+            unique: true
+            id: 736
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/ln Fighter"
+            skill: 2
+            points: 42
+            chassis: "Formed Up"
+            keyword: ["AlreadyHasHullUpgrade"]
+            ship_override:
+                hull: 4
+                actions: [
+                    "Focus"
+                    "Evade"
+                    "Barrel Roll"
+                    "R-> Evade"
+                ]
+        }
+        {
+            name: "Scythe 6 (BoE SL)"
+            xws: "scythe6-battleoverendor"
+            canonical_name: 'Scythe 6'.canonicalize()
+            unique: true
+            id: 737
+            image_id: 736
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/ln Fighter"
+            skill: 2
+            points: 53
+            chassis: "Formed Up"
+            ship_override:
+                hull: 4
+                actions: [
+                    "Focus"
+                    "Evade"
+                    "Barrel Roll"
+                    "R-> Evade"
+                ]
+            upgrades: [
+                "No Escape (BoE)"
+                "Predator"
+                "Ion Maneuvering Jet (BoE)"
+                "Targeting Matrix (BoE)"
+            ]
+        }
+        {
+            name: "Scimitar 1 (BoE)"
+            xws: "scimitar1-battleoverendor-lsl"
+            canonical_name: 'Scimitar 1'.canonicalize()
+            unique: true
+            id: 738
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/sa Bomber"
+            skill: 3
+            points: 36
+            charge: 2
+            slots: [
+                "Talent"
+                "Torpedo"
+                "Missile"
+                "Missile"
+                "Gunner"
+                "Device"
+                "Device"
+                "Modification"
+            ]
+        }
+        {
+            name: "Scimitar 1 (BoE SL)"
+            xws: "scimitar1-battleoverendor"
+            canonical_name: 'Scimitar 1'.canonicalize()
+            unique: true
+            id: 739
+            image_id: 738
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/sa Bomber"
+            skill: 3
+            points: 56
+            charge: 2
+            upgrades: [
+                "Marksmanship"
+                "No Escape (BoE)"
+                "Proton Torpedoes"
+                "Ion Bombs"
+            ]
+        }
+        {
+            name: "Scimitar 3 (BoE)"
+            xws: "scimitar3-battleoverendor-lsl"
+            canonical_name: 'Scimitar 3'.canonicalize()
+            unique: true
+            id: 740
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/sa Bomber"
+            skill: 4
+            points: 34
+            charge: 2
+            slots: [
+                "Talent"
+                "Torpedo"
+                "Missile"
+                "Missile"
+                "Gunner"
+                "Device"
+                "Device"
+                "Modification"
+            ]
+        }
+        {
+            name: "Scimitar 3 (BoE SL)"
+            xws: "scimitar3-battleoverendor"
+            canonical_name: 'Scimitar 3'.canonicalize()
+            unique: true
+            id: 741
+            image_id: 740
+            standard_loadout: true
+            faction: "Galactic Empire"
+            ship: "TIE/sa Bomber"
+            skill: 4
+            points: 57
+            charge: 2
+            upgrades: [
+                "No Escape (BoE)"
+                "Parting Gift (BoE)"
+                "Proton Torpedoes"
+                "Proton Bombs"
+            ]
         }
     ]
 
@@ -13122,6 +15590,7 @@ exportObj.basicCardData = ->
             id: 0
             slot: "Astromech"
             canonical_name: '"Chopper"'.canonicalize()
+            xws: "chopper"
             points: 2
             unique: true
             faction: "Rebel Alliance"
@@ -13138,7 +15607,8 @@ exportObj.basicCardData = ->
             name: "R2 Astromech"
             id: 2
             slot: "Astromech"
-            points: 6
+            pointsarray: [2,2,4,8]
+            variableagility: true
             charge: 2
         }
         {
@@ -13146,7 +15616,8 @@ exportObj.basicCardData = ->
             id: 3
             unique: true
             slot: "Astromech"
-            points: 8
+            pointsarray: [3,4,7,11]
+            variableagility: true
             charge: 3
             faction: "Rebel Alliance"
         }
@@ -13154,13 +15625,13 @@ exportObj.basicCardData = ->
             name: "R3 Astromech"
             id: 4
             slot: "Astromech"
-            points: 4
+            points: 3
         }
         {
             name: "R4 Astromech"
             id: 5
             slot: "Astromech"
-            points: 3
+            points: 2
             restrictions: [
                 ["Base", "Small"]
             ]
@@ -13178,7 +15649,8 @@ exportObj.basicCardData = ->
             name: "R5 Astromech"
             id: 6
             slot: "Astromech"
-            points: 4
+            pointsarray: [1,2,3,4]
+            variableagility: true
             charge: 2
         }
         {
@@ -13186,7 +15658,8 @@ exportObj.basicCardData = ->
             id: 7
             unique: true
             slot: "Astromech"
-            points: 6
+            pointsarray: [2,3,4,6]
+            variableagility: true
             charge: 3
             faction: "Rebel Alliance"
         }
@@ -13243,7 +15716,7 @@ exportObj.basicCardData = ->
             name: "Admiral Sloane"
             id: 14
             slot: "Crew"
-            points: 16
+            points: 18
             unique: true
             faction: "Galactic Empire"
         }
@@ -13268,7 +15741,7 @@ exportObj.basicCardData = ->
             name: "Baze Malbus"
             id: 17
             slot: "Crew"
-            points: 5
+            points: 3
             unique: true
             faction: "Rebel Alliance"
         }
@@ -13276,7 +15749,7 @@ exportObj.basicCardData = ->
             name: "C-3PO"
             id: 18
             slot: "Crew"
-            points: 5
+            points: 7
             unique: true
             faction: "Rebel Alliance"
             modifier_func: (stats) ->
@@ -13319,9 +15792,9 @@ exportObj.basicCardData = ->
         }
         {
             name: '"Chopper" (Crew)'
+            xws: "chopper-crew"
             id: 23
             canonical_name: '"Chopper"'.canonicalize()
-            xws: "chopper-crew"
             slot: "Crew"
             points: 1
             unique: true
@@ -13350,7 +15823,7 @@ exportObj.basicCardData = ->
             name: "Darth Vader"
             id: 26
             slot: "Crew"
-            points: 14
+            points: 16
             force: 1
             unique: true
             faction: "Galactic Empire"
@@ -13368,7 +15841,7 @@ exportObj.basicCardData = ->
                 ["Slot", "Crew"]
             ]
             validation_func: (ship, upgrade_obj) ->
-                upgrade_obj.occupiesAnUpgradeSlot "Crew"
+                upgrade_obj.occupiesAnUpgradeSlot upgrade_obj.slot
             also_occupies_upgrades: [ "Crew" ]
         }
         {
@@ -13394,7 +15867,7 @@ exportObj.basicCardData = ->
                 ["Slot", "Crew"]
             ]
             validation_func: (ship, upgrade_obj) ->
-                upgrade_obj.occupiesAnUpgradeSlot "Crew"
+                upgrade_obj.occupiesAnUpgradeSlot upgrade_obj.slot
             also_occupies_upgrades: [ "Crew" ]
             modifier_func: (stats) ->
                 stats.force += 1
@@ -13403,13 +15876,13 @@ exportObj.basicCardData = ->
             name: "Freelance Slicer"
             id: 30
             slot: "Crew"
-            points: 3
+            points: 2
         }
         {
             name: "4-LOM"
             id: 31
             slot: "Crew"
-            points: 5
+            points: 2
             unique: true
             faction: "Scum and Villainy"
         }
@@ -13490,14 +15963,14 @@ exportObj.basicCardData = ->
                 ["Slot", "Crew"]
             ]
             validation_func: (ship, upgrade_obj) ->
-                upgrade_obj.occupiesAnUpgradeSlot "Crew"
+                upgrade_obj.occupiesAnUpgradeSlot upgrade_obj.slot
             also_occupies_upgrades: [ "Crew" ]
         }
         {
             name: "Jyn Erso"
             id: 40
             slot: "Crew"
-            points: 5
+            points: 4
             unique: true
             faction: "Rebel Alliance"
         }
@@ -13516,7 +15989,7 @@ exportObj.basicCardData = ->
             name: "Ketsu Onyo"
             id: 42
             slot: "Crew"
-            points: 4
+            points: 3
             unique: true
             faction: "Scum and Villainy"
         }
@@ -13542,7 +16015,7 @@ exportObj.basicCardData = ->
             id: 45
             slot: "Crew"
             xws: "landocalrissian-crew"
-            points: 4
+            points: 6
             unique: true
             faction: "Scum and Villainy"
         }
@@ -13550,7 +16023,7 @@ exportObj.basicCardData = ->
             name: "Leia Organa"
             id: 46
             slot: "Crew"
-            points: 7
+            points: 8
             unique: true
             faction: "Rebel Alliance"
             charge: 3
@@ -13568,13 +16041,14 @@ exportObj.basicCardData = ->
             name: "Maul"
             id: 48
             slot: "Crew"
-            points: 10
+            points: 11
             unique: true
             keyword: ["Dark Side"]
             faction: ["Scum and Villainy", "Rebel Alliance"]
             force: 1
             restrictions: [
-                ["FactionOrUnique", "Ezra Bridger", "Scum and Villainy"]
+                ["orUnique", "Ezra Bridger"]
+                ["Faction", "Scum and Villainy"]
             ]
             modifier_func: (stats) ->
                 stats.force += 1
@@ -13583,7 +16057,7 @@ exportObj.basicCardData = ->
             name: "Minister Tua"
             id: 49
             slot: "Crew"
-            points: 4
+            points: 5
             unique: true
             faction: "Galactic Empire"
         }
@@ -13673,13 +16147,14 @@ exportObj.basicCardData = ->
             name: "Seasoned Navigator"
             id: 59
             slot: "Crew"
-            points: 7
+            pointsarray: [2,3,4,5,6,7,8,9,10]
+            variableinit: true
         }
         {
             name: "Seventh Sister"
             id: 60
             slot: "Crew"
-            points: 9
+            points: 10
             force: 1
             unique: true
             faction: "Galactic Empire"
@@ -13701,7 +16176,7 @@ exportObj.basicCardData = ->
             name: "Tobias Beckett"
             id: 62
             slot: "Crew"
-            points: 2
+            points: 1
             unique: true
             faction: "Scum and Villainy"
         }
@@ -13713,7 +16188,8 @@ exportObj.basicCardData = ->
             unique: true
             faction: ["Scum and Villainy", "Galactic Empire"]
             restrictions: [
-                ["FactionOrUnique", "Darth Vader", "Scum and Villainy"]
+                ["orUnique", "Darth Vader"]
+                ["Faction", "Scum and Villainy"]
             ]
         }
         {
@@ -13744,21 +16220,21 @@ exportObj.basicCardData = ->
             name: "Bomblet Generator"
             id: 67
             slot: "Device"
-            points: 2
+            points: 3
             charge: 2
             applies_condition: 'Bomblet'.canonicalize()
             restrictions: [
                 ["Slot", "Device"]
             ]
             validation_func: (ship, upgrade_obj) ->
-                upgrade_obj.occupiesAnUpgradeSlot "Device"
+                upgrade_obj.occupiesAnUpgradeSlot upgrade_obj.slot
             also_occupies_upgrades: [ "Device" ]
         }
         {
             name: "Conner Nets"
             id: 68
             slot: "Device"
-            points: 5
+            points: 3
             charge: 1
             applies_condition: 'Conner Net'.canonicalize()
         }
@@ -13774,7 +16250,7 @@ exportObj.basicCardData = ->
             name: "Proximity Mines"
             id: 70
             slot: "Device"
-            points: 8
+            points: 6
             charge: 2
             applies_condition: 'Proximity Mine'.canonicalize()
         }
@@ -13796,13 +16272,14 @@ exportObj.basicCardData = ->
             name: "Instinctive Aim"
             id: 73
             slot: "Force"
-            points: 2
+            points: 1
         }
         {
             name: "Supernatural Reflexes"
             id: 74
             slot: "Force"
-            points: 24
+            pointsarray: [4,4,4,8,16,24,32]
+            variableinit: true
             restrictions: [
                 ["Base", "Small"]
             ]
@@ -13811,7 +16288,7 @@ exportObj.basicCardData = ->
             name: "Sense"
             id: 75
             slot: "Force"
-            points: 6
+            points: 7
         }
         {
             name: "Agile Gunner"
@@ -13831,7 +16308,7 @@ exportObj.basicCardData = ->
             name: "Bossk"
             id: 78
             slot: "Gunner"
-            points: 6
+            points: 8
             unique: true
             faction: "Scum and Villainy"
         }
@@ -13839,11 +16316,12 @@ exportObj.basicCardData = ->
             name: "BT-1"
             id: 79
             slot: "Gunner"
-            points: 2
+            points: 3
             unique: true
             faction: ["Scum and Villainy", "Galactic Empire"]
             restrictions: [
-                ["FactionOrUnique", "Darth Vader", "Scum and Villainy"]
+                ["orUnique", "Darth Vader"]
+                ["Faction", "Scum and Villainy"]
             ]
         }
         {
@@ -13903,7 +16381,7 @@ exportObj.basicCardData = ->
             id: 85
             slot: "Gunner"
             xws: "hansolo-gunner"
-            points: 9
+            points: 10
             unique: true
             faction: "Scum and Villainy"
         }
@@ -13917,7 +16395,7 @@ exportObj.basicCardData = ->
             name: "Luke Skywalker"
             id: 87
             slot: "Gunner"
-            points: 12
+            points: 26
             force: 1
             unique: true
             faction: "Rebel Alliance"
@@ -13934,7 +16412,7 @@ exportObj.basicCardData = ->
             name: "Veteran Tail Gunner"
             id: 89
             slot: "Gunner"
-            points: 3
+            points: 2
             restrictions: [
                 ["AttackArc", "Rear Arc"]
             ]
@@ -13943,7 +16421,8 @@ exportObj.basicCardData = ->
             name: "Veteran Turret Gunner"
             id: 90
             slot: "Gunner"
-            points: 5
+            pointsarray: [9,8,7,7]
+            variablebase: true
             restrictions: [
                 ["Action", "Rotate Arc"]
             ]
@@ -13956,7 +16435,7 @@ exportObj.basicCardData = ->
             unique: true
             charge: 2
             restrictions: [
-                ["Base", "Small", "Medium"]
+                ["Base", "Small or Medium"]
             ]
         }
         {
@@ -13976,13 +16455,14 @@ exportObj.basicCardData = ->
             name: "Feedback Array"
             id: 94
             slot: "Illicit"
-            points: 4
+            points: 2
         }
         {
             name: "Inertial Dampeners"
             id: 95
             slot: "Illicit"
-            points: 8
+            pointsarray: [0,1,2,3,4,5,6,7,8]
+            variableinit: true
         }
         {
             name: "Rigged Cargo Chute"
@@ -13992,7 +16472,7 @@ exportObj.basicCardData = ->
             charge: 1
             applies_condition: '''Loose Cargo'''.canonicalize()
             restrictions: [
-                ["Base", "Medium", "Large"]
+                ["Base", "Medium or Large"]
             ]
         }
         {
@@ -14008,14 +16488,15 @@ exportObj.basicCardData = ->
                 ["Slot", "Missile"]
             ]
             validation_func: (ship, upgrade_obj) ->
-                upgrade_obj.occupiesAnUpgradeSlot "Missile"
-            also_occupies_upgrades: [ "Missile" ]
+                upgrade_obj.occupiesAnUpgradeSlot upgrade_obj.slot
+            also_occupies_upgrades: [ 'Missile' ]
         }
         {
             name: "Cluster Missiles"
             id: 98
             slot: "Missile"
-            points: 4
+            pointsarray: [3,3,3,4,4,4,4,4,4]
+            variableinit: true
             attack: 3
             range: """1-2"""
             rangebonus: true
@@ -14025,7 +16506,7 @@ exportObj.basicCardData = ->
             name: "Concussion Missiles"
             id: 99
             slot: "Missile"
-            points: 5
+            points: 6
             attack: 3
             range: """2-3"""
             rangebonus: true
@@ -14045,7 +16526,7 @@ exportObj.basicCardData = ->
             name: "Ion Missiles"
             id: 101
             slot: "Missile"
-            points: 4
+            points: 2
             attack: 3
             range: """2-3"""
             rangebonus: true
@@ -14055,7 +16536,7 @@ exportObj.basicCardData = ->
             name: "Proton Rockets"
             id: 102
             slot: "Missile"
-            points: 8
+            points: 5
             attackbull: 5
             range: """1-2"""
             rangebonus: true
@@ -14065,10 +16546,10 @@ exportObj.basicCardData = ->
             name: "Ablative Plating"
             id: 103
             slot: "Modification"
-            points: 4
+            points: 3
             charge: 2
             restrictions: [
-                ["Base", "Medium", "Large"]
+                ["Base", "Medium or Large"]
             ]
         }
         {
@@ -14084,7 +16565,8 @@ exportObj.basicCardData = ->
             name: "Afterburners"
             id: 105
             slot: "Modification"
-            points: 10
+            pointsarray: [4,4,4,4,5,6,7]
+            variableinit: true
             charge: 2
             restrictions: [
                 ["Base", "Small"]
@@ -14100,7 +16582,8 @@ exportObj.basicCardData = ->
             name: "Engine Upgrade"
             id: 107
             slot: "Modification"
-            points: 3
+            pointsarray: [3,4,7]
+            variablebase: true
             restrictions: [
                 ["Action", "R-Boost"]
             ]
@@ -14117,28 +16600,29 @@ exportObj.basicCardData = ->
             name: "Static Discharge Vanes"
             id: 109
             slot: "Modification"
-            points: 5
+            points: 4
         }
         {
             name: "Tactical Scrambler"
             id: 110
             slot: "Modification"
-            points: 2
+            points: 1
             restrictions: [
-                ["Base", "Medium", "Large"]
+                ["Base", "Medium or Large"]
             ]
         }
         {
             name: "Advanced Sensors"
             id: 111
             slot: "Sensor"
-            points: 12
+            pointsarray: [13,11,9,0]
+            variablebase: true
         }
         {
             name: "Collision Detector"
             id: 112
             slot: "Sensor"
-            points: 9
+            points: 6
             charge: 2
         }
         {
@@ -14151,7 +16635,8 @@ exportObj.basicCardData = ->
             name: "Trajectory Simulator"
             id: 114
             slot: "Sensor"
-            points: 6
+            pointsarray: [7,6,5,4]
+            variablebase: true
         }
         {
             name: "Composure"
@@ -14183,9 +16668,9 @@ exportObj.basicCardData = ->
             name: "Debris Gambit"
             id: 118
             slot: "Talent"
-            points: 6
+            points: 3
             restrictions: [
-                ["Base", "Small", "Medium"]
+                ["Base", "Small or Medium"]
             ]
             modifier_func: (stats) ->
                 stats.actions.push 'R-Evade' if 'R-Evade' not in stats.actions
@@ -14197,14 +16682,15 @@ exportObj.basicCardData = ->
             points: 2
             charge: 1
             restrictions: [
-                ["Base", "Small", "Medium"]
+                ["Base", "Small or Medium"]
             ]
         }
         {
             name: "Expert Handling"
             id: 120
             slot: "Talent"
-            points: 2
+            pointsarray: [2,2,4]
+            variablebase: true
             restrictions: [
                 ["Action", "R-Barrel Roll"]
             ]
@@ -14230,7 +16716,7 @@ exportObj.basicCardData = ->
             slot: "Talent"
             points: 6
             restrictions: [
-                ["Base", "Small", "Medium"]
+                ["Base", "Small or Medium"]
             ]
         }
         {
@@ -14252,7 +16738,8 @@ exportObj.basicCardData = ->
             name: "Outmaneuver"
             id: 126
             slot: "Talent"
-            points: 12
+            pointsarray: [5,5,5,5,6,6,6]
+            variableinit: true
         }
         {
             name: "Predator"
@@ -14287,7 +16774,8 @@ exportObj.basicCardData = ->
             name: "Squad Leader"
             id: 131
             slot: "Talent"
-            points: 6
+            pointsarray: [2,4,5,7,9,10,12]
+            variableinit: true
             unique: true
             modifier_func: (stats) ->
                 stats.actions.push 'R-Coordinate' if 'R-Coordinate' not in stats.actions
@@ -14296,7 +16784,8 @@ exportObj.basicCardData = ->
             name: "Swarm Tactics"
             id: 132
             slot: "Talent"
-            points: 5
+            pointsarray: [3,3,3,3,3,4,5]
+            variableinit: true
         }
         {
             name: "Trick Shot"
@@ -14308,7 +16797,7 @@ exportObj.basicCardData = ->
             name: "Adv. Proton Torpedoes"
             id: 134
             slot: "Torpedo"
-            points: 8
+            points: 5
             attack: 5
             range: """1"""
             rangebonus: true
@@ -14416,7 +16905,7 @@ exportObj.basicCardData = ->
         {
             name: "L3-37's Programming (BoY)"
             id: 145
-            standard: true
+            standard_loadout: true
             unique: true
             slot: "Configuration"
         }
@@ -14424,7 +16913,7 @@ exportObj.basicCardData = ->
             name: "Andrasta"
             id: 146
             slot: "Title"
-            points: 0
+            points: 2
             unique: true
             faction: "Scum and Villainy"
             ship: "Firespray-class Patrol Craft"
@@ -14441,7 +16930,7 @@ exportObj.basicCardData = ->
             name: "Dauntless"
             id: 147
             slot: "Title"
-            points: 0
+            points: 2
             unique: true
             faction: "Galactic Empire"
             ship: "VT-49 Decimator"
@@ -14501,7 +16990,7 @@ exportObj.basicCardData = ->
             name: "Lando's Millennium Falcon"
             id: 152
             slot: "Title"
-            points: 0
+            points: 2
             unique: true
             faction: "Scum and Villainy"
             ship: "Customized YT-1300 Light Freighter"
@@ -14510,7 +16999,7 @@ exportObj.basicCardData = ->
             name: "Marauder"
             id: 153
             slot: "Title"
-            points: 0
+            points: 6
             unique: true
             faction: "Scum and Villainy"
             ship: "Firespray-class Patrol Craft"
@@ -14525,7 +17014,7 @@ exportObj.basicCardData = ->
             name: "Millennium Falcon"
             id: 154
             slot: "Title"
-            points: 0
+            points: 3
             unique: true
             faction: "Rebel Alliance"
             ship: "Modified YT-1300 Light Freighter"
@@ -14536,7 +17025,7 @@ exportObj.basicCardData = ->
             name: "Mist Hunter"
             id: 155
             slot: "Title"
-            points: 0
+            points: 1
             unique: true
             faction: "Scum and Villainy"
             ship: "G-1A Starfighter"
@@ -14553,7 +17042,7 @@ exportObj.basicCardData = ->
             name: "Moldy Crow"
             id: 156
             slot: "Title"
-            points: 0
+            points: 16
             unique: true
             faction: ["Rebel Alliance", "Scum and Villainy"]
             ship: "HWK-290 Light Freighter"
@@ -14564,7 +17053,7 @@ exportObj.basicCardData = ->
             name: "Outrider"
             id: 157
             slot: "Title"
-            points: 0
+            points: 9
             unique: true
             faction: "Rebel Alliance"
             ship: "YT-2400 Light Freighter"
@@ -14577,7 +17066,7 @@ exportObj.basicCardData = ->
             name: "Punishing One"
             id: 159
             slot: "Title"
-            points: 0
+            points: 5
             unique: true
             faction: "Scum and Villainy"
             ship: "JumpMaster 5000"
@@ -14598,7 +17087,7 @@ exportObj.basicCardData = ->
             name: "Shadow Caster"
             id: 160
             slot: "Title"
-            points: 0
+            points: 1
             unique: true
             faction: "Scum and Villainy"
             ship: "Lancer-Class Pursuit Craft"
@@ -14607,7 +17096,7 @@ exportObj.basicCardData = ->
             name: "Slave I"
             id: 161
             slot: "Title"
-            points: 0
+            points: 6
             unique: true
             faction: "Scum and Villainy"
             ship: "Firespray-class Patrol Craft"
@@ -14622,7 +17111,7 @@ exportObj.basicCardData = ->
             name: "ST-321"
             id: 162
             slot: "Title"
-            points: 0
+            points: 3
             unique: true
             faction: "Galactic Empire"
             ship: "Lambda-class T-4a Shuttle"
@@ -14631,7 +17120,7 @@ exportObj.basicCardData = ->
             name: "Virago"
             id: 163
             slot: "Title"
-            points: 0
+            points: 7
             unique: true
             charge: 2
             ship: "StarViper-class Attack Platform"
@@ -14648,7 +17137,11 @@ exportObj.basicCardData = ->
             name: "Hull Upgrade"
             id: 164
             slot: "Modification"
-            points: 6
+            pointsarray: [2,3,5,7]
+            variableagility: true
+            restrictions: [
+                ["noKeyword", "AlreadyHasHullUpgrade"]
+            ]
             modifier_func: (stats) ->
                 stats.hull += 1
         }
@@ -14656,7 +17149,11 @@ exportObj.basicCardData = ->
             name: "Shield Upgrade"
             id: 165
             slot: "Modification"
-            points: 8
+            pointsarray: [3,4,6,8]
+            variableagility: true
+            restrictions: [
+                ["noKeyword", "AlreadyHasShieldUpgrade"]
+            ]
             modifier_func: (stats) ->
                 stats.shields += 1
         }
@@ -14664,7 +17161,8 @@ exportObj.basicCardData = ->
             name: "Stealth Device"
             id: 166
             slot: "Modification"
-            points: 8
+            pointsarray: [3,4,6,8]
+            variableagility: true
             charge: 1
         }
         {
@@ -14694,7 +17192,7 @@ exportObj.basicCardData = ->
             slot: "Title"
             unique: true
             charge: 1
-            points: 0
+            points: 4
             faction: "Resistance"
             ship: "T-70 X-wing"
             modifier_func: (stats) ->
@@ -14704,7 +17202,7 @@ exportObj.basicCardData = ->
             name: "Heroic"
             id: 172
             slot: "Talent"
-            points: 2
+            points: 1
             faction: "Resistance"
         }
         {
@@ -14719,7 +17217,7 @@ exportObj.basicCardData = ->
             name: "Finn"
             id: 174
             slot: "Gunner"
-            points: 9
+            points: 8
             unique: true
             faction: "Resistance"
         }
@@ -14752,7 +17250,8 @@ exportObj.basicCardData = ->
             name: "Primed Thrusters"
             id: 178
             slot: "Tech"
-            points: 6
+            pointsarray: [4,5,6,7,8,9,10]
+            variableinit: true
             restrictions: [
                 ["Base", "Small"]
             ]
@@ -14761,11 +17260,11 @@ exportObj.basicCardData = ->
             name: "Kylo Ren"
             id: 179
             slot: "Crew"
-            points: 9
+            points: 8
             force: 1
             faction: "First Order"
             unique: true
-            applies_condition: '''I'll Show You the Dark Side'''.canonicalize()
+            applies_condition: """I'll Show You the Dark Side""".canonicalize()
             modifier_func: (stats) ->
                 stats.force += 1
         }
@@ -14773,7 +17272,7 @@ exportObj.basicCardData = ->
             name: "General Hux"
             id: 180
             slot: "Crew"
-            points: 3
+            points: 2
             unique: true
             faction: "First Order"
             restrictions: [
@@ -14791,7 +17290,7 @@ exportObj.basicCardData = ->
             name: "Special Forces Gunner"
             id: 182
             slot: "Gunner"
-            points: 5
+            points: 9
             faction: "First Order"
             ship: "TIE/sf Fighter"
         }
@@ -14815,7 +17314,7 @@ exportObj.basicCardData = ->
                 ["Slot", "Crew"]
             ]
             validation_func: (ship, upgrade_obj) ->
-                upgrade_obj.occupiesAnUpgradeSlot "Crew"
+                upgrade_obj.occupiesAnUpgradeSlot upgrade_obj.slot
             also_occupies_upgrades: [ "Crew" ]
             modifier_func: (stats) ->
                 stats.force += 1
@@ -14834,14 +17333,14 @@ exportObj.basicCardData = ->
             name: "Advanced Optics"
             id: 186
             slot: "Tech"
-            points: 5
+            points: 4
         }
         {
             name: "Rey"
             id: 187
             slot: "Gunner"
             xws: "rey-gunner"
-            points: 12
+            points: 11
             unique: true
             force: 1
             faction: "Resistance"
@@ -14880,7 +17379,7 @@ exportObj.basicCardData = ->
             id: 191
             slot: "Crew"
             xws: "c3po-crew"
-            points: 7
+            points: 6
             unique: true
             faction: "Resistance"
             modifier_func: (stats) ->
@@ -14902,7 +17401,7 @@ exportObj.basicCardData = ->
             name: "Rey's Millennium Falcon"
             id: 193
             slot: "Title"
-            points: 0
+            points: 3
             unique: true
             ship: "Scavenged YT-1300"
             faction: "Resistance"
@@ -14919,7 +17418,8 @@ exportObj.basicCardData = ->
             name: "BB-8"
             id: 195
             slot: "Astromech"
-            points: 7
+            pointsarray: [2,2,3,4,4,5,6,6,6]
+            variableinit: true
             charge: 2
             unique: true
             faction: "Resistance"
@@ -14928,7 +17428,8 @@ exportObj.basicCardData = ->
             name: "BB Astromech"
             id: 196
             slot: "Astromech"
-            points: 6
+            pointsarray: [1,1,2,3,3,4,5,5,5]
+            variableinit: true
             charge: 2
             faction: "Resistance"
         }
@@ -14958,7 +17459,8 @@ exportObj.basicCardData = ->
             id: 200
             slot: "Configuration"
             ship: "Delta-7 Aethersprite"
-            points: 0
+            pointsarray: [2,2,3,4,5,6,7]
+            variableinit: true
             restrictions: [
                 ["Slot", "Modification"]
             ]
@@ -14971,7 +17473,8 @@ exportObj.basicCardData = ->
             id: 201
             slot: "Configuration"
             ship: "Delta-7 Aethersprite"
-            points: 99
+            pointsarray: [15,15,15,15,16,18,22]
+            variableinit: true
             modifier_func: (stats) ->
                 stats.attack += 1
                 stats.agility += -1
@@ -15023,7 +17526,7 @@ exportObj.basicCardData = ->
             ship: "Belbullab-22 Starfighter"
             charge: 2
             slot: "Modification"
-            points: 0
+            points: 4
         }
         {
             name: "Grappling Struts"
@@ -15041,7 +17544,7 @@ exportObj.basicCardData = ->
             range: """2-3"""
             rangebonus: true
             charge: 1
-            points: 4
+            points: 5
             restrictions: [
                 ["Action", "Calculate"]
             ]
@@ -15053,7 +17556,7 @@ exportObj.basicCardData = ->
             slot: "Talent"
             points: 1
             restrictions: [
-                ["Keyword", "Clone"]
+                ["isUnique", false]
             ]
         }
         {
@@ -15071,7 +17574,8 @@ exportObj.basicCardData = ->
             id: 212
             faction: "Galactic Republic"
             slot: "Force"
-            points: 6
+            pointsarray: [2,2,2,2,3,4,6]
+            variableinit: true
             modifier_func: (stats) ->
                 stats.actions.push 'F-Coordinate' if 'F-Coordinate' not in stats.actions
         }
@@ -15090,14 +17594,14 @@ exportObj.basicCardData = ->
             faction: "Galactic Republic"
             slot: "Astromech"
             charge: 2
-            points: 4
+            points: 5
         }
         {
             name: "Spare Parts Canisters"
             id: 215
             slot: "Modification"
             charge: 1
-            points: 3
+            points: 2
             applies_condition: '''Spare Parts'''.canonicalize()
             restrictions: [
                 ["Equipped", "Astromech"]
@@ -15110,7 +17614,7 @@ exportObj.basicCardData = ->
             ship: "Sith Infiltrator"
             slot: "Title"
             faction: "Separatist Alliance"
-            points: 0
+            points: 3
             modifier_func: (stats) ->
                 stats.actions.push 'R-Cloak' if 'R-Cloak' not in stats.actions
                 stats.actions.push 'Jam' if 'Jam' not in stats.actions
@@ -15145,7 +17649,7 @@ exportObj.basicCardData = ->
             slot: "Crew"
             charge: 1
             faction: "Separatist Alliance"
-            points: 4
+            points: 3
         }
         {
             name: "K2-B4"
@@ -15154,7 +17658,7 @@ exportObj.basicCardData = ->
             solitary: true
             slot: "Tactical Relay"
             faction: "Separatist Alliance"
-            points: 6
+            points: 5
         }
         {
             name: "DRK-1 Probe Droids"
@@ -15193,7 +17697,7 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             charge: 1
             max_per_squad: 3
-            points: 3
+            points: 4
             applies_condition: '''Buzz Droid Swarm'''.canonicalize()
         }
         {
@@ -15202,7 +17706,7 @@ exportObj.basicCardData = ->
             unique: true
             slot: "Gunner"
             faction: "Galactic Republic"
-            points: 4
+            points: 3
         }
         {
             name: "R4-P44"
@@ -15218,7 +17722,7 @@ exportObj.basicCardData = ->
             charge: 1
             slot: "Gunner"
             faction: "Galactic Republic"
-            points: 8
+            points: 7
         }
         {
             name: "Treacherous"
@@ -15235,7 +17739,7 @@ exportObj.basicCardData = ->
             unique: true
             ship: "Belbullab-22 Starfighter"
             faction: "Separatist Alliance"
-            points: 0
+            points: 7
             modifier_func: (stats) ->
                 stats.hull += 2
         }
@@ -15243,12 +17747,12 @@ exportObj.basicCardData = ->
             name: "GA-97"
             id: 230
             slot: "Crew"
-            points: 5
+            points: 3
             charge: 5
             recurring: 1
             faction: "Resistance"
             unique: true
-            applies_condition: '''It's The Resistance'''.canonicalize()
+            applies_condition: """It's The Resistance""".canonicalize()
             modifier_func: (stats) ->
                 stats.actions.push 'Calculate' if 'Calculate' not in stats.actions
         }
@@ -15264,7 +17768,7 @@ exportObj.basicCardData = ->
             name: "Autoblasters"
             id: 232
             slot: "Cannon"
-            points: 7
+            points: 4
             attack: 2
             range: """1-2"""
         }
@@ -15280,7 +17784,8 @@ exportObj.basicCardData = ->
             name: "Plasma Torpedoes"
             id: 234
             slot: "Torpedo"
-            points: 7
+            pointsarray: [6,6,6,7,7,7,7,7,7]
+            variableinit: true
             attack: 3
             range: """2-3"""
             rangebonus: true
@@ -15329,8 +17834,8 @@ exportObj.basicCardData = ->
                 ["Slot", "Missile"]
             ]
             validation_func: (ship, upgrade_obj) ->
-                upgrade_obj.occupiesAnUpgradeSlot "Missile"
-            also_occupies_upgrades: [ "Missile" ]
+                upgrade_obj.occupiesAnUpgradeSlot upgrade_obj.slot
+            also_occupies_upgrades: [ 'Missile' ]
         }
         {
             name: "TA-175"
@@ -15339,7 +17844,7 @@ exportObj.basicCardData = ->
             slot: "Tactical Relay"
             solitary: true
             faction: "Separatist Alliance"
-            points: 8
+            points: 11
         }
         {
             name: "Passive Sensors"
@@ -15347,7 +17852,8 @@ exportObj.basicCardData = ->
             slot: "Sensor"
             charge: 1
             recurring: 1
-            points: 5
+            pointsarray: [4,4,4,4,5,6,7,4,4]
+            variableinit: true
         }
         {
             name: "R2-A6"
@@ -15371,7 +17877,7 @@ exportObj.basicCardData = ->
             unique: true
             slot: "Crew"
             faction: "Resistance"
-            points: 4
+            points: 2
         }
         {
             name: "Leia Organa (Resistance)"
@@ -15386,7 +17892,7 @@ exportObj.basicCardData = ->
                 ["Slot", "Crew"]
             ]
             validation_func: (ship, upgrade_obj) ->
-                upgrade_obj.occupiesAnUpgradeSlot "Crew"
+                upgrade_obj.occupiesAnUpgradeSlot upgrade_obj.slot
             also_occupies_upgrades: [ "Crew" ]
             modifier_func: (stats) ->
                 stats.force += 1
@@ -15406,7 +17912,7 @@ exportObj.basicCardData = ->
             unique: true
             slot: "Crew"
             faction: "Resistance"
-            points: 5
+            points: 3
             modifier_func: (stats) ->
                 stats.actions.push 'Calculate' if 'Calculate' not in stats.actions
         }
@@ -15414,10 +17920,11 @@ exportObj.basicCardData = ->
             name: "Angled Deflectors"
             id: 247
             slot: "Modification"
-            points: 4
+            pointsarray: [6,3,1,1]
+            variableagility: true
             restrictions: [
                 ["ShieldsGreaterThan", 0]
-                ["Base", "Small", "Medium"]
+                ["Base", "Small or Medium"]
             ]
             modifier_func: (stats) ->
                 stats.shields -= 1
@@ -15427,14 +17934,15 @@ exportObj.basicCardData = ->
             name: "Ensnare"
             id: 248
             slot: "Talent"
-            points: 10
+            pointsarray: [15,15,15,15,15,16,17]
+            variableinit: true
             ship: "Nantex-Class Starfighter"
         }
         {
             name: "Targeting Computer"
             id: 249
             slot: "Modification"
-            points: 1
+            points: 2
             modifier_func: (stats) ->
                 stats.actions.push 'Lock' if 'Lock' not in stats.actions
         }
@@ -15442,7 +17950,8 @@ exportObj.basicCardData = ->
             name: "Precognitive Reflexes"
             id: 250
             slot: "Force"
-            points: 15
+            pointsarray: [3,3,3,4,7,10,13]
+            variableinit: true
             restrictions: [
                 ["Base", "Small"]
             ]
@@ -15450,7 +17959,7 @@ exportObj.basicCardData = ->
         {
             name: "Foresight"
             slot: "Force"
-            points: 6
+            points: 5
             id: 251
             attackbull: 2
             range: """1-3"""
@@ -15470,7 +17979,7 @@ exportObj.basicCardData = ->
             id: 253
             unique: true
             slot: "Gunner"
-            points: 12
+            points: 9
             faction: "Galactic Republic"
             force: 1
             modifier_func: (stats) ->
@@ -15483,7 +17992,7 @@ exportObj.basicCardData = ->
             unique: true
             slot: "Crew"
             xws: "c3po-republic"
-            points: 6
+            points: 7
             faction: "Galactic Republic"
             modifier_func: (stats) ->
                 stats.actions.push 'Calculate' if 'Calculate' not in stats.actions
@@ -15492,14 +18001,15 @@ exportObj.basicCardData = ->
             name: "Gravitic Deflection"
             id: 255
             slot: "Talent"
-            points: 4
+            points: 2
             ship: "Nantex-Class Starfighter"
         }
         {
             name: "Snap Shot"
             id: 256
             slot: "Talent"
-            points: 9
+            pointsarray: [6,7,8,9]
+            variablebase: true
             attack: 2
             range: """2"""
             rangebonus: true
@@ -15644,7 +18154,7 @@ exportObj.basicCardData = ->
             id: 267
             unique: true
             slot: "Command"
-            points: 6
+            points: 10
             restrictions: [
                 ["Slot", "Crew"]
                 ["Base", "Huge"]
@@ -15672,7 +18182,7 @@ exportObj.basicCardData = ->
             name: "Ion Cannon Battery"
             id: 269
             slot: "Hardpoint"
-            points: 5
+            points: 6
             attackt: 4
             range: """2-4"""
             modifier_func: (stats) ->
@@ -15698,7 +18208,7 @@ exportObj.basicCardData = ->
             name: "Point-Defense Battery"
             id: 272
             slot: "Hardpoint"
-            points: 9
+            points: 8
             attackdt: 2
             range: """1-2"""
             modifier_func: (stats) ->
@@ -15712,7 +18222,7 @@ exportObj.basicCardData = ->
             attackt: 3
             range: """3-5"""
             restrictions: [
-                ["EnergyGreatterThan", 4]
+                ["EnergyGreaterThan", 4]
             ]
             modifier_func: (stats) ->
                 stats.actions.push 'Rotate Arc' if 'Rotate Arc' not in stats.actions
@@ -15735,7 +18245,7 @@ exportObj.basicCardData = ->
             name: "Bombardment Specialists"
             id: 275
             slot: "Team"
-            points: 6
+            points: 8
             modifier_func: (stats) ->
                 stats.actions.push '*Lock'
                 stats.actions.push '> Calculate'
@@ -15744,7 +18254,7 @@ exportObj.basicCardData = ->
             name: "Comms Team"
             id: 276
             slot: "Team"
-            points: 7
+            points: 6
             modifier_func: (stats) ->
                 stats.actions.push '*Coordinate'
                 stats.actions.push '> Calculate'
@@ -15764,7 +18274,7 @@ exportObj.basicCardData = ->
             name: "Gunnery Specialists"
             id: 278
             slot: "Team"
-            points: 5
+            points: 4
             modifier_func: (stats) ->
                 stats.actions.push '*Rotate Arc'
                 stats.actions.push '> Calculate'
@@ -15800,17 +18310,22 @@ exportObj.basicCardData = ->
             name: "Adaptive Shields"
             id: 282
             slot: "Cargo"
-            points: 5
+            points: 4
         }
         {
             name: "Boosted Scanners"
             id: 283
             slot: "Cargo"
-            points: 7
+            points: 6
         }
         {
+            name: "Selfless (BoY)"
+            canonical_name: 'Selfless'.canonicalize()
+            unique: true
             id: 284
-            skip: true
+            image_id: 130
+            slot: "Talent"
+            standard_loadout: true
         }
         {
             name: "Tibanna Reserves"
@@ -15823,14 +18338,14 @@ exportObj.basicCardData = ->
             name: "Optimized Power Core"
             id: 286
             slot: "Cargo"
-            points: 6
+            points: 7
         }
         {
             name: "Quick-Release Locks"
             id: 287
             slot: "Illicit"
             charge: 2
-            points: 5
+            points: 4
             restrictions: [
                 ["Base", "Huge"]
             ]
@@ -15839,7 +18354,7 @@ exportObj.basicCardData = ->
             name: "Saboteur's Map"
             id: 288
             slot: "Illicit"
-            points: 3
+            points: 2
             unique: true
             restrictions: [
                 ["Base", "Huge"]
@@ -15849,7 +18364,7 @@ exportObj.basicCardData = ->
             name: "Scanner Baffler"
             id: 289
             slot: "Illicit"
-            points: 8
+            points: 7
             restrictions: [
                 ["Base", "Huge"]
             ]
@@ -15989,6 +18504,8 @@ exportObj.basicCardData = ->
             ship: "Raider-class Corvette"
             faction: "Galactic Empire"
             points: 3
+            modifier_func: (stats) ->
+                stats.actions.push 'Calculate' if 'Calculate' not in stats.actions
         }
         {
             name: "Impetuous"
@@ -16199,7 +18716,7 @@ exportObj.basicCardData = ->
             name: "Coaxium Hyperfuel"
             id: 310
             slot: "Illicit"
-            points: 4
+            points: 1
             restrictions: [
                 ["Action", "Slam"]
             ]
@@ -16208,7 +18725,8 @@ exportObj.basicCardData = ->
             name: "Mag-Pulse Warheads"
             id: 311
             slot: "Missile"
-            points: 4
+            pointsarray: [4,4,4,5,5,5,5,5,5]
+            variableinit: true
             attack: 3
             range: """1-3"""
             rangebonus: true
@@ -16254,14 +18772,14 @@ exportObj.basicCardData = ->
             ship: "Fireball"
             faction: "Resistance"
             unique: true
-            points: 0
+            points: 1
         }
         {
             name: "Cluster Mines"
             id: 316
             slot: "Device"
             charge: 1
-            points: 7
+            points: 6
             applies_condition: 'Cluster Mine'.canonicalize()
         }
         {
@@ -16276,7 +18794,8 @@ exportObj.basicCardData = ->
             name: "Deuterium Power Cells"
             id: 318
             slot: "Tech"
-            points: 8
+            pointsarray: [4,5,6,7]
+            variableagility: true
             charge: 2
             faction: "First Order"
             restrictions: [
@@ -16291,7 +18810,7 @@ exportObj.basicCardData = ->
             id: 319
             slot: "Talent"
             faction: "First Order"
-            points: 2
+            points: 1
         }
         {
             name: "Commander Pyre"
@@ -16307,7 +18826,7 @@ exportObj.basicCardData = ->
             slot: "Gunner"
             unique: true
             faction: "Galactic Republic"
-            points: 2
+            points: 1
         }
         {
             name: "Yoda"
@@ -16316,7 +18835,7 @@ exportObj.basicCardData = ->
             unique: true
             force: 2
             faction: "Galactic Republic"
-            points: 12
+            points: 11
             modifier_func: (stats) ->
                 stats.force += 2
                 stats.actions.push 'F-Coordinate' if 'F-Coordinate' not in stats.actions
@@ -16344,7 +18863,8 @@ exportObj.basicCardData = ->
             unique: true
             force: 1
             faction: "Galactic Republic"
-            points: 9
+            pointsarray: [8,8,9,15]
+            variablebase: true
             modifier_func: (stats) ->
                 stats.force += 1
                 stats.actions.push 'F-Reinforce' if 'F-Reinforce' not in stats.actions
@@ -16362,8 +18882,8 @@ exportObj.basicCardData = ->
                 ["Slot", "Missile"]
             ]
             validation_func: (ship, upgrade_obj) ->
-                upgrade_obj.occupiesAnUpgradeSlot "Missile"
-            also_occupies_upgrades: [ "Missile" ]
+                upgrade_obj.occupiesAnUpgradeSlot upgrade_obj.slot
+            also_occupies_upgrades: [ 'Missile' ]
         }
         {
             name: "Kit Fisto"
@@ -16384,7 +18904,7 @@ exportObj.basicCardData = ->
             unique: true
             force: 1
             faction: "Galactic Republic"
-            points: 14
+            points: 12
             modifier_func: (stats) ->
                 stats.force += 1
                 stats.actions.push '*Focus'
@@ -16421,7 +18941,7 @@ exportObj.basicCardData = ->
             slot: "Talent"
             points: 1
             restrictions: [
-                ["Base", "Small", "Medium"]
+                ["Base", "Small or Medium"]
             ]
         }
         {
@@ -16449,7 +18969,7 @@ exportObj.basicCardData = ->
             id: 334
             slot: "Gunner"
             unique: true
-            points: 2
+            points: 4
             faction: ["Scum and Villainy", "Separatist Alliance"]
         }
         {
@@ -16468,14 +18988,14 @@ exportObj.basicCardData = ->
             charge: 2
             faction: ["Scum and Villainy", "Separatist Alliance"]
             points: 11
-            applies_condition: ['''You'd Better Mean Business'''.canonicalize(),'You Should Thank Me'.canonicalize()]
+            applies_condition: ["""You'd Better Mean Business""".canonicalize(),'You Should Thank Me'.canonicalize()]
         }
         {
             name: 'Alpha-3B "Besh"'
             id: 337
             slot: "Configuration"
             ship: "Nimbus-class V-wing"
-            points: 0
+            points: 1
             confersAddons: [
                 {
                     type: exportObj.Upgrade
@@ -16487,7 +19007,8 @@ exportObj.basicCardData = ->
             name: "Precision Ion Engines"
             id: 338
             slot: "Modification"
-            points: 2
+            pointsarray: [1,1,1,1,1,2,2]
+            variableinit: true
             charge: 2
             restrictions: [
                 ["Keyword", "TIE"]
@@ -16506,12 +19027,13 @@ exportObj.basicCardData = ->
             name: "R2-D2 (Republic)"
             canonical_name: 'R2-D2'.canonicalize()
             id: 340
-            points: 8
             charge: 2
             unique: true
             xws: "r2d2-republic"
             faction: "Galactic Republic"
             slot: "Astromech"
+            pointsarray: [2,4,6,8]
+            variableagility: true
         }
         {
             name: "Extreme Maneuvers"
@@ -16538,7 +19060,7 @@ exportObj.basicCardData = ->
             slot: "Talent"
             points: 1
             restrictions: [
-                ["Base", "Small", "Medium"]
+                ["Base", "Small or Medium"]
             ]
         }
         {
@@ -16556,7 +19078,8 @@ exportObj.basicCardData = ->
             ship: "T-70 X-wing"
             unique: true
             slot: "Modification"
-            points: 5
+            pointsarray: [2,3,4,5,6,7,8]
+            variableinit: true
         }
         {
             name: '"Fives"'
@@ -16572,7 +19095,7 @@ exportObj.basicCardData = ->
             unique: true
             faction: "First Order"
             slot: "Crew"
-            points: 2
+            points: 3
         }
         {
             name: "Automated Target Priority"
@@ -16591,7 +19114,7 @@ exportObj.basicCardData = ->
             slot: "Tech"
             points: 4
             restrictions: [
-                ["Base", "Medium", "Large"]
+                ["Base", "Medium or Large"]
             ]
             applies_condition: 'Sensor Buoy'.canonicalize()
         }
@@ -16642,7 +19165,7 @@ exportObj.basicCardData = ->
             slot: "Tactical Relay"
             solitary: true
             faction: "Separatist Alliance"
-            points: 5
+            points: 3
             modifier_func: (stats) ->
                 stats.actions.push 'Calculate' if 'Calculate' not in stats.actions
         }
@@ -16650,15 +19173,15 @@ exportObj.basicCardData = ->
             name: "Synced Laser Cannons"
             id: 354
             slot: "Cannon"
-            points: 8
+            points: 7
             attack: 3
             range: """2-3"""
             restrictions: [
                 ["Slot", "Cannon"]
             ]
             validation_func: (ship, upgrade_obj) ->
-                upgrade_obj.occupiesAnUpgradeSlot "Cannon"
-            also_occupies_upgrades: [ "Cannon" ]
+                upgrade_obj.occupiesAnUpgradeSlot upgrade_obj.slot
+            also_occupies_upgrades: [ 'Cannon' ]
         }
         {
             name: "Concussion Bombs"
@@ -16674,7 +19197,7 @@ exportObj.basicCardData = ->
             slot: "Configuration"
             ship: "TIE/rb Heavy"
             faction: "Galactic Empire"
-            points: 0
+            points: 3
             modifier_func: (stats) ->
                 stats.actions.push 'Calculate'
                 stats.actions.push '*Rotate Arc'
@@ -16734,7 +19257,7 @@ exportObj.basicCardData = ->
         {
             name: "Syliure-31 Hyperdrive"
             id: 362
-            points: 3
+            points: 0
             slot: "Hyperdrive"
             ship: "Syliure-class Hyperspace Ring"
         }
@@ -16759,7 +19282,8 @@ exportObj.basicCardData = ->
         {
             name: "Q7 Astromech"
             id: 365
-            points: 3
+            pointsarray: [2,2,2,2,3,3,3]
+            variableinit: true
             slot: "Astromech"
             faction: "Galactic Republic"
         }
@@ -16782,6 +19306,7 @@ exportObj.basicCardData = ->
             points: 0
             standardized: true
             slot: "Modification"
+            faction: "Separatist Alliance"
             chassis: "Independent Calculations"
             restrictions: [
                 ["Keyword", "Networked Calculations"]
@@ -16805,7 +19330,7 @@ exportObj.basicCardData = ->
             canonical_name: 'Slave I'.canonicalize()
             xws: "slavei-swz82"
             id: 370
-            points: 0
+            points: 3
             slot: "Title"
             unique: true
             faction: ["Scum and Villainy", "Separatist Alliance"]
@@ -16819,11 +19344,13 @@ exportObj.basicCardData = ->
         }
         {
             name: "Vectored Cannons (RZ-1)"
+            xws: "vectoredcannonsrz1"
             id: 371
             points: 0
             slot: "Configuration"
             standardized: true
             chassis: "Vectored Cannons"
+            ship: "RZ-1 A-wing"
             restrictions: [
                 ["Keyword", "Vectored Thrusters"]
             ]
@@ -16834,7 +19361,7 @@ exportObj.basicCardData = ->
         {
             name: "B6 Blade Wing Prototype"
             id: 372
-            points: 0
+            points: 1
             unique: true
             slot: "Title"
             ship: "A/SF-01 B-wing"
@@ -16849,12 +19376,15 @@ exportObj.basicCardData = ->
         {
             name: "TIE Defender Elite"
             id: 373
-            points: 0
+            points: -8
             slot: "Configuration"
             faction: "Galactic Empire"
             ship: "TIE/d Defender"
             standardized: true
             chassis: "Advanced Fire Control"
+            restrictions: [
+                ["Keyword", "Full Throttle"]
+            ]
             modifier_func: (stats) ->
                 if stats.maneuvers[1]?
                     for s in (stats.maneuvers)
@@ -16870,11 +19400,12 @@ exportObj.basicCardData = ->
             id: 374
             points: 0
             slot: "Configuration"
+            ship: ["TIE/in Interceptor", "TIE/vn Silencer"]
             standardized: true
             chassis: "Sensitive Controls"
             restrictions: [
                 ["Keyword", "Autothrusters"]
-            ]
+            ]            
         }
         {
             name: "Cutthroat"
@@ -16886,8 +19417,9 @@ exportObj.basicCardData = ->
         {
             name: "Tierfon Belly Run"
             id: 376
-            points: 0
             slot: "Talent"
+            pointsarray: [0,0,0,0,1,1,1]
+            variableinit: true
             restrictions: [
                 ["Keyword", "Y-wing"]
             ]
@@ -17066,7 +19598,7 @@ exportObj.basicCardData = ->
             id: 392
             unique: true
             slot: "Command"
-            points: 7
+            points: 6
             charge: 2
             restrictions: [
                 ["Slot", "Crew"]
@@ -17140,7 +19672,7 @@ exportObj.basicCardData = ->
             name: "Drill Beak"
             id: 397
             slot: "Hardpoint"
-            points: 4
+            points: 2
             attackb: 3
             range: """0-1"""
             rangebonus: true
@@ -17157,7 +19689,7 @@ exportObj.basicCardData = ->
             name: "Enhanced Propulsion"
             id: 398
             slot: "Hardpoint"
-            points: 6
+            points: 2
             ship: "Trident-class Assault Ship"
             restrictions: [
                 ["Slot", "Cargo"]
@@ -17196,13 +19728,13 @@ exportObj.basicCardData = ->
             name: "Tractor Technicians"
             id: 401
             slot: "Team"
-            points: 2
+            points: 1
         }
         {
             name: "Corsair Crew"
             id: 402
             slot: "Team"
-            points: 5
+            points: 2
             faction: "Scum and Villainy"
             restrictions: [
                 ["Slot", "Gunner"]
@@ -17244,7 +19776,7 @@ exportObj.basicCardData = ->
             ship: "Trident-class Assault Ship"
             faction: "Separatist Alliance"
             modifier_func: (stats) ->
-                stats.shields -= 2
+                stats.hull -= 2
         }
         {
             name: "Trident"
@@ -17274,7 +19806,7 @@ exportObj.basicCardData = ->
             id: 408
             unique: true
             slot: "Astromech"
-            points: 3
+            points: 4
             faction: "Resistance"
             restrictions: [
                 ["Action", "Rotate Arc"]
@@ -17316,7 +19848,7 @@ exportObj.basicCardData = ->
             name: "Watchful Astromech"
             id: 410
             slot: "Astromech"
-            points: 2
+            points: 1
         }
         {
             name: "Overtuned Modulators"
@@ -17369,7 +19901,7 @@ exportObj.basicCardData = ->
             id: 415
             ship: ["TIE/vn Silencer", "TIE/wi Whisper Modified Interceptor"]
             slot: "Tech"
-            points: 1
+            points: 2
         }
         {
             name: "Babu Frik"
@@ -17377,7 +19909,7 @@ exportObj.basicCardData = ->
             id: 416
             faction: ["Scum and Villainy", "Resistance"]
             slot: "Illicit"
-            points: 5
+            points: 7
             charge: 3
         }
         {
@@ -17392,7 +19924,7 @@ exportObj.basicCardData = ->
         {
             name: "Malice"
             id: 418
-            points: 4
+            points: 6
             slot: "Force"
             restrictions: [
                 ["Keyword", "Dark Side"]
@@ -17407,7 +19939,7 @@ exportObj.basicCardData = ->
         {
             name: "Electro-Chaff Missiles"
             id: 420
-            points: 9
+            points: 4
             slot: "Missile"
             max_per_squad: 2
             charge: 1
@@ -17433,7 +19965,7 @@ exportObj.basicCardData = ->
             name: "Sabine Wren (Command)"
             canonical_name: 'Sabine Wren'.canonicalize()
             id: 422
-            points: 99
+            points: 10
             slot: "Command"
             unique: true
             faction: "Rebel Alliance"
@@ -17463,7 +19995,7 @@ exportObj.basicCardData = ->
             canonical_name: 'Ahsoka Tano'.canonicalize()
             xws: "ahsokatano-crew"
             id: 424
-            points: 9
+            points: 10
             force: 1
             slot: "Crew"
             unique: true
@@ -17474,8 +20006,9 @@ exportObj.basicCardData = ->
         {
             name: "Bo-Katan Kryze (Republic/Separatist)"
             canonical_name: 'Bo-Katan Kryze'.canonicalize()
+            xws: "bokatankryze"
             id: 425
-            points: 6
+            points: 5
             slot: "Crew"
             unique: true
             faction: ["Galactic Republic", "Separatist Alliance"]
@@ -17485,7 +20018,7 @@ exportObj.basicCardData = ->
             canonical_name: 'Bo-Katan Kryze'.canonicalize()
             xws: "bokatankryze-rebel-scum"
             id: 426
-            points: 4
+            points: 2
             slot: "Crew"
             unique: true
             faction: ["Rebel Alliance", "Scum and Villainy"]
@@ -17493,7 +20026,7 @@ exportObj.basicCardData = ->
         {
             name: "Captain Hark"
             id: 427
-            points: 3
+            points: 5
             charge: 2
             slot: "Crew"
             faction: "Galactic Empire"
@@ -17502,7 +20035,7 @@ exportObj.basicCardData = ->
         {
             name: "Fenn Rau"
             id: 428
-            points: 4
+            points: 6
             slot: "Crew"
             unique: true
             faction: ["Rebel Alliance", "Scum and Villainy"]
@@ -17526,7 +20059,7 @@ exportObj.basicCardData = ->
         {
             name: "Obi-Wan Kenobi"
             id: 431
-            points: 11
+            points: 9
             force: 1
             slot: "Crew"
             unique: true
@@ -17537,7 +20070,7 @@ exportObj.basicCardData = ->
         {
             name: "Pre Vizsla"
             id: 432
-            points: 9
+            points: 7
             slot: "Crew"
             faction: ["Scum and Villainy", "Separatist Alliance"]
             unique: true
@@ -17547,7 +20080,7 @@ exportObj.basicCardData = ->
         {
             name: "Prime Minister Almec"
             id: 433
-            points: 6
+            points: 8
             slot: "Crew"
             unique: true
             faction: ["Galactic Republic", "Scum and Villainy"]
@@ -17555,7 +20088,7 @@ exportObj.basicCardData = ->
         {
             name: "Rook Kast"
             id: 434
-            points: 8
+            points: 7
             slot: "Crew"
             unique: true
             faction: "Scum and Villainy"
@@ -17565,7 +20098,7 @@ exportObj.basicCardData = ->
         {
             name: "Satine Kryze"
             id: 435
-            points: 10
+            points: 7
             charge: 2
             recurring: 1
             slot: "Crew"
@@ -17586,7 +20119,7 @@ exportObj.basicCardData = ->
         {
             name: "Tal Merrik"
             id: 437
-            points: 7
+            points: 8
             slot: "Crew"
             unique: true
             faction: "Separatist Alliance"
@@ -17602,13 +20135,14 @@ exportObj.basicCardData = ->
             unique: true
             faction: ["Rebel Alliance", "Galactic Empire", "Scum and Villainy"]
             restrictions: [
-                ["FactionOrUnique", "Gar Saxon", "Rebel Alliance"]
+                ["orUnique", "Gar Saxon"]
+                ["Faction", "Rebel Alliance"]
             ]
         }
         {
             name: "Ursa Wren"
             id: 439
-            points: 6
+            points: 7
             slot: "Crew"
             unique: true
             faction: "Rebel Alliance"
@@ -17642,20 +20176,20 @@ exportObj.basicCardData = ->
         {
             name: "Gar Saxon (Gunner)"
             canonical_name: 'Gar Saxon'.canonicalize()
-            xws: "garsaxon-gunner"
+            xws: 'garsaxon-gunner'
             id: 441
-            points: 6
+            points: 10
             slot: "Gunner"
             unique: true
             faction: "Scum and Villainy"
             restrictions: [
-                ["Base", "Large", "Huge"]
+                ["Base", "Large or Huge"]
             ]
         }
         {
             name: "Tiber Saxon"
             id: 442
-            points: 4
+            points: 5
             charge: 2
             recurring: 1
             slot: "Gunner"
@@ -17675,7 +20209,7 @@ exportObj.basicCardData = ->
         {
             name: "Blazer Bomb"
             id: 444
-            points: 5
+            points: 4
             charge: 1
             slot: "Device"
             applies_condition: '''Blazer Bomb'''.canonicalize()
@@ -17683,7 +20217,8 @@ exportObj.basicCardData = ->
         {
             name: "Beskar Reinforced Plating"
             id: 445
-            points: 6
+            pointsarray: [2,3,4,5]
+            variableagility: true
             slot: "Modification"
             charge: 2
             restrictions: [
@@ -17703,7 +20238,7 @@ exportObj.basicCardData = ->
         {
             name: "Gauntlet"
             id: 447
-            points: 0
+            points: 3
             slot: "Title"
             unique: true
             charge: 2
@@ -17725,7 +20260,7 @@ exportObj.basicCardData = ->
         {
             name: "Nightbrother"
             id: 448
-            points: 0
+            points: 3
             slot: "Title"
             unique: true
             charge: 2
@@ -17755,7 +20290,7 @@ exportObj.basicCardData = ->
         {
             name: "Clan Wren Commandos"
             id: 450
-            points: 7
+            points: 10
             slot: "Crew"
             unique: true
             charge: 2
@@ -17772,7 +20307,7 @@ exportObj.basicCardData = ->
         {
             name: "Razor Crest"
             id: 451
-            points: 0
+            points: 4
             unique: true
             slot: "Title"
             ship: "ST-70 Assault Ship"
@@ -17783,7 +20318,7 @@ exportObj.basicCardData = ->
         {
             name: "The Mandalorian"
             id: 452
-            points: 2
+            points: 4
             unique: true
             slot: "Crew"
             faction: "Scum and Villainy"
@@ -17793,7 +20328,8 @@ exportObj.basicCardData = ->
         {
             name: "The Child"
             id: 453
-            points: 7
+            points: 6
+            canonical_name: 'The Child'.canonicalize()
             unique: true
             slot: "Crew"
             force: 2
@@ -17830,7 +20366,7 @@ exportObj.basicCardData = ->
         {
             name: "Enduring"
             id: 456
-            points: 5
+            points: 2
             slot: "Talent"
         }
         {
@@ -17846,7 +20382,7 @@ exportObj.basicCardData = ->
         {
             name: "Greef Karga"
             id: 458
-            points: 6
+            points: 8
             slot: "Crew"
             unique: true
             faction: "Scum and Villainy"
@@ -17856,7 +20392,7 @@ exportObj.basicCardData = ->
         {
             name: "Kuiil"
             id: 459
-            points: 4
+            points: 6
             slot: "Crew"
             unique: true
             faction: "Scum and Villainy"
@@ -17869,13 +20405,14 @@ exportObj.basicCardData = ->
             unique: true
             faction: "Scum and Villainy"
             restrictions: [
-                ["Base", "Medium", "Large"]
+                ["Base", "Medium or Large"]
             ]
         }
         {
             name: "Migs Mayfeld"
             id: 461
-            points: 4
+            pointsarray: [2,3,4,7]
+            variablebase: true
             slot: "Gunner"
             unique: true
             faction: ["Scum and Villainy","Galactic Empire"]
@@ -17883,15 +20420,15 @@ exportObj.basicCardData = ->
         {
             name: "Burnout Thrusters"
             id: 462
-            points: 6
-            slot: "Modification"
+            points: 4
             charge: 1
-            faction: ["Scum and Villainy"]
+            slot: "Modification"
+            faction: "Scum and Villainy"
             restrictions: [
-                ["Base", "Small", "Medium"]
+                ["Base", "Small or Medium"]
             ]
             modifier_func: (stats) ->
-                stats.actions.push 'Slam' if 'Slam' not in stats.actions
+                stats.actions.push 'Slam'
         }
         {
             name: "Hotshot Tail Blaster"
@@ -17903,7 +20440,7 @@ exportObj.basicCardData = ->
             charge: 2
             slot: "Illicit"
             restrictions: [
-                ["Base", "Medium", "Large"]
+                ["Base", "Medium or Large"]
             ]
         }
         {
@@ -17946,7 +20483,7 @@ exportObj.basicCardData = ->
         {
             name: "Mandalorian Super Commandos"
             id: 466
-            points: 7
+            points: 10
             slot: "Crew"
             unique: true
             charge: 2
@@ -17963,7 +20500,7 @@ exportObj.basicCardData = ->
         {
             name: "Imperial Super Commandos"
             id: 467
-            points: 7
+            points: 10
             slot: "Crew"
             unique: true
             charge: 2
@@ -17980,7 +20517,7 @@ exportObj.basicCardData = ->
         {
             name: "Nite Owl Commandos"
             id: 468
-            points: 7
+            points: 10
             slot: "Crew"
             unique: true
             charge: 2
@@ -17997,7 +20534,7 @@ exportObj.basicCardData = ->
         {
             name: "Death Watch Commandos"
             id: 469
-            points: 7
+            points: 10
             slot: "Crew"
             unique: true
             charge: 2
@@ -18015,7 +20552,7 @@ exportObj.basicCardData = ->
             name: "Proton Cannons"
             id: 470
             slot: "Cannon"
-            points: 4
+            points: 5
             attackbull: 4
             range: """2-3"""
             charge: 2
@@ -18042,8 +20579,8 @@ exportObj.basicCardData = ->
             id: 472
             slot: "Title"
             unique: true
-            points: 0
-            ship: ["Rogue-class Starfighter"]
+            points: 2
+            ship: "Rogue-class Starfighter"
             modifier_func: (stats) ->
                 stats.actions.push 'R-Cloak' if 'R-Cloak' not in stats.actions
             confersAddons: [
@@ -18060,34 +20597,39 @@ exportObj.basicCardData = ->
         {
             name: "Fanatic (BoY)"
             id: 473
+            no_image: true
             slot: "Talent"
-            standard: true
+            standard_loadout: true
         }
         {
             name: "Chewbacca (BoY)"
             canonical_name: 'Chewbacca'.canonicalize()
             id: 474
+            image_id: 21
             slot: "Crew"
-            standard: true
+            standard_loadout: true
             unique: true
         }
         {
             name: "Attack Speed (BoY)"
             id: 475
+            no_image: true
             slot: "Talent"
-            standard: true
+            standard_loadout: true
         }
         {
             name: "Unstable Sublight Engines (BoY)"
             id: 476
+            no_image: true
             slot: "Modification"
-            standard: true
+            standard_loadout: true
         }
         {
             name: "R2-D2 (BoY)"
             canonical_name: 'R2-D2'.canonicalize()
             id: 477
-            standard: true
+            image_id: 3
+            standard_loadout: true
             unique: true
             slot: "Astromech"
             charge: 2
@@ -18095,7 +20637,8 @@ exportObj.basicCardData = ->
         {
             name: "Dorsal Turret (BoY)"
             id: 478
-            standard: true
+            image_id: 137
+            standard_loadout: true
             slot: "Turret"
             attackt: 3
             range: """1-2"""
@@ -18106,7 +20649,8 @@ exportObj.basicCardData = ->
             name: "R2-F2 (BoY)"
             canonical_name: 'R2-F2'.canonicalize()
             id: 479
-            standard: true
+            no_image: true
+            standard_loadout: true
             unique: true
             slot: "Astromech"
             charge: 2
@@ -18114,7 +20658,8 @@ exportObj.basicCardData = ->
         {
             name: "Precise Astromech (BoY)"
             id: 480
-            standard: true
+            no_image: true
+            standard_loadout: true
             slot: "Astromech"
             charge: 2
         }
@@ -18122,7 +20667,8 @@ exportObj.basicCardData = ->
             name: "R2-A3 (BoY)"
             canonical_name: 'R2-A3'.canonicalize()
             id: 481
-            standard: true
+            no_image: true
+            standard_loadout: true
             unique: true
             slot: "Astromech"
             charge: 2
@@ -18130,14 +20676,16 @@ exportObj.basicCardData = ->
         {
             name: "Vengeful (BoY)"
             id: 482
-            standard: true
+            no_image: true
+            standard_loadout: true
             slot: "Talent"
         }
         {
             name: "R5-D8 (BoY)"
             canonical_name: 'R5-D8'.canonicalize()
             id: 483
-            standard: true
+            image_id: 7
+            standard_loadout: true
             unique: true
             slot: "Astromech"
             charge: 2
@@ -18146,7 +20694,8 @@ exportObj.basicCardData = ->
             name: "R5-K6 (BoY)"
             canonical_name: 'R5-K6'.canonicalize()
             id: 484
-            standard: true
+            no_image: true
+            standard_loadout: true
             unique: true
             slot: "Astromech"
             charge: 2
@@ -18154,13 +20703,15 @@ exportObj.basicCardData = ->
         {
             name: "Sensor Jammer (BoY)"
             id: 485
-            standard: true
+            no_image: true
+            standard_loadout: true
             slot: "Sensor"
         }
         {
             name: "Ancillary Ion Weapons (SoC)"
             id: 486
-            standard: true
+            no_image: true
+            standard_loadout: true
             slot: "Cannon"
             charge: 2
             recurring: 1
@@ -18168,51 +20719,311 @@ exportObj.basicCardData = ->
         {
             name: "Roiling Anger (SoC)"
             id: 487
-            standard: true
+            no_image: true
+            standard_loadout: true
             slot: "Force"
         }
         {
             name: "Contingency Protocol (SoC)"
             id: 488
-            standard: true
+            no_image: true
+            standard_loadout: true
             slot: "Modification"
         }
         {
             name: "Strut-Lock Override (SoC)"
             id: 489
-            standard: true
+            no_image: true
+            standard_loadout: true
             charge: 2
             slot: "Configuration"
         }
         {
             name: "R4-P17 (SoC)"
+            canonical_name: 'R4-P17'.canonicalize()
             id: 490
-            standard: true
+            image_id: 214
+            standard_loadout: true
+            unique: true
             charge: 2
             slot: "Astromech"
         }
         {
             name: "Targeting Astromech (BoY)"
             id: 491
-            standard: true
+            no_image: true
+            standard_loadout: true
             slot: "Astromech"
         }
         {
             name: "Wolfpack (SoC)"
             canonical_name: 'Wolfpack'.canonicalize()
             id: 492
+            image_id: 352
             unique: true
-            standard: true
+            standard_loadout: true
             slot: "Crew"
         }
         {
             name: "Evasion Sequence 7 (SoC)"
             id: 493
-            standard: true
+            no_image: true
+            standard_loadout: true
             slot: "Modification"
         }
+        {
+            name: "Swift Approach (TBE)"
+            id: 494
+            no_image: true
+            standard_loadout: true
+            slot: "Talent"
+        }
+        {
+            name: "Automated Loaders (TBE)"
+            id: 495
+            no_image: true
+            standard_loadout: true
+            charge: 1
+            slot: "Modification"
+        }
+        {
+            name: "Top Cover (TBE)"
+            id: 496
+            no_image: true
+            standard_loadout: true
+            slot: "Talent"
+        }
+        {
+            name: "True Grit (TBE)"
+            id: 497
+            no_image: true
+            standard_loadout: true
+            slot: "Talent"
+        }
+        {
+            name: "Mercenary (YLF)"
+            id: 498
+            no_image: true
+            standard_loadout: true
+            slot: "Talent"
+        }
+        {
+            name: "Efficient Processing (YLF)"
+            id: 499
+            no_image: true
+            standard_loadout: true
+            slot: "Talent"
+        }
+        {
+            name: "Seeker Missiles (YLF)"
+            id: 500
+            no_image: true
+            standard_loadout: true
+            slot: "Missile"
+            attack: 3
+            range: """2-3"""
+            rangebonus: true
+            charge: 4
+        }
+        {
+            name: '"Leebo" (YLF)'
+            canonical_name: '"Leebo"'.canonicalize()
+            id: 501
+            no_image: true
+            standard_loadout: true
+            unique: true
+            slot: "Crew"
+        }
+        {
+            name: "Outrider (2023)"
+            canonical_name: 'Outrider'.canonicalize()
+            xws: "outrider2023"
+            id: 502
+            image_id: 157
+            slot: "Title"
+            points: 7
+            unique: true
+            faction: ["Scum and Villainy", "Rebel Alliance"]
+            ship: "YT-2400 Light Freighter (2023)"
+        }
+        {
+            name: "R2-A3 (BoE)"
+            unique: true
+            id: 503
+            no_image: true
+            standard_loadout: true
+            charge: 1
+            slot: "Talent"
+        }
+        {
+            name: "Ace In The Hole (BoE)"
+            id: 504
+            no_image: true
+            standard_loadout: true
+            charge: 2
+            slot: "Talent"
+        }
+        {
+            name: "Airen Cracken (BoE)"
+            id: 505
+            canonical_name: 'Airen Cracken'.canonicalize()
+            unique: true
+            no_image: true
+            standard_loadout: true
+            slot: "Gunner"
+        }
+        {
+            name: "Millennium Falcon (BoE)"
+            id: 506
+            unique: true
+            no_image: true
+            standard_loadout: true
+            slot: "Title"
+        }
+        {
+            name: "Chaff Particles (BoE)"
+            id: 507
+            no_image: true
+            standard_loadout: true
+            slot: "Modification"
+        }
+        {
+            name: "No Escape (BoE)"
+            id: 508
+            no_image: true
+            standard_loadout: true
+            slot: "Talent"
+        }
+        {
+            name: "Reckless (BoE)"
+            id: 509
+            no_image: true
+            standard_loadout: true
+            slot: "Talent"
+        }
+        {
+            name: "Push The Limit (BoE)"
+            id: 510
+            no_image: true
+            standard_loadout: true
+            slot: "Talent"
+        }
+        {
+            name: "Computer-Assisted Handling (BoE)"
+            id: 511
+            no_image: true
+            standard_loadout: true
+            charge: 1
+            slot: "Modification"
+        }
+        {
+            name: "Blank Signature (BoE)"
+            id: 512
+            no_image: true
+            standard_loadout: true
+            charge: 1
+            recurring: 1
+            slot: "Sensor"
+        }
+        {
+            name: "Feedback Emitter (BoE)"
+            id: 513
+            no_image: true
+            standard_loadout: true
+            charge: 1
+            slot: "Illicit"
+        }
+        {
+            name: "Targeting Matrix (BoE)"
+            id: 514
+            no_image: true
+            standard_loadout: true
+            slot: "Modification"
+        }
+        {
+            name: "Apex Predator (BoE)"
+            id: 515
+            no_image: true
+            standard_loadout: true
+            slot: "Talent"
+        }
+        {
+            name: "Fuel Injection Override (BoE)"
+            id: 516
+            no_image: true
+            standard_loadout: true
+            charge: 2
+            slot: "Modification"
+        }
+        {
+            name: "Target-Assist Algorithm (BoE)"
+            id: 517
+            no_image: true
+            standard_loadout: true
+            slot: "Modification"
+        }
+        {
+            name: "Precision-Tuned Cannons (BoE)"
+            id: 518
+            no_image: true
+            standard_loadout: true
+            attack: 2
+            range: """2-3"""
+            slot: "Cannon"
+        }
+        {
+            name: "Heroic Sacrifice (BoE)"
+            id: 519
+            no_image: true
+            standard_loadout: true
+            slot: "Talent"
+        }
+        {
+            name: "Parting Gift (BoE)"
+            id: 520
+            no_image: true
+            standard_loadout: true
+            slot: "Talent"
+        }
+        {
+            name: "Stabilizing Astromech (BoE)"
+            id: 521
+            no_image: true
+            standard_loadout: true
+            slot: "Astromech"
+            charge: 1
+        }
+        {
+            name: "Modified R4-P unit (BoE)"
+            id: 522
+            no_image: true
+            standard_loadout: true
+            slot: "Astromech"
+            charge: 1
+        }
+        {
+            name: "Ion Maneuvering Jet (BoE)"
+            id: 523
+            no_image: true
+            standard_loadout: true
+            slot: "Modification"
+            charge: 2
+        }
+        {
+            name: "Collected (BoE)"
+            id: 524
+            no_image: true
+            standard_loadout: true
+            slot: "Talent"
+        }
+        {
+            name: "It's A Trap! (BoE)"
+            id: 525
+            no_image: true
+            standard_loadout: true
+            slot: "Talent"
+        }
     ]
-
 
     conditionsById: [
         {
@@ -18240,7 +21051,7 @@ exportObj.basicCardData = ->
             unique: true
         }
         {
-            name: '''I'll Show You the Dark Side'''
+            name: """I'll Show You the Dark Side"""
             id: 5
             unique: true
         }
@@ -18282,7 +21093,7 @@ exportObj.basicCardData = ->
             id: 14
         }
         {
-            name: '''It's the Resistance'''
+            name: """It's the Resistance"""
             id: 15
         }
         {
@@ -18322,14 +21133,13 @@ exportObj.basicCardData = ->
         {
             name: 'Fearful Prey'
             id: 24
-            unique: true
         }
         {
             name: 'You Should Thank Me'
             id: 25
         }
         {
-            name: '''You'd Better Mean Business'''
+            name: """You'd Better Mean Business"""
             id: 26
         }
         {
@@ -18365,7 +21175,6 @@ exportObj.basicCardData = ->
         {
             name: '''Marked for Elimination'''
             id: 34
-            unique: true
         }
         {
             name: '''Clan Wren Commandos'''
@@ -18612,7760 +21421,29 @@ exportObj.basicCardData = ->
             name: "Solo"
             id: 48
         }
-    ]
-
-    quickbuildsById: [
         {
-            id: 0
-            faction: "Galactic Empire"
-            pilot: "Valen Rudor"
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 1
-            faction: "Galactic Empire"
-            pilot: "Black Squadron Ace"
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-                "Afterburners"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 2
-            faction: "Galactic Empire"
-            pilot: "Academy Pilot"
-            ship: "TIE/ln Fighter"
-            threat: 1
-        }
-        {
-            id: 3
-            faction: "Galactic Empire"
-            pilot: "Iden Versio"
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 4
-            faction: "Galactic Empire"
-            pilot: '"Night Beast"'
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Predator"
-                "Hull Upgrade"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 5
-            faction: "Galactic Empire"
-            pilot: "Obsidian Squadron Pilot"
-            ship: "TIE/ln Fighter"
-            threat: 1
-        }
-        {
-            id: 6
-            faction: "Galactic Empire"
-            pilot: '"Scourge" Skutu'
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Predator"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 7
-            faction: "Galactic Empire"
-            pilot: '"Wampa"'
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Crack Shot"
-                "Hull Upgrade"
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 8
-            faction: "Galactic Empire"
-            pilot: "Black Squadron Ace"
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Crack Shot"
-                "Afterburners"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 9
-            faction: "Galactic Empire"
-            pilot: "Gideon Hask"
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Crack Shot"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 10
-            faction: "Galactic Empire"
-            pilot: "Del Meeko"
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Juke"
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 11
-            faction: "Galactic Empire"
-            pilot: "Obsidian Squadron Pilot"
-            ship: "TIE/ln Fighter"
-            threat: 1
-            skip: true
-        }
-        {
-            id: 12
-            faction: "Galactic Empire"
-            pilot: '"Howlrunner"'
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Juke"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 13
-            faction: "Galactic Empire"
-            pilot: "Seyn Marana"
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Marksmanship"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 14
-            faction: "Galactic Empire"
-            pilot: "Black Squadron Ace"
-            suffix: " (x2)"
-            linkedId: 14
-            ship: "TIE/ln Fighter"
-            threat: 3
-            upgrades: [
-                "Juke"
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 15
-            faction: "Galactic Empire"
-            pilot: "Obsidian Squadron Pilot"
-            suffix: " (x2)"
-            linkedId: 15
-            ship: "TIE/ln Fighter"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 16
-            faction: "Galactic Empire"
-            pilot: "Academy Pilot"
-            suffix: " (x2)"
-            linkedId: 16
-            ship: "TIE/ln Fighter"
-            threat: 2
-        }
-        {
-            id: 17
-            faction: "Galactic Empire"
-            pilot: "Academy Pilot"
-            ship: "TIE/ln Fighter"
-            threat: 1
-            skip: true
-        }
-        {
-            id: 18
-            faction: "Galactic Empire"
-            pilot: "Darth Vader"
-            ship: "TIE Advanced x1"
-            threat: 4
-            upgrades: [
-                "Supernatural Reflexes"
-                "Fire-Control System"
-                "Afterburners"
-                "Shield Upgrade"
-                "Cluster Missiles"
-            ]
-        }
-        {
-            id: 19
-            faction: "Galactic Empire"
-            pilot: "Maarek Stele"
-            ship: "TIE Advanced x1"
-            threat: 3
-            upgrades: [
-                "Ruthless"
-                "Fire-Control System"
-                "Cluster Missiles"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 20
-            faction: "Galactic Empire"
-            pilot: "Storm Squadron Ace"
-            ship: "TIE Advanced x1"
-            threat: 2
-            upgrades: [
-                "Fire-Control System"
-            ]
-        }
-        {
-            id: 21
-            faction: "Galactic Empire"
-            pilot: "Ved Foslo"
-            ship: "TIE Advanced x1"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Fire-Control System"
-                "Cluster Missiles"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 22
-            faction: "Galactic Empire"
-            pilot: "Zertik Strom"
-            ship: "TIE Advanced x1"
-            threat: 3
-            upgrades: [
-                "Squad Leader"
-                "Fire-Control System"
-                "Cluster Missiles"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 23
-            faction: "Galactic Empire"
-            pilot: "Tempest Squadron Pilot"
-            ship: "TIE Advanced x1"
-            threat: 2
-            upgrades: [
-                "Cluster Missiles"
-            ]
-        }
-        {
-            id: 24
-            faction: "Galactic Empire"
-            pilot: "Colonel Jendon"
-            ship: "Lambda-class T-4a Shuttle"
-            threat: 3
-            upgrades: [
-                "Collision Detector"
-                "Ion Cannon"
-                "Darth Vader"
-                "Freelance Slicer"
-                "ST-321"
-            ]
-        }
-        {
-            id: 25
-            faction: "Galactic Empire"
-            pilot: "Captain Kagi"
-            ship: "Lambda-class T-4a Shuttle"
-            threat: 3
-            upgrades: [
-                "Collision Detector"
-                "Tractor Beam"
-                "Emperor Palpatine"
-                "Shield Upgrade"
-                "Static Discharge Vanes"
-            ]
-        }
-        {
-            id: 26
-            faction: "Galactic Empire"
-            pilot: "Lieutenant Sai"
-            ship: "Lambda-class T-4a Shuttle"
-            threat: 3
-            upgrades: [
-                "Ciena Ree"
-                'GNK "Gonk" Droid'
-                "Advanced Sensors"
-                "Jamming Beam"
-            ]
-        }
-        {
-            id: 27
-            faction: "Galactic Empire"
-            pilot: "Omicron Group Pilot"
-            ship: "Lambda-class T-4a Shuttle"
-            threat: 2
-            upgrades: [
-                "Admiral Sloane"
-                "Jamming Beam"
-            ]
-        }
-        {
-            id: 28
-            faction: "Galactic Empire"
-            pilot: "Lieutenant Kestal"
-            ship: "TIE/ag Aggressor"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Barrage Rockets"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 29
-            faction: "Galactic Empire"
-            pilot: "Onyx Squadron Scout"
-            ship: "TIE/ag Aggressor"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-                "Dorsal Turret"
-                "Proton Rockets"
-            ]
-        }
-        {
-            id: 30
-            faction: "Galactic Empire"
-            pilot: '"Double Edge"'
-            ship: "TIE/ag Aggressor"
-            threat: 2
-            upgrades: [
-                "Ion Cannon Turret"
-                "Concussion Missiles"
-                "Hotshot Gunner"
-            ]
-        }
-        {
-            id: 31
-            faction: "Galactic Empire"
-            pilot: "Sienar Specialist"
-            ship: "TIE/ag Aggressor"
-            threat: 2
-            upgrades: [
-                "Ion Cannon Turret"
-                "Homing Missiles"
-                "Veteran Turret Gunner"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 32
-            faction: "Galactic Empire"
-            pilot: '"Whisper"'
-            ship: "TIE/ph Phantom"
-            threat: 3
-            upgrades: [
-                "Juke"
-                "Advanced Sensors"
-                "Agent Kallus"
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 33
-            faction: "Galactic Empire"
-            pilot: "Sigma Squadron Ace"
-            ship: "TIE/ph Phantom"
-            threat: 3
-            upgrades: [
-                "Predator"
-                "Advanced Sensors"
-                "Grand Inquisitor"
-            ]
-        }
-        {
-            id: 34
-            faction: "Galactic Empire"
-            pilot: '"Echo"'
-            ship: "TIE/ph Phantom"
-            threat: 3
-            upgrades: [
-                "Lone Wolf"
-                "Collision Detector"
-                "Perceptive Copilot"
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 35
-            faction: "Galactic Empire"
-            pilot: "Imdaar Test Pilot"
-            ship: "TIE/ph Phantom"
-            threat: 2
-            upgrades: [
-                "Moff Jerjerrod"
-            ]
-        }
-        {
-            id: 36
-            faction: "Galactic Empire"
-            pilot: '"Duchess"'
-            ship: "TIE/sk Striker"
-            threat: 2
-            upgrades: [
-                "Trick Shot"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 37
-            faction: "Galactic Empire"
-            pilot: "Black Squadron Scout"
-            ship: "TIE/sk Striker"
-            threat: 2
-            upgrades: [
-                "Skilled Bombardier"
-                "Proximity Mines"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 38
-            faction: "Galactic Empire"
-            pilot: '"Countdown"'
-            ship: "TIE/sk Striker"
-            threat: 2
-            upgrades: [
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 39
-            faction: "Galactic Empire"
-            pilot: "Planetary Sentinel"
-            suffix: " x2"
-            linkedId: 39
-            ship: "TIE/sk Striker"
-            threat: 3
-            upgrades: [
-                "Conner Nets"
-            ]
-        }
-        {
-            id: 40
-            faction: "Galactic Empire"
-            pilot: '"Pure Sabacc"'
-            ship: "TIE/sk Striker"
-            threat: 2
-            upgrades: [
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 41
-            faction: "Galactic Empire"
-            pilot: "Black Squadron Scout"
-            ship: "TIE/sk Striker"
-            threat: 2
-            upgrades: [
-                "Skilled Bombardier"
-                "Proximity Mines"
-                "Hull Upgrade"
-            ]
-            skip: true
-        }
-        {
-            id: 42
-            faction: "Galactic Empire"
-            pilot: "Countess Ryad"
-            ship: "TIE/d Defender"
-            threat: 4
-            upgrades: [
-                "Outmaneuver"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 43
-            faction: "Galactic Empire"
-            pilot: "Onyx Squadron Ace"
-            ship: "TIE/d Defender"
-            threat: 3
-        }
-        {
-            id: 44
-            faction: "Galactic Empire"
-            pilot: "Rexler Brath"
-            ship: "TIE/d Defender"
-            threat: 4
-            upgrades: [
-                "Juke"
-                "Collision Detector"
-                "Cluster Missiles"
-            ]
-        }
-        {
-            id: 45
-            faction: "Galactic Empire"
-            pilot: "Colonel Vessery"
-            ship: "TIE/d Defender"
-            threat: 4
-            upgrades: [
-                "Juke"
-                "Fire-Control System"
-                "Cluster Missiles"
-            ]
-        }
-        {
-            id: 46
-            faction: "Galactic Empire"
-            pilot: "Onyx Squadron Ace"
-            ship: "TIE/d Defender"
-            threat: 4
-            upgrades: [
-                "Elusive"
-                "Advanced Sensors"
-                "Proton Rockets"
-            ]
-        }
-        {
-            id: 47
-            faction: "Galactic Empire"
-            pilot: "Tomax Bren"
-            ship: "TIE/sa Bomber"
-            threat: 2
-            upgrades: [
-                "Crack Shot"
-                "Proton Torpedoes"
-                "Proton Bombs"
-            ]
-        }
-        {
-            id: 48
-            faction: "Galactic Empire"
-            pilot: '"Deathfire"'
-            ship: "TIE/sa Bomber"
-            threat: 2
-            upgrades: [
-                "Cluster Missiles"
-                "Skilled Bombardier"
-                "Seismic Charges"
-                "Proximity Mines"
-                "Electronic Baffle"
-            ]
-        }
-        {
+            name: "Sensor Blackout"
             id: 49
-            faction: "Galactic Empire"
-            pilot: "Major Rhymer"
-            ship: "TIE/sa Bomber"
-            threat: 2
-            upgrades: [
-                "Intimidation"
-                "Adv. Proton Torpedoes"
-                "Cluster Missiles"
-            ]
         }
         {
+            name: "Locked S-Foils"
             id: 50
-            faction: "Galactic Empire"
-            pilot: "Scimitar Squadron Pilot"
-            suffix: " x2"
-            linkedId: 50
-            ship: "TIE/sa Bomber"
-            threat: 3
-            upgrades: [
-                "Ion Missiles"
-                "Proton Bombs"
-            ]
         }
         {
+            name: "High Stakes"
             id: 51
-            faction: "Galactic Empire"
-            pilot: "Captain Jonus"
-            ship: "TIE/sa Bomber"
-            threat: 2
-            upgrades: [
-                "Proton Torpedoes"
-                "Shield Upgrade"
-            ]
         }
         {
+            name: "Chiss Engineering"
             id: 52
-            faction: "Galactic Empire"
-            pilot: "Gamma Squadron Ace"
-            ship: "TIE/sa Bomber"
-            threat: 2
-            upgrades: [
-                "Concussion Missiles"
-                "Skilled Bombardier"
-                "Bomblet Generator"
-                "Shield Upgrade"
-            ]
         }
         {
+            name: "Gyro-Cockpit"
             id: 53
-            faction: "Galactic Empire"
-            pilot: "Grand Inquisitor"
-            ship: "TIE Advanced v1"
-            threat: 3
-            upgrades: [
-                "Supernatural Reflexes"
-                "Concussion Missiles"
-            ]
         }
         {
+            name: "Formed Up"
             id: 54
-            faction: "Galactic Empire"
-            pilot: "Inquisitor"
-            ship: "TIE Advanced v1"
-            threat: 2
-            upgrades: [
-                "Instinctive Aim"
-                "Cluster Missiles"
-                "Munitions Failsafe"
-            ]
-        }
-        {
-            id: 55
-            faction: "Galactic Empire"
-            pilot: "Seventh Sister"
-            ship: "TIE Advanced v1"
-            threat: 2
-            upgrades: [
-                "Homing Missiles"
-            ]
-        }
-        {
-            id: 56
-            faction: "Galactic Empire"
-            pilot: "Baron of the Empire"
-            ship: "TIE Advanced v1"
-            threat: 2
-            upgrades: [
-                "Crack Shot"
-                "Proton Rockets"
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 57
-            faction: "Galactic Empire"
-            pilot: "Soontir Fel"
-            ship: "TIE/in Interceptor"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Afterburners"
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 58
-            faction: "Galactic Empire"
-            pilot: "Alpha Squadron Pilot"
-            suffix: " x2"
-            linkedId: 58
-            ship: "TIE/in Interceptor"
-            threat: 3
-            upgrades: [
-                "Ablative Plating"
-            ]
-        }
-        {
-            id: 59
-            faction: "Galactic Empire"
-            pilot: "Turr Phennir"
-            ship: "TIE/in Interceptor"
-            threat: 2
-            upgrades: [
-                "Daredevil"
-                "Electronic Baffle"
-            ]
-        }
-        {
-            id: 60
-            faction: "Galactic Empire"
-            pilot: "Saber Squadron Ace"
-            ship: "TIE/in Interceptor"
-            threat: 2
-            upgrades: [
-                "Predator"
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 61
-            faction: "Galactic Empire"
-            pilot: "Lieutenant Karsabi"
-            ship: "Alpha-Class Star Wing"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-                "Heavy Laser Cannon"
-                "Advanced SLAM"
-                "Xg-1 Assault Configuration"
-            ]
-        }
-        {
-            id: 62
-            faction: "Galactic Empire"
-            pilot: "Nu Squadron Pilot"
-            ship: "Alpha-Class Star Wing"
-            threat: 2
-            upgrades: [
-                "Fire-Control System"
-                "Proton Torpedoes"
-                "Advanced SLAM"
-                "Os-1 Arsenal Loadout"
-            ]
-        }
-        {
-            id: 63
-            faction: "Galactic Empire"
-            pilot: "Major Vynder"
-            ship: "Alpha-Class Star Wing"
-            threat: 2
-            upgrades: [
-                "Saturation Salvo"
-                "Barrage Rockets"
-                "Advanced SLAM"
-                "Os-1 Arsenal Loadout"
-            ]
-        }
-        {
-            id: 64
-            faction: "Galactic Empire"
-            pilot: "Rho Squadron Pilot"
-            ship: "Alpha-Class Star Wing"
-            threat: 2
-            upgrades: [
-                "Fire-Control System"
-                "Ion Cannon"
-                "Homing Missiles"
-                "Advanced SLAM"
-                "Xg-1 Assault Configuration"
-            ]
-        }
-        {
-            id: 65
-            faction: "Galactic Empire"
-            pilot: '"Deathrain"'
-            ship: "TIE/ca Punisher"
-            threat: 2
-            upgrades: [
-                "Trajectory Simulator"
-                "Homing Missiles"
-                "Bomblet Generator"
-                "Ablative Plating"
-            ]
-        }
-        {
-            id: 66
-            skip: true
-            faction: "Galactic Empire"
-            pilot: '"Deathrain"'
-            ship: "TIE/ca Punisher"
-            threat: 2
-            upgrades: [
-                "Trajectory Simulator"
-                "Homing Missiles"
-                "Bomblet Generator"
-                "Ablative Plating"
-            ]
-        }
-        {
-            id: 67
-            faction: "Galactic Empire"
-            pilot: "Cutlass Squadron Pilot"
-            ship: "TIE/ca Punisher"
-            threat: 2
-            upgrades: [
-                "Trajectory Simulator"
-                "Ion Missiles"
-                "Skilled Bombardier"
-                "Proton Bombs"
-            ]
-        }
-        {
-            id: 68
-            faction: "Galactic Empire"
-            pilot: '"Redline"'
-            ship: "TIE/ca Punisher"
-            threat: 2
-            upgrades: [
-                "Debris Gambit"
-                "Cluster Missiles"
-            ]
-        }
-        {
-            id: 69
-            faction: "Galactic Empire"
-            pilot: "Cutlass Squadron Pilot"
-            ship: "TIE/ca Punisher"
-            threat: 2
-            upgrades: [
-                "Advanced Sensors"
-                "Proton Rockets"
-                "Conner Nets"
-            ]
-        }
-        {
-            id: 70
-            faction: "Galactic Empire"
-            pilot: "Captain Oicunn"
-            ship: "VT-49 Decimator"
-            threat: 4
-            upgrades: [
-                "Intimidation"
-                "Grand Moff Tarkin"
-                "Dauntless"
-            ]
-        }
-        {
-            id: 71
-            faction: "Galactic Empire"
-            pilot: "Rear Admiral Chiraneau"
-            ship: "VT-49 Decimator"
-            threat: 4
-            upgrades: [
-                "Swarm Tactics"
-                "Minister Tua"
-                "Tactical Officer"
-            ]
-        }
-        {
-            id: 72
-            faction: "Galactic Empire"
-            pilot: "Patrol Leader"
-            ship: "VT-49 Decimator"
-            threat: 4
-            upgrades: [
-                "Informant"
-                "Seventh Sister"
-                "Fifth Brother"
-            ]
-        }
-        {
-            id: 73
-            faction: "Galactic Empire"
-            pilot: '"Vizier"'
-            ship: "TIE Reaper"
-            threat: 2
-            upgrades: [
-                "Director Krennic"
-            ]
-        }
-        {
-            id: 74
-            faction: "Galactic Empire"
-            pilot: "Scarif Base Pilot"
-            ship: "TIE Reaper"
-            threat: 2
-            upgrades: [
-                "Death Troopers"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 75
-            faction: "Galactic Empire"
-            pilot: "Major Vermeil"
-            ship: "TIE Reaper"
-            threat: 2
-            upgrades: [
-                "Swarm Tactics"
-                "Tactical Officer"
-            ]
-        }
-        {
-            id: 76
-            faction: "Galactic Empire"
-            pilot: "Captain Feroph"
-            ship: "TIE Reaper"
-            threat: 2
-            upgrades: [
-                "Swarm Tactics"
-                "ISB Slicer"
-            ]
-        }
-        {
-            id: 77
-            faction: "Rebel Alliance"
-            pilot: "Luke Skywalker"
-            ship: "T-65 X-wing"
-            threat: 3
-            upgrades: [
-                "Instinctive Aim"
-                "Proton Torpedoes"
-                "R2-D2"
-                "Servomotor S-Foils"
-            ]
-        }
-        {
-            id: 78
-            faction: "Rebel Alliance"
-            pilot: "Red Squadron Veteran"
-            ship: "T-65 X-wing"
-            threat: 2
-            upgrades: [
-                "Predator"
-                "R5 Astromech"
-                "Servomotor S-Foils"
-            ]
-        }
-        {
-            id: 79
-            faction: "Rebel Alliance"
-            pilot: "Jek Porkins"
-            ship: "T-65 X-wing"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "R5-D8"
-                "Afterburners"
-                "Hull Upgrade"
-                "Servomotor S-Foils"
-            ]
-        }
-        {
-            id: 80
-            faction: "Rebel Alliance"
-            pilot: "Blue Squadron Escort"
-            ship: "T-65 X-wing"
-            threat: 2
-            upgrades: [
-                "Proton Torpedoes"
-                "R3 Astromech"
-                "Servomotor S-Foils"
-            ]
-        }
-        {
-            id: 81
-            faction: "Rebel Alliance"
-            pilot: "Wedge Antilles"
-            ship: "T-65 X-wing"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Proton Torpedoes"
-                "R4 Astromech"
-                "Shield Upgrade"
-                "Servomotor S-Foils"
-            ]
-        }
-        {
-            id: 82
-            faction: "Rebel Alliance"
-            pilot: "Biggs Darklighter"
-            ship: "T-65 X-wing"
-            threat: 2
-            upgrades: [
-                "Selfless"
-                "Servomotor S-Foils"
-            ]
-        }
-        {
-            id: 83
-            faction: "Rebel Alliance"
-            pilot: "Thane Kyrell"
-            ship: "T-65 X-wing"
-            threat: 3
-            upgrades: [
-                "Elusive"
-                "Ion Torpedoes"
-                "R2 Astromech"
-                "Afterburners"
-                "Hull Upgrade"
-                "Servomotor S-Foils"
-            ]
-        }
-        {
-            id: 84
-            faction: "Rebel Alliance"
-            pilot: "Garven Dreis (X-Wing)"
-            ship: "T-65 X-wing"
-            threat: 2
-            upgrades: [
-                "Servomotor S-Foils"
-            ]
-        }
-        {
-            id: 85
-            faction: "Rebel Alliance"
-            pilot: "Norra Wexley (Y-Wing)"
-            ship: "BTL-A4 Y-wing"
-            threat: 3
-            upgrades: [
-                "Expert Handling"
-                "Ion Cannon Turret"
-                "Veteran Turret Gunner"
-                "R3 Astromech"
-            ]
-        }
-        {
-            id: 86
-            faction: "Rebel Alliance"
-            pilot: "Evaan Verlaine"
-            ship: "BTL-A4 Y-wing"
-            threat: 2
-            upgrades: [
-                "Expert Handling"
-                "Ion Cannon Turret"
-            ]
-        }
-        {
-            id: 87
-            faction: "Rebel Alliance"
-            pilot: "Gold Squadron Veteran"
-            ship: "BTL-A4 Y-wing"
-            threat: 2
-            upgrades: [
-                "Expert Handling"
-                "Proton Torpedoes"
-                "R3 Astromech"
-            ]
-        }
-        {
-            id: 88
-            faction: "Rebel Alliance"
-            pilot: "Horton Salm"
-            ship: "BTL-A4 Y-wing"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Ion Cannon Turret"
-                "Veteran Turret Gunner"
-                "R5 Astromech"
-            ]
-        }
-        {
-            id: 89
-            faction: "Rebel Alliance"
-            pilot: '"Dutch" Vander'
-            ship: "BTL-A4 Y-wing"
-            threat: 2
-            upgrades: [
-                "Proton Torpedoes"
-                "R3 Astromech"
-            ]
-        }
-        {
-            id: 90
-            faction: "Rebel Alliance"
-            pilot: "Gray Squadron Bomber"
-            ship: "BTL-A4 Y-wing"
-            threat: 2
-            upgrades: [
-                "Ion Cannon Turret"
-                "Proton Bombs"
-                "R5 Astromech"
-            ]
-        }
-        {
-            id: 91
-            faction: "Rebel Alliance"
-            pilot: "Esege Tuketu"
-            ship: "BTL-S8 K-wing"
-            threat: 3
-            upgrades: [
-                "Trajectory Simulator"
-                "Ion Missiles"
-                "Perceptive Copilot"
-                "Conner Nets"
-                "Proton Bombs"
-                "Advanced SLAM"
-            ]
-        }
-        {
-            id: 92
-            faction: "Rebel Alliance"
-            pilot: "Miranda Doni"
-            ship: "BTL-S8 K-wing"
-            threat: 2
-            upgrades: [
-                "Proton Bombs"
-                "Advanced SLAM"
-            ]
-        }
-        {
-            id: 93
-            faction: "Rebel Alliance"
-            pilot: "Warden Squadron Pilot"
-            ship: "BTL-S8 K-wing"
-            threat: 2
-            upgrades: [
-                "Barrage Rockets"
-                "Bomblet Generator"
-            ]
-        }
-        {
-            id: 94
-            faction: "Rebel Alliance"
-            pilot: "Braylen Stramm"
-            ship: "A/SF-01 B-wing"
-            threat: 2
-            upgrades: [
-                "Trick Shot"
-                "Jamming Beam"
-            ]
-        }
-        {
-            id: 95
-            faction: "Rebel Alliance"
-            pilot: "Blade Squadron Veteran"
-            ship: "A/SF-01 B-wing"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Tractor Beam"
-            ]
-        }
-        {
-            id: 96
-            faction: "Rebel Alliance"
-            pilot: "Ten Numb"
-            ship: "A/SF-01 B-wing"
-            threat: 3
-            upgrades: [
-                "Squad Leader"
-                "Advanced Sensors"
-                "Heavy Laser Cannon"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 97
-            faction: "Rebel Alliance"
-            pilot: "Blue Squadron Pilot"
-            ship: "A/SF-01 B-wing"
-            threat: 2
-            upgrades: [
-                "Advanced Sensors"
-            ]
-        }
-        {
-            id: 98
-            faction: "Rebel Alliance"
-            pilot: "Norra Wexley"
-            ship: "ARC-170 Starfighter"
-            threat: 3
-            upgrades: [
-                "Expert Handling"
-                "Seasoned Navigator"
-                "Veteran Tail Gunner"
-                "R3 Astromech"
-                "Ablative Plating"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 99
-            faction: "Rebel Alliance"
-            pilot: "Garven Dreis"
-            ship: "ARC-170 Starfighter"
-            threat: 3
-            upgrades: [
-                "Expert Handling"
-                "Proton Torpedoes"
-                "Perceptive Copilot"
-                "Veteran Tail Gunner"
-            ]
-        }
-        {
-            id: 100
-            faction: "Rebel Alliance"
-            pilot: "Shara Bey"
-            ship: "ARC-170 Starfighter"
-            threat: 3
-            upgrades: [
-                "Expert Handling"
-                "Proton Torpedoes"
-                "Perceptive Copilot"
-                "R3 Astromech"
-            ]
-        }
-        {
-            id: 101
-            faction: "Rebel Alliance"
-            pilot: "Ibtisam"
-            ship: "ARC-170 Starfighter"
-            threat: 2
-            upgrades: [
-                "Elusive"
-            ]
-        }
-        {
-            id: 102
-            faction: "Rebel Alliance"
-            pilot: "Wullffwarro"
-            ship: "Auzituck Gunship"
-            threat: 3
-            upgrades: [
-                "Selfless"
-                'GNK "Gonk" Droid'
-                "Novice Technician"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 103
-            faction: "Rebel Alliance"
-            pilot: "Lowhhrick"
-            ship: "Auzituck Gunship"
-            threat: 2
-        }
-        {
-            id: 104
-            faction: "Rebel Alliance"
-            pilot: "Kashyyyk Defender"
-            ship: "Auzituck Gunship"
-            threat: 2
-            upgrades: [
-                "Novice Technician"
-            ]
-        }
-        {
-            id: 105
-            skip: true
-        }
-        {
-            id: 106
-            faction: "Rebel Alliance"
-            pilot: "Corran Horn"
-            ship: "E-wing"
-            threat: 4
-            upgrades: [
-                "Outmaneuver"
-                "Fire-Control System"
-                "Proton Torpedoes"
-                "R2 Astromech"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 107
-            faction: "Rebel Alliance"
-            pilot: "Rogue Squadron Escort"
-            ship: "E-wing"
-            threat: 3
-            upgrades: [
-                "Predator"
-                "Collision Detector"
-                "Proton Torpedoes"
-                "R3 Astromech"
-            ]
-        }
-        {
-            id: 108
-            faction: "Rebel Alliance"
-            pilot: "Gavin Darklighter"
-            ship: "E-wing"
-            threat: 3
-            upgrades: [
-                "Crack Shot"
-                "Fire-Control System"
-                "Ion Torpedoes"
-                "R4 Astromech"
-            ]
-        }
-        {
-            id: 109
-            faction: "Rebel Alliance"
-            pilot: "Knave Squadron Escort"
-            ship: "E-wing"
-            threat: 2
-        }
-        {
-            id: 110
-            faction: "Rebel Alliance"
-            pilot: "Jan Ors"
-            ship: "HWK-290 Light Freighter"
-            threat: 3
-            upgrades: [
-                "Trick Shot"
-                "Perceptive Copilot"
-                "Seismic Charges"
-                "Cloaking Device"
-                "Engine Upgrade"
-                "Moldy Crow"
-            ]
-        }
-        {
-            id: 111
-            faction: "Rebel Alliance"
-            pilot: "Roark Garnet"
-            ship: "HWK-290 Light Freighter"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Seismic Charges"
-                "Hull Upgrade"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 112
-            faction: "Rebel Alliance"
-            pilot: "Kyle Katarn"
-            ship: "HWK-290 Light Freighter"
-            threat: 2
-            upgrades: [
-                "Moldy Crow"
-            ]
-        }
-        {
-            id: 113
-            faction: "Rebel Alliance"
-            pilot: "Rebel Scout"
-            ship: "HWK-290 Light Freighter"
-            threat: 2
-            upgrades: [
-                "Proton Bombs"
-                "Seismic Charges"
-                "Sabine Wren"
-                "Engine Upgrade"
-            ]
-        }
-        {
-            id: 114
-            faction: "Rebel Alliance"
-            pilot: "Arvel Crynyd"
-            ship: "RZ-1 A-wing"
-            threat: 2
-            upgrades: [
-                "Intimidation"
-                "Proton Rockets"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 115
-            faction: "Rebel Alliance"
-            pilot: "Green Squadron Pilot"
-            ship: "RZ-1 A-wing"
-            threat: 2
-            upgrades: [
-                "Daredevil"
-                "Concussion Missiles"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 116
-            faction: "Jake Farrell"
-            pilot: "Green Squadron Pilot"
-            ship: "RZ-1 A-wing"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-                "Cluster Missiles"
-            ]
-        }
-        {
-            id: 117
-            faction: "Rebel Alliance"
-            pilot: "Phoenix Squadron Pilot"
-            suffix: " x2"
-            linkedId: 117
-            ship: "RZ-1 A-wing"
-            threat: 3
-            upgrades: [
-                "Proton Rockets"
-            ]
-        }
-        {
-            id: 118
-            faction: "Rebel Alliance"
-            pilot: "Fenn Rau (Sheathipede)"
-            ship: "Sheathipede-Class Shuttle"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Seasoned Navigator"
-                "R4 Astromech"
-                "Stealth Device"
-                "Phantom"
-            ]
-        }
-        {
-            id: 119
-            faction: "Rebel Alliance"
-            pilot: "Ezra Bridger (Sheathipede)"
-            ship: "Sheathipede-Class Shuttle"
-            threat: 2
-            upgrades: [
-                "Heightened Perception"
-                '"Chopper" (Astromech)'
-                "Afterburners"
-                "Phantom"
-            ]
-        }
-        {
-            id: 120
-            faction: "Rebel Alliance"
-            pilot: "Captain Rex"
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Juke"
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 121
-            faction: "Rebel Alliance"
-            pilot: "Sabine Wren (TIE Fighter)"
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-                "Conner Nets"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 122
-            faction: "Rebel Alliance"
-            pilot: "Ezra Bridger (TIE Fighter)"
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Supernatural Reflexes"
-                '"Zeb" Orrelios'
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 123
-            faction: "Rebel Alliance"
-            pilot: '"Zeb" Orrelios (TIE Fighter)'
-            ship: "TIE/ln Fighter"
-            threat: 1
-        }
-        {
-            id: 124
-            faction: "Rebel Alliance"
-            pilot: "Cassian Andor"
-            ship: "UT-60D U-wing"
-            threat: 3
-            upgrades: [
-                "Fire-Control System"
-                "Jyn Erso"
-                "Baze Malbus"
-                "Pivot Wing"
-            ]
-        }
-        {
-            id: 125
-            faction: "Rebel Alliance"
-            pilot: "Bodhi Rook"
-            ship: "UT-60D U-wing"
-            threat: 2
-            upgrades: [
-                "Cassian Andor"
-                "Pivot Wing"
-            ]
-        }
-        {
-            id: 126
-            faction: "Rebel Alliance"
-            pilot: "Heff Tobber"
-            ship: "UT-60D U-wing"
-            threat: 3
-            upgrades: [
-                "Fire-Control System"
-                "Ion Cannon Turret"
-                "Bistan"
-                "Perceptive Copilot"
-                "Pivot Wing"
-            ]
-        }
-        {
-            id: 127
-            faction: "Rebel Alliance"
-            pilot: "Blue Squadron Scout"
-            ship: "UT-60D U-wing"
-            threat: 2
-            upgrades: [
-                "Advanced Sensors"
-                "Tactical Officer"
-                "Pivot Wing"
-            ]
-        }
-        {
-            id: 128
-            faction: "Rebel Alliance"
-            pilot: "Han Solo"
-            ship: "Modified YT-1300 Light Freighter"
-            threat: 4
-            upgrades: [
-                "Lone Wolf"
-                "Chewbacca"
-                "Millennium Falcon"
-            ]
-        }
-        {
-            id: 129
-            faction: "Rebel Alliance"
-            pilot: "Chewbacca"
-            ship: "Modified YT-1300 Light Freighter"
-            threat: 6
-            upgrades: [
-                "Predator"
-                "C-3PO"
-                "Leia Organa"
-                "R2-D2 (Crew)"
-                "Han Solo"
-                "Luke Skywalker"
-                "Engine Upgrade"
-                "Millennium Falcon"
-            ]
-        }
-        {
-            id: 130
-            faction: "Rebel Alliance"
-            pilot: "Lando Calrissian"
-            ship: "Modified YT-1300 Light Freighter"
-            threat: 5
-            upgrades: [
-                "Swarm Tactics"
-                "Concussion Missiles"
-                "Nien Nunb"
-                "Engine Upgrade"
-                "Millennium Falcon"
-            ]
-        }
-        {
-            id: 131
-            faction: "Rebel Alliance"
-            pilot: "Outer Rim Smuggler"
-            ship: "Modified YT-1300 Light Freighter"
-            threat: 4
-            upgrades: [
-                "Homing Missiles"
-                "Novice Technician"
-                "Veteran Turret Gunner"
-                "Feedback Array"
-                "Static Discharge Vanes"
-            ]
-        }
-        {
-            id: 132
-            faction: "Rebel Alliance"
-            pilot: "Airen Cracken"
-            ship: "Z-95-AF4 Headhunter"
-            threat: 2
-            upgrades: [
-                "Swarm Tactics"
-                "Cluster Missiles"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 133
-            faction: "Rebel Alliance"
-            pilot: "Bandit Squadron Pilot"
-            ship: "Z-95-AF4 Headhunter"
-            threat: 1
-        }
-        {
-            id: 134
-            faction: "Rebel Alliance"
-            pilot: "Lieutenant Blount"
-            ship: "Z-95-AF4 Headhunter"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-                "Proton Rockets"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 135
-            faction: "Rebel Alliance"
-            pilot: "Tala Squadron Pilot"
-            ship: "Z-95-AF4 Headhunter"
-            threat: 1
-            upgrades: [
-                "Selfless"
-            ]
-        }
-        {
-            id: 136
-            faction: "Rebel Alliance"
-            pilot: "Hera Syndulla"
-            ship: "Attack Shuttle"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Ion Cannon Turret"
-                "Phantom"
-            ]
-        }
-        {
-            id: 137
-            faction: "Rebel Alliance"
-            pilot: "Sabine Wren"
-            ship: "Attack Shuttle"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-                "Dorsal Turret"
-                "Phantom"
-            ]
-        }
-        {
-            id: 138
-            faction: "Rebel Alliance"
-            pilot: "Dash Rendar"
-            ship: "YT-2400 Light Freighter"
-            threat: 5
-            upgrades: [
-                "Expert Handling"
-                "Trick Shot"
-                "Perceptive Copilot"
-                "Rigged Cargo Chute"
-                "Outrider"
-            ]
-        }
-        {
-            id: 139
-            faction: "Rebel Alliance"
-            pilot: '"Leebo"'
-            ship: "YT-2400 Light Freighter"
-            threat: 4
-            upgrades: [
-                "Outrider"
-                "Inertial Dampeners"
-            ]
-        }
-        {
-            id: 140
-            faction: "Rebel Alliance"
-            pilot: "Wild Space Fringer"
-            ship: "YT-2400 Light Freighter"
-            threat: 4
-            upgrades: [
-                "Concussion Missiles"
-                "Veteran Turret Gunner"
-                "Contraband Cybernetics"
-            ]
-        }
-        {
-            id: 141
-            faction: "Rebel Alliance"
-            pilot: "Magva Yarro"
-            ship: "UT-60D U-wing"
-            threat: 3
-            upgrades: [
-                "Elusive"
-                "Saw Gerrera"
-                "Advanced Sensors"
-                "Shield Upgrade"
-                "Pivot Wing"
-            ]
-        }
-        {
-            id: 142
-            faction: "Rebel Alliance"
-            pilot: "Saw Gerrera"
-            ship: "UT-60D U-wing"
-            threat: 2
-            upgrades: [
-                "Magva Yarro"
-                "Pivot Wing"
-            ]
-        }
-        {
-            id: 143
-            faction: "Rebel Alliance"
-            pilot: "Benthic Two Tubes"
-            ship: "UT-60D U-wing"
-            threat: 2
-            upgrades: [
-                "Advanced Sensors"
-                "Pivot Wing"
-            ]
-        }
-        {
-            id: 144
-            faction: "Rebel Alliance"
-            pilot: "Partisan Renegade"
-            ship: "UT-60D U-wing"
-            threat: 2
-            upgrades: [
-                "Advanced Sensors"
-                "Deadman's Switch"
-                "Pivot Wing"
-            ]
-        }
-        {
-            id: 145
-            faction: "Rebel Alliance"
-            pilot: "Kullbee Sperado"
-            ship: "T-65 X-wing"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "R2 Astromech"
-                "Deadman's Switch"
-                "Afterburners"
-                "Hull Upgrade"
-                "Servomotor S-Foils"
-            ]
-        }
-        {
-            id: 146
-            faction: "Rebel Alliance"
-            pilot: "Edrio Two Tubes"
-            ship: "T-65 X-wing"
-            threat: 2
-            upgrades: [
-                "Trick Shot"
-                "R4 Astromech"
-                "Deadman's Switch"
-                "Servomotor S-Foils"
-            ]
-        }
-        {
-            id: 147
-            faction: "Rebel Alliance"
-            pilot: "Leevan Tenza"
-            ship: "T-65 X-wing"
-            threat: 3
-            upgrades: [
-                "Elusive"
-                "R2 Astromech"
-                "Deadman's Switch"
-                "Afterburners"
-                "Shield Upgrade"
-                "Servomotor S-Foils"
-            ]
-        }
-        {
-            id: 148
-            faction: "Rebel Alliance"
-            pilot: "Cavern Angels Zealot"
-            ship: "T-65 X-wing"
-            threat: 2
-            upgrades: [
-                "R2 Astromech"
-                "Deadman's Switch"
-                "Servomotor S-Foils"
-            ]
-        }
-        {
-            id: 149
-            faction: "Rebel Alliance"
-            pilot: "Kanan Jarrus"
-            suffix: " + Phantom"
-            linkedId: 150
-            ship: "VCX-100 Light Freighter"
-            threat: 6
-            upgrades: [
-                "Ion Cannon Turret"
-                "Hera Syndulla"
-                '"Chopper" (Crew)'
-                "Ezra Bridger"
-                "Ghost"
-            ]
-        }
-        {
-            id: 150
-            faction: "Rebel Alliance"
-            pilot: '"Zeb" Orrelios'
-            suffix: " + Ghost"
-            linkedId: 149
-            ship: "Attack Shuttle"
-            threat: 6
-            upgrades: [
-                "Phantom"
-            ]
-        }
-        {
-            id: 151
-            faction: "Rebel Alliance"
-            pilot: "Hera Syndulla (VCX-100)"
-            suffix: " + Phantom"
-            linkedId: 152
-            ship: "VCX-100 Light Freighter"
-            threat: 6
-            upgrades: [
-                "Elusive"
-                "Dorsal Turret"
-                "Kanan Jarrus"
-                "Ghost"
-            ]
-        }
-        {
-            id: 152
-            faction: "Rebel Alliance"
-            pilot: "Ezra Bridger"
-            suffix: " + Ghost"
-            linkedId: 151
-            ship: "Attack Shuttle"
-            threat: 6
-            upgrades: [
-                "Supernatural Reflexes"
-                "Dorsal Turret"
-                "Phantom"
-            ]
-        }
-        {
-            id: 153
-            faction: "Rebel Alliance"
-            pilot: '"Chopper"'
-            suffix: " + Phantom"
-            linkedId: 154
-            ship: "VCX-100 Light Freighter"
-            threat: 6
-            upgrades: [
-                "Ion Cannon Turret"
-                '"Zeb" Orrelios'
-                "Ghost"
-            ]
-        }
-        {
-            id: 154
-            faction: "Rebel Alliance"
-            pilot: "AP-5"
-            suffix: " + Ghost"
-            linkedId: 153
-            ship: "Sheathipede-Class Shuttle"
-            threat: 6
-            upgrades: [
-                "R4 Astromech"
-                "Phantom"
-            ]
-        }
-        {
-            id: 155
-            faction: "Rebel Alliance"
-            pilot: "Lothal Rebel"
-            suffix: " + Phantom"
-            linkedId: 156
-            ship: "VCX-100 Light Freighter"
-            threat: 4
-            upgrades: [
-                "Dorsal Turret"
-                "Lando Calrissian"
-                "Ghost"
-            ]
-        }
-        {
-            id: 156
-            faction: "Rebel Alliance"
-            pilot: '"Zeb" Orrelios (Sheathipede)'
-            suffix: " + Ghost"
-            linkedId: 155
-            ship: "Sheathipede-Class Shuttle"
-            threat: 4
-            upgrades: [
-                "R5 Astromech"
-                "Phantom"
-            ]
-        }
-        {
-            id: 157
-            faction: "First Order"
-            pilot: '"Midnight"'
-            ship: "TIE/fo Fighter"
-            threat: 2
-            upgrades: [
-                "Afterburners"
-            ]
-        }
-        {
-            id: 158
-            faction: "First Order"
-            pilot: '"Static"'
-            ship: "TIE/fo Fighter"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-            ]
-        }
-        {
-            id: 159
-            faction: "First Order"
-            pilot: "Omega Squadron Ace"
-            ship: "TIE/fo Fighter"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Fanatical"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 160
-            faction: "First Order"
-            pilot: '"Scorch"'
-            ship: "TIE/fo Fighter"
-            threat: 2
-            upgrades: [
-                "Fanatical"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 161
-            faction: "First Order"
-            pilot: '"Longshot"'
-            ship: "TIE/fo Fighter"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Predator"
-            ]
-        }
-        {
-            id: 162
-            faction: "First Order"
-            pilot: "Zeta Squadron Pilot"
-            ship: "TIE/fo Fighter"
-            threat: 2
-            upgrades: [
-                "Advanced Optics"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 163
-            faction: "First Order"
-            pilot: '"Muse"'
-            ship: "TIE/fo Fighter"
-            threat: 2
-            upgrades: [
-                "Squad Leader"
-                "Advanced Optics"
-            ]
-        }
-        {
-            id: 164
-            faction: "First Order"
-            pilot: '"Null"'
-            ship: "TIE/fo Fighter"
-            threat: 2
-            upgrades: [
-                "Swarm Tactics"
-                "Afterburners"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 165
-            faction: "First Order"
-            pilot: "Epsilon Squadron Cadet"
-            ship: "TIE/fo Fighter"
-            threat: 2
-            upgrades: [
-                "Targeting Synchronizer"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 166
-            faction: "First Order"
-            pilot: "Commander Malarus"
-            ship: "TIE/fo Fighter"
-            threat: 2
-            upgrades: [
-                "Advanced Optics"
-            ]
-        }
-        {
-            id: 167
-            faction: "First Order"
-            pilot: "TN-3465"
-            ship: "TIE/fo Fighter"
-            threat: 2
-            upgrades: [
-                "Targeting Synchronizer"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 168
-            faction: "First Order"
-            pilot: "Lieutenant Rivas"
-            ship: "TIE/fo Fighter"
-            threat: 1
-            upgrades: [
-            ]
-        }
-        {
-            id: 169
-            faction: "First Order"
-            pilot: '"Quickdraw"'
-            ship: "TIE/sf Fighter"
-            threat: 3
-            upgrades: [
-                "Juke"
-                "Collision Detector"
-                "Hotshot Gunner"
-                "Afterburners"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 170
-            faction: "First Order"
-            pilot: "Zeta Squadron Survivor"
-            ship: "TIE/sf Fighter"
-            threat: 2
-            upgrades: [
-                "Pattern Analyzer"
-                "Ion Missiles"
-                "Special Forces Gunner"
-            ]
-        }
-        {
-            id: 171
-            faction: "First Order"
-            pilot: '"Backdraft"'
-            ship: "TIE/sf Fighter"
-            threat: 3
-            upgrades: [
-                "Pattern Analyzer"
-                "Collision Detector"
-                "Ion Missiles"
-                "Special Forces Gunner"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 172
-            faction: "First Order"
-            pilot: "Omega Squadron Expert"
-            ship: "TIE/sf Fighter"
-            threat: 2
-            upgrades: [
-                "Juke"
-                "Special Forces Gunner"
-            ]
-        }
-        {
-            id: 173
-            faction: "First Order"
-            pilot: "Kylo Ren"
-            ship: "TIE/vn Silencer"
-            threat: 4
-            upgrades: [
-                "Hate"
-                "Predictive Shot"
-                "Primed Thrusters"
-                "Adv. Proton Torpedoes"
-            ]
-        }
-        {
-            id: 174
-            faction: "First Order"
-            pilot: '"Recoil"'
-            ship: "TIE/vn Silencer"
-            threat: 3
-            upgrades: [
-                "Predator"
-                "Proton Torpedoes"
-            ]
-        }
-        {
-            id: 175
-            faction: "First Order"
-            pilot: "First Order Test Pilot"
-            ship: "TIE/vn Silencer"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 176
-            faction: "First Order"
-            pilot: '"Blackout"'
-            ship: "TIE/vn Silencer"
-            threat: 3
-            upgrades: [
-                "Elusive"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 177
-            faction: "First Order"
-            pilot: '"Avenger"'
-            ship: "TIE/vn Silencer"
-            threat: 3
-            upgrades: [
-                "Primed Thrusters"
-                "Adv. Proton Torpedoes"
-            ]
-        }
-        {
-            id: 178
-            faction: "First Order"
-            pilot: "Sienar-Jaemus Engineer"
-            ship: "TIE/vn Silencer"
-            threat: 2
-        }
-        {
-            id: 179
-            faction: "First Order"
-            pilot: "Lieutenant Tavson"
-            ship: "Upsilon-Class Command Shuttle"
-            threat: 4
-            upgrades: [
-                "Advanced Sensors"
-                "Ion Cannon"
-                "Kylo Ren"
-                "Supreme Leader Snoke"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 180
-            faction: "First Order"
-            pilot: "Lieutenant Dormitz"
-            ship: "Upsilon-Class Command Shuttle"
-            threat: 3
-            upgrades: [
-                "Biohexacrypt Codes"
-                "Hyperspace Tracking Data"
-                "Tractor Beam"
-            ]
-        }
-        {
-            id: 181
-            faction: "First Order"
-            pilot: "Starkiller Base Pilot"
-            ship: "Upsilon-Class Command Shuttle"
-            threat: 2
-        }
-        {
-            id: 182
-            faction: "First Order"
-            pilot: "Major Stridan"
-            ship: "Upsilon-Class Command Shuttle"
-            threat: 4
-            upgrades: [
-                "Biohexacrypt Codes"
-                "Pattern Analyzer"
-                "Tractor Beam"
-                "Captain Phasma"
-                "General Hux"
-            ]
-        }
-        {
-            id: 183
-            faction: "First Order"
-            pilot: "Captain Cardinal"
-            ship: "Upsilon-Class Command Shuttle"
-            threat: 3
-            upgrades: [
-                "Ion Cannon"
-                "Petty Officer Thanisson"
-            ]
-        }
-        {
-            id: 184
-            faction: "First Order"
-            pilot: "Petty Officer Thanisson"
-            ship: "Upsilon-Class Command Shuttle"
-            threat: 3
-            upgrades: [
-                "Captain Phasma"
-                "Tactical Scrambler"
-            ]
-        }
-        {
-            id: 185
-            faction: "Scum and Villainy"
-            pilot: "Boba Fett"
-            ship: "Firespray-class Patrol Craft"
-            threat: 4
-            upgrades: [
-                "Lone Wolf"
-                "Perceptive Copilot"
-                "Inertial Dampeners"
-                "Seismic Charges"
-                "Slave I"
-            ]
-        }
-        {
-            id: 186
-            faction: "Scum and Villainy"
-            pilot: "Kath Scarlet"
-            ship: "Firespray-class Patrol Craft"
-            threat: 3
-            upgrades: [
-                "Marauder"
-            ]
-        }
-        {
-            id: 187
-            faction: "Scum and Villainy"
-            pilot: "Krassis Trelix"
-            ship: "Firespray-class Patrol Craft"
-            threat: 3
-            upgrades: [
-                "Concussion Missiles"
-            ]
-        }
-        {
-            id: 188
-            faction: "Scum and Villainy"
-            pilot: "Emon Azzameen"
-            ship: "Firespray-class Patrol Craft"
-            threat: 4
-            upgrades: [
-                "Elusive"
-                "Perceptive Copilot"
-                "Inertial Dampeners"
-                "Proximity Mines"
-                "Seismic Charges"
-                "Andrasta"
-            ]
-        }
-        {
-            id: 189
-            faction: "Scum and Villainy"
-            pilot: "Koshka Frost"
-            ship: "Firespray-class Patrol Craft"
-            threat: 3
-            upgrades: [
-                "Perceptive Copilot"
-            ]
-        }
-        {
-            id: 190
-            faction: "Scum and Villainy"
-            pilot: "Bounty Hunter"
-            ship: "Firespray-class Patrol Craft"
-            threat: 3
-            upgrades: [
-                "Perceptive Copilot"
-                "Inertial Dampeners"
-                "Seismic Charges"
-            ]
-        }
-        {
-            id: 191
-            faction: "Scum and Villainy"
-            pilot: "Fenn Rau"
-            ship: "Fang Fighter"
-            threat: 3
-            upgrades: [
-                "Daredevil"
-                "Afterburners"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 192
-            faction: "Scum and Villainy"
-            pilot: "Kad Solus"
-            ship: "Fang Fighter"
-            threat: 2
-            upgrades: [
-                "Fearless"
-            ]
-        }
-        {
-            id: 193
-            faction: "Scum and Villainy"
-            pilot: "Zealous Recruit"
-            ship: "Fang Fighter"
-            threat: 2
-            upgrades: [
-                "Proton Torpedoes"
-            ]
-        }
-        {
-            id: 194
-            faction: "Scum and Villainy"
-            pilot: "Joy Rekkoff"
-            ship: "Fang Fighter"
-            threat: 3
-            upgrades: [
-                "Predator"
-                "Ion Torpedoes"
-                "Afterburners"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 195
-            faction: "Scum and Villainy"
-            pilot: "Old Teroch"
-            ship: "Fang Fighter"
-            threat: 2
-        }
-        {
-            id: 196
-            faction: "Scum and Villainy"
-            pilot: "Skull Squadron Pilot"
-            ship: "Fang Fighter"
-            threat: 2
-            upgrades: [
-                "Fearless"
-            ]
-        }
-        {
-            id: 197
-            faction: "Scum and Villainy"
-            pilot: "Ahhav"
-            ship: "Modified TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Afterburners"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 198
-            faction: "Scum and Villainy"
-            pilot: "Mining Guild Surveyor"
-            ship: "Modified TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Swarm Tactics"
-                "Trick Shot"
-                "Shield Upgrade"
-                "Static Discharge Vanes"
-            ]
-        }
-        {
-            id: 199
-            faction: "Scum and Villainy"
-            pilot: "Overseer Yushyn"
-            ship: "Modified TIE/ln Fighter"
-            threat: 1
-        }
-        {
-            id: 200
-            faction: "Scum and Villainy"
-            pilot: "Captain Seevor"
-            ship: "Modified TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 201
-            faction: "Scum and Villainy"
-            pilot: "Foreman Proach"
-            ship: "Modified TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Predator"
-                "Swarm Tactics"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 202
-            faction: "Scum and Villainy"
-            pilot: "Mining Guild Sentry"
-            ship: "Modified TIE/ln Fighter"
-            threat: 1
-        }
-        {
-            id: 203
-            faction: "Scum and Villainy"
-            pilot: "Ketsu Onyo"
-            ship: "Lancer-Class Pursuit Craft"
-            threat: 4
-            upgrades: [
-                "Outmaneuver"
-                "Rigged Cargo Chute"
-                "Shield Upgrade"
-                "Shadow Caster"
-            ]
-        }
-        {
-            id: 204
-            faction: "Scum and Villainy"
-            pilot: "Sabine Wren (Scum)"
-            ship: "Lancer-Class Pursuit Craft"
-            threat: 3
-            upgrades: [
-                "Fearless"
-                "Ketsu Onyo"
-                "Shadow Caster"
-            ]
-        }
-        {
-            id: 205
-            faction: "Scum and Villainy"
-            pilot: "Asajj Ventress"
-            ship: "Lancer-Class Pursuit Craft"
-            threat: 4
-            upgrades: [
-                "Sense"
-                "Veteran Turret Gunner"
-                "Deadman's Switch"
-                "Inertial Dampeners"
-            ]
-        }
-        {
-            id: 206
-            faction: "Scum and Villainy"
-            pilot: "Shadowport Hunter"
-            ship: "Lancer-Class Pursuit Craft"
-            threat: 3
-            upgrades: [
-                "Maul"
-                "Contraband Cybernetics"
-            ]
-        }
-        {
-            id: 207
-            faction: "Scum and Villainy"
-            pilot: "Talonbane Cobra"
-            ship: "Kihraxz Fighter"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Cluster Missiles"
-                "Inertial Dampeners"
-                "Afterburners"
-                "Electronic Baffle"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 208
-            faction: "Scum and Villainy"
-            pilot: "Viktor Hel"
-            ship: "Kihraxz Fighter"
-            threat: 2
-            upgrades: [
-                "Crack Shot"
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 209
-            faction: "Scum and Villainy"
-            pilot: "Graz"
-            ship: "Kihraxz Fighter"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Concussion Missiles"
-                "Contraband Cybernetics"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 210
-            faction: "Scum and Villainy"
-            pilot: "Black Sun Ace"
-            ship: "Kihraxz Fighter"
-            threat: 2
-            upgrades: [
-                "Predator"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 211
-            faction: "Scum and Villainy"
-            pilot: "Captain Jostero"
-            ship: "Kihraxz Fighter"
-            threat: 2
-            upgrades: [
-                "Ion Missiles"
-                "Munitions Failsafe"
-            ]
-        }
-        {
-            id: 212
-            faction: "Scum and Villainy"
-            pilot: "Cartel Marauder"
-            ship: "Kihraxz Fighter"
-            threat: 2
-            upgrades: [
-                "Concussion Missiles"
-                "Hull Upgrade"
-                "Munitions Failsafe"
-            ]
-        }
-        {
-            id: 213
-            faction: "Scum and Villainy"
-            pilot: "Kavil"
-            ship: "BTL-A4 Y-wing"
-            threat: 3
-            upgrades: [
-                "Expert Handling"
-                "Dorsal Turret"
-                '"Genius"'
-                "Proton Bombs"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 214
-            faction: "Scum and Villainy"
-            pilot: "Hired Gun"
-            ship: "BTL-A4 Y-wing"
-            threat: 2
-            upgrades: [
-                "Crack Shot"
-                "Ion Cannon Turret"
-                "Veteran Turret Gunner"
-                "R3 Astromech"
-                "Conner Nets"
-            ]
-        }
-        {
-            id: 215
-            faction: "Scum and Villainy"
-            pilot: "Drea Renthal"
-            ship: "BTL-A4 Y-wing"
-            threat: 2
-            upgrades: [
-                "Expert Handling"
-                "Ion Cannon Turret"
-                "Hotshot Gunner"
-            ]
-        }
-        {
-            id: 216
-            faction: "Scum and Villainy"
-            pilot: "Crymorah Goon"
-            ship: "BTL-A4 Y-wing"
-            threat: 2
-            upgrades: [
-                "Dorsal Turret"
-                "Ion Torpedoes"
-                "R3 Astromech"
-                "Inertial Dampeners"
-                "Proximity Mines"
-            ]
-        }
-        {
-            id: 217
-            faction: "Scum and Villainy"
-            pilot: "Dace Bonearm"
-            ship: "HWK-290 Light Freighter"
-            threat: 2
-            upgrades: [
-                "Feedback Array"
-                "Conner Nets"
-                "Static Discharge Vanes"
-            ]
-        }
-        {
-            id: 218
-            faction: "Scum and Villainy"
-            pilot: "Palob Godalhi"
-            ship: "HWK-290 Light Freighter"
-            threat: 2
-            upgrades: [
-                "Debris Gambit"
-                "Juke"
-                "Contraband Cybernetics"
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 219
-            faction: "Scum and Villainy"
-            pilot: "Torkil Mux"
-            ship: "HWK-290 Light Freighter"
-            threat: 2
-            upgrades: [
-                "Cloaking Device"
-                "Proximity Mines"
-            ]
-        }
-        {
-            id: 220
-            faction: "Scum and Villainy"
-            pilot: "Spice Runner"
-            suffix: " (x2)"
-            ship: "HWK-290 Light Freighter"
-            threat: 3
-            linkedId: 220
-            upgrades: [
-                "Deadman's Switch"
-                "Proton Bombs"
-                "Electronic Baffle"
-            ]
-        }
-        {
-            id: 221
-            faction: "Scum and Villainy"
-            pilot: "Constable Zuvio"
-            ship: "Quadrijet Transfer Spacetug"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-                "Rigged Cargo Chute"
-                "Conner Nets"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 222
-            faction: "Scum and Villainy"
-            pilot: "Jakku Gunrunner"
-            suffix: " (x2)"
-            linkedId: 222
-            ship: "Quadrijet Transfer Spacetug"
-            threat: 3
-            upgrades: [
-                "Novice Technician"
-                "Proximity Mines"
-                "Electronic Baffle"
-            ]
-        }
-        {
-            id: 223
-            faction: "Scum and Villainy"
-            pilot: "Sarco Plank"
-            ship: "Quadrijet Transfer Spacetug"
-            threat: 2
-            upgrades: [
-                "Unkar Plutt"
-                "Feedback Array"
-                "Seismic Charges"
-                "Hull Upgrade"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 224
-            faction: "Scum and Villainy"
-            pilot: "Unkar Plutt"
-            ship: "Quadrijet Transfer Spacetug"
-            threat: 2
-            upgrades: [
-                "Novice Technician"
-                "Contraband Cybernetics"
-                "Proximity Mines"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 225
-            faction: "Scum and Villainy"
-            pilot: "Prince Xizor"
-            ship: "StarViper-class Attack Platform"
-            threat: 3
-            upgrades: [
-                "Predator"
-                "Fire-Control System"
-                "Shield Upgrade"
-                "Virago"
-            ]
-        }
-        {
-            id: 226
-            faction: "Scum and Villainy"
-            pilot: "Black Sun Enforcer"
-            ship: "StarViper-class Attack Platform"
-            threat: 2
-            upgrades: [
-                "Collision Detector"
-            ]
-        }
-        {
-            id: 227
-            faction: "Scum and Villainy"
-            pilot: "Guri"
-            ship: "StarViper-class Attack Platform"
-            threat: 3
-            upgrades: [
-                "Daredevil"
-                "Advanced Sensors"
-                "Adv. Proton Torpedoes"
-            ]
-        }
-        {
-            id: 228
-            faction: "Scum and Villainy"
-            pilot: "Dalan Oberos (StarViper)"
-            ship: "StarViper-class Attack Platform"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Fire-Control System"
-                "Proton Torpedoes"
-                "Contraband Cybernetics"
-            ]
-        }
-        {
-            id: 229
-            faction: "Scum and Villainy"
-            pilot: "Black Sun Assassin"
-            ship: "StarViper-class Attack Platform"
-            threat: 2
-            upgrades: [
-                "Fearless"
-            ]
-        }
-        {
-            id: 230
-            faction: "Scum and Villainy"
-            pilot: "Serissu"
-            ship: "M3-A Interceptor"
-            threat: 2
-            upgrades: [
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 231
-            faction: "Scum and Villainy"
-            pilot: "Genesis Red"
-            ship: "M3-A Interceptor"
-            threat: 2
-            upgrades: [
-                "Juke"
-                "Concussion Missiles"
-                "Munitions Failsafe"
-            ]
-        }
-        {
-            id: 232
-            faction: "Scum and Villainy"
-            pilot: "Quinn Jast"
-            ship: "M3-A Interceptor"
-            threat: 2
-            upgrades: [
-                "Crack Shot"
-                "Adv. Proton Torpedoes"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 233
-            faction: "Scum and Villainy"
-            pilot: "Laetin A'shera"
-            ship: "M3-A Interceptor"
-            threat: 2
-            upgrades: [
-                "Juke"
-                "Cluster Missiles"
-                "Munitions Failsafe"
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 234
-            faction: "Scum and Villainy"
-            pilot: "Inaldra"
-            ship: "M3-A Interceptor"
-            threat: 2
-            upgrades: [
-                "Ion Cannon"
-                "Hull Upgrade"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 235
-            faction: "Scum and Villainy"
-            pilot: "Tansarii Point Veteran"
-            suffix: " (x2)"
-            linkedId: 235
-            ship: "M3-A Interceptor"
-            threat: 3
-            upgrades: [
-                "Crack Shot"
-                "Heavy Laser Cannon"
-            ]
-        }
-        {
-            id: 236
-            faction: "Scum and Villainy"
-            pilot: "Sunny Bounder"
-            ship: "M3-A Interceptor"
-            threat: 2
-            upgrades: [
-                "Predator"
-                "Cluster Missiles"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 237
-            faction: "Scum and Villainy"
-            pilot: "Cartel Spacer"
-            suffix: " (x2)"
-            linkedId: 237
-            ship: "M3-A Interceptor"
-            threat: 3
-            upgrades: [
-                "Ion Torpedoes"
-                "Munitions Failsafe"
-            ]
-        }
-        {
-            id: 238
-            faction: "Scum and Villainy"
-            pilot: "Tel Trevura"
-            ship: "JumpMaster 5000"
-            threat: 3
-            upgrades: [
-                "Expert Handling"
-                'GNK "Gonk" Droid'
-                "Proton Torpedoes"
-                "Deadman's Switch"
-            ]
-        }
-        {
-            id: 239
-            faction: "Scum and Villainy"
-            pilot: "Contracted Scout"
-            ship: "JumpMaster 5000"
-            threat: 2
-            upgrades: [
-                "Ion Torpedoes"
-                "Inertial Dampeners"
-            ]
-        }
-        {
-            id: 240
-            faction: "Scum and Villainy"
-            pilot: "Dengar"
-            ship: "JumpMaster 5000"
-            threat: 3
-            upgrades: [
-                "Expert Handling"
-                "Proton Torpedoes"
-                "R4 Astromech"
-                "Contraband Cybernetics"
-                "Punishing One"
-            ]
-        }
-        {
-            id: 241
-            faction: "Scum and Villainy"
-            pilot: "Manaroo"
-            ship: "JumpMaster 5000"
-            threat: 3
-            upgrades: [
-                "Intimidation"
-                "Perceptive Copilot"
-                "Proton Torpedoes"
-                "Feedback Array"
-                "Static Discharge Vanes"
-            ]
-        }
-        {
-            id: 242
-            faction: "Scum and Villainy"
-            pilot: "N'dru Suhlak"
-            ship: "Z-95-AF4 Headhunter"
-            threat: 2
-            upgrades: [
-                "Lone Wolf"
-                "Homing Missiles"
-                "Cloaking Device"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 243
-            faction: "Scum and Villainy"
-            pilot: "Black Sun Soldier"
-            suffix: " (x2)"
-            linkedId: 243
-            ship: "Z-95-AF4 Headhunter"
-            threat: 3
-            upgrades: [
-                "Expert Handling"
-                "Concussion Missiles"
-                "Deadman's Switch"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 244
-            faction: "Scum and Villainy"
-            pilot: "Kaa'to Leeachos"
-            ship: "Z-95-AF4 Headhunter"
-            threat: 2
-            upgrades: [
-                "Expert Handling"
-                "Cluster Missiles"
-                "Contraband Cybernetics"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 245
-            faction: "Scum and Villainy"
-            pilot: "Binayre Pirate"
-            ship: "Z-95-AF4 Headhunter"
-            threat: 1
-        }
-        {
-            id: 246
-            faction: "Scum and Villainy"
-            pilot: "4-LOM"
-            ship: "G-1A Starfighter"
-            threat: 3
-            upgrades: [
-                "Elusive"
-                "Advanced Sensors"
-                "0-0-0"
-                "Zuckuss"
-                "BT-1"
-                "Mist Hunter"
-            ]
-        }
-        {
-            id: 247
-            faction: "Scum and Villainy"
-            pilot: "Zuckuss"
-            ship: "G-1A Starfighter"
-            threat: 2
-            upgrades: [
-                "Lone Wolf"
-                "Tractor Beam"
-                "4-LOM"
-                "Mist Hunter"
-            ]
-        }
-        {
-            id: 248
-            faction: "Scum and Villainy"
-            pilot: "Gand Findsman"
-            ship: "G-1A Starfighter"
-            threat: 2
-            upgrades: [
-                "Fire-Control System"
-                "Freelance Slicer"
-                "Deadman's Switch"
-                "Electronic Baffle"
-            ]
-        }
-        {
-            id: 249
-            faction: "Scum and Villainy"
-            pilot: "Moralo Eval"
-            ship: "YV-666 Light Freighter"
-            threat: 4
-            upgrades: [
-                "Outmaneuver"
-                "Cluster Missiles"
-                "Latts Razzi"
-                "Dengar"
-                "Contraband Cybernetics"
-            ]
-        }
-        {
-            id: 250
-            faction: "Scum and Villainy"
-            pilot: "Latts Razzi"
-            ship: "YV-666 Light Freighter"
-            threat: 3
-            upgrades: [
-                "Boba Fett"
-                "Bossk"
-                "Dengar"
-                "Feedback Array"
-                "Static Discharge Vanes"
-            ]
-        }
-        {
-            id: 251
-            faction: "Scum and Villainy"
-            pilot: "Trandoshan Slaver"
-            ship: "YV-666 Light Freighter"
-            threat: 3
-            upgrades: [
-                "Hotshot Gunner"
-                "Jabba the Hutt"
-                "Contraband Cybernetics"
-                "Rigged Cargo Chute"
-            ]
-        }
-        {
-            id: 252
-            faction: "Scum and Villainy"
-            pilot: "Bossk"
-            suffix: " + Nashtah Pup"
-            linkedId: 253
-            ship: "YV-666 Light Freighter"
-            threat: 3
-            upgrades: [
-                "Marksmanship"
-                "Greedo"
-                "Hound's Tooth"
-            ]
-        }
-        {
-            id: 253
-            faction: "Scum and Villainy"
-            pilot: "Nashtah Pup"
-            suffix: " + Bossk"
-            linkedId: 252
-            ship: "Z-95-AF4 Headhunter"
-            threat: 3
-        }
-        {
-            id: 254
-            faction: "Scum and Villainy"
-            pilot: "Trandoshan Slaver"
-            suffix: " + Nashtah Pup"
-            linkedId: 255
-            ship: "YV-666 Light Freighter"
-            threat: 3
-            upgrades: [
-                "Deadman's Switch"
-                "Hound's Tooth"
-            ]
-        }
-        {
-            id: 255
-            faction: "Scum and Villainy"
-            pilot: "Nashtah Pup"
-            suffix: " + Trandoshan Slaver"
-            linkedId: 254
-            ship: "Z-95-AF4 Headhunter"
-            threat: 3
-            upgrades: [
-                "Proton Rockets"
-            ]
-        }
-        {
-            id: 256
-            faction: "Scum and Villainy"
-            pilot: "Torani Kulda"
-            ship: "M12-L Kimogila Fighter"
-            threat: 3
-            upgrades: [
-                "Saturation Salvo"
-                "Proton Torpedoes"
-                "Cluster Missiles"
-                "R4 Astromech"
-                "Inertial Dampeners"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 257
-            faction: "Scum and Villainy"
-            pilot: "Dalan Oberos"
-            ship: "M12-L Kimogila Fighter"
-            threat: 2
-            upgrades: [
-                "Expert Handling"
-                "R5-TK"
-                "Inertial Dampeners"
-            ]
-        }
-        {
-            id: 258
-            faction: "Scum and Villainy"
-            pilot: "Cartel Executioner"
-            ship: "M12-L Kimogila Fighter"
-            threat: 2
-            upgrades: [
-                "Crack Shot"
-                "R5-P8"
-                "Contraband Cybernetics"
-            ]
-        }
-        {
-            id: 259
-            skip: true
-            faction: "Scum and Villainy"
-            pilot: "Dalan Oberos"
-            ship: "M12-L Kimogila Fighter"
-            threat: 2
-            upgrades: [
-                "Expert Handling"
-                "R5-TK"
-                "Inertial Dampeners"
-            ]
-        }
-        {
-            id: 260
-            faction: "Scum and Villainy"
-            pilot: "Captain Nym"
-            ship: "Scurrg H-6 Bomber"
-            threat: 3
-            upgrades: [
-                "Squad Leader"
-                "Trajectory Simulator"
-                "R4 Astromech"
-                "Bomblet Generator"
-                "Havoc"
-            ]
-        }
-        {
-            id: 261
-            faction: "Scum and Villainy"
-            pilot: "Sol Sixxa"
-            ship: "Scurrg H-6 Bomber"
-            threat: 3
-            upgrades: [
-                "Ion Cannon Turret"
-                "Skilled Bombardier"
-                "Conner Nets"
-                "Proximity Mines"
-            ]
-        }
-        {
-            id: 262
-            faction: "Scum and Villainy"
-            pilot: "Lok Revenant"
-            ship: "Scurrg H-6 Bomber"
-            threat: 2
-            upgrades: [
-                "Dorsal Turret"
-                "Bomblet Generator"
-            ]
-        }
-        {
-            id: 263
-            faction: "Scum and Villainy"
-            pilot: "IG-88A"
-            suffix: " + IG-88D"
-            linkedId: 264
-            ship: "Aggressor Assault Fighter"
-            threat: 6
-            upgrades: [
-                "Advanced Sensors"
-                "IG-2000"
-            ]
-        }
-        {
-            id: 264
-            faction: "Scum and Villainy"
-            pilot: "IG-88D"
-            suffix: " + IG-88A"
-            linkedId: 263
-            ship: "Aggressor Assault Fighter"
-            threat: 6
-            upgrades: [
-                "Advanced Sensors"
-                "IG-2000"
-            ]
-        }
-        {
-            id: 265
-            faction: "Scum and Villainy"
-            pilot: "IG-88B"
-            suffix: " + IG-88C"
-            linkedId: 266
-            ship: "Aggressor Assault Fighter"
-            threat: 6
-            upgrades: [
-                "Fire-Control System"
-                "Ion Cannon"
-                "IG-2000"
-            ]
-        }
-        {
-            id: 266
-            faction: "Scum and Villainy"
-            pilot: "IG-88C"
-            suffix: " + IG-88B"
-            linkedId: 265
-            ship: "Aggressor Assault Fighter"
-            threat: 6
-            upgrades: [
-                "Fire-Control System"
-                "Ion Cannon"
-                "IG-2000"
-            ]
-        }
-        {
-            id: 267
-            faction: "Resistance"
-            pilot: "L'ulo L'ampar"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Primed Thrusters"
-                "Homing Missiles"
-            ]
-        }
-        {
-            id: 268
-            faction: "Resistance"
-            pilot: "Greer Sonnel"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 269
-            faction: "Resistance"
-            pilot: "Green Squadron Expert"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Heroic"
-                "Primed Thrusters"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 270
-            faction: "Resistance"
-            pilot: "Tallissan Lintra"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Predator"
-                "Ferrosphere Paint"
-            ]
-        }
-        {
-            id: 271
-            faction: "Resistance"
-            pilot: "Zari Bangel"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-                "Proton Rockets"
-            ]
-        }
-        {
-            id: 272
-            faction: "Resistance"
-            pilot: "Blue Squadron Recruit"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Primed Thrusters"
-                "Homing Missiles"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 273
-            faction: "Resistance"
-            pilot: "Poe Dameron"
-            ship: "T-70 X-wing"
-            threat: 4
-            upgrades: [
-                "Proton Torpedoes"
-                "BB-8"
-                "Black One"
-                "Integrated S-Foils"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 274
-            faction: "Resistance"
-            pilot: "Jessika Pava"
-            ship: "T-70 X-wing"
-            threat: 3
-            upgrades: [
-                "R5 Astromech"
-                "Integrated S-Foils"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 275
-            faction: "Resistance"
-            pilot: "Black Squadron Ace (T-70)"
-            ship: "T-70 X-wing"
-            threat: 3
-            upgrades: [
-                "Proton Torpedoes"
-                "M9-G8"
-                "Integrated S-Foils"
-            ]
-        }
-        {
-            id: 276
-            faction: "Resistance"
-            pilot: "Ello Asty"
-            ship: "T-70 X-wing"
-            threat: 3
-            upgrades: [
-                "Elusive"
-                "Integrated S-Foils"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 277
-            faction: "Resistance"
-            pilot: "Joph Seastriker"
-            ship: "T-70 X-wing"
-            threat: 3
-            upgrades: [
-                "R2 Astromech"
-                "Integrated S-Foils"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 278
-            faction: "Resistance"
-            pilot: "Jaycris Tubbs"
-            ship: "T-70 X-wing"
-            threat: 2
-        }
-        {
-            id: 279
-            faction: "Resistance"
-            pilot: "Nien Nunb"
-            ship: "T-70 X-wing"
-            threat: 3
-            upgrades: [
-                "Elusive"
-                "Integrated S-Foils"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 280
-            faction: "Resistance"
-            pilot: "Lieutenant Bastian"
-            ship: "T-70 X-wing"
-            threat: 3
-            upgrades: [
-                "Targeting Synchronizer"
-                "Proton Torpedoes"
-                "R3 Astromech"
-                "Integrated S-Foils"
-            ]
-        }
-        {
-            id: 281
-            faction: "Resistance"
-            pilot: "Red Squadron Expert"
-            ship: "T-70 X-wing"
-            threat: 2
-        }
-        {
-            id: 282
-            faction: "Resistance"
-            pilot: "Temmin Wexley"
-            ship: "T-70 X-wing"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Proton Torpedoes"
-                "Integrated S-Foils"
-            ]
-        }
-        {
-            id: 283
-            faction: "Resistance"
-            pilot: "Kare Kun"
-            ship: "T-70 X-wing"
-            threat: 3
-            upgrades: [
-                "Predator"
-                "Integrated S-Foils"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 284
-            faction: "Resistance"
-            pilot: "Blue Squadron Rookie"
-            ship: "T-70 X-wing"
-            threat: 2
-            upgrades: [
-                "BB Astromech"
-            ]
-        }
-        {
-            id: 285
-            faction: "Resistance"
-            pilot: "Finch Dallow"
-            ship: "MG-100 StarFortress"
-            threat: 4
-            upgrades: [
-                "Advanced Optics"
-                "Paige Tico"
-                "Proton Bombs"
-                "Ablative Plating"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 286
-            faction: "Resistance"
-            pilot: "Cat"
-            ship: "MG-100 StarFortress"
-            threat: 3
-            upgrades: [
-                "Skilled Bombardier"
-                "Conner Nets"
-                "Electronic Baffle"
-            ]
-        }
-        {
-            id: 287
-            faction: "Resistance"
-            pilot: "Cobalt Squadron Bomber"
-            ship: "MG-100 StarFortress"
-            threat: 3
-            upgrades: [
-                "Trajectory Simulator"
-                "Proton Bombs"
-                "Ablative Plating"
-            ]
-        }
-        {
-            id: 288
-            faction: "Resistance"
-            pilot: "Edon Kappehl"
-            ship: "MG-100 StarFortress"
-            threat: 4
-            upgrades: [
-                "Pattern Analyzer"
-                "Seasoned Navigator"
-                "Skilled Bombardier"
-                "Conner Nets"
-                "Proton Bombs"
-            ]
-        }
-        {
-            id: 289
-            faction: "Resistance"
-            pilot: "Vennie"
-            ship: "MG-100 StarFortress"
-            threat: 4
-            upgrades: [
-                "Advanced Optics"
-                "Rose Tico"
-                "Finn"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 290
-            faction: "Resistance"
-            pilot: "Ben Teene"
-            ship: "MG-100 StarFortress"
-            threat: 3
-            upgrades: [
-                "Conner Nets"
-                "Proton Bombs"
-            ]
-        }
-        {
-            id: 291
-            faction: "Resistance"
-            pilot: "Han Solo (Resistance)"
-            ship: "Scavenged YT-1300"
-            threat: 3
-            upgrades: [
-                "Chewbacca"
-            ]
-        }
-        {
-            id: 292
-            faction: "Resistance"
-            pilot: "Rey"
-            ship: "Scavenged YT-1300"
-            threat: 5
-            upgrades: [
-                "Finn"
-                "BB-8"
-                "Inertial Dampeners"
-                "Engine Upgrade"
-                "Rey's Millennium Falcon"
-            ]
-        }
-        {
-            id: 293
-            faction: "Resistance"
-            pilot: "Chewbacca (Resistance)"
-            ship: "Scavenged YT-1300"
-            threat: 4
-            upgrades: [
-                "Rey"
-                "Engine Upgrade"
-                "Rey's Millennium Falcon"
-            ]
-        }
-        {
-            id: 294
-            faction: "Resistance"
-            pilot: "Resistance Sympathizer"
-            ship: "Scavenged YT-1300"
-            threat: 4
-            upgrades: [
-                "Debris Gambit"
-                "C-3PO"
-                "Chewbacca"
-                "Han Solo (Resistance)"
-            ]
-        }
-        {
-            id: 295
-            faction: "Rebel Alliance"
-            pilot: "Thane Kyrell"
-            ship: "T-65 X-wing"
-            threat: 2
-            upgrades: [
-                "Stealth Device"
-                "Outmaneuver"
-            ]
-        }
-        {
-            id: 296
-            faction: "Galactic Empire"
-            pilot: "Iden Versio"
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Proton Torpedoes"
-                "Lone Wolf"
-                "Targeting Computer"
-            ]
-        }
-        {
-            id: 297
-            faction: "Scum and Villainy"
-            pilot: "Skull Squadron Pilot"
-            ship: "Fang Fighter"
-            threat: 3
-            upgrades: [
-                "Marksmanship"
-                "Adv. Proton Torpedoes"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 298
-            faction: "Scum and Villainy"
-            pilot: "Foreman Proach"
-            ship: "Modified TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Fearless"
-                "Crack Shot"
-            ]
-        }
-        {
-            id: 299
-            faction: "First Order"
-            pilot: '"Blackout"'
-            ship: "TIE/vn Silencer"
-            threat: 3
-            upgrades: [
-                "Trick Shot"
-            ]
-        }
-        {
-            id: 300
-            faction: "Resistance"
-            pilot: "Greer Sonnel"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Marksmanship"
-                "Primed Thrusters"
-            ]
-        }
-        {
-            id: 301
-            faction: "Scum and Villainy"
-            pilot: "Han Solo (Scum)"
-            ship: "Customized YT-1300 Light Freighter"
-            linkedId: 302
-            suffix: " + Escape craft"
-            threat: 5
-            upgrades: [
-                "Elusive"
-                "Chewbacca"
-                "Lando's Millennium Falcon"
-                "Agile Gunner"
-                "Tactical Scrambler"
-                "Rigged Cargo Chute"
-            ]
-        }
-        {
-            id: 302
-            faction: "Scum and Villainy"
-            pilot: "Outer Rim Pioneer"
-            ship: "Escape Craft"
-            linkedId: 301
-            suffix: " + Han Solo"
-            threat: 5
-            upgrades: [
-                "Tobias Beckett"
-            ]
-        }
-        {
-            id: 303
-            faction: "Scum and Villainy"
-            pilot: "Lando Calrissian (Scum)"
-            ship: "Customized YT-1300 Light Freighter"
-            linkedId: 304
-            suffix: " + L3-37"
-            threat: 4
-            upgrades: [
-                "Han Solo (Scum)"
-                "Qi'ra"
-                "Lando's Millennium Falcon"
-            ]
-        }
-        {
-            id: 304
-            faction: "Scum and Villainy"
-            pilot: "L3-37 (Escape Craft)"
-            ship: "Escape Craft"
-            linkedId: 303
-            suffix: " + Lando Calrissian"
-            threat: 4
-            upgrades: [
-            ]
-        }
-        {
-            id: 305
-            faction: "Scum and Villainy"
-            pilot: "L3-37"
-            ship: "Customized YT-1300 Light Freighter"
-            linkedId: 306
-            suffix: " + Lando Calrissian"
-            threat: 5
-            upgrades: [
-                "Han Solo (Scum)"
-                "Qi'ra"
-                "Hull Upgrade"
-                "Outmaneuver"
-                "Lando's Millennium Falcon"
-            ]
-        }
-        {
-            id: 306
-            faction: "Scum and Villainy"
-            pilot: "Lando Calrissian (Scum) (Escape Craft)"
-            ship: "Escape Craft"
-            linkedId: 305
-            suffix: " + L3-37"
-            threat: 5
-            upgrades: [
-                "Elusive"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 307
-            faction: "Scum and Villainy"
-            pilot: "Freighter Captain"
-            ship: "Customized YT-1300 Light Freighter"
-            linkedId: 308
-            suffix: " + Autopilot drone"
-            threat: 3
-            upgrades: [
-                "Lando's Millennium Falcon"
-            ]
-        }
-        {
-            id: 308
-            faction: "Scum and Villainy"
-            pilot: "Autopilot Drone"
-            ship: "Escape Craft"
-            linkedId: 307
-            suffix: " + YT-1300"
-            threat: 3
-            upgrades: [
-                "Afterburners"
-            ]
-        }
-        {
-            id: 309
-            faction: "Galactic Republic"
-            pilot: "Obi-Wan Kenobi"
-            ship: "Delta-7 Aethersprite"
-            threat: 3
-            upgrades: [
-                "Predictive Shot"
-                "R4-P17"
-                "Spare Parts Canisters"
-                "Calibrated Laser Targeting"
-            ]
-        }
-        {
-            id: 310
-            faction: "Galactic Republic"
-            pilot: "Saesee Tiin"
-            ship: "Delta-7 Aethersprite"
-            threat: 3
-            upgrades: [
-                "Supernatural Reflexes"
-                "R4-P Astromech"
-                "Delta-7B"
-            ]
-        }
-        {
-            id: 311
-            faction: "Galactic Republic"
-            pilot: "Mace Windu"
-            ship: "Delta-7 Aethersprite"
-            threat: 4
-            upgrades: [
-                "Supernatural Reflexes"
-                "R2 Astromech"
-                "Delta-7B"
-                "Afterburners"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 312
-            faction: "Galactic Republic"
-            pilot: "Plo Koon"
-            ship: "Delta-7 Aethersprite"
-            threat: 3
-            upgrades: [
-                "Battle Meditation"
-                "Sense"
-                "R4-P Astromech"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 313
-            faction: "Galactic Republic"
-            pilot: "Jedi Knight"
-            ship: "Delta-7 Aethersprite"
-            threat: 2
-            upgrades: [
-                "Delta-7B"
-            ]
-        }
-        {
-            id: 314
-            faction: "Galactic Republic"
-            pilot: '"Tucker"'
-            ship: "V-19 Torrent Starfighter"
-            threat: 2
-            upgrades: [
-                "Concussion Missiles"
-                "Munitions Failsafe"
-            ]
-        }
-        {
-            id: 315
-            faction: "Galactic Republic"
-            pilot: "Gold Squadron Trooper"
-            ship: "V-19 Torrent Starfighter"
-            threat: 2
-            upgrades: [
-                "Cluster Missiles"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 316
-            faction: "Galactic Republic"
-            pilot: '"Swoop"'
-            ship: "V-19 Torrent Starfighter"
-            threat: 2
-            upgrades: [
-                "Composure"
-                "Synchronized Console"
-                "Proton Rockets"
-            ]
-        }
-        {
-            id: 317
-            faction: "Galactic Republic"
-            pilot: "Blue Squadron Protector"
-            ship: "V-19 Torrent Starfighter"
-            threat: 2
-            upgrades: [
-                "Dedicated"
-                "Synchronized Console"
-            ]
-        }
-        {
-            id: 318
-            faction: "Galactic Republic"
-            pilot: '"Odd Ball"'
-            ship: "V-19 Torrent Starfighter"
-            threat: 3
-            upgrades: [
-                "Saturation Salvo"
-                "Cluster Missiles"
-                "Afterburners"
-                "Munitions Failsafe"
-            ]
-        }
-        {
-            id: 319
-            faction: "Galactic Republic"
-            pilot: '"Kickback"'
-            ship: "V-19 Torrent Starfighter"
-            threat: 2
-            upgrades: [
-                "Crack Shot"
-                "Synchronized Console"
-            ]
-        }
-        {
-            id: 320
-            faction: "Galactic Republic"
-            pilot: '"Axe"'
-            ship: "V-19 Torrent Starfighter"
-            threat: 2
-            upgrades: [
-                "Juke"
-                "Homing Missiles"
-            ]
-        }
-        {
-            id: 321
-            faction: "Galactic Republic"
-            pilot: '"Wolffe"'
-            ship: "ARC-170 Starfighter"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "R4-P44"
-                "Veteran Tail Gunner"
-                "Perceptive Copilot"
-            ]
-        }
-        {
-            id: 322
-            faction: "Galactic Republic"
-            pilot: '"Sinker"'
-            ship: "ARC-170 Starfighter"
-            threat: 2
-            upgrades: [
-                "Expert Handling"
-            ]
-        }
-        {
-            id: 323
-            faction: "Galactic Republic"
-            pilot: "104th Battalion Pilot"
-            ship: "ARC-170 Starfighter"
-            threat: 2
-            upgrades: [
-                "Dedicated"
-                "R4-P Astromech"
-            ]
-        }
-        {
-            id: 324
-            faction: "Galactic Republic"
-            pilot: '"Odd Ball" (ARC-170)'
-            ship: "ARC-170 Starfighter"
-            threat: 3
-            upgrades: [
-                "Elusive"
-                "Seasoned Navigator"
-                "Clone Commander Cody"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 325
-            faction: "Galactic Republic"
-            pilot: '"Jag"'
-            ship: "ARC-170 Starfighter"
-            threat: 3
-            upgrades: [
-                "Predator"
-                "Ion Torpedoes"
-                "R2 Astromech"
-                "Seventh Fleet Gunner"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 326
-            faction: "Galactic Republic"
-            pilot: "Squad Seven Veteran"
-            ship: "ARC-170 Starfighter"
-            threat: 3
-            upgrades: [
-                "Expert Handling"
-                "Proton Torpedoes"
-                "R4-P Astromech"
-                "Novice Technician"
-                "Seventh Fleet Gunner"
-            ]
-        }
-        {
-            id: 327
-            faction: "Scum and Villainy"
-            pilot: "Black Sun Soldier"
-            ship: "Z-95-AF4 Headhunter"
-            threat: 2
-            upgrades: [
-                "Crack Shot"
-                "Cluster Missiles"
-                "Afterburners"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 328
-            faction: "Scum and Villainy"
-            pilot: "Binayre Pirate"
-            ship: "Z-95-AF4 Headhunter"
-            threat: 1
-            upgrades: [
-                "Deadman's Switch"
-            ]
-        }
-        {
-            id: 329
-            faction: "Scum and Villainy"
-            pilot: "N'dru Suhlak"
-            ship: "Z-95-AF4 Headhunter"
-            threat: 2
-            upgrades: [
-                "Crack Shot"
-                "Outmaneuver"
-                "Hull Upgrade"
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 330
-            faction: "Scum and Villainy"
-            pilot: "Kaa'to Leeachos"
-            ship: "Z-95-AF4 Headhunter"
-            threat: 2
-            upgrades: [
-                "Saturation Salvo"
-                "Cluster Missiles"
-                "Concussion Missiles"
-                "Deadman's Switch"
-                "Munitions Failsafe"
-            ]
-        }
-        {
-            id: 331
-            faction: "Galactic Empire"
-            pilot: "Black Squadron Scout"
-            ship: "TIE/sk Striker"
-            threat: 2
-            upgrades: [
-                "Predator"
-                "Conner Nets"
-            ]
-        }
-        {
-            id: 332
-            faction: "Galactic Empire"
-            pilot: "Planetary Sentinel"
-            ship: "TIE/sk Striker"
-            threat: 2
-            upgrades: [
-                "Proton Bombs"
-                "Skilled Bombardier"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 333
-            faction: "Galactic Empire"
-            pilot: '"Duchess"'
-            ship: "TIE/sk Striker"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Conner Nets"
-                "Afterburners"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 334
-            faction: "Galactic Empire"
-            pilot: '"Countdown"'
-            ship: "TIE/sk Striker"
-            threat: 3
-            upgrades: [
-                "Elusive"
-                "Proton Bombs"
-                "Skilled Bombardier"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 335
-            faction: "Galactic Empire"
-            pilot: '"Pure Sabacc"'
-            ship: "TIE/sk Striker"
-            threat: 2
-            upgrades: [
-                "Trick Shot"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 336
-            skip: true
-            faction: "Galactic Empire"
-            pilot: "Planetary Sentinel"
-            ship: "TIE/sk Striker"
-            threat: 2
-            upgrades: [
-                "Proton Bombs"
-                "Skilled Bombardier"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 337
-            faction: "Separatist Alliance"
-            pilot: "0-66"
-            ship: "Sith Infiltrator"
-            threat: 3
-            upgrades: [
-                "Chancellor Palpatine"
-                "Shield Upgrade"
-                "Scimitar"
-            ]
-        }
-        {
-            id: 338
-            faction: "Separatist Alliance"
-            pilot: "Dark Courier"
-            ship: "Sith Infiltrator"
-            threat: 3
-            upgrades: [
-                "Count Dooku"
-                "General Grievous"
-                "K2-B4"
-                "Scimitar"
-            ]
-        }
-        {
-            id: 339
-            faction: "Separatist Alliance"
-            pilot: "Darth Maul"
-            ship: "Sith Infiltrator"
-            threat: 4
-            upgrades: [
-                "Hate"
-                "Heavy Laser Cannon"
-                "Perceptive Copilot"
-                "DRK-1 Probe Droids"
-                "Shield Upgrade"
-                "Scimitar"
-            ]
-        }
-        {
-            id: 340
-            faction: "Separatist Alliance"
-            pilot: "Count Dooku"
-            ship: "Sith Infiltrator"
-            threat: 4
-            upgrades: [
-                "Brilliant Evasion"
-                "Predictive Shot"
-                "Ion Torpedoes"
-                "General Grievous"
-                "Hull Upgrade"
-                "Scimitar"
-            ]
-        }
-        {
-            id: 341
-            faction: "Separatist Alliance"
-            pilot: "DFS-311"
-            ship: "Vulture-class Droid Fighter"
-            threat: 1
-            upgrades: [
-                "Grappling Struts"
-            ]
-        }
-        {
-            id: 342
-            faction: "Separatist Alliance"
-            pilot: "Precise Hunter"
-            ship: "Vulture-class Droid Fighter"
-            threat: 2
-            upgrades: [
-                "Concussion Missiles"
-                "Afterburners"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 343
-            faction: "Separatist Alliance"
-            pilot: "Separatist Drone"
-            ship: "Vulture-class Droid Fighter"
-            threat: 2
-            upgrades: [
-                "Energy-Shell Charges"
-                "Grappling Struts"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 344
-            faction: "Separatist Alliance"
-            pilot: "Haor Chall Prototype"
-            ship: "Vulture-class Droid Fighter"
-            threat: 2
-            upgrades: [
-                "Discord Missiles"
-                "Energy-Shell Charges"
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 345
-            faction: "Separatist Alliance"
-            pilot: "Trade Federation Drone"
-            ship: "Vulture-class Droid Fighter"
-            threat: 1
-            upgrades: [
-                "Energy-Shell Charges"
-            ]
-        }
-        {
-            id: 346
-            faction: "Separatist Alliance"
-            pilot: "DFS-081"
-            ship: "Vulture-class Droid Fighter"
-            threat: 2
-            upgrades: [
-                "Proton Rockets"
-                "Grappling Struts"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 347
-            faction: "Separatist Alliance"
-            pilot: "Haor Chall Prototype"
-            ship: "Vulture-class Droid Fighter"
-            threat: 2
-            upgrades: [
-                "Energy-Shell Charges"
-                "Stealth Device"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 348
-            faction: "Separatist Alliance"
-            pilot: "General Grievous"
-            ship: "Belbullab-22 Starfighter"
-            threat: 3
-            upgrades: [
-                "Treacherous"
-                "Impervium Plating"
-                "Soulless One"
-                "TV-94"
-            ]
-        }
-        {
-            id: 349
-            faction: "Separatist Alliance"
-            pilot: "Wat Tambor"
-            ship: "Belbullab-22 Starfighter"
-            threat: 3
-            upgrades: [
-                "Intimidation"
-                "Kraken"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 350
-            faction: "Separatist Alliance"
-            pilot: "Skakoan Ace"
-            ship: "Belbullab-22 Starfighter"
-            threat: 2
-            upgrades: [
-                "Crack Shot"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 351
-            faction: "Separatist Alliance"
-            pilot: "Captain Sear"
-            ship: "Belbullab-22 Starfighter"
-            threat: 3
-            upgrades: [
-                "Daredevil"
-                "Impervium Plating"
-                "Kraken"
-                "Stealth Device"
-            ]
-        }
-        {
-            id: 352
-            faction: "Separatist Alliance"
-            pilot: "Feethan Ottraw Autopilot"
-            ship: "Belbullab-22 Starfighter"
-            threat: 2
-            upgrades: [
-                "Impervium Plating"
-                "TV-94"
-            ]
-        }
-        {
-            id: 353
-            faction: "Resistance"
-            pilot: "Cova Nell"
-            ship: "Resistance Transport"
-            threat: 3
-            upgrades: [
-                "Composure"
-                "Leia Organa (Resistance)"
-                "Korr Sella"
-            ]
-        }
-        {
-            id: 354
-            faction: "Resistance"
-            pilot: "Pammich Nerro Goode"
-            ship: "Resistance Transport"
-            threat: 2
-            upgrades: [
-                "Autoblasters"
-                "R5-X3"
-                "Kaydel Connix"
-                "Spare Parts Canisters"
-            ]
-        }
-        {
-            id: 355
-            faction: "Resistance"
-            pilot: "Nodin Chavdri"
-            ship: "Resistance Transport"
-            threat: 2
-            upgrades: [
-                "Plasma Torpedoes"
-                "R2-HA"
-                "Angled Deflectors"
-            ]
-        }
-        {
-            id: 356
-            faction: "Resistance"
-            pilot: "Logistics Division Pilot"
-            ship: "Resistance Transport"
-            threat: 2
-            upgrades: [
-                "Proton Torpedoes"
-                "Larma D'Acy"
-                "Amilyn Holdo"
-            ]
-        }
-        {
-            id: 357
-            faction: "Resistance"
-            pilot: "Rose Tico"
-            ship: "Resistance Transport Pod"
-            threat: 1
-            upgrades: [
-                "PZ-4CO"
-            ]
-        }
-        {
-            id: 358
-            faction: "Resistance"
-            pilot: "Finn"
-            ship: "Resistance Transport Pod"
-            threat: 1
-            upgrades: [
-                "Predator"
-            ]
-        }
-        {
-            id: 359
-            faction: "Resistance"
-            pilot: "BB-8"
-            ship: "Resistance Transport Pod"
-            threat: 2
-            upgrades: [
-                "Autoblasters"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 360
-            faction: "Resistance"
-            pilot: "Vi Moradi"
-            ship: "Resistance Transport Pod"
-            threat: 1
-            upgrades: [
-                "GA-97"
-            ]
-        }
-        {
-            id: 361
-            faction: "Galactic Republic"
-            pilot: "Padmé Amidala"
-            ship: "Naboo Royal N-1 Starfighter"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Collision Detector"
-            ]
-        }
-        {
-            id: 362
-            faction: "Galactic Republic"
-            pilot: "Dineé Ellberger"
-            ship: "Naboo Royal N-1 Starfighter"
-            threat: 2
-            upgrades: [
-                "Passive Sensors"
-                "R3 Astromech"
-                "Plasma Torpedoes"
-            ]
-        }
-        {
-            id: 363
-            faction: "Galactic Republic"
-            pilot: "Bravo Flight Officer"
-            ship: "Naboo Royal N-1 Starfighter"
-            threat: 2
-            upgrades: [
-                "Passive Sensors"
-                "R2-C4"
-                "Proton Torpedoes"
-            ]
-        }
-        {
-            id: 364
-            faction: "Galactic Republic"
-            pilot: "Anakin Skywalker (N-1 Starfighter)"
-            ship: "Naboo Royal N-1 Starfighter"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Proton Torpedoes"
-                "Heightened Perception"
-                "R2 Astromech"
-                "Collision Detector"
-            ]
-        }
-        {
-            id: 365
-            faction: "Galactic Republic"
-            pilot: "Ric Olié"
-            ship: "Naboo Royal N-1 Starfighter"
-            threat: 2
-            upgrades: [
-                "Daredevil"
-                "R2-A6"
-            ]
-        }
-        {
-            id: 366
-            faction: "Galactic Republic"
-            pilot: "Naboo Handmaiden"
-            ship: "Naboo Royal N-1 Starfighter"
-            threat: 2
-            upgrades: [
-                "Plasma Torpedoes"
-                "R5 Astromech"
-            ]
-        }
-        {
-            id: 367
-            faction: "Separatist Alliance"
-            pilot: "Baktoid Prototype"
-            ship: "Hyena-class Droid Bomber"
-            threat: 2
-            upgrades: [
-                "Passive Sensors"
-                "Barrage Rockets"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 368
-            faction: "Separatist Alliance"
-            pilot: "Bombardment Drone"
-            ship: "Hyena-class Droid Bomber"
-            threat: 2
-            upgrades: [
-                "Trajectory Simulator"
-                "Delayed Fuses"
-                "Bomblet Generator"
-            ]
-        }
-        {
-            id: 369
-            faction: "Separatist Alliance"
-            pilot: "DBS-32C"
-            ship: "Hyena-class Droid Bomber"
-            threat: 2
-            upgrades: [
-                "TA-175"
-                "Stealth Device"
-                "Landing Struts"
-            ]
-        }
-        {
-            id: 370
-            faction: "Separatist Alliance"
-            pilot: "DBS-404"
-            ship: "Hyena-class Droid Bomber"
-            threat: 2
-            upgrades: [
-                "Predator"
-                "Plasma Torpedoes"
-                "Afterburners"
-                "Landing Struts"
-            ]
-        }
-        {
-            id: 371
-            faction: "Separatist Alliance"
-            pilot: "Separatist Bomber"
-            ship: "Hyena-class Droid Bomber"
-            threat: 2
-            upgrades: [
-                "Passive Sensors"
-                "Diamond-Boron Missiles"
-            ]
-        }
-        {
-            id: 372
-            faction: "Separatist Alliance"
-            pilot: "Techno Union Bomber"
-            ship: "Hyena-class Droid Bomber"
-            threat: 2
-            upgrades: [
-                "Proton Torpedoes"
-                "Electro-Proton Bomb"
-                "Delayed Fuses"
-            ]
-        }
-        {
-            id: 373
-            faction: "Galactic Republic"
-            pilot: "Plo Koon"
-            ship: "Delta-7 Aethersprite"
-            threat: [5,6,7,8]
-            wingmates: [2,3,4,5]
-            suffix: " and his wing"
-            upgrades: [
-                "Veteran Wing Leader"
-                "Synchronized Console"
-                "Brilliant Evasion"
-                "Delta-7B"
-            ]
-            wingmateId: 374
-            wingleader: true
-        }
-        {
-            id: 374
-            faction: "Galactic Republic"
-            pilot: "Gold Squadron Trooper"
-            ship: "V-19 Torrent Starfighter"
-            suffix: ", Plo Koons wing"
-            threat: '*'
-            upgrades: [
-                "Concussion Missiles"
-                "Synchronized Console"
-            ]
-            linkedId: 373
-            wingmate: true
-        }
-        {
-            id: 375
-            faction: "Rebel Alliance"
-            pilot: "Echo Base Evacuees"
-            ship: "GR-75 Medium Transport"
-            threat: 4
-            upgrades: [
-                "Bright Hope"
-                "Optimized Power Core"
-                "Adaptive Shields"
-                "Comms Team"
-                "Point-Defense Battery"
-                "Carlist Rieekan"
-                "Novice Technician"
-            ]
-        }
-        {
-            id: 376
-            faction: "Rebel Alliance"
-            pilot: "Alderaanian Guard"
-            ship: "CR90 Corellian Corvette"
-            threat: 9
-            upgrades: [
-                "Dodonna's Pride"
-                "Comms Team"
-                "Boosted Scanners"
-                "Sensor Experts"
-                "Turbolaser Battery"
-                "Ion Cannon Battery"
-                "Jan Dodonna"
-                "Toryn Farr"
-            ]
-        }
-        {
-            id: 377
-            faction: "Galactic Empire"
-            pilot: "Outer Rim Garrison"
-            ship: "Gozanti-class Cruiser"
-            threat: 5
-            upgrades: [
-                "Requiem"
-                "Optimized Power Core"
-                "Boosted Scanners"
-                "Sensor Experts"
-                "Comms Team"
-                "Dorsal Turret"
-                "Targeting Battery"
-                "Strategic Commander"
-            ]
-        }
-        {
-            id: 378
-            faction: "Galactic Empire"
-            pilot: "Outer Rim Patrol"
-            ship: "Raider-class Corvette"
-            threat: 9
-            upgrades: [
-                "Impetuous"
-                "Boosted Scanners"
-                "Bombardment Specialists"
-                "Ordnance Team"
-                "Concussion Missiles"
-                "Adv. Proton Torpedoes"
-                "Turbolaser Battery"
-                "Ordnance Tubes"
-                "Captain Needa"
-            ]
-        }
-        {
-            id: 379
-            faction: "Scum and Villainy"
-            pilot: "Syndicate Smugglers"
-            ship: "C-ROC Cruiser"
-            threat: 5
-            upgrades: [
-                "Merchant One"
-                "Quick-Release Locks"
-                "Tibanna Reserves"
-                "Adaptive Shields"
-                "IG-RM Droids"
-                "Comms Team"
-                "Dorsal Turret"
-                "Point-Defense Battery"
-                "Azmorigan"
-                "Novice Technician"
-            ]
-        }
-        {
-            id: 380
-            faction: "Resistance"
-            pilot: "Colossus Station Mechanic"
-            ship: "Fireball"
-            threat: 1
-            upgrades: [
-                "Snap Shot"
-            ]
-        }
-        {
-            id: 381
-            faction: "Resistance"
-            pilot: "Jarek Yeager"
-            ship: "Fireball"
-            threat: 2
-            upgrades: [
-                "Targeting Computer"
-                "Advanced SLAM"
-                "Mag-Pulse Warheads"
-                "Elusive"
-            ]
-        }
-        {
-            id: 382
-            faction: "Resistance"
-            pilot: "Kazuda Xiono"
-            ship: "Fireball"
-            threat: 2
-            upgrades: [
-                "Kaz's Fireball"
-                "Advanced SLAM"
-                "Coaxium Hyperfuel"
-                "R1-J5"
-                "Outmaneuver"
-            ]
-        }
-        {
-            id: 383
-            faction: "Resistance"
-            pilot: "R1-J5"
-            ship: "Fireball"
-            threat: 2
-            upgrades: [
-                "Targeting Computer"
-                "Afterburners"
-                "Mag-Pulse Warheads"
-                "Coaxium Hyperfuel"
-            ]
-        }
-        {
-            id: 384
-            faction: "Resistance"
-            pilot: "New Republic Volunteers"
-            ship: "GR-75 Medium Transport"
-            threat: 4
-            upgrades: [
-                "Tibanna Reserves"
-                "Boosted Scanners"
-                "Sensor Experts"
-                "Dorsal Turret"
-                "Ion Cannon Battery"
-                "Stalwart Captain"
-            ]
-        }
-        {
-            id: 385
-            faction: "First Order"
-            pilot: "Major Vonreg"
-            ship: "TIE/ba Interceptor"
-            threat: 3
-            upgrades: [
-                "Mag-Pulse Warheads"
-                "Deuterium Power Cells"
-                "Outmaneuver"
-            ]
-        }
-        {
-            id: 386
-            faction: "First Order"
-            pilot: '"Holo"'
-            ship: "TIE/ba Interceptor"
-            threat: 3
-            upgrades: [
-                "Hull Upgrade"
-                "Munitions Failsafe"
-                "Mag-Pulse Warheads"
-                "Proud Tradition"
-            ]
-        }
-        {
-            id: 387
-            faction: "First Order"
-            pilot: '"Ember"'
-            ship: "TIE/ba Interceptor"
-            threat: 3
-            upgrades: [
-                "Afterburners"
-                "Concussion Missiles"
-                "Predator"
-                "Elusive"
-            ]
-        }
-        {
-            id: 388
-            faction: "First Order"
-            pilot: "First Order Provocateur"
-            ship: "TIE/ba Interceptor"
-            threat: 2
-            upgrades: [
-                "Snap Shot"
-            ]
-        }
-        {
-            id: 389
-            faction: "First Order"
-            pilot: "First Order Sympathizers"
-            ship: "Gozanti-class Cruiser"
-            threat: 4
-            upgrades: [
-                "Adaptive Shields"
-                "Gunnery Specialists"
-                "Damage Control Team"
-                "Point-Defense Battery"
-                "Strategic Commander"
-            ]
-        }
-        {
-            id: 390
-            faction: "First Order"
-            pilot: "First Order Collaborators"
-            ship: "Raider-class Corvette"
-            threat: 8
-            upgrades: [
-                "Boosted Scanners"
-                "Comms Team"
-                "Bombardment Specialists"
-                "Point-Defense Battery"
-                "Ion Cannon Battery"
-                "Stalwart Captain"
-                "Novice Technician"
-            ]
-        }
-        {
-            id: 391
-            faction: "Galactic Republic"
-            pilot: "Shadow Squadron Veteran"
-            ship: "BTL-B Y-wing"
-            threat: 3
-            upgrades: [
-                "R5 Astromech"
-                "Proton Torpedoes"
-                "Ion Cannon Turret"
-                "Snap Shot"
-            ]
-        }
-        {
-            id: 392
-            faction: "Galactic Republic"
-            pilot: "Anakin Skywalker (Y-Wing)"
-            ship: "BTL-B Y-wing"
-            threat: 4
-            upgrades: [
-                "Proton Bombs"
-                "R2 Astromech"
-                "Ahsoka Tano"
-                "Proton Torpedoes"
-                "Ion Cannon Turret"
-                "Precognitive Reflexes"
-            ]
-        }
-        {
-            id: 393
-            faction: "Galactic Republic"
-            pilot: "R2-D2"
-            ship: "BTL-B Y-wing"
-            threat: 2
-            upgrades: [
-                "Proton Bombs"
-                "C-3PO"
-                "Ion Cannon Turret"
-            ]
-        }
-        {
-            id: 394
-            faction: "Galactic Republic"
-            pilot: '"Odd Ball" (Y-Wing)'
-            ship: "BTL-B Y-wing"
-            threat: 3
-            upgrades: [
-                "Hull Upgrade"
-                "R3 Astromech"
-                "Proton Torpedoes"
-                "Ion Cannon Turret"
-                "Predator"
-            ]
-        }
-        {
-            id: 395
-            faction: "Galactic Republic"
-            pilot: '"Matchstick"'
-            ship: "BTL-B Y-wing"
-            threat: 3
-            upgrades: [
-                "Shield Upgrade"
-                "Delayed Fuses"
-                "Proton Bombs"
-                "R2 Astromech"
-                "Ion Cannon Turret"
-                "Elusive"
-            ]
-        }
-        {
-            id: 396
-            faction: "Galactic Republic"
-            pilot: '"Broadside"'
-            ship: "BTL-B Y-wing"
-            threat: 2
-            upgrades: [
-                "Hull Upgrade"
-                "R5 Astromech"
-                "Ion Cannon Turret"
-                "Snap Shot"
-            ]
-        }
-        {
-            id: 397
-            faction: "Galactic Republic"
-            pilot: '"Goji"'
-            ship: "BTL-B Y-wing"
-            threat: 2
-            upgrades: [
-                "Afterburners"
-                "Electro-Proton Bomb"
-            ]
-        }
-        {
-            id: 398
-            faction: "Galactic Republic"
-            pilot: "Red Squadron Bomber"
-            ship: "BTL-B Y-wing"
-            threat: 2
-            upgrades: [
-                "Delayed Fuses"
-                "Proton Bombs"
-                "R2 Astromech"
-                "Ion Cannon Turret"
-            ]
-        }
-        {
-            id: 399
-            faction: "Galactic Republic"
-            pilot: "Republic Judiciary"
-            ship: "CR90 Corellian Corvette"
-            threat: 9
-            upgrades: [
-                "Strategic Commander"
-                "Targeting Battery"
-                "Turbolaser Battery"
-                "Damage Control Team"
-                "Agile Gunner"
-                "Boosted Scanners"
-                "Gunnery Specialists"
-                "Seasoned Navigator"
-            ]
-        }
-        {
-            id: 400
-            faction: "Separatist Alliance"
-            pilot: "Stalgasin Hive Guard"
-            ship: "Nantex-Class Starfighter"
-            threat: 2
-            upgrades: [
-                "Targeting Computer"
-                "Gravitic Deflection"
-                "Ensnare"
-            ]
-        }
-        {
-            id: 401
-            faction: "Separatist Alliance"
-            pilot: "Sun Fac"
-            ship: "Nantex-Class Starfighter"
-            threat: 3
-            upgrades: [
-                "Shield Upgrade"
-                "Afterburners"
-                "Predator"
-                "Ensnare"
-            ]
-        }
-        {
-            id: 402
-            faction: "Separatist Alliance"
-            pilot: "Berwer Kret"
-            ship: "Nantex-Class Starfighter"
-            threat: 2
-            upgrades: [
-                "Hull Upgrade"
-                "Snap Shot"
-                "Ensnare"
-            ]
-        }
-        {
-            id: 403
-            faction: "Separatist Alliance"
-            pilot: "Chertek"
-            ship: "Nantex-Class Starfighter"
-            threat: 2
-            upgrades: [
-                "Targeting Computer"
-                "Juke"
-                "Gravitic Deflection"
-            ]
-        }
-        {
-            id: 404
-            faction: "Separatist Alliance"
-            pilot: "Gorgol"
-            ship: "Nantex-Class Starfighter"
-            threat: 2
-            upgrades: [
-                "Stealth Device"
-                "Shield Upgrade"
-                "Gravitic Deflection"
-            ]
-        }
-        {
-            id: 405
-            faction: "Separatist Alliance"
-            pilot: "Separatist Privateers"
-            ship: "C-ROC Cruiser"
-            threat: 6
-            upgrades: [
-                "Stalwart Captain"
-                "Turbolaser Battery"
-                "Dorsal Turret"
-                "Heavy Laser Cannon"
-                "Cluster Missiles"
-                "Bombardment Specialists"
-                "Boosted Scanners"
-                "Tibanna Reserves"
-                "Corsair Refit"
-            ]
-        }
-        {
-            id: 406
-            faction: "Galactic Empire"
-            pilot: "Darth Vader"
-            ship: "TIE Advanced x1"
-            threat: [6,7,8,9]
-            wingmates: [2,3,4,5]
-            suffix: " and his wing"
-            upgrades: [
-                "Agent of the Empire"
-                "Fire-Control System"
-                "Supernatural Reflexes"
-                "Cluster Missiles"
-            ]
-            wingmateId: 407
-            wingleader: true
-        }
-        {
-            id: 407
-            faction: "Galactic Empire"
-            pilot: "Black Squadron Ace"
-            ship: "TIE/ln Fighter"
-            suffix: ", Darth Vaders wing"
-            threat: '*'
-            upgrades: [
-                "Crack Shot"
-            ]
-            linkedId: 406
-            wingmate: true
-        }
-        {
-            id: 408
-            faction: "Resistance"
-            pilot: "Poe Dameron"
-            ship: "T-70 X-wing"
-            threat: [9,11,13,15]
-            wingmates: [2,3,4,5]
-            suffix: " and his wing"
-            upgrades: [
-                "Veteran Wing Leader"
-                "Targeting Synchronizer"
-                "BB-8"
-                "Black One"
-            ]
-            wingmateId: 409
-            wingleader: true
-        }
-        {
-            id: 409
-            faction: "Resistance"
-            pilot: "Black Squadron Ace (T-70)"
-            ship: "T-70 X-wing"
-            suffix: ", Poe Damerons wing"
-            threat: '*'
-            upgrades: [
-                "Proton Torpedoes"
-            ]
-            linkedId: 408
-            wingmate: true
-        }
-        {
-            id: 410
-            faction: "First Order"
-            pilot: "Kylo Ren"
-            ship: "TIE/vn Silencer"
-            threat: [6,8]
-            wingmates: [2,3]
-            suffix: " and his wing"
-            upgrades: [
-                "First Order Elite"
-                "Heightened Perception"
-                "Dreadnought Hunter"
-                "Proton Torpedoes"
-            ]
-            wingmateId: 411
-            wingleader: true
-        }
-        {
-            id: 411
-            faction: "First Order"
-            pilot: "Omega Squadron Expert"
-            ship: "TIE/sf Fighter"
-            suffix: ", Kylo Rens wing"
-            threat: '*'
-            upgrades: [
-                "Ion Missiles"
-                "Special Forces Gunner"
-            ]
-            linkedId: 410
-            wingmate: true
-        }
-        {
-            id: 412
-            faction: "Separatist Alliance"
-            pilot: "General Grievous"
-            ship: "Belbullab-22 Starfighter"
-            threat: [5,6,7,8]
-            wingmates: [2,3,4,5]
-            suffix: " and his wing"
-            upgrades: [
-                "Veteran Wing Leader"
-                "Kraken"
-                "Predator"
-                "Soulless One"
-            ]
-            wingmateId: 413
-            wingleader: true
-        }
-        {
-            id: 413
-            faction: "Separatist Alliance"
-            pilot: "Separatist Drone"
-            ship: "Vulture-class Droid Fighter"
-            suffix: ", General Grievous wing"
-            threat: '*'
-            upgrades: [
-                "Energy-Shell Charges"
-            ]
-            linkedId: 412
-            wingmate: true
-        }
-        {
-            id: 414
-            faction: "Rebel Alliance"
-            pilot: "Luke Skywalker"
-            ship: "T-65 X-wing"
-            threat: [8,10,12,14]
-            wingmates: [2,3,4,5]
-            suffix: " and his wing"
-            upgrades: [
-                "Veteran Wing Leader"
-                "Proton Torpedoes"
-                "Instinctive Aim"
-                "R2-D2"
-                "Servomotor S-Foils"
-            ]
-            wingmateId: 415
-            wingleader: true
-        }
-        {
-            id: 415
-            faction: "Rebel Alliance"
-            pilot: "Red Squadron Veteran"
-            ship: "T-65 X-wing"
-            suffix: ", Luke Skywalkers wing"
-            threat: '*'
-            upgrades: [
-                "Proton Torpedoes"
-            ]
-            linkedId: 414
-            wingmate: true
-        }
-        {
-            id: 416
-            faction: "Scum and Villainy"
-            pilot: "Fenn Rau"
-            ship: "Fang Fighter"
-            threat: [8,10,12,14]
-            wingmates: [2,3,4,5]
-            suffix: " and his wing"
-            upgrades: [
-                "Veteran Wing Leader"
-                "Fearless"
-                "Daredevil"
-                "Afterburners"
-            ]
-            wingmateId: 417
-            wingleader: true
-        }
-        {
-            id: 417
-            faction: "Scum and Villainy"
-            pilot: "Skull Squadron Pilot"
-            ship: "Fang Fighter"
-            suffix: ", Fenn Raus wing"
-            threat: '*'
-            upgrades: [
-                "Fearless"
-            ]
-            linkedId: 416
-            wingmate: true
-        }
-        {
-            id: 418
-            faction: "Rebel Alliance"
-            pilot: "Gina Moonsong"
-            ship: "A/SF-01 B-wing"
-            threat: 3
-            upgrades: [
-                "Elusive"
-                "Afterburners"
-                "Passive Sensors"
-                "Stabilized S-Foils"
-                "Autoblasters"
-            ]
-        }
-        {
-            id: 419
-            faction: "Rebel Alliance"
-            pilot: "Leia Organa"
-            ship: "Modified YT-1300 Light Freighter"
-            threat: 4
-            upgrades: [
-                "Chewbacca"
-                "Millennium Falcon"
-                "Lando Calrissian"
-                "Engine Upgrade"
-                "R2-D2"
-            ]
-        }
-        {
-            id: 420
-            faction: "Rebel Alliance"
-            pilot: "Blue Squadron Pilot"
-            ship: "A/SF-01 B-wing"
-            threat: 2
-            upgrades: [
-                "Passive Sensors"
-                "Stabilized S-Foils"
-                "Plasma Torpedoes"
-            ]
-        }
-        {
-            id: 421
-            faction: "Rebel Alliance"
-            pilot: "Blade Squadron Veteran"
-            ship: "A/SF-01 B-wing"
-            threat: 3
-            upgrades: [
-                "Snap Shot"
-                "Stabilized S-Foils"
-                "Autoblasters"
-                "Proton Torpedoes"
-                "Angled Deflectors"
-            ]
-        }
-        {
-            id: 422
-            faction: "Rebel Alliance"
-            pilot: "Outer Rim Smuggler"
-            ship: "Modified YT-1300 Light Freighter"
-            threat: 3
-            upgrades: [
-                "Homing Missiles"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 423
-            faction: "Rebel Alliance"
-            pilot: "Alexsandr Kallus"
-            ship: "VCX-100 Light Freighter"
-            threat: 4
-            upgrades: [
-                "Passive Sensors"
-                "Ghost"
-                "Proton Torpedoes"
-                "Shield Upgrade"
-                '"Zeb" Orrelios'
-            ]
-        }
-        {
-            id: 424
-            faction: "Rebel Alliance"
-            pilot: "Lothal Rebel"
-            ship: "VCX-100 Light Freighter"
-            threat: 3
-            upgrades: [
-                "Passive Sensors"
-                "Plasma Torpedoes"
-            ]
-        }
-        {
-            id: 425
-            faction: "Rebel Alliance"
-            pilot: "Partisan Renegade"
-            ship: "UT-60D U-wing"
-            threat: 3
-            upgrades: [
-                "Magva Yarro"
-                "Deadman's Switch"
-                "Pivot Wing"
-                "Saw Gerrera"
-            ]
-        }
-        {
-            id: 426
-            faction: "Resistance"
-            pilot: "Blue Squadron Recruit"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Primed Thrusters"
-                "Composure"
-                "Snap Shot"
-            ]
-        }
-        {
-            id: 427
-            faction: "Resistance"
-            pilot: "Ronith Blario"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Mag-Pulse Warheads"
-                "Pattern Analyzer"
-                "Snap Shot"
-            ]
-        }
-        {
-            id: 428
-            faction: "Resistance"
-            pilot: "Zizi Tlo"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Advanced Optics"
-                "Snap Shot"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 429
-            faction: "Resistance"
-            pilot: "Cobalt Squadron Bomber"
-            ship: "MG-100 StarFortress"
-            threat: 3
-            upgrades: [
-                "Passive Sensors"
-                "Conner Nets"
-                "Hull Upgrade"
-                "Agile Gunner"
-            ]
-        }
-        {
-            id: 430
-            faction: "Resistance"
-            pilot: "Paige Tico"
-            ship: "MG-100 StarFortress"
-            threat: 3
-            upgrades: [
-                "Rose Tico"
-                "Proton Bombs"
-                "Skilled Bombardier"
-            ]
-        }
-        {
-            id: 431
-            faction: "Scum and Villainy"
-            pilot: "Bossk"
-            ship: "Z-95-AF4 Headhunter"
-            threat: 2
-            upgrades: [
-                "Predator"
-                "Snap Shot"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 432
-            faction: "Scum and Villainy"
-            pilot: "Binayre Pirate"
-            ship: "Z-95-AF4 Headhunter"
-            threat: 2
-            upgrades: [
-                "Concussion Missiles"
-                "Snap Shot"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 433
-            faction: "Scum and Villainy"
-            pilot: "Black Sun Soldier"
-            ship: "Z-95-AF4 Headhunter"
-            threat: 1
-            upgrades: [
-                "Composure"
-            ]
-        }
-        {
-            id: 434
-            faction: "Scum and Villainy"
-            pilot: "Contracted Scout"
-            ship: "JumpMaster 5000"
-            threat: 2
-            upgrades: [
-                "Plasma Torpedoes"
-            ]
-        }
-        {
-            id: 435
-            faction: "Scum and Villainy"
-            pilot: "Nom Lumb"
-            ship: "JumpMaster 5000"
-            threat: 3
-            upgrades: [
-                "Proton Torpedoes"
-                "Snap Shot"
-                "Afterburners"
-                "Dengar"
-                "Deadman's Switch"
-            ]
-        }
-        {
-            id: 436
-            faction: "Scum and Villainy"
-            pilot: "Tansarii Point Veteran"
-            ship: "M3-A Interceptor"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-                "Munitions Failsafe"
-                "Plasma Torpedoes"
-            ]
-        }
-        {
-            id: 437
-            faction: "Scum and Villainy"
-            pilot: "G4R-GOR V/M"
-            ship: "M3-A Interceptor"
-            threat: 2
-            upgrades: [
-                "Intimidation"
-                "Shield Upgrade"
-                "Deadman's Switch"
-                "Autoblasters"
-            ]
-        }
-        {
-            id: 438
-            faction: "Scum and Villainy"
-            pilot: "Cartel Spacer"
-            ship: "M3-A Interceptor"
-            threat: 2
-            upgrades: [
-                "Snap Shot"
-                "Shield Upgrade"
-                "Autoblasters"
-            ]
-        }
-        {
-            id: 439
-            faction: "Galactic Empire"
-            pilot: "Patrol Leader"
-            ship: "VT-49 Decimator"
-            threat: 3
-            upgrades: [
-                "Hull Upgrade"
-                "Tactical Scrambler"
-            ]
-        }
-        {
-            id: 440
-            faction: "Galactic Empire"
-            pilot: "Morna Kee"
-            ship: "VT-49 Decimator"
-            threat: 4
-            upgrades: [
-                "Shield Upgrade"
-                "Plasma Torpedoes"
-                "Proximity Mines"
-                'GNK "Gonk" Droid'
-            ]
-        }
-        {
-            id: 441
-            faction: "Galactic Empire"
-            pilot: "Black Squadron Scout"
-            ship: "TIE/sk Striker"
-            threat: 2
-            upgrades: [
-                "Snap Shot"
-                "Targeting Computer"
-            ]
-        }
-        {
-            id: 442
-            faction: "Galactic Empire"
-            pilot: '"Vagabond"'
-            ship: "TIE/sk Striker"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Afterburners"
-                "Skilled Bombardier"
-                "Proton Bombs"
-            ]
-        }
-        {
-            id: 443
-            faction: "Galactic Empire"
-            pilot: "Planetary Sentinel"
-            ship: "TIE/sk Striker"
-            threat: 2
-            upgrades: [
-                "Conner Nets"
-                "Trick Shot"
-            ]
-        }
-        {
-            id: 444
-            faction: "Galactic Empire"
-            pilot: "Inquisitor"
-            ship: "TIE Advanced v1"
-            threat: 2
-            upgrades: [
-                "Brilliant Evasion"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 445
-            faction: "Galactic Empire"
-            pilot: "Baron of the Empire"
-            ship: "TIE Advanced v1"
-            threat: 2
-            upgrades: [
-                "Snap Shot"
-                "Mag-Pulse Warheads"
-            ]
-        }
-        {
-            id: 446
-            faction: "Galactic Empire"
-            pilot: "Fifth Brother"
-            ship: "TIE Advanced v1"
-            threat: 2
-            upgrades: [
-                "Foresight"
-            ]
-        }
-        {
-            id: 447
-            faction: "First Order"
-            pilot: "Zeta Squadron Survivor"
-            ship: "TIE/sf Fighter"
-            threat: 2
-            upgrades: [
-                "Passive Sensors"
-                "Advanced Optics"
-                "Proud Tradition"
-            ]
-        }
-        {
-            id: 448
-            faction: "First Order"
-            pilot: "Lieutenant LeHuse"
-            ship: "TIE/sf Fighter"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Mag-Pulse Warheads"
-                "Angled Deflectors"
-            ]
-        }
-        {
-            id: 449
-            faction: "First Order"
-            pilot: "Captain Phasma"
-            ship: "TIE/sf Fighter"
-            threat: 3
-            upgrades: [
-                "Advanced Optics"
-                "Ion Missiles"
-                "Special Forces Gunner"
-                "Outmaneuver"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 450
-            faction: "First Order"
-            pilot: "First Order Test Pilot"
-            ship: "TIE/vn Silencer"
-            threat: 3
-            upgrades: [
-                "Proud Tradition"
-                "Plasma Torpedoes"
-                "Passive Sensors"
-            ]
-        }
-        {
-            id: 451
-            faction: "First Order"
-            pilot: "Sienar-Jaemus Engineer"
-            ship: "TIE/vn Silencer"
-            threat: 3
-            upgrades: [
-                "Afterburners"
-                "Mag-Pulse Warheads"
-                "Passive Sensors"
-                "Snap Shot"
-            ]
-        }
-        {
-            id: 452
-            faction: "First Order"
-            pilot: '"Rush"'
-            ship: "TIE/vn Silencer"
-            threat: 3
-            upgrades: [
-                "Primed Thrusters"
-                "Angled Deflectors"
-                "Proton Torpedoes"
-            ]
-        }
-        {
-            id: 453
-            faction: "Galactic Empire"
-            pilot: "Seventh Sister"
-            ship: "TIE Advanced v1"
-            threat: 3
-            upgrades: [
-                "Predictive Shot"
-                "Proton Rockets"
-                "Afterburners"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 454
-            faction: "Galactic Empire"
-            pilot: "Inquisitor"
-            ship: "TIE Advanced v1"
-            threat: 2
-            upgrades: [
-                "Heightened Perception"
-                "Proton Rockets"
-            ]
-        }
-        {
-            id: 455
-            faction: "Galactic Empire"
-            pilot: "Grand Inquisitor"
-            ship: "TIE Advanced v1"
-            threat: 3
-            upgrades: [
-                "Hate"
-                "Proton Rockets"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 456
-            faction: "Galactic Empire"
-            pilot: "Baron of the Empire"
-            ship: "TIE Advanced v1"
-            threat: 3
-            upgrades: [
-                "Elusive"
-                "Outmaneuver"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 457
-            faction: "First Order"
-            pilot: "First Order Courier"
-            ship: "Xi-class Light Shuttle"
-            threat: 2
-            upgrades: [
-                "Tactical Officer"
-                "Automated Target Priority"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 458
-            faction: "First Order"
-            pilot: "Gideon Hask (Xi Shuttle)"
-            ship: "Xi-class Light Shuttle"
-            threat: 2
-            upgrades: [
-                "Deadeye Shot"
-                "Sensor Buoy Suite"
-                "Commander Pyre"
-                "Rigged Cargo Chute"
-            ]
-        }
-        {
-            id: 459
-            faction: "First Order"
-            pilot: "Commander Malarus (Xi Shuttle)"
-            ship: "Xi-class Light Shuttle"
-            threat: 2
-            upgrades: [
-                "Snap Shot"
-                "Sensor Buoy Suite"
-                "Agent Terex"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 460
-            faction: "First Order"
-            pilot: "Agent Terex"
-            ship: "Xi-class Light Shuttle"
-            threat: 2
-            upgrades: [
-                "Inertial Dampeners"
-                "Deadman's Switch"
-                "Commander Malarus"
-                "Contraband Cybernetics"
-            ]
-        }
-        {
-            id: 461
-            faction: "Galactic Empire"
-            pilot: "Carida Academy Cadet"
-            ship: "TIE/rb Heavy"
-            threat: 2
-            upgrades: [
-                "Snap Shot"
-                "Maneuver-Assist MGK-300"
-                "Synced Laser Cannons"
-            ]
-        }
-        {
-            id: 462
-            faction: "Galactic Empire"
-            pilot: "Lyttan Dree"
-            ship: "TIE/rb Heavy"
-            threat: 2
-            upgrades: [
-                "Deadeye Shot"
-                "Ion Cannon"
-                "Heavy Laser Cannon"
-                "Maneuver-Assist MGK-300"
-            ]
-        }
-        {
-            id: 463
-            faction: "Galactic Empire"
-            pilot: "Onyx Squadron Sentry"
-            ship: "TIE/rb Heavy"
-            threat: 2
-            upgrades: [
-                "Ion Limiter Override"
-                "Shield Upgrade"
-                "Heavy Laser Cannon"
-                "Maneuver-Assist MGK-300"
-            ]
-        }
-        {
-            id: 464
-            faction: "Galactic Empire"
-            pilot: '"Rampage"'
-            ship: "TIE/rb Heavy"
-            threat: 3
-            upgrades: [
-                "Predator"
-                "Afterburners"
-                "Maneuver-Assist MGK-300"
-                "Synced Laser Cannons"
-                "Ablative Plating"
-            ]
-        }
-        {
-            id: 465
-            faction: "Galactic Republic"
-            pilot: '"Odd Ball"'
-            ship: "Nimbus-class V-wing"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Ion Limiter Override"
-                "Q7 Astromech"
-                "Precision Ion Engines"
-            ]
-        }
-        {
-            id: 466
-            faction: "Galactic Republic"
-            pilot: "Wilhuff Tarkin"
-            ship: "Nimbus-class V-wing"
-            threat: 2
-            upgrades: [
-                "R3 Astromech"
-                'Alpha-3E "Esk"'
-            ]
-        }
-        {
-            id: 467
-            faction: "Galactic Republic"
-            pilot: "Loyalist Volunteer"
-            ship: "Nimbus-class V-wing"
-            threat: 1
-        }
-        {
-            id: 468
-            faction: "Galactic Republic"
-            pilot: '"Contrail"'
-            ship: "Nimbus-class V-wing"
-            threat: 4
-            upgrades: [
-                "Ion Limiter Override"
-                "R7-A7"
-                "Precision Ion Engines"
-            ]
-        }
-        {
-            id: 469
-            faction: "Galactic Republic"
-            pilot: '"Klick"'
-            ship: "Nimbus-class V-wing"
-            threat: 4
-            upgrades: [
-                "R3 Astromech" 
-                "Thermal Detonators"
-                'Alpha-3B "Besh"'
-            ]
-        }
-        {
-            id: 470
-            faction: "Galactic Republic"
-            pilot: "Shadow Squadron Escort"
-            ship: "Nimbus-class V-wing"
-            threat: 2
-            upgrades: [
-                "Outmaneuver" 
-                "R2 Astromech"
-                'Alpha-3E "Esk"'
-            ]
-        } 
-        {
-            id: 471
-            faction: "Galactic Republic"
-            pilot: "Anakin Skywalker (Eta-2)"
-            ship: "Eta-2 Actis"
-            threat: 4
-            upgrades: [
-                "Marg Sabl Closure"
-                "Extreme Maneuvers"
-                "R2-D2 (Republic)"
-                "Afterburners"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 472
-            faction: "Galactic Republic"
-            pilot: "Yoda"
-            ship: "Eta-2 Actis"
-            threat: 3
-            upgrades: [
-                "Heightened Perception"
-                "Patience"
-                "Sense"
-                "R2-D2 (Republic)"
-            ]
-        }
-        {
-            id: 473
-            faction: "Galactic Republic"
-            pilot: "Obi-Wan Kenobi (Eta-2)"
-            ship: "Eta-2 Actis"
-            threat: 2
-            upgrades: [
-                "Marg Sabl Closure"
-                "Patience"
-                "R5 Astromech"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 474
-            faction: "Galactic Republic"
-            pilot: "Aayla Secura"
-            ship: "Eta-2 Actis"
-            threat: 3
-            upgrades: [
-                "Predator"
-                "Supernatural Reflexes"
-                "R3 Astromech"
-            ]
-        }
-        {
-            id: 475
-            faction: "Galactic Republic"
-            pilot: "Shaak Ti"
-            ship: "Eta-2 Actis"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Patience"
-            ]
-        }
-        {
-            id: 476
-            faction: "Galactic Republic"
-            pilot: "Jedi General"
-            ship: "Eta-2 Actis"
-            threat: 2
-            upgrades: [
-                "Marg Sabl Closure"
-                "Extreme Maneuvers"
-            ]
-        }
-        {
-            id: 477
-            faction: "Galactic Republic"
-            pilot: "Aayla Secura"
-            ship: "Eta-2 Actis"
-            threat: [5, 7, 8, 9]
-            wingmates: [2, 3, 4, 5]
-            suffix: " and her wing"
-            upgrades: [
-                "Jedi Commander"
-                "Supernatural Reflexes"
-                "Q7 Astromech"
-            ]
-            wingmateId: 478
-            wingleader: true
-        }
-        {
-            id: 478
-            faction: "Galactic Republic"
-            pilot: "Shadow Squadron Escort"
-            ship: "Nimbus-class V-wing"
-            suffix: ", Aayla Secura's wing"
-            threat: '*'
-            upgrades: [
-                "Q7 Astromech"
-                'Alpha-3B "Besh"'
-            ]
-            linkedId: 477
-            wingmate: true
-        }
-        {
-            id: 479
-            faction: "Rebel Alliance"
-            pilot: "Han Solo"
-            ship: "Modified YT-1300 Light Freighter"
-            threat: 5
-            upgrades: [
-                "C-3PO"
-                "Leia Organa"
-                "Chewbacca"
-                "Rigged Cargo Chute"
-                "Millennium Falcon"
-            ]
-        }
-        {
-            id: 480 
-            faction: "Rebel Alliance"
-            pilot: "Blade Squadron Veteran"
-            ship: "A/SF-01 B-wing"
-            threat: 2
-            upgrades: [
-                "Predator"
-                "Jamming Beam"
-                "Ion Cannon"
-            ]
-        }
-        {
-            id: 481 
-            faction: "Rebel Alliance"
-            pilot: "Blue Squadron Pilot"
-            ship: "A/SF-01 B-wing"
-            threat: 2
-            upgrades: [
-                "Fire-Control System"
-                "Adv. Proton Torpedoes"
-            ]
-        }
-        {
-            id: 482 
-            faction: "Rebel Alliance"
-            pilot: "Blue Squadron Pilot"
-            ship: "A/SF-01 B-wing"
-            threat: 2
-            upgrades: [
-                "Passive Sensors"
-                "Stabilized S-Foils"
-                "Autoblasters"
-            ]
-        }
-        {
-            id: 483 
-            faction: "Rebel Alliance"
-            pilot: "Netrem Pollard"
-            ship: "A/SF-01 B-wing"
-            threat: 2
-            upgrades: [
-                "Debris Gambit"
-                "Stabilized S-Foils"
-                "Autoblasters"
-            ]
-        }
-        {
-            id: 484
-            faction: "Rebel Alliance"
-            pilot: "Ten Numb"
-            ship: "A/SF-01 B-wing"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Electronic Baffle"
-            ]
-        }
-        {
-            id: 485
-            faction: "Rebel Alliance"
-            pilot: "Blade Squadron Veteran"
-            ship: "A/SF-01 B-wing"
-            threat: 3
-            upgrades: [
-                "Saturation Salvo"
-                "Plasma Torpedoes"
-                "Stabilized S-Foils"
-                "Passive Sensors"
-                "Shield Upgrade"
-                "Synced Laser Cannons"
-            ]
-        }
-        {
-            id: 486
-            faction: "Rebel Alliance"
-            pilot: "Braylen Stramm"
-            ship: "A/SF-01 B-wing"
-            threat: 3
-            upgrades: [
-                "Squad Leader"
-                "Jamming Beam"
-                "Heavy Laser Cannon"
-                "Electronic Baffle"
-            ]
-        }
-        {
-            id: 487
-            faction: "Rebel Alliance"
-            pilot: "Hera Syndulla (B-Wing)"
-            ship: "A/SF-01 B-wing"
-            threat: 3
-            upgrades: [
-                "B6 Blade Wing Prototype (Epic)"
-                "Passive Sensors"
-                "Deadeye Shot"
-                "Sabine Wren (Gunner)"
-            ]
-        }
-        {
-            id: 488
-            faction: "Rebel Alliance"
-            pilot: "Phoenix Squadron Pilot"
-            ship: "RZ-1 A-wing"
-            threat: 1
-            upgrades: [
-                "Hopeful"
-            ]
-        }
-        {
-            id: 489
-            faction: "Rebel Alliance"
-            pilot: "Phoenix Squadron Pilot"
-            ship: "RZ-1 A-wing"
-            threat: 1
-            upgrades: [
-                "Elusive"
-            ]
-        }
-        {
-            id: 490
-            faction: "Rebel Alliance"
-            pilot: "Phoenix Squadron Pilot"
-            ship: "RZ-1 A-wing"
-            threat: 1
-            upgrades: [
-                "Marg Sabl Closure"
-            ]
-        }
-        {
-            id: 491
-            faction: "Rebel Alliance"
-            pilot: "Ahsoka Tano (A-Wing)"
-            ship: "RZ-1 A-wing"
-            threat: 2
-            upgrades: [
-                "Marg Sabl Closure"
-                "Patience"
-                "Sense"
-            ]
-        }
-        {
-            id: 492
-            faction: "Rebel Alliance"
-            pilot: "Arvel Crynyd"
-            ship: "RZ-1 A-wing"
-            threat: 2
-            upgrades: [
-                "Intimidation"
-                "Concussion Missiles"
-                "Juke"
-            ]
-        }
-        {
-            id: 493
-            faction: "Rebel Alliance"
-            pilot: "Derek Klivian"
-            ship: "RZ-1 A-wing"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Mag-Pulse Warheads"
-            ]
-        }
-        {
-            id: 494
-            faction: "Rebel Alliance"
-            pilot: "Green Squadron Pilot"
-            ship: "RZ-1 A-wing"
-            threat: 2
-            upgrades: [
-                "Juke"
-                "Outmaneuver"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 495
-            faction: "Rebel Alliance"
-            pilot: "Green Squadron Pilot"
-            ship: "RZ-1 A-wing"
-            threat: 2
-            upgrades: [
-                "Starbird Slash"
-                "Vectored Cannons (RZ-1)"
-                "Mag-Pulse Warheads"
-            ]
-        }
-        {
-            id: 496
-            faction: "Rebel Alliance"
-            pilot: "Hera Syndulla (A-Wing)"
-            ship: "RZ-1 A-wing"
-            threat: 2
-            upgrades: [
-                "Hopeful"
-            ]
-        }
-        {
-            id: 497
-            faction: "Rebel Alliance"
-            pilot: "Jake Farrell"
-            ship: "RZ-1 A-wing"
-            threat: 2
-            upgrades: [
-                "Cluster Missiles"
-                "Outmaneuver"
-            ]
-        }
-        {
-            id: 498
-            faction: "Rebel Alliance"
-            pilot: "Jake Farrell"
-            ship: "RZ-1 A-wing"
-            threat: 2
-            upgrades: [
-                "Daredevil"
-                "Proton Rockets"
-                "Juke"
-            ]
-        }
-        {
-            id: 499
-            faction: "Rebel Alliance"
-            pilot: "Phoenix Squadron Pilot"
-            ship: "RZ-1 A-wing"
-            threat: 2
-            upgrades: [
-                "Daredevil"
-                "Proton Rockets"
-                "Afterburners"
-            ]
-        }
-        {
-            id: 500
-            faction: "Rebel Alliance"
-            pilot: "Sabine Wren (A-Wing)"
-            ship: "RZ-1 A-wing"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-            ]
-        }
-        {
-            id: 501
-            faction: "Rebel Alliance"
-            pilot: "Shara Bey (A-Wing)"
-            ship: "RZ-1 A-wing"
-            threat: 2
-            upgrades: [
-                "Marg Sabl Closure"
-                "Vectored Cannons (RZ-1)"
-                "Starbird Slash"
-            ]
-        }
-        {
-            id: 502
-            faction: "Rebel Alliance"
-            pilot: "Wedge Antilles (A-Wing)"
-            ship: "RZ-1 A-wing"
-            threat: 2
-            upgrades: [
-                "Deadeye Shot"
-                "XX-23 S-Thread Tracers"
-            ]
-        }
-        {
-            id: 503
-            faction: "Rebel Alliance"
-            pilot: "Hera Syndulla (VCX-100)"
-            ship: "VCX-100 Light Freighter"
-            threat: [6, 7, 8, 9]
-            wingmates: [1, 2, 3, 4]
-            suffix: " + Phantom and her wing"
-            upgrades: [
-                "Phoenix Squadron"
-                "Sabine Wren (Gunner)"
-                "Dorsal Turret"
-                "Ghost"
-            ]
-            wingmateId: 504
-            wingleader: true
-            linkedId: 505
-        }
-        {
-            id: 504
-            faction: "Rebel Alliance"
-            pilot: "Phoenix Squadron Pilot"
-            ship: "RZ-1 A-wing"
-            suffix: ", Heras wing"
-            threat: '*'
-            upgrades: [
-                "Hopeful"
-            ]
-            linkedId: 503
-            wingmate: true
-        }
-        {
-            id: 505
-            faction: "Rebel Alliance"
-            pilot: '"Zeb" Orrelios (Sheathipede)'
-            ship: "Sheathipede-Class Shuttle"
-            suffix: ", Heras wing"
-            threat: '*'
-            upgrades: [
-                '"Chopper" (Crew)'
-                "Phantom"
-            ]
-            linkedId: 503
-        }
-        {
-            id: 506
-            faction: "Galactic Empire"
-            pilot: "Captain Dobbs"
-            ship: "TIE/d Defender"
-            threat: 3 
-            upgrades: [
-                "Disciplined"
-                "TIE Defender Elite"
-                "Tractor Beam"
-            ]
-        }
-        {
-            id: 507
-            faction: "Galactic Empire"
-            pilot: "Delta Squadron Pilot"
-            ship: "TIE/d Defender"
-            threat: 3 
-            upgrades: [
-                "Ion Cannon"
-            ]
-        }
-        {
-            id: 508
-            faction: "Galactic Empire"
-            pilot: "Delta Squadron Pilot"
-            ship: "TIE/d Defender"
-            threat: 3 
-            upgrades: [
-                "Autoblasters"
-                "TIE Defender Elite"
-            ]
-        }
-        {
-            id: 509
-            faction: "Galactic Empire"
-            pilot: "Onyx Squadron Ace"
-            ship: "TIE/d Defender"
-            threat: 3 
-            upgrades: [
-                "Interloper Turn"
-                "TIE Defender Elite"
-                "Tractor Beam"
-            ]
-        }
-        {
-            id: 510
-            faction: "Galactic Empire"
-            pilot: "Colonel Vessery"
-            ship: "TIE/d Defender"
-            threat: 4
-            upgrades: [
-                "Outmaneuver"
-                "TIE Defender Elite"
-                "Tractor Beam"
-            ]
-        }
-        {
-            id: 511
-            faction: "Galactic Empire"
-            pilot: "Countess Ryad"
-            ship: "TIE/d Defender"
-            threat: 4
-            upgrades: [
-                "Predator"
-                "Advanced Sensors"
-                "Tractor Beam"
-                "Ion Missiles"
-            ]
-        }
-        {
-            id: 512
-            faction: "Galactic Empire"
-            pilot: "Onyx Squadron Ace"
-            ship: "TIE/d Defender"
-            threat: 4
-            upgrades: [
-                "Outmaneuver"
-                "Advanced Sensors"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 513
-            faction: "Galactic Empire"
-            pilot: "Rexler Brath"
-            ship: "TIE/d Defender"
-            threat: 4
-            upgrades: [
-                "Elusive"
-                "Advanced Sensors"
-                "Ion Missiles"
-            ]
-        }
-        {
-            id: 514
-            faction: "Galactic Empire"
-            pilot: "Vult Skerris"
-            ship: "TIE/d Defender"
-            threat: 4
-            upgrades: [
-                "Daredevil"
-                "Mag-Pulse Warheads"
-                "Predator"
-                "TIE Defender Elite"
-            ]
-        }
-        {
-            id: 515
-            faction: "Galactic Empire"
-            pilot: "Darth Vader (TIE Defender)"
-            ship: "TIE/d Defender"
-            threat: 5
-            upgrades: [
-                "Sense"
-                "Mag-Pulse Warheads"
-                "TIE Defender Elite"
-            ]
-        }
-        {
-            id: 516
-            faction: "Galactic Empire"
-            pilot: "Alpha Squadron Pilot"
-            ship: "TIE/in Interceptor"
-            threat: 2
-            upgrades: [
-                "Hull Upgrade"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 517
-            faction: "Galactic Empire"
-            pilot: "Alpha Squadron Pilot"
-            ship: "TIE/in Interceptor"
-            threat: 2
-            upgrades: [
-                "Disciplined"
-                "Sensitive Controls"
-                "Static Discharge Vanes"
-            ]
-        }
-        {
-            id: 518
-            faction: "Galactic Empire"
-            pilot: "Alpha Squadron Pilot"
-            ship: "TIE/in Interceptor"
-            threat: 2
-            upgrades: [
-                "Shield Upgrade"
-                "Sensitive Controls"
-                "Targeting Computer"
-            ]
-        }
-        {
-            id: 519
-            faction: "Galactic Empire"
-            pilot: "Ciena Ree"
-            ship: "TIE/in Interceptor"
-            threat: 2
-            upgrades: [
-                "Disciplined"
-                "Sensitive Controls"
-            ]
-        }
-        {
-            id: 520
-            faction: "Galactic Empire"
-            pilot: "Commandant Goran"
-            ship: "TIE/in Interceptor"
-            threat: 2
-            upgrades: [
-                "Disciplined"
-                "Sensitive Controls"
-                "Marg Sabl Closure"
-            ]
-        }
-        {
-            id: 521
-            faction: "Galactic Empire"
-            pilot: "Lieutenant Lorrir"
-            ship: "TIE/in Interceptor"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-                "Sensitive Controls"
-            ]
-        }
-        {
-            id: 522
-            faction: "Galactic Empire"
-            pilot: "Nash Windrider"
-            ship: "TIE/in Interceptor"
-            threat: 2
-            upgrades: [
-                "Daredevil"
-                "Sensitive Controls"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 523
-            faction: "Galactic Empire"
-            pilot: "Saber Squadron Ace"
-            ship: "TIE/in Interceptor"
-            threat: 2
-            upgrades: [
-                "Predator"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 524
-            faction: "Galactic Empire"
-            pilot: "Saber Squadron Ace"
-            ship: "TIE/in Interceptor"
-            threat: 2
-            upgrades: [
-                "Daredevil"
-                "Sensitive Controls"
-                "Targeting Computer"
-            ]
-        }
-        {
-            id: 525
-            faction: "Galactic Empire"
-            pilot: "Turr Phennir"
-            ship: "TIE/in Interceptor"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-            ]
-        }
-        {
-            id: 526
-            faction: "Galactic Empire"
-            pilot: "Gideon Hask (TIE Interceptor)"
-            ship: "TIE/in Interceptor"
-            threat: 3
-            upgrades: [
-                "Disciplined"
-                "Sensitive Controls"
-                "Targeting Computer"
-                "Elusive"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 527
-            faction: "Galactic Empire"
-            pilot: "Soontir Fel"
-            ship: "TIE/in Interceptor"
-            threat: 3
-            upgrades: [
-                "Daredevil"
-                "Afterburners"
-                "Predator"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 528
-            faction: "Galactic Empire"
-            pilot: "Vult Skerris (TIE Interceptor)"
-            ship: "TIE/in Interceptor"
-            threat: 3
-            upgrades: [
-                "Daredevil"
-                "Elusive"
-                "Predator"
-                "Sensitive Controls"
-            ]
-        }
-        {
-            id: 529
-            faction: "Galactic Empire"
-            pilot: "Commandant Goran"
-            ship: "TIE/in Interceptor"
-            threat: [4,5,6,7]
-            wingmates: [2,3,4,5]
-            suffix: " and his wing"
-            upgrades: [
-                "Skystrike Academy Class"
-                "Disciplined"
-                "Marg Sabl Closure"
-                "Sensitive Controls"
-            ]
-            wingmateId: 530
-            wingleader: true
-        }
-        {
-            id: 530
-            faction: "Galactic Republic"
-            pilot: "Academy Pilot"
-            ship: "TIE/ln Fighter"
-            suffix: ", Commandant Gorans wing"
-            threat: '*'
-            upgrades: [
-                "Disciplined"
-            ]
-            linkedId: 529
-            wingmate: true
-        }
-        {
-            id: 531
-            faction: "Scum and Villainy"
-            pilot: "Gamut Key"
-            ship: "HWK-290 Light Freighter"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Engine Upgrade"
-                "False Transponder Codes"
-            ]
-        }
-        {
-            id: 532
-            faction: "Scum and Villainy"
-            pilot: "Kanan Jarrus (HWK-290)"
-            ship: "HWK-290 Light Freighter"
-            threat: 2
-            upgrades: [
-                "Patience"
-                "Thermal Detonators"
-            ]
-        }
-        {
-            id: 533
-            faction: "Scum and Villainy"
-            pilot: "Spice Runner"
-            ship: "HWK-290 Light Freighter"
-            threat: 2
-            upgrades: [
-                "Hondo Ohnaka"
-                "Concussion Bombs"
-                "Engine Upgrade"
-                "False Transponder Codes"
-            ]
-        }
-        {
-            id: 534
-            faction: "Scum and Villainy"
-            pilot: "Tápusk"
-            ship: "HWK-290 Light Freighter"
-            threat: 2
-            upgrades: [
-                "Cutthroat"
-                "Gamut Key"
-            ]
-        }
-        {
-            id: 535
-            faction: "Scum and Villainy"
-            pilot: "Amaxine Warrior"
-            ship: "BTL-A4 Y-wing"
-            threat: 2
-            upgrades: [
-                "Cutthroat"
-                "Thermal Detonators"
-                "R5 Astromech"
-            ]
-        }
-        {
-            id: 536
-            faction: "Scum and Villainy"
-            pilot: "Arliz Hadrassian"
-            ship: "BTL-A4 Y-wing"
-            threat: 2
-            upgrades: [
-                "Predator"
-                "R5-TK"
-                "Suppressive Gunner"
-                "Thermal Detonators"
-            ]
-        }
-        {
-            id: 537
-            faction: "Scum and Villainy"
-            pilot: "Jinata Security Officer"
-            ship: "BTL-A4 Y-wing"
-            threat: 2
-            upgrades: [
-                "Automated Target Priority"
-                "Weapons Systems Officer"
-                "Proton Torpedoes"
-                "R3 Astromech"
-            ]
-        }
-        {
-            id: 538
-            faction: "Scum and Villainy"
-            pilot: "Padric"
-            ship: "BTL-A4 Y-wing"
-            threat: 2
-            upgrades: [
-                "Dorsal Turret"
-                "Thermal Detonators"
-                '"Genius"'
-            ]
-        }
-        {
-            id: 539
-            faction: "Scum and Villainy"
-            pilot: "Leema Kai"
-            ship: "BTL-A4 Y-wing"
-            threat: 3
-            upgrades: [
-                "Marg Sabl Closure"
-                "Plasma Torpedoes"
-                "Saturation Salvo"
-                "Weapons Systems Officer"
-                "Targeting Synchronizer"
-                "R4-B11"
-                "Ion Cannon Turret"
-                "Concussion Bombs"
-            ]
-        }
-        {
-            id: 540 
-            faction: "Resistance"
-            pilot: "Blue Squadron Rookie"
-            ship: "T-70 X-wing"
-            threat: 2
-            upgrades: [
-                "Automated Target Priority"
-                "R2 Astromech"
-                "Integrated S-Foils"
-            ]
-        }
-        {
-            id: 541 
-            faction: "Resistance"
-            pilot: "Nimi Chireen"
-            ship: "T-70 X-wing"
-            threat: 2
-            upgrades: [
-                "Automated Target Priority"
-                "Ion Cannon"
-                "Integrated S-Foils"
-            ]
-        }
-        {
-            id: 542 
-            faction: "Resistance"
-            pilot: "Red Squadron Expert"
-            ship: "T-70 X-wing"
-            threat: 2
-            upgrades: [
-                "Predator"
-                "Underslung Blaster Cannon"
-                "Integrated S-Foils"
-            ]
-        }
-        {
-            id: 543 
-            faction: "Resistance"
-            pilot: "Black Squadron Ace (T-70)"
-            ship: "T-70 X-wing"
-            threat: 3
-            upgrades: [
-                "Deadeye Shot"
-                "R3 Astromech"
-                "Proton Torpedoes"
-                "Afterburners"
-                "Primed Thrusters"
-                "Integrated S-Foils"
-            ]
-        }
-        {
-            id: 544 
-            faction: "Resistance"
-            pilot: "C'ai Threnalli"
-            ship: "T-70 X-wing"
-            threat: 3
-            upgrades: [
-                "Backwards Tailslide"
-                "R4 Astromech"
-                "Proton Torpedoes"
-                "Primed Thrusters"
-                "Integrated S-Foils"
-            ]
-        }
-        {
-            id: 545 
-            faction: "Resistance"
-            pilot: "Poe Dameron (HoH)"
-            ship: "T-70 X-wing"
-            threat: 3
-            upgrades: [
-                "Backwards Tailslide"
-                "R2-D2 (Resistance)"
-                "Black One"
-                "Overdrive Thruster"
-                "Integrated S-Foils"
-                "Daredevil"
-            ]
-        }
-        {
-            id: 546 
-            faction: "Resistance"
-            pilot: "Temmin Wexley (HoH)"
-            ship: "T-70 X-wing"
-            threat: 3
-            upgrades: [
-                "Snap Shot"
-                "R6-D8"
-                "Underslung Blaster Cannon"
-                "Integrated S-Foils"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 547 
-            faction: "Resistance"
-            pilot: "Blue Squadron Recruit"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Snap Shot"
-                "Concussion Missiles"
-                "Automated Target Priority"
-            ]
-        }
-        {
-            id: 548 
-            faction: "Resistance"
-            pilot: "Green Squadron Expert"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Snap Shot"
-                "Afterburners"
-                "Primed Thrusters"
-            ]
-        }
-        {
-            id: 549 
-            faction: "Resistance"
-            pilot: "Merl Cobben"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Deadeye Shot"
-                "Predator"
-                "Automated Target Priority"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 550 
-            faction: "Resistance"
-            pilot: "Seftin Vanik"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Daredevil"
-                "Snap Shot"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 551 
-            faction: "Resistance"
-            pilot: "Suralinda Javos"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Starbird Slash"
-                "Snap Shot"
-                "Shield Upgrade"
-                "Ion Missiles"
-            ]
-        }
-        {
-            id: 552 
-            faction: "Resistance"
-            pilot: "Wrobie Tyce"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Starbird Slash"
-                "Elusive"
-                "Concussion Missiles"
-            ]
-        }
-        {
-            id: 553 
-            faction: "Resistance"
-            pilot: "Wrobie Tyce"
-            ship: "RZ-2 A-wing"
-            threat: 2
-            upgrades: [
-                "Starbird Slash"
-                "Elusive"
-                "Concussion Missiles"
-            ]
-        }
-        {
-            id: 554 
-            faction: "Separatist Alliance" 
-            pilot: "Baktoid Drone"
-            ship: "HMP Droid Gunship"
-            threat: 2
-            upgrades: [
-                "Delayed Fuses"
-                "Concussion Bombs"
-                "Ion Missiles"
-                "Repulsorlift Stabilizers"
-            ]
-        }
-        {
-            id: 555 
-            faction: "Separatist Alliance" 
-            pilot: "DGS-047"
-            ship: "HMP Droid Gunship"
-            threat: 2
-            upgrades: [
-                "Delayed Fuses"
-                "Concussion Bombs"
-                "Ion Missiles"
-                "Repulsorlift Stabilizers"
-            ]
-        }
-        {
-            id: 556 
-            faction: "Separatist Alliance" 
-            pilot: "Geonosian Prototype"
-            ship: "HMP Droid Gunship"
-            threat: 2
-            upgrades: [
-                "Synced Laser Cannons"
-                "Ion Missiles"
-                "Repulsorlift Stabilizers"
-            ]
-        }
-        {
-            id: 557 
-            faction: "Separatist Alliance" 
-            pilot: "Onderon Oppressor"
-            ship: "HMP Droid Gunship"
-            threat: 2
-            upgrades: [
-                "Multi-Missile Pods"
-                "Repulsorlift Stabilizers"
-            ]
-        }
-        {
-            id: 558 
-            faction: "Separatist Alliance" 
-            pilot: "Separatist Predator"
-            ship: "HMP Droid Gunship"
-            threat: 2
-            upgrades: [
-                "Multi-Missile Pods"
-                "Concussion Bombs"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 559 
-            faction: "Separatist Alliance" 
-            pilot: "DGS-286"
-            ship: "HMP Droid Gunship"
-            threat: 3
-            upgrades: [
-                "Multi-Missile Pods"
-                "Concussion Bombs"
-                "Shield Upgrade"
-                "Afterburners"
-                "Kalani"
-                "Repulsorlift Stabilizers"
-            ]
-        }
-        {
-            id: 560 
-            faction: "Galactic Republic" 
-            pilot: "212th Battalion Pilot"
-            ship: "LAAT/i Gunship"
-            threat: 3
-            upgrades: [
-                "Multi-Missile Pods"
-                "Shield Upgrade"
-                "Suppressive Gunner"
-                "Ghost Company"
-            ]
-        }
-        {
-            id: 561 
-            faction: "Galactic Republic" 
-            pilot: '"Hawk"'
-            ship: "LAAT/i Gunship"
-            threat: 3
-            upgrades: [
-                "Deadeye Shot"
-                "Yoda"
-                "Ion Missiles"
-                "Clone Captain Rex"
-                '"Fives"'
-            ]
-        }
-        {
-            id: 562 
-            faction: "Galactic Republic" 
-            pilot: '"Warthog"'
-            ship: "LAAT/i Gunship"
-            threat: 3
-            upgrades: [
-                "Wolfpack"
-                "Multi-Missile Pods"
-                "Plo Koon"
-                "Suppressive Gunner"
-            ]
-        }
-        {
-            id: 563 
-            faction: "Galactic Republic" 
-            pilot: '"Hound"'
-            ship: "LAAT/i Gunship"
-            threat: 4
-            upgrades: [
-                "Concussion Missiles"
-                "Aayla Secura"
-                "Kit Fisto"
-                "Suppressive Gunner"
-                "Hull Upgrade"
-                "Agile Gunner"
-            ]
-        }
-        {
-            id: 564 
-            faction: "Separatist Alliance" 
-            pilot: "Zam Wesell"
-            ship: "Firespray-class Patrol Craft"
-            threat: 4
-            upgrades: [
-                "Deadeye Shot"
-                "Jango Fett"
-                "False Transponder Codes"
-                "Hotshot Gunner"
-                "Slave I"
-            ]
-        }
-        {
-            id: 565 
-            faction: "Separatist Alliance" 
-            pilot: "Separatist Racketeer"
-            ship: "Firespray-class Patrol Craft"
-            threat: 3
-            upgrades: [
-                "Jamming Beam"
-                "Thermal Detonators"
-                "Suppressive Gunner"
-                "Ablative Plating"
-            ]
-        }
-        {
-            id: 566 
-            faction: "Separatist Alliance" 
-            pilot: "Jango Fett"
-            ship: "Firespray-class Patrol Craft"
-            threat: 4
-            upgrades: [
-                "Zam Wesell"
-                "False Transponder Codes"
-                "Boba Fett"
-                "Slave I"
-            ]
-        }
-        {
-            id: 567 
-            faction: "Separatist Alliance" 
-            pilot: "Boba Fett (Separatist)"
-            ship: "Firespray-class Patrol Craft"
-            threat: 3
-            upgrades: [
-                "Debris Gambit"
-                "Hondo Ohnaka"
-                "Slave I"
-            ]
-        }
-        {
-            id: 568 
-            faction: "Separatist Alliance" 
-            pilot: "Colicoid Interceptor"
-            ship: "Droid Tri-fighter"
-            threat: 2
-            upgrades: [
-                "Fire-Control System"
-                "Independent Calculations"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 569 
-            faction: "Separatist Alliance" 
-            pilot: "DIS-347"
-            ship: "Droid Tri-fighter"
-            threat: 2
-            upgrades: [
-                "Fire-Control System"
-                "Independent Calculations"
-                "Elusive"
-            ]
-        }
-        {
-            id: 570 
-            faction: "Separatist Alliance" 
-            pilot: "DIS-T81"
-            ship: "Droid Tri-fighter"
-            threat: 2
-            upgrades: [
-                "Marg Sabl Closure"
-                "Discord Missiles"
-            ]
-        }
-        {
-            id: 571 
-            faction: "Separatist Alliance" 
-            pilot: "Fearsome Predator"
-            ship: "Droid Tri-fighter"
-            threat: 2
-            upgrades: [
-                "Fire-Control System"
-                "Intercept Booster"
-            ]
-        }
-        {
-            id: 572 
-            faction: "Separatist Alliance" 
-            pilot: "Phlac-Arphocc Prototype"
-            ship: "Droid Tri-fighter"
-            threat: 2
-            upgrades: [
-                "XX-23 S-Thread Tracers"
-                "Intercept Booster"
-            ]
-        }
-        {
-            id: 573
-            faction: "Separatist Alliance" 
-            pilot: "Separatist Interceptor"
-            ship: "Droid Tri-fighter"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-                "Discord Missiles"
-                "Intercept Booster"
-            ]
-        }
-        {
-            id: 574
-            faction: "Galactic Empire"
-            pilot: "Delta Squadron Pilot"
-            ship: "TIE/d Defender"
-            threat: 3 
-            upgrades: [
-                "Tractor Beam"
-                "Ion Missiles"
-            ]
-        }
-        {
-            id: 575
-            faction: "Scum and Villainy"
-            pilot: "Lawless Pirates"
-            ship: "Trident-class Assault Ship"
-            threat: 9
-            upgrades: [
-                "Zealous Captain"
-                "Tractor Tentacles"
-                "Proton Cannon Battery"
-                "Novice Technician"
-                "Corsair Crew"
-                "Tibanna Reserves"
-                "Nautolan's Revenge"
-            ]
-        }
-        {
-            id: 576
-            faction: "Scum and Villainy"
-            pilot: "Lawless Pirates"
-            ship: "Trident-class Assault Ship"
-            threat: 10
-            upgrades: [
-                "Hondo Ohnaka (Command)"
-                "Tractor Tentacles"
-                "Drill Beak"
-                "Seasoned Navigator"
-                "Corsair Crew"
-                "Gunnery Specialists"
-                "Boosted Scanners"
-                "Grappler"
-            ]
-        }
-        {
-            id: 577
-            faction: "Separatist Alliance"
-            pilot: "Colicoid Destroyer"
-            ship: "Trident-class Assault Ship"
-            threat: 8
-            upgrades: [
-                "Tractor Tentacles"
-                "Drill Beak"
-                "Optimized Power Core"
-            ]
-        }
-        {
-            id: 578
-            faction: "Separatist Alliance"
-            pilot: "Colicoid Destroyer"
-            ship: "Trident-class Assault Ship"
-            threat: 9
-            upgrades: [
-                "Asajj Ventress (Command)" 
-                "Tractor Tentacles"
-                "Enhanced Propulsion"
-                "Seasoned Navigator"
-                "Droid Crew"
-                "Tractor Technicians"
-                "Trident"
-            ]
-        }
-        {
-            id: 579
-            faction: "Separatist Alliance"
-            pilot: "Colicoid Destroyer"
-            ship: "Trident-class Assault Ship"
-            threat: 10 
-            upgrades: [
-                "Riff Tamson"
-                "Tractor Tentacles"
-                "Proton Cannon Battery"
-                "Proton Torpedoes"
-                "Novice Technician"
-                "Hotshot Gunner"
-                "Droid Crew"
-                "Gunnery Specialists"
-                "Tibanna Reserves"
-                "Neimoidian Grasp"
-            ]
-        }
-        {
-            id: 580
-            faction: "Galactic Empire"
-            pilot: "Onyx Squadron Sentry"
-            ship: "TIE/rb Heavy"
-            threat: 3
-            upgrades: [
-                "Ablative Plating"
-                "Target-Assist MGK-300"
-                "Ion Limiter Override"
-                "Synced Laser Cannons"
-            ]
-        }
-        {
-            id: 581
-            faction: "First Order"
-            pilot: "Kylo Ren (TIE Whisper)"
-            ship: "TIE/wi Whisper Modified Interceptor"
-            threat: 3
-            upgrades: [
-                "Predator"
-                "Cluster Missiles"
-                "Malice"
-                "Enhanced Jamming Suite"
-            ]
-        }
-        {
-            id: 582
-            faction: "First Order"
-            pilot: '"Wrath"'
-            ship: "TIE/wi Whisper Modified Interceptor"
-            threat: 3
-            upgrades: [
-                "Elusive"
-                "Enhanced Jamming Suite"
-                "Proton Rockets"
-            ]
-        }
-        {
-            id: 583
-            faction: "First Order"
-            pilot: '"Whirlwind"'
-            ship: "TIE/wi Whisper Modified Interceptor"
-            threat: 3
-            upgrades: [
-                "Elusive"
-                "Sensor Scramblers"
-                "Ion Limiter Override"
-                "Proton Rockets"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 584
-            faction: "First Order"
-            pilot: "709th Legion Ace"
-            ship: "TIE/wi Whisper Modified Interceptor"
-            threat: 3
-            upgrades: [
-                "Predator"
-                "Enhanced Jamming Suite"
-                "Homing Missiles"
-            ]
-        }
-        {
-            id: 585
-            faction: "First Order"
-            pilot: '"Nightfall"'
-            ship: "TIE/wi Whisper Modified Interceptor"
-            threat: 2
-            upgrades: [
-                "Ion Limiter Override"
-                "Sensor Scramblers"
-            ]
-        }
-        {
-            id: 586
-            faction: "First Order"
-            pilot: "Red Fury Zealot"
-            ship: "TIE/wi Whisper Modified Interceptor"
-            threat: 2
-            upgrades: [
-                "Predator"
-                "Enhanced Jamming Suite"
-            ]
-        }
-        {
-            id: 587
-            faction: "First Order"
-            pilot: '"Breach"'
-            ship: "TIE/se Bomber"
-            threat: 3
-            upgrades: [
-                "Elusive"
-                "Proton Torpedoes"
-                "Advanced Optics"
-                "Engine Upgrade"
-            ]
-        }
-        {
-            id: 588
-            faction: "First Order"
-            pilot: '"Scorch"'
-            ship: "TIE/se Bomber"
-            threat: 3
-            upgrades: [
-                "Predator"
-                "Suppressive Gunner"
-                "Electro-Chaff Missiles"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 589
-            faction: "First Order"
-            pilot: '"Dread"'
-            ship: "TIE/se Bomber"
-            threat: 3
-            upgrades: [
-                "Feedback Ping"
-                "Concussion Bombs"
-                "Primed Thrusters"
-                "DT-798"
-                "Delayed Fuses"
-            ]
-        }
-        {
-            id: 590
-            faction: "First Order"
-            pilot: '"Grudge"'
-            ship: "TIE/se Bomber"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Proton Rockets"
-                "Ion Torpedoes"
-                "Engine Upgrade"
-            ]
-        }
-        {
-            id: 591
-            faction: "First Order"
-            pilot: "First Order Cadet"
-            ship: "TIE/se Bomber"
-            threat: 2
-            upgrades: [
-                "Feedback Ping"
-                "Concussion Bombs"
-                "First Order Ordnance Tech"
-            ]
-        }
-        {
-            id: 592
-            faction: "First Order"
-            pilot: "Sienar-Jaemus Test Pilot"
-            ship: "TIE/se Bomber"
-            threat: 2
-            upgrades: [
-                "Cluster Missiles"
-                "Suppressive Gunner"
-            ]
-        }
-        {
-            id: 593
-            faction: "Resistance"
-            pilot: "Zorii Bliss"
-            ship: "BTA-NR2 Y-wing"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Babu Frik"
-                "Proton Torpedoes"
-                "Wartime Loadout"
-                "R3 Astromech"
-            ]
-        }
-        {
-            id: 594
-            faction: "Resistance"
-            pilot: "Teza Nasz"
-            ship: "BTA-NR2 Y-wing"
-            threat: 3
-            upgrades: [
-                "Expert Handling"
-                "Delayed Fuses"
-                "R2 Astromech"
-                "Engine Upgrade"
-                "Ion Cannon Turret"
-                "Concussion Bombs"
-            ]
-        }
-        {
-            id: 595
-            faction: "Resistance"
-            pilot: "Lega Fossang"
-            ship: "BTA-NR2 Y-wing"
-            threat: 2
-            upgrades: [
-                "Proton Torpedoes"
-                "Wartime Loadout"
-                "L4E-R5"
-            ]
-        }
-        {
-            id: 596
-            faction: "Resistance"
-            pilot: "Shasa Zaro"
-            ship: "BTA-NR2 Y-wing"
-            threat: 2
-            upgrades: [
-                "Ion Cannon Turret"
-                "Concussion Bombs"
-                "Watchful Astromech"
-                "Wartime Loadout"
-            ]
-        }
-        {
-            id: 597
-            faction: "Resistance"
-            pilot: "C'ai Threnalli"
-            ship: "BTA-NR2 Y-wing"
-            threat: 2
-            upgrades: [
-                "Expert Handling"
-                "Targeting Computer"
-                "R2 Astromech"
-                "Hull Upgrade"
-                "Engine Upgrade"
-            ]
-        }
-        {
-            id: 598
-            faction: "Resistance"
-            pilot: "Aftab Ackbar"
-            ship: "BTA-NR2 Y-wing"
-            threat: 2
-            upgrades: [
-                "Elusive"
-                "Wartime Loadout"
-                "Electro-Chaff Missiles"
-            ]
-        }
-        {
-            id: 599
-            faction: "Resistance"
-            pilot: "Corus Kapellim"
-            ship: "BTA-NR2 Y-wing"
-            threat: 2
-            upgrades: [
-                "Ion Cannon Turret"
-                "Engine Upgrade"
-                "Overtuned Modulators"
-                "Targeting Computer"
-            ]
-        }
-        {
-            id: 600 
-            faction: "Resistance"
-            pilot: "New Republic Patrol"
-            ship: "BTA-NR2 Y-wing"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-                "Shield Upgrade"
-                "Ion Cannon Turret"
-                "Targeting Computer"
-                "R3 Astromech"
-            ]
-        }
-        {
-            id: 601
-            faction: "Resistance"
-            pilot: "Kijimi Spice Runner"
-            ship: "BTA-NR2 Y-wing"
-            threat: 2
-            upgrades: [
-                "Tierfon Belly Run"
-                "Engine Upgrade"
-                "Ion Cannon Turret"
-                "Targeting Computer"
-                "Overtuned Modulators"
-            ]
-        }
-        {
-            id: 602
-            faction: "Resistance"
-            pilot: "Wilsa Teshlo"
-            ship: "BTA-NR2 Y-wing"
-            threat: 3
-            upgrades: [
-                "Predator"
-                "Engine Upgrade"
-                "R3 Astromech"
-                "Targeting Computer"
-                "Ion Cannon Turret"
-            ]
-        }
-        {
-            id: 603
-            faction: "Scum and Villainy"
-            pilot: "Outer Rim Enforcer"
-            ship: "ST-70 Assault Ship"
-            threat: 2
-            upgrades: [
-                "Tracking Fob"
-            ]
-        }
-        {
-            id: 604
-            faction: "Scum and Villainy"
-            pilot: "Q9-0"
-            ship: "ST-70 Assault Ship"
-            threat: 4
-            upgrades: [
-                "Outmaneuver"
-                "The Mandalorian"
-                "The Child"
-                "Migs Mayfeld"
-                "Tracking Fob"
-                "Burnout Thrusters"
-                "Razor Crest"
-            ]
-        }
-        {
-            id: 605
-            faction: "Scum and Villainy"
-            pilot: "Guild Bounty Hunter"
-            ship: "ST-70 Assault Ship"
-            threat: 3
-            upgrades: [
-                "Peli Motto"
-                "IG-11"
-                "Hotshot Tail Blaster"
-                "Tracking Fob"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 606
-            faction: "Scum and Villainy"
-            pilot: "The Mandalorian"
-            ship: "ST-70 Assault Ship"
-            threat: 4
-            upgrades: [
-                "Notorious"
-                "Burnout Thrusters"
-                "Kuiil"
-                "The Child"
-                "Hull Upgrade"
-                "Tracking Fob"
-                "Razor Crest"
-            ]
-        }
-        {
-            id: 607
-            faction: "Scum and Villainy"
-            pilot: "Maul"
-            ship: "Gauntlet Fighter"
-            threat: 3
-            upgrades: [
-                "Heightened Perception"
-                "Nightbrother"
-                "Swivel Wing"
-            ]
-        }
-        {
-            id: 608
-            faction: "Scum and Villainy"
-            pilot: "Rook Kast"
-            ship: "Gauntlet Fighter"
-            threat: 4
-            upgrades: [
-                "Elusive"
-                "Mandalorian Super Commandos"
-                "Drop-Seat Bay"
-                "Nightbrother"
-                "Swivel Wing"
-            ]
-        }
-        {
-            id: 609
-            faction: "Scum and Villainy"
-            pilot: "Shadow Collective Operator"
-            ship: "Gauntlet Fighter"
-            threat: 3
-            upgrades: [
-                "Enduring"
-                "Blazer Bomb"
-                "Overtuned Modulators"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 610
-            faction: "Galactic Republic"
-            pilot: "Bo-Katan Kryze (Republic)"
-            ship: "Gauntlet Fighter"
-            threat: 4
-            upgrades: [
-                "Outmaneuver"
-                "Nite Owl Commandos"
-                "Veteran Tail Gunner"
-                "Drop-Seat Bay"
-                "Hull Upgrade"
-                "Gauntlet"
-                "Swivel Wing"
-            ]
-        }
-        {
-            id: 611
-            faction: "Galactic Republic"
-            pilot: "Nite Owl Liberator"
-            ship: "Gauntlet Fighter"
-            threat: 3
-            upgrades: [
-                "Enduring"
-                "Veteran Tail Gunner"
-                "Concussion Bombs"
-                "Hull Upgrade"
-                "Swivel Wing"
-            ]
-        }
-        {
-            id: 612
-            faction: "Separatist Alliance"
-            pilot: "Pre Vizsla"
-            ship: "Gauntlet Fighter"
-            threat: 4
-            upgrades: [
-                "Predator"
-                "Death Watch Commandos"
-                "Blazer Bomb"
-                "Shield Upgrade"
-                "Swivel Wing"
-            ]
-        }
-        {
-            id: 613
-            faction: "Separatist Alliance"
-            pilot: "Bo-Katan Kryze"
-            ship: "Gauntlet Fighter"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Veteran Tail Gunner"
-                "Swivel Wing"
-            ]
-        }       
-        {
-            id: 614
-            faction: "Separatist Alliance"
-            pilot: "Death Watch Warrior"
-            ship: "Gauntlet Fighter"
-            threat: 3
-            upgrades: [
-                "Hull Upgrade"
-                "Shield Upgrade"
-                "Concussion Bombs"
-                "Swivel Wing"
-            ]
-        }
-        {
-            id: 615
-            faction: "Rebel Alliance"
-            pilot: "Ezra Bridger (Gauntlet Fighter)"
-            ship: "Gauntlet Fighter"
-            threat: 4
-            upgrades: [
-                "Shattering Shot"
-                "Clan Wren Commandos"
-                "Shield Upgrade"
-                "Nightbrother"
-                "Swivel Wing"
-            ]
-        }
-        {
-            id: 616
-            faction: "Rebel Alliance"
-            pilot: '"Chopper" (Gauntlet Fighter)'
-            ship: "Gauntlet Fighter"
-            threat: 3
-            upgrades: [
-                "Predator"
-                "Veteran Tail Gunner"
-                "Hull Upgrade"
-                "Nightbrother"
-                "Swivel Wing"
-            ]
-        }
-        {
-            id: 617
-            faction: "Rebel Alliance"
-            pilot: "Mandalorian Resistance Pilot"
-            ship: "Gauntlet Fighter"
-            threat: 3
-            upgrades: [
-                "Enduring"
-                "Clan Wren Commandos"
-                "Swivel Wing"
-            ]
-        }
-        {
-            id: 618
-            faction: "Galactic Empire"
-            pilot: "Gar Saxon"
-            ship: "Gauntlet Fighter"
-            threat: 4
-            upgrades: [
-                "Imperial Super Commandos"
-                "Drop-Seat Bay"
-                "Hull Upgrade"
-                "Shield Upgrade"
-                "Swivel Wing"
-            ]
-        }
-        {
-            id: 619
-            faction: "Galactic Empire"
-            pilot: "Captain Hark"
-            ship: "Gauntlet Fighter"
-            threat: 3
-            upgrades: [
-                "Combat Boarding Tube"
-                "Imperial Super Commandos"
-                "Swivel Wing"
-            ]
-        }
-        {
-            id: 620
-            faction: "Galactic Empire"
-            pilot: "Imperial Super Commando"
-            ship: "Gauntlet Fighter"
-            threat: 2
-            upgrades: [
-                "Outmaneuver"
-                "Veteran Tail Gunner"
-                "Concussion Bombs"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 621
-            faction: "Rebel Alliance"
-            pilot: "Fenn Rau (Rebel Fang)"
-            ship: "Fang Fighter"
-            threat: 3
-            upgrades: [
-                "Clan Training"
-                "Ion Torpedoes"    
-                "Afterburners"
-            ]
-        }
-        {
-            id: 622
-            faction: "Rebel Alliance"
-            pilot: "Clan Wren Volunteer"
-            ship: "Fang Fighter"
-            threat: 2
-            upgrades: [
-                "Predator"
-            ]
-        }
-        {
-            id: 623
-            faction: "Rebel Alliance"
-            pilot: "Bodica Venj"
-            ship: "Fang Fighter"
-            threat: 3
-            upgrades: [
-                "Outmaneuver"
-                "Beskar Reinforced Plating"
-                "Mandalorian Optics"
-            ]
-        }
-        {
-            id: 624
-            faction: "Rebel Alliance"
-            pilot: "Dirk Ullodin"
-            ship: "Fang Fighter"
-            threat: 3
-            upgrades: [
-                "Clan Training"
-                "Proton Torpedoes"
-                "Hull Upgrade"
-                "Mandalorian Optics"
-            ]
-        }
-        {
-            id: 625
-            faction: "Galactic Empire"
-            pilot: "Moff Gideon"
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Deadeye Shot"
-                "Outmaneuver"
-                "Overtuned Modulators"
-                "Hull Upgrade"
-            ]
-        }
-        {
-            id: 626
-            faction: "Galactic Empire"
-            pilot: "ISB Jingoist"
-            ship: "TIE/ln Fighter"
-            threat: 2
-            upgrades: [
-                "Ion Limiter Override"
-                "False Transponder Codes"
-                "Afterburners"
-                "Shield Upgrade"
-            ]
-        }
-        {
-            id: 627
-            faction: "Scum and Villainy"
-            pilot: "Mandalorian Royal Guard"
-            ship: "Fang Fighter"
-            threat: 2
-            upgrades: [
-                "Afterburners"
-                "Beskar Reinforced Plating"
-            ]
-        }
-        {
-            id: 628
-            faction: "Scum and Villainy"
-            pilot: "Mandalorian Royal Guard"
-            ship: "Fang Fighter"
-            threat: 2
-            upgrades: [
-                "Clan Training"
-                "Mandalorian Optics"
-            ]
         }
     ]
 
@@ -26383,10 +21461,6 @@ exportObj.setupCommonCardData = (basic_cards) ->
     for chassis_data, i in basic_cards.chassisById
         if chassis_data.id != i
             throw new Error("ID mismatch: chassis at index #{i} has ID #{chassis_data.id}")
-    for quickbuild_data, i in basic_cards.quickbuildsById
-        if quickbuild_data.id != i
-            throw new Error("ID mismatch: quickbuild  at index #{i} has ID #{quickbuild_data.id}")
-
 
     exportObj.pilots = {}
     # Assuming a given pilot is unique by name...
@@ -26408,9 +21482,10 @@ exportObj.setupCommonCardData = (basic_cards) ->
     exportObj.conditions = {}
     for condition_data in basic_cards.conditionsById
         unless condition_data.skip?
+            condition_data.sources = []
             condition_data.canonical_name = condition_data.name.canonicalize() unless condition_data.canonical_name?
             exportObj.conditions[condition_data.name] = condition_data
-
+            
     exportObj.chassis = {}
     for chassis_data in basic_cards.chassisById
         unless chassis_data.skip?
@@ -26419,19 +21494,6 @@ exportObj.setupCommonCardData = (basic_cards) ->
 
     exportObj.obstacles = {}
     # we just want to include obstacles in the manifest like we already do for other stuff. No information other than sources will be used
-
-    # there is no exportObj.quickbuilds generated from basic_cards.quickbuildsById, as reference by pilot name might be ambigous (e.g. there are multiple Black Sq. Aces having different upgrades)
-
-    exportObj.quickbuildsById = {}
-    quickbuild_count = 0
-    for quickbuild_data in basic_cards.quickbuildsById
-        unless quickbuild_data.skip?
-            quickbuild_count += 1
-            # Sometimes there is something to be appended to the pilot name for displaying, e.g. (x2) for two TIEs at the cost of 3 threat points. If nothing specified set as empty string.
-            quickbuild_data.suffix = "" unless quickbuild_data.suffix?
-            exportObj.quickbuildsById[quickbuild_data.id] = quickbuild_data
-    if Object.keys(exportObj.quickbuildsById).length != quickbuild_count
-        throw new Error("At least one quickbuild shares an ID with another")
 
     for ship_name, ship_data of basic_cards.ships
         ship_data.canonical_name ?= ship_data.name.canonicalize()
@@ -26479,7 +21541,7 @@ exportObj.setupCommonCardData = (basic_cards) ->
 
     exportObj.pilotsByFactionCanonicalName = {}
     exportObj.pilotsByKeyword = {}
-    # uniqueness can't be enforced just be canonical name, but by the base part
+    # uniqueness can't be enforced just by canonical name, but by the base part
     exportObj.pilotsByUniqueName = {}
     for pilot_name, pilot of exportObj.pilots
         ((exportObj.pilotsByFactionCanonicalName[pilot.faction] ?= {})[pilot.canonical_name] ?= []).push pilot
@@ -26514,6 +21576,8 @@ exportObj.setupCommonCardData = (basic_cards) ->
     for condition_name, condition of exportObj.conditions
         exportObj.fixIcons condition
         exportObj.conditionsById[condition.id] = condition
+        for source in condition.sources
+            exportObj.expansions[source] = 1 if source not of exportObj.expansions
     if Object.keys(exportObj.conditionsById).length != Object.keys(exportObj.conditions).length
         throw new Error("At least one condition shares an ID with another")
 
@@ -26523,7 +21587,7 @@ exportObj.setupCommonCardData = (basic_cards) ->
         exportObj.chassisById[chassis.id] = chassis
     if Object.keys(exportObj.chassisById).length != Object.keys(exportObj.chassis).length
         throw new Error("At least one chassis shares an ID with another")
-
+        
     exportObj.conditionsByCanonicalName = {}
     for condition_name, condition of exportObj.conditions
         (exportObj.conditionsByCanonicalName ?= {})[condition.canonical_name] = condition
@@ -26532,7 +21596,7 @@ exportObj.setupCommonCardData = (basic_cards) ->
     for chassis_name, chassis of exportObj.chassis
         (exportObj.chassisByCanonicalName ?= {})[chassis.canonical_name] = chassis
 
-
+        
     exportObj.expansions = Object.keys(exportObj.expansions).sort()
 
 exportObj.setupTranslationCardData = (pilot_translations, upgrade_translations, condition_translations, chassis_translations) ->
@@ -26544,16 +21608,7 @@ exportObj.setupTranslationCardData = (pilot_translations, upgrade_translations, 
             catch e
                 console.error "Cannot find translation for attribute #{field} for upgrade #{upgrade_name}. Please report this Issue. "
                 throw e
-
-    for condition_name, translations of condition_translations
-        exportObj.fixIcons translations
-        for field, translation of translations
-            try
-                exportObj.conditions[condition_name][field] = translation
-            catch e
-                console.error "Cannot find translation for attribute #{field} for condition #{condition_name}. Please report this Issue. "
-                throw e
-
+                
     for chassis_name, translations of chassis_translations
         exportObj.fixIcons translations
         for field, translation of translations
@@ -26563,6 +21618,14 @@ exportObj.setupTranslationCardData = (pilot_translations, upgrade_translations, 
                 console.error "Cannot find translation for attribute #{field} for chassis #{chassis_name}. Please report this Issue. "
                 throw e
 
+    for condition_name, translations of condition_translations
+        exportObj.fixIcons translations
+        for field, translation of translations
+            try
+                exportObj.conditions[condition_name][field] = translation
+            catch e
+                console.error "Cannot find translation for attribute #{field} for condition #{condition_name}. Please report this Issue. "
+                throw e
 
     for pilot_name, translations of pilot_translations
         exportObj.fixIcons translations
@@ -26584,6 +21647,7 @@ exportObj.fixIcons = (data) ->
             .replace(/%LEFTARC%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-leftarc"></i>')
             .replace(/%RIGHTARC%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-rightarc"></i>')
             .replace(/%ROTATEARC%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-rotatearc"></i>')
+            .replace(/%SIDEARCS%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-sidearcs"></i>')
             .replace(/%FULLFRONTARC%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-fullfrontarc"></i>')
             .replace(/%FULLREARARC%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-fullreararc"></i>')
             .replace(/%DEVICE%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-device"></i>')
@@ -26606,7 +21670,10 @@ exportObj.fixIcons = (data) ->
             .replace(/%ASTROMECH%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-astromech"></i>')
             .replace(/%GUNNER%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-gunner"></i>')
             .replace(/%CREW%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-crew"></i>')
+            .replace(/%DUALCARD%/g, '<span class="card-restriction">Dual card.</span>')
+            .replace(/%ELITE%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-elite"></i>')
             .replace(/%TACTICALRELAY%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-tacticalrelay"></i>')
+            .replace(/%SALVAGEDASTROMECH%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-salvagedastromech"></i>')
             .replace(/%HARDPOINT%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-hardpoint"></i>')
             .replace(/%EVADE%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-evade"></i>')
             .replace(/%FOCUS%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-focus"></i>')
@@ -26616,6 +21683,7 @@ exportObj.fixIcons = (data) ->
             .replace(/%KTURN%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-kturn"></i>')
             .replace(/%MISSILE%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-missile"></i>')
             .replace(/%RECOVER%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-recover"></i>')
+            .replace(/%RECURRING%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-recurring"></i>')
             .replace(/%F-REINFORCE%/g, '<i class="xwing-miniatures-font force xwing-miniatures-font-reinforce"></i>')
             .replace(/%REINFORCE%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-reinforce"></i>')
             .replace(/%REVERSESTRAIGHT%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-reversestraight"></i>')
@@ -26642,9 +21710,16 @@ exportObj.fixIcons = (data) ->
             .replace(/%TECH%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-tech"></i>')
             .replace(/%FORCEPOWER%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-forcepower"></i>')
             .replace(/%RANGEBONUS%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-rangebonusindicator"></i>')
+            .replace(/%LARGESHIPONLY%/g, '<span class="card-restriction">Large ship only.</span>')
+            .replace(/%SMALLSHIPONLY%/g, '<span class="card-restriction">Small ship only.</span>')
+            .replace(/%REBELONLY%/g, '<span class="card-restriction">Rebel only.</span>')
+            .replace(/%IMPERIALONLY%/g, '<span class="card-restriction">Imperial only.</span>')
+            .replace(/%SCUMONLY%/g, '<span class="card-restriction">Scum only.</span>')
+            .replace(/%LIMITED%/g, '<span class="card-restriction">Limited.</span>')
             .replace(/%CONFIGURATION%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-config"></i>')
             .replace(/%AGILITY%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-agility"></i>')
             .replace(/%HULL%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-hull"></i>')
+            .replace(/%POINT%/g, '<i class="xwing-miniatures-font xwing-miniatures-font-token-point-1-outline"></i>')
             .replace(/%LINEBREAK%/g, '<br /><br />')
 
 exportObj.canonicalizeShipNames = (card_data) ->
@@ -26661,173 +21736,42 @@ exportObj.randomizer = (faction_name, points) ->
         #if Math.random() >= 0.9
         #append.shiplistmaster.pilotsbyid.xws ? shiplistmaster.pilotsbyid.canonical_name ? shiplistmaster.pilotsbyid.name.canonicalize())
 
-exportObj.standardShipInclusions = [
-    {name: 'T-65 X-wing', faction: 'Rebel Alliance'}
-    {name: 'Modified YT-1300 Light Freighter', faction: 'Rebel Alliance'}
-    {name: 'A/SF-01 B-wing', faction: 'Rebel Alliance'}
-    {name: 'RZ-1 A-wing', faction: 'Rebel Alliance'}
-    {name: 'BTL-A4 Y-wing', faction: 'Rebel Alliance'}
-    {name: 'VCX-100 Light Freighter', faction: 'Rebel Alliance'}
-    {name: 'Sheathipede-Class Shuttle', faction: 'Rebel Alliance'}
-    {name: 'ARC-170 Starfighter', faction: 'Rebel Alliance'}
-    {name: 'Fang Fighter', faction: 'Rebel Alliance'}
-    {name: 'TIE/ln Fighter', faction: 'Rebel Alliance'}
-    {name: 'HWK-290 Light Freighter', faction: 'Rebel Alliance'}
-    {name: 'UT-60D U-wing', faction: 'Rebel Alliance'}
-    {name: 'Z-95-AF4 Headhunter', faction: 'Rebel Alliance'}
-    {name: 'Gauntlet Fighter', faction: 'Rebel Alliance'}
-
-    {name: 'TIE Advanced x1', faction: 'Galactic Empire'}
-    {name: 'TIE Advanced v1', faction: 'Galactic Empire'}
-    {name: 'TIE/ln Fighter', faction: 'Galactic Empire'}
-    {name: 'TIE/in Interceptor', faction: 'Galactic Empire'}
-    {name: 'TIE Reaper', faction: 'Galactic Empire'}
-    {name: 'TIE/d Defender', faction: 'Galactic Empire'}
-    {name: 'TIE/sk Striker', faction: 'Galactic Empire'}
-    {name: 'TIE/rb Heavy', faction: 'Galactic Empire'}
-    {name: 'VT-49 Decimator', faction: 'Galactic Empire'}
-    {name: 'Gauntlet Fighter', faction: 'Galactic Empire'}
-
-    {name: 'Firespray-class Patrol Craft', faction: 'Scum and Villainy'}
-    {name: 'BTL-A4 Y-wing', faction: 'Scum and Villainy'}
-    {name: 'Modified TIE/ln Fighter', faction: 'Scum and Villainy'}
-    {name: 'Fang Fighter', faction: 'Scum and Villainy'}
-    {name: 'JumpMaster 5000', faction: 'Scum and Villainy'}
-    {name: 'M3-A Interceptor', faction: 'Scum and Villainy'}
-    {name: 'Customized YT-1300 Light Freighter', faction: 'Scum and Villainy'}
-    {name: 'Escape Craft', faction: 'Scum and Villainy'}
-    {name: 'YV-666 Light Freighter', faction: 'Scum and Villainy'}
-    {name: 'Z-95-AF4 Headhunter', faction: 'Scum and Villainy'}
-    {name: 'HWK-290 Light Freighter', faction: 'Scum and Villainy'}
-    {name: 'ST-70 Assault Ship', faction: 'Scum and Villainy'}
-    {name: 'Rogue-class Starfighter', faction: 'Scum and Villainy'}
-    {name: 'Gauntlet Fighter', faction: 'Scum and Villainy'}
-
-    {name: 'Fireball', faction: 'Resistance'}
-    {name: 'T-70 X-wing', faction: 'Resistance'}
-    {name: 'RZ-2 A-wing', faction: 'Resistance'}
-    {name: 'BTA-NR2 Y-wing', faction: 'Resistance'}
-    {name: 'Resistance Transport', faction: 'Resistance'}
-    {name: 'Resistance Transport Pod', faction: 'Resistance'}
-    {name: 'Scavenged YT-1300', faction: 'Resistance'}
-
-    {name: 'TIE/ba Interceptor', faction: 'First Order'}
-    {name: 'TIE/fo Fighter', faction: 'First Order'}
-    {name: 'TIE/vn Silencer', faction: 'First Order'}
-    {name: 'TIE/sf Fighter', faction: 'First Order'}
-    {name: 'TIE/se Bomber', faction: 'First Order'}
-    {name: 'TIE/wi Whisper Modified Interceptor', faction: 'First Order'}
-    {name: 'Xi-class Light Shuttle', faction: 'First Order'}
-
-    {name: 'Delta-7 Aethersprite', faction: 'Galactic Republic'}
-    {name: 'Delta-7b Aethersprite', faction: 'Galactic Republic'}
-    {name: 'ARC-170 Starfighter', faction: 'Galactic Republic'}
-    {name: 'Naboo Royal N-1 Starfighter', faction: 'Galactic Republic'}
-    {name: 'BTL-B Y-wing', faction: 'Galactic Republic'}
-    {name: 'V-19 Torrent Starfighter', faction: 'Galactic Republic'}
-    {name: 'Eta-2 Actis', faction: 'Galactic Republic'}
-    {name: 'Nimbus-class V-wing', faction: 'Galactic Republic'}
-    {name: 'LAAT/i Gunship', faction: 'Galactic Republic'}
-    {name: 'Gauntlet Fighter', faction: 'Galactic Republic'}
-    {name: 'Clone Z-95 Headhunter', faction: 'Galactic Republic'}
-
-    {name: 'Vulture-class Droid Fighter', faction: 'Separatist Alliance'}
-    {name: 'Hyena-class Droid Bomber', faction: 'Separatist Alliance'}
-    {name: 'Droid Tri-fighter', faction: 'Separatist Alliance'}
-    {name: 'Firespray-class Patrol Craft', faction: 'Separatist Alliance'}
-    {name: 'Sith Infiltrator', faction: 'Separatist Alliance'}
-    {name: 'Nantex-Class Starfighter', faction: 'Separatist Alliance'}
-    {name: 'HMP Droid Gunship', faction: 'Separatist Alliance'}
-    {name: 'Belbullab-22 Starfighter', faction: 'Separatist Alliance'}
-    {name: 'Gauntlet Fighter', faction: 'Separatist Alliance'}
-    {name: 'Rogue-class Starfighter', faction: 'Separatist Alliance'}
-]
-
-# Used to exclude pilots from included ships
-exportObj.standardPilotExclusions = [
-
-    # Rebel Alliance
-    'Hera Syndulla (VCX-100)'
-
-    # Galactic Empire
-    'Ved Foslo'
-
-    # Scum and Villainy
-
-    # Resistance
-    'Han Solo (Resistance)'
-    'Vi Moradi'
-
-    # FO
-
-    # Galactic Republic
-    'Saesee Tiin'
-    'Saesee Tiin (Delta-7b)'
-
-    # Separatist Alliance
-    'Phlac-Arphocc Prototype'
-
-]
-
-# Upgrades in that are not in standard
-exportObj.standardUpgradeExclusions = [
-    # Rebel Alliance
-    'Cassian Andor'
-    'Sabine Wren'
-
-    # Galactic Empire
-    'Admiral Sloane'
-
-    # Scum and Villainy
-    'Boba Fett'
-    'Tobias Beckett'
-    'Slave I'
-
-    # Resistance
-    'Kaydel Connix'
-
-    # FO
-    'Supreme Leader Snoke'
-    'Commander Pyre'
-
-    # Galactic Republic
-    'R2-A6'
-  
-    # Separatist Alliance
-    'Tal Merrik'
-
-    # Generic
-    'Advanced Sensors'
-    'Autoblasters'
-    'Delta-7B'
-    'Hull Upgrade'
-    'Inertial Dampeners'
-    'Informant'
-    'Interloper Turn'
-    'Intimidation'
-    'Precognitive Reflexes'
-    'R2 Astromech'
-    'R5 Astromech'
-    'Seasoned Navigator'
-    'Sense'
-    'Supernatural Reflexes'
-    'Static Discharge Vanes'
-    'Stealth Device'
-    'Trajectory Simulator'
-]
-
 exportObj.epicExclusionsList = [
-    'CR90 Corellian Corvette'
-    'Raider-class Corvette'
-    'GR-75 Medium Transport'
-    'Gozanti-class Cruiser'
     'C-ROC Cruiser'
+    'Consular Cruiser'
+    'CR90 Corellian Corvette'
+    'Gozanti-class Cruiser'
+    'GR-75 Medium Transport'
+    'Quick-Release Locks'
+    'Raider-class Corvette'
+    "Saboteur's Map"
+    'Scanner Baffler'
     'Syliure-class Hyperspace Ring'
+    'Toryn Farr'
+    'Tracking Torpedoes'
     'Trident-class Assault Ship'
 ]
 
 
 exportObj.epicExclusions = (data) ->
+    #if data.upgrades?
+    #    return false
+    #else
+        return true
+
+exportObj.standardExclusions = (data) ->
+    if data.ship? and (data.ship in exportObj.epicExclusionsList)
+        return false
+    else if data.slot? and (data.slot == "Command")
+        return false
+    else if data.name? and (data.name in exportObj.epicExclusionsList)
+        return false
+    else if data.upgrades?
+        return false
+    else
+        return true
+
+exportObj.wildspaceExclusions = (data) ->
     if data.ship? and (data.ship in exportObj.epicExclusionsList)
         return false
     else if data.slot? and (data.slot == "Command")
@@ -26837,131 +21781,142 @@ exportObj.epicExclusions = (data) ->
     else
         return true
 
-# Ships/Pilots excluded unless in the included list (with further excluded pilots list for included ships, i.e u-wing)
-# while upgrades assumed included unless on the excluded list
-exportObj.standardCheck = (data, faction='', shipCheck=false) ->
-    if (shipCheck)
-        if (data.name in exportObj.standardPilotExclusions)
-            return false
-        for ship in exportObj.standardShipInclusions
-            if (ship.faction == faction && (data.name == ship.name || data.ship == ship.name || (Array.isArray(data.ship) and ship.name in data.ship)))
-                return true
-        return false
+String::ParseParameter = (name) ->
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]")
+    regexS = "[\\?&]" + name + "=([^&#]*)"
+    regex = new RegExp(regexS)
+    results = regex.exec(this)
+    if results == null
+        return ""
     else
-        return data.name not in exportObj.standardUpgradeExclusions
+        return decodeURIComponent(results[1].replace(/\+/g, " "))
 
-exportObj.standardCheckBrowser = (data, faction='', type) ->
-    # check ship/pilot first
-    if type == 'Pilot'
-        check = false
-        for ship in exportObj.standardShipInclusions
-            if (data.faction == ship.faction && (data.ship == ship.name))
-                check = true
-        if check == false
-            return false
-        return data.name not in exportObj.standardPilotExclusions
-    else if type == 'Ship'
-        for ship in exportObj.standardShipInclusions
-            # checks against name for ship itself or ship name/faction for pilot inclusions
-            if (ship.faction == faction && (data.name == ship.name || data.ship == ship.name || (Array.isArray(data.ship) and ship.name in data.ship)))
-                return true
-        return false
+getUpgradePoints = (upgrade, pilot, ship) ->
+    if upgrade?.variableagility?
+        upgrade?.pointsarray[ship?.agility]
+    else if upgrade?.variablebase?
+        if ship?.medium?
+            upgrade?.pointsarray[1]
+        else if ship?.large?
+            upgrade?.pointsarray[2]
+        else if ship?.huge?
+            upgrade?.pointsarray[3]
+        else
+            upgrade?.pointsarray[0]
+    else if upgrade?.variableinit?
+        upgrade?.pointsarray[pilot?.skill]
     else
-        return data.name not in exportObj.standardUpgradeExclusions
+        upgrade?.points ? 0
+            
 
-#not functional yet
 String::serialtoxws = ->
-    list = this.getParameterByName('d')
-    re = if "Z" in list then /^v(\d+)Z(.*)/ else /^v(\d+)!(.*)/
-    matches = re.exec list
-    if matches? and version > 7 and !serialized_ships?
+    xws =
+        description: ""
+        faction: this.ParseParameter('f').canonicalize()
+        name: this.ParseParameter('sn')
+        pilots: []
+        points: 200
+        vendor:
+            yasb:
+                builder: 'YASB 2.0'
+                builder_url: "https://xwing-legacy.com"
+                link: "https://xwing-legacy.com/#{this}" 
+        version: '2023/10/10'
+    
+    squadron_total_points = 0
+    
+    serialized = this.ParseParameter('d')
+    re = if "Z" in serialized then /^v(\d+)Z(.*)/ else /^v(\d+)!(.*)/
+    matches = re.exec serialized
+    if matches?
+        # Parsing extra data in case we need it later
         version = parseInt matches[1]
         ship_splitter = 'Y'
         [g, p, s] = matches[2].split('Z')
         [ game_type_abbrev, desired_points, serialized_ships ] = [g, parseInt(p), s]
 
-        ships_with_unmet_dependencies = []
+        switch game_type_abbrev
+            when 's'
+                gamemode = 'standard'
+            when 'h'
+                gamemode = 'wildspace'
+            when 'e'
+                gamemode = 'epic'
+            when 'q'
+                gamemode = 'quickbuild'
+
+        if !serialized_ships? # something went wrong, we can't load that serialization
+            return "error: serialization read failed"
+
+        #independantly setting up basic card data for xws output
+        card_data = exportObj.basicCardData()
+
+        card_pilots = {}
+        for pilot_data in card_data.pilotsById
+            unless pilot_data.skip?
+                name_parse = pilot_data.name.split("(")
+                pilot_data.canonical_name = name_parse[0].canonicalize() unless pilot_data.canonical_name?
+
+                pilot_data.xws = if pilot_data.xws? then pilot_data.xws else (if pilot_data.xwsaddon? then (pilot_data.canonical_name + "-" + pilot_data.xwsaddon) else (pilot_data.canonical_name + (if name_parse[1]? then ("-" + pilot_data.ship.canonicalize()) else "")))
+                card_pilots[pilot_data.id] = pilot_data
+
+        cards_upgrades = {}
+        for upgrade_data in card_data.upgradesById
+            unless upgrade_data.skip?
+                name_parse = upgrade_data.name.split("(")
+                upgrade_data.canonical_name = name_parse[0].canonicalize() unless upgrade_data.canonical_name?
+
+                upgrade_data.xws = if upgrade_data.xws? then upgrade_data.xws else (if upgrade_data.xwsaddon? then (upgrade_data.canonical_name + "-" + upgrade_data.xwsaddon) else (upgrade_data.canonical_name + (if name_parse[1]? then ("-" + upgrade_data.slot.canonicalize()) else "")))
+                cards_upgrades[upgrade_data.id] = upgrade_data
+
         if serialized_ships.length?
+            # Ship loop
             for serialized_ship in serialized_ships.split(ship_splitter)
-                unless serialized_ship == ''
-                    new_ship = @addShip()
-                    if (not new_ship.fromSerialized version, serialized_ship) or not new_ship.pilot # also check, if the pilot has been set (the pilot himself was not invalid)
-                        ships_with_unmet_dependencies.push [new_ship, serialized_ship]
-            for ship in ships_with_unmet_dependencies
-                # 2nd attempt to load ships with unmet dependencies.
-                if not ship[0].pilot
-                    # create ship, if the ship was so invalid, that it in fact decided to not exist
-                    ship[0] = @addShip()
-                ship[0].fromSerialized version, ship[1]
+                pilot_splitter = 'X'
+                upgrade_splitter = 'W'
+                
+                [ pilot_id, upgrade_ids ] = serialized_ship.split pilot_splitter
+                # pilot_data is the pilot info
+                pilot_data = card_pilots[parseInt(pilot_id)]
+                if pilot_data
+                    pilot_xws =
+                        id: (pilot_data.xws ? pilot_data.canonical_name)
+                        name: (pilot_data.name)
+                        points: pilot_data.points
+                        ship: pilot_data.ship.canonicalize()
+                        upgrades: []
 
-    @suppress_automatic_new_ship = false
-    # Finally, the unassigned ship
+                    if not pilot_data.upgrades?
+                        upgrade_ids = upgrade_ids.split upgrade_splitter
+                        upgrade_total_points = 0
+                        upgrade_obj = {}
+                        
+                        for i in [upgrade_ids.length - 1 ... -1]
+                            upgrade_id = upgrade_ids[i]
+                            # upgrade_data is the pilot info
+                            upgrade_data = cards_upgrades[parseInt(upgrade_id)]
+                            if upgrade_data
+                                upgrade_total_points += getUpgradePoints(upgrade_data,pilot_data,card_data.ships[pilot_data.ship])
+                                switch upgrade_data.slot
+                                    when 'Force'
+                                        slot = 'force-power'
+                                    when 'Tactical Relay'
+                                        slot = 'tactical-relay'
+                                    else
+                                        slot = upgrade_data.slot.canonicalize()
+                                
+                                (upgrade_obj[slot] ?= []).push (upgrade_data.xws ? upgrade_data.canonical_name)
 
-    pilot_splitter = 'X'
-    upgrade_splitter = 'W'
-    [ pilot_id, upgrade_ids, conferredaddon_pairs ] = serialized.split pilot_splitter
-    upgrade_ids = upgrade_ids.split upgrade_splitter
-    # set the pilot
-    @setPilotById parseInt(pilot_id), true
-    # make sure the pilot is valid 
-    
-    for _ in [1 ... 3] # try adding each upgrade a few times, as the required slots might be added in by titles etc and are not yet available on the first try
-        `upgradeloop: //` 
-        for i in [upgrade_ids.length - 1 ... -1]
-            upgrade_id = upgrade_ids[i]
-            upgrade = exportObj.upgradesById[upgrade_id]
-            if not upgrade? 
-                upgrade_ids.splice(i,1) # Remove unknown or empty ID
-                if upgrade_id != ""
-                    console.log("Unknown upgrade id " + upgrade_id + " could not be added. Please report that error")
-                    everythingadded = false
-                continue
-            for upgrade_selection in @upgrades
-                if upgrade_selection?.data?.name == upgrade.name
-                    # for some reason the correct upgrade already was equipped (e.g. an earlier ship alread had a standardized that was added on creation here)
-                    upgrade_ids.splice(i,1) # was already added successfully, remove from list
-                    `continue upgradeloop`
+                        pilot_xws.upgrades = upgrade_obj
 
-            for upgrade_selection in @upgrades
-                if exportObj.slotsMatching(upgrade.slot, upgrade_selection.slot) and not upgrade_selection.isOccupied()
-                    upgrade_selection.setById upgrade_id
-                    if upgrade_selection.lastSetValid
-                        upgrade_ids.splice(i,1) # added successfully, remove from list
-                    break    
+                        pilot_xws.points += upgrade_total_points
+                
+                    xws.pilots.push pilot_xws
+                    
+                    squadron_total_points += pilot_xws.points
+                    xws.points = squadron_total_points
 
-    # create the xws json now that ships/pilots have been made
-    xws =
-        description: "List generated by yasb.app URL"
-        faction: this.getParameterByName('f')
-        name: this.getParameterByName('sn') ? ""
-        pilots: []
-        points: desired_points
-        vendor:
-            yasb:
-                builder: 'YASB - X-Wing 2.5'
-                builder_url: window.location.href.split('?')[0]
-                link: @getPermaLink()
-        version: '10/28/2022'
-        # there is no point to have this version identifier, if we never actually increase it, right?
+    else
+        return "error: could not read URL"
 
-    # create xws entry
-    for ship in @ships
-        if ship.pilot?
-            xwsship =
-                id: (ship.pilot.xws ? ship.pilot.canonical_name)
-                name: (ship.pilot.xws ? ship.pilot.canonical_name) 
-                points: ship.getPoints()
-                ship: ship.data.name.canonicalize()
-
-            upgrade_obj = {}
-
-            for upgrade in ship.upgrades
-                if upgrade?.data?
-                    upgrade.toXWS 
-                    (upgrade_obj[exportObj.toXWSUpgrade[@data.slot] ? @data.slot.canonicalize()] ?= []).push (@data.xws ? @data.canonical_name)
-
-            if Object.keys(upgrade_obj).length > 0
-                xwsship.upgrades = upgrade_obj
-
-            xwsship.pilots.push = xws
-    xwsship
+    return JSON.stringify(xws)

@@ -1,7 +1,7 @@
 ###
-    X-Wing Squad Builder 2.5
+    X-Wing Squad Builder 2.0
     Stephen Kim <raithos@gmail.com>
-    https://yasb.app
+    https://raithos.github.io
 ###
 
 DFL_LANGUAGE = 'English' # default language
@@ -34,7 +34,7 @@ try
     exportObj.currentLanguage = DFL_LANGUAGE
     if exportObj.languagePriority == -1
         return
-    # some browses just provide a single navigator.language, some provide an array navigator.languages 
+    # some browsers just provide a single navigator.language, some provide an array navigator.languages 
     languageCodes = [navigator.language].concat(navigator.languages)
     for langc in languageCodes
         # strip stuff like -US from en-US
@@ -49,7 +49,6 @@ try
 catch all
     exportObj.currentLanguage = DFL_LANGUAGE
     # throw all
-    
 
 exportObj.loadCards = (language) ->
     exportObj.cardLoaders[language]()
@@ -96,9 +95,11 @@ exportObj.setupTranslationSupport = ->
             if language of exportObj.translations
                 $('.language-placeholder').text language
                 current_language = ""
+                builders_before = []
                 for builder in builders
                     current_language = builder.language
-                    await builder.container.trigger 'xwing:beforeLanguageLoad', defer()
+                    builders_before.push new Promise((resolve,reject) => builder.container.trigger 'xwing:beforeLanguageLoad', resolve)
+                await Promise.all builders_before
                 if language != current_language
                     exportObj.loadCards language
                 exportObj.translateUIElements()
@@ -107,11 +108,13 @@ exportObj.setupTranslationSupport = ->
 
     # Load cards one time
     basic_cards = exportObj.basicCardData()
+    quick_builds = exportObj.basicQuickBuilds()
     exportObj.canonicalizeShipNames basic_cards
     exportObj.ships = basic_cards.ships
 
     # Set up the common card data (e.g. stats)
     exportObj.setupCommonCardData basic_cards
+    exportObj.setupQuickBuilds quick_builds
 
     # do we need to load dfl as well? Not sure...
     exportObj.loadCards DFL_LANGUAGE

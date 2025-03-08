@@ -3929,7 +3929,7 @@ exportObj.manifestByExpansion =
             count: 2
         }
     ]
-    'T-70 X-Wing Expansion Pack': [
+    'T-70 X-wing Expansion Pack': [
         {
             name: 'T-70 X-wing'
             type: 'ship'
@@ -4026,7 +4026,7 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-    'RZ-2 A-Wing Expansion Pack': [
+    'RZ-2 A-wing Expansion Pack': [
         {
             name: 'RZ-2 A-wing'
             type: 'ship'
@@ -4684,7 +4684,6 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-
     'Servants of Strife Squadron Pack': [
         {
             name: 'Belbullab-22 Starfighter'
@@ -4877,6 +4876,11 @@ exportObj.manifestByExpansion =
             count: 3
         }
         {
+            name: 'gascloud0'
+            type: 'obstacle'
+            count: 1
+        }
+        {
             name: 'gascloud1'
             type: 'obstacle'
             count: 1
@@ -4886,13 +4890,7 @@ exportObj.manifestByExpansion =
             type: 'obstacle'
             count: 1
         }
-        {
-            name: 'gascloud3'
-            type: 'obstacle'
-            count: 1
-        }
     ]
-
     'Sith Infiltrator Expansion Pack': [
         {
             name: 'Sith Infiltrator'
@@ -4965,11 +4963,6 @@ exportObj.manifestByExpansion =
             count: 1
         }
         {
-            name: 'Perceptive Copilot'
-            type: 'upgrade'
-            count: 1
-        }
-        {
             name: 'Scimitar'
             type: 'upgrade'
             count: 1
@@ -4984,9 +4977,7 @@ exportObj.manifestByExpansion =
             type: 'upgrade'
             count: 1
         }
-
     ]
-
     'Vulture-class Droid Fighter Expansion': [
         {
             name: 'Vulture-class Droid Fighter'
@@ -5044,15 +5035,9 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-
     'Guardians of the Republic Squadron Pack': [
         {
             name: 'Delta-7 Aethersprite'
-            type: 'ship'
-            count: 1
-        }
-        {
-            name: 'Delta-7b Aethersprite'
             type: 'ship'
             count: 1
         }
@@ -5083,31 +5068,6 @@ exportObj.manifestByExpansion =
         }
         {
             name: 'Jedi Knight'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: 'Obi-Wan Kenobi (Delta-7b)'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: 'Plo Koon (Delta-7b)'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: 'Mace Windu (Delta-7b)'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: 'Saesee Tiin (Delta-7b)'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: 'Jedi Knight (Delta-7b)'
             type: 'pilot'
             count: 1
         }
@@ -5302,6 +5262,11 @@ exportObj.manifestByExpansion =
             count: 3
         }
         {
+            name: 'gascloud0'
+            type: 'obstacle'
+            count: 1
+        }
+        {
             name: 'gascloud1'
             type: 'obstacle'
             count: 1
@@ -5311,13 +5276,7 @@ exportObj.manifestByExpansion =
             type: 'obstacle'
             count: 1
         }
-        {
-            name: 'gascloud3'
-            type: 'obstacle'
-            count: 1
-        }
     ]
-
     'ARC-170 Starfighter Expansion': [
         {
             name: 'ARC-170 Starfighter'
@@ -5380,11 +5339,6 @@ exportObj.manifestByExpansion =
             count: 1
         }
         {
-            name: 'Ion Torpedoes'
-            type: 'upgrade'
-            count: 1
-        }
-        {
             name: 'Seventh Fleet Gunner'
             type: 'upgrade'
             count: 1
@@ -5404,62 +5358,11 @@ exportObj.manifestByExpansion =
             type: 'upgrade'
             count: 1
         }
-        {
-            name: 'R3 Astromech'
-            type: 'upgrade'
-            count: 1
-        }
-        {
-            name: 'Novice Technician'
-            type: 'upgrade'
-            count: 1
-        }
-        {
-            name: 'Perceptive Copilot'
-            type: 'upgrade'
-            count: 1
-        }
-        {
-            name: 'Seasoned Navigator'
-            type: 'upgrade'
-            count: 1
-        }
     ]
-
     'Delta-7 Aethersprite Expansion': [
         {
             name: 'Delta-7 Aethersprite'
             type: 'ship'
-            count: 1
-        }
-        {
-            name: 'Delta-7b Aethersprite'
-            type: 'ship'
-            count: 1
-        }
-        {
-            name: 'Anakin Skywalker (Delta-7b)'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: 'Ahsoka Tano (Delta-7b)'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: 'Barriss Offee (Delta-7b)'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: 'Luminara Unduli (Delta-7b)'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: 'Jedi Knight (Delta-7b)'
-            type: 'pilot'
             count: 1
         }
         {
@@ -5558,7 +5461,6 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-
     'Z-95-AF4 Headhunter Expansion Pack': [
         {
             name: 'Z-95-AF4 Headhunter'
@@ -5611,7 +5513,6 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-
     'TIE/sk Striker Expansion Pack': [
         {
             name: 'TIE/sk Striker'
@@ -5669,7 +5570,6 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-
     'Naboo Royal N-1 Starfighter Expansion Pack': [
         {
             name: 'Naboo Royal N-1 Starfighter'
@@ -5747,8 +5647,7 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-
-    'Hyena-Class Droid Bomber Expansion Pack': [
+    'Hyena-class Droid Bomber Expansion Pack': [
         {
             name: 'Hyena-class Droid Bomber'
             type: 'ship'
@@ -5835,8 +5734,6 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-
-
     'A/SF-01 B-Wing Expansion Pack': [
         {
             name: 'A/SF-01 B-wing'
@@ -5904,7 +5801,6 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-
     'Millennium Falcon Expansion Pack': [
         {
             name: 'Modified YT-1300 Light Freighter'
@@ -6002,7 +5898,6 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-
     'VT-49 Decimator Expansion Pack': [
         {
             name: 'VT-49 Decimator'
@@ -6090,8 +5985,7 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-
-    'TIE/VN Silencer Expansion Pack': [
+    'TIE/vn Silencer Expansion Pack': [
         {
             name: 'TIE/vn Silencer'
             type: 'ship'
@@ -6153,8 +6047,7 @@ exportObj.manifestByExpansion =
             count: 1
         }        
     ]
-
-    'TIE/SF Fighter Expansion Pack': [
+    'TIE/sf Fighter Expansion Pack': [
         {
             name: 'TIE/sf Fighter'
             type: 'ship'
@@ -6216,7 +6109,6 @@ exportObj.manifestByExpansion =
             count: 1
         }        
     ]
-
     'Resistance Transport Expansion Pack': [
         {
             name: 'Resistance Transport'
@@ -6349,7 +6241,7 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-    'BTL-B Y-Wing Expansion Pack': [
+    'BTL-B Y-wing Expansion Pack': [
         {
             name: 'BTL-B Y-wing'
             type: 'ship'
@@ -7527,7 +7419,6 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-
     'Epic Battles Multiplayer Expansion': [
         {
             name: 'Agent of the Empire'
@@ -8240,7 +8131,7 @@ exportObj.manifestByExpansion =
             count: 1
         }
         {
-            name: 'Black Squadron Ace'
+            name: 'Black Squadron Ace (T-70)'
             type: 'pilot'
             count: 2
         }
@@ -8586,7 +8477,7 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-    "Droid Tri-Fighter Expansion Pack": [
+    "Droid Tri-fighter Expansion Pack": [
         {
             name: 'Droid Tri-fighter'
             type: 'ship'
@@ -8653,7 +8544,7 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-    "Nimbus-class V-Wing Expansion Pack": [
+    "Nimbus-class V-wing Expansion Pack": [
         {
             name: 'Nimbus-class V-wing'
             type: 'ship'
@@ -8665,7 +8556,7 @@ exportObj.manifestByExpansion =
             count: 1
         }
         {
-            name: '"Odd Ball" (V-wing)'
+            name: '"Odd Ball" (V-Wing)'
             type: 'pilot'
             count: 1
         }
@@ -9483,7 +9374,7 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-    "BTA-NR2 Y-Wing Pack": [
+    "BTA-NR2 Y-wing Pack": [
         {
             name: 'BTA-NR2 Y-wing'
             type: 'ship'
@@ -9600,7 +9491,6 @@ exportObj.manifestByExpansion =
             count: 2
         }
     ]
-
     "Trident-class Assault Ship Expansion Pack": [
         {
             name: 'Trident-class Assault Ship'
@@ -9803,8 +9693,6 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-
-
     "Hotshots and Aces Reinforcements Pack": [
         {
             name: 'Gina Moonsong'
@@ -10141,17 +10029,17 @@ exportObj.manifestByExpansion =
             count: 1
         }
         {
+            name: 'gascloud3'
+            type: 'obstacle'
+            count: 1
+        }
+        {
             name: 'gascloud4'
             type: 'obstacle'
             count: 1
         }
         {
             name: 'gascloud5'
-            type: 'obstacle'
-            count: 1
-        }
-        {
-            name: 'gascloud6'
             type: 'obstacle'
             count: 1
         }
@@ -10288,11 +10176,6 @@ exportObj.manifestByExpansion =
             count: 2
         }
         {
-            name: 'Veteran Tail Gunner'
-            type: 'upgrade'
-            count: 1
-        }
-        {
             name: 'Enduring'
             type: 'upgrade'
             count: 1
@@ -10301,225 +10184,6 @@ exportObj.manifestByExpansion =
             name: 'Shattering Shot'
             type: 'upgrade'
             count: 1
-        }
-    ]
-    "Rogue-class Starfighter Expansion pack": [
-        {
-            name: 'Rogue-class Starfighter'
-            type: 'ship'
-            count: 2
-        }
-        {
-            name: 'Cad Bane (Separatist)'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: 'IG-101'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: 'IG-102'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: 'IG-111'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: 'MagnaGuard Executioner'
-            type: 'pilot'
-            count: 2
-        }
-        {
-            name: 'MagnaGuard Protector'
-            type: 'pilot'
-            count: 2
-        }
-        {
-            name: 'Cad Bane'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: 'Viktor Hel (Rogue)'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: 'Nom Lumb (Rogue)'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: 'Outer Rim Hunter'
-            type: 'pilot'
-            count: 2
-        }
-        {
-            name: 'Enduring'
-            type: 'upgrade'
-            count: 2
-        }
-        {
-            name: 'Notorious'
-            type: 'upgrade'
-            count: 2
-        }
-        {
-            name: 'Freelance Slicer'
-            type: 'upgrade'
-            count: 1
-        }
-        {
-            name: 'Ion Cannon'
-            type: 'upgrade'
-            count: 1
-        }
-        {
-            name: 'Proton Cannons'
-            type: 'upgrade'
-            count: 2
-        }
-        {
-            name: 'Synced Laser Cannons'
-            type: 'upgrade'
-            count: 2
-        }
-        {
-            name: 'Blazer Bomb'
-            type: 'upgrade'
-            count: 1
-        }
-        {
-            name: 'Independent Calculations'
-            type: 'upgrade'
-            count: 2
-        }
-        {
-            name: 'Tracking Fob'
-            type: 'upgrade'
-            count: 1
-        }
-        {
-            name: 'Overtuned Modulators'
-            type: 'upgrade'
-            count: 2
-        }
-        {
-            name: 'Xanadu Blood'
-            type: 'upgrade'
-            count: 1
-        }
-    ]
-    "Clone Z-95 Headhunter Expansion pack": [
-        {
-            name: 'Clone Z-95 Headhunter'
-            type: 'ship'
-            count: 2
-        }
-        {
-            name: '"Boost"'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: '"Drift"'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: '"Hawk" (Z-95)'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: '"Killer"'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: '"Knack"'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: '"Slider"'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: '"Stub"'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: '"Warthog" (Z-95)'
-            type: 'pilot'
-            count: 1
-        }
-        {
-            name: '7th Sky Corps Pilot'
-            type: 'pilot'
-            count: 2
-        }
-        {
-            name: 'Reaper Squadron Scout'
-            type: 'pilot'
-            count: 2
-        }
-        {
-            name: 'Enduring'
-            type: 'upgrade'
-            count: 2
-        }
-        {
-            name: 'Adv. Proton Torpedoes'
-            type: 'upgrade'
-            count: 2
-        }
-        {
-            name: 'Angled Deflectors'
-            type: 'upgrade'
-            count: 2
-        }
-        {
-            name: 'Fire-Control System'
-            type: 'upgrade'
-            count: 2
-        }
-        {
-            name: 'Homing Torpedoes'
-            type: 'upgrade'
-            count: 2
-        }
-        {
-            name: 'Ion Torpedoes'
-            type: 'upgrade'
-            count: 1
-        }
-        {
-            name: 'Mag-Pulse Warheads'
-            type: 'upgrade'
-            count: 2
-        }
-        {
-            name: 'Marg Sabl Closure'
-            type: 'upgrade'
-            count: 2
-        }
-        {
-            name: 'Squad Leader'
-            type: 'upgrade'
-            count: 1
-        }
-        {
-            name: 'XX-23 S-Thread Tracers'
-            type: 'upgrade'
-            count: 2
         }
     ]
     "Pride of Mandalore Reinforcements Pack": [
@@ -10861,6 +10525,225 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
+    "Rogue-class Starfighter Expansion pack": [
+        {
+            name: 'Rogue-class Starfighter'
+            type: 'ship'
+            count: 2
+        }
+        {
+            name: 'Cad Bane (Separatist)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'IG-101'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'IG-102'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'IG-111'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'MagnaGuard Executioner'
+            type: 'pilot'
+            count: 2
+        }
+        {
+            name: 'MagnaGuard Protector'
+            type: 'pilot'
+            count: 2
+        }
+        {
+            name: 'Cad Bane'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Viktor Hel (Rogue)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Nom Lumb (Rogue)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Outer Rim Hunter'
+            type: 'pilot'
+            count: 2
+        }
+        {
+            name: 'Enduring'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Notorious'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Freelance Slicer'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Ion Cannon'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Proton Cannons'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Synced Laser Cannons'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Blazer Bomb'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Independent Calculations'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Tracking Fob'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Overtuned Modulators'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Xanadu Blood'
+            type: 'upgrade'
+            count: 1
+        }
+    ]
+    "Clone Z-95 Headhunter Expansion pack": [
+        {
+            name: 'Clone Z-95 Headhunter'
+            type: 'ship'
+            count: 2
+        }
+        {
+            name: '"Boost"'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Drift"'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Hawk" (Z-95)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Killer"'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Knack"'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Slider"'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Stub"'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Warthog" (Z-95)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '7th Sky Corps Pilot'
+            type: 'pilot'
+            count: 2
+        }
+        {
+            name: 'Reaper Squadron Scout'
+            type: 'pilot'
+            count: 2
+        }
+        {
+            name: 'Enduring'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Adv. Proton Torpedoes'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Angled Deflectors'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Fire-Control System'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Homing Torpedoes'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Ion Torpedoes'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Mag-Pulse Warheads'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Marg Sabl Closure'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Squad Leader'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'XX-23 S-Thread Tracers'
+            type: 'upgrade'
+            count: 2
+        }
+    ]
     "Battle of Yavin Battle Pack": [
         {
             name: 'Garven Dreis (BoY)'
@@ -10959,6 +10842,106 @@ exportObj.manifestByExpansion =
         }
         {
             name: 'Sigma 7 (BoY)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Garven Dreis (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Luke Skywalker (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Jek Porkins (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Biggs Darklighter (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Wedge Antilles (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Han Solo (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Dutch" Vander (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Dex Tiree (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Pops" Krail (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Hol Okand (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Darth Vader (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Backstabber" (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Mauler" Mithel (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Dark Curse" (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Wampa" (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Iden Versio (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Sigma 4 (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Sigma 5 (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Sigma 6 (BoY SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Sigma 7 (BoY SL)'
             type: 'pilot'
             count: 1
         }
@@ -11061,6 +11044,106 @@ exportObj.manifestByExpansion =
         }
         {
             name: 'Haor Chall Prototype (SoC)'
+            type: 'pilot'
+            count: 2
+        }
+        {
+            name: 'Anakin Skywalker (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Obi-Wan Kenobi (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Shaak Ti (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Odd Ball" (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Wolffe" (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Jag" (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Contrail" (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Klick" (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Kickback" (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Axe" (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Count Dooku (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'DBS-32C (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'DBS-404 (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Baktoid Prototype (SoC SL)'
+            type: 'pilot'
+            count: 2
+        }
+        {
+            name: 'DIS-347 (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'DIS-T81 (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Phlac-Arphocc Prototype (SoC SL)'
+            type: 'pilot'
+            count: 2
+        }
+        {
+            name: 'DFS-081 (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'DFS-311 (SoC SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Haor Chall Prototype (SoC SL)'
             type: 'pilot'
             count: 2
         }
@@ -11197,11 +11280,6 @@ exportObj.manifestByExpansion =
             count: 1
         }
         {
-            name: 'Adi Gallia (Delta-7B)'
-            type: 'pilot'
-            count: 1
-        }
-        {
             name: '"Sicko"'
             type: 'pilot'
             count: 1
@@ -11247,7 +11325,801 @@ exportObj.manifestByExpansion =
             count: 1
         }
     ]
-
+    "Galactic Empire Squadron Starter Pack": [
+        {
+            name: 'TIE Advanced x1'
+            type: 'ship'
+            count: 1
+        }
+        {
+            name: 'TIE/ln Fighter'
+            type: 'ship'
+            count: 2
+        }
+        {
+            name: 'TIE/sa Bomber'
+            type: 'ship'
+            count: 1
+        }
+        {
+            name: 'Darth Vader (SSP SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Maarek Stele (SSP SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Captain Jonus (SSP SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Tomax Bren (SSP SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Night Beast" (SSP SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Valen Rudor (SSP SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Iden Versio (SSP SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Darth Vader'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Maarek Stele'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Captain Jonus'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Tomax Bren'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Night Beast"'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Valen Rudor'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Iden Versio'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Feedback Ping'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Outmaneuver'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Instinctive Aim'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Barrage Rockets'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Proton Bombs'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Proximity Mines'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Elusive'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Predator'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Heightened Perception'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Proton Torpedoes'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Disciplined'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Hate'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Ion Missiles'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Plasma Torpedoes'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Pattern Analyzer'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Precision Ion Engines'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Shield Upgrade'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Afterburners'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Passive Sensors'
+            type: 'upgrade'
+            count: 1
+        }
+    ]
+    "Rebel Alliance Squadron Starter Pack": [
+        {
+            name: 'T-65 X-wing'
+            type: 'ship'
+            count: 1
+        }
+        {
+            name: 'RZ-1 A-wing'
+            type: 'ship'
+            count: 2
+        }
+        {
+            name: 'BTL-A4 Y-wing'
+            type: 'ship'
+            count: 1
+        }
+        {
+            name: 'Luke Skywalker (SSP SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Jek Porkins (SSP SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Dutch" Vander (SSP SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Horton Salm (SSP SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Arvel Crynyd (SSP SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Jake Farrell (SSP SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Shara Bey (SSP SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Luke Skywalker'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Jek Porkins'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Dutch" Vander'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Horton Salm'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Arvel Crynyd'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Jake Farrell'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Shara Bey (A-Wing)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Outmaneuver'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Predator'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Proton Bombs'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Proximity Mines'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Elusive'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Hopeful'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Proton Torpedoes'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Ion Cannon Turret'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Heightened Perception'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Concussion Missiles'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'R2-D2'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'R5-D8'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Instinctive Aim'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Ion Missiles'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'R4 Astromech'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Vectored Cannons (RZ-1)'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Afterburners'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Shield Upgrade'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Servomotor S-Foils'
+            type: 'upgrade'
+            count: 1
+        }
+    ]
+    "YT-2400 Light Freighter Expansion Pack": [
+        {
+            name: 'YT-2400 Light Freighter (2023)'
+            type: 'ship'
+            count: 1
+        }
+        {
+            name: 'Dash Rendar (2023)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Leebo" (2023)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Dash Rendar (YLF)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Leebo" (YLF)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Dash Rendar (YLF SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Leebo" (YLF SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Dash Rendar (Scum)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Dash Rendar (Scum SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Leebo" (Scum)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Leebo" (Scum SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Lone Wolf'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Proton Rockets'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Heavy Laser Cannon'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Lando Calrissian'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Hotshot Gunner'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Veteran Turret Gunner'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Rigged Cargo Chute'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Outrider (2023)'
+            type: 'upgrade'
+            count: 1
+        }
+    ]
+    "TIE/sa TIE Bomber Expansion Pack": [
+        {
+            name: 'TIE/sa Bomber'
+            type: 'ship'
+            count: 2
+        }
+        {
+            name: '"Deathfire"'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Captain Jonus'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Tomax Bren'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Major Rhymer'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Scimitar Squadron Pilot'
+            type: 'pilot'
+            count: 2
+        }
+        {
+            name: 'Gamma Squadron Ace'
+            type: 'pilot'
+            count: 2
+        }
+        {
+            name: '"Deathfire" (TBE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Captain Jonus (TBE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Tomax Bren (TBE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Major Rhymer (TBE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: '"Deathfire" (TBE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Captain Jonus (TBE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Tomax Bren (TBE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Major Rhymer (TBE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Adv. Proton Torpedoes'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Proton Bombs'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Conner Nets'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Seismic Charges'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Cluster Missiles'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Saturation Salvo'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Ion Missiles'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Skilled Bombardier'
+            type: 'upgrade'
+            count: 1
+        }
+        {
+            name: 'Ion Bombs'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Feedback Ping'
+            type: 'upgrade'
+            count: 2
+        }
+        {
+            name: 'Disciplined'
+            type: 'upgrade'
+            count: 2
+        }
+    ]
+    "Battle Over Endor Battle Pack": [
+        {
+            name: 'Wedge Antilles (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Lando Calrissian (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Tycho Celchu (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Gemmer Sojan (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Yendor (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Kendy Idele (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Arvel Crynyd (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Adon Fox (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Gina Moonsong (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Braylen Stramm (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Captain Yorr (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Colonel Jendon (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Soontir Fel (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Sapphire 2 (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Maus Monare (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Major Mianda (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Lieutenant Hebsly (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Scythe 6 (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Scimitar 1 (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Scimitar 3 (BoE)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Wedge Antilles (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Lando Calrissian (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Tycho Celchu (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Gemmer Sojan (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Yendor (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Kendy Idele (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Arvel Crynyd (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Adon Fox (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Gina Moonsong (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Braylen Stramm (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Captain Yorr (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Colonel Jendon (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Soontir Fel (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Sapphire 2 (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Maus Monare (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Major Mianda (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Lieutenant Hebsly (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Scythe 6 (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Scimitar 1 (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+        {
+            name: 'Scimitar 3 (BoE SL)'
+            type: 'pilot'
+            count: 1
+        }
+    ]
     'Loose Ships': [
         {
             name: 'Auzituck Gunship'
@@ -11270,11 +12142,6 @@ exportObj.manifestByExpansion =
             count: 2
         }
         {
-            name: 'YT-2400 Light Freighter'
-            type: 'ship'
-            count: 2
-        }
-        {
             name: 'Alpha-Class Star Wing'
             type: 'ship'
             count: 3
@@ -11286,11 +12153,6 @@ exportObj.manifestByExpansion =
         }
         {
             name: 'TIE/ag Aggressor'
-            type: 'ship'
-            count: 3
-        }
-        {
-            name: 'TIE/sa Bomber'
             type: 'ship'
             count: 3
         }
@@ -11450,8 +12312,8 @@ class exportObj.Collection
                 """
                 ul = $ contents.find("ul#counts-#{type}")
                 for thing in Object.keys(things).sort((a,b) -> sortWithoutQuotes(a,b,type))
+                    card_totals_by_type[type] += things[thing]
                     if thing in singletonsByType[type]
-                        card_totals_by_type[type] += things[thing]
                         card_different_by_type[type]++
                         if type == 'pilot'
                             ul.append """<li>#{if exportObj.pilots[thing].display_name then exportObj.pilots[thing].display_name else thing} - #{things[thing]}</li>"""

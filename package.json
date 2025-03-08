@@ -1,12 +1,8 @@
 {
   "name": "yasb",
-  "description": "Squad builder for Atomic Mass Games ' X-Wing Miniatures Game",
-  "version": "2.5.0",
-  "author": [
-    "Geordan Rosario <geordan@gmail.com>",
-    "Stephen Kim <raithos@gmail.com>",
-    "Patrick Mischke <Patschke>"
-  ],
+  "description": "Squad builder for Fantasy Flight Games' X-Wing Miniatures Game",
+  "version": "2.0.1",
+  "author": "Eric Rew <eric.rew.85@gmail.com>",
   "license": "MIT",
   "main": "app/index.html",
   "private": "true",
@@ -18,15 +14,18 @@
     "grunt-contrib-copy": "*",
     "grunt-contrib-pug": "*",
     "grunt-contrib-uglify": "*",
-    "grunt-iced-coffee": "*",
+    "grunt-contrib-coffee": "*",
     "grunt-sass": "*",
-    "iced-coffee-script": "*",
     "jstransformer-coffee-script": "*",
     "jstransformer-markdown": "*",
-    "node-sass": "*",
+    "sass": "*",
     "phantomjs-prebuilt": "*"
   },
   "engines": {
     "node": "*"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "sass": "^1.85.0"
   }
 }
